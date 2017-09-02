@@ -51,7 +51,7 @@ Partial Class RegistrarEmpleado
         'lbl_tipo_documento
         '
         Me.lbl_tipo_documento.AutoSize = True
-        Me.lbl_tipo_documento.Location = New System.Drawing.Point(8, 122)
+        Me.lbl_tipo_documento.Location = New System.Drawing.Point(19, 123)
         Me.lbl_tipo_documento.Name = "lbl_tipo_documento"
         Me.lbl_tipo_documento.Size = New System.Drawing.Size(102, 13)
         Me.lbl_tipo_documento.TabIndex = 1
@@ -60,7 +60,7 @@ Partial Class RegistrarEmpleado
         'lbl_numero_documento
         '
         Me.lbl_numero_documento.AutoSize = True
-        Me.lbl_numero_documento.Location = New System.Drawing.Point(8, 167)
+        Me.lbl_numero_documento.Location = New System.Drawing.Point(3, 168)
         Me.lbl_numero_documento.Name = "lbl_numero_documento"
         Me.lbl_numero_documento.Size = New System.Drawing.Size(118, 13)
         Me.lbl_numero_documento.TabIndex = 1
@@ -69,7 +69,7 @@ Partial Class RegistrarEmpleado
         'lbl_nombre
         '
         Me.lbl_nombre.AutoSize = True
-        Me.lbl_nombre.Location = New System.Drawing.Point(8, 32)
+        Me.lbl_nombre.Location = New System.Drawing.Point(74, 33)
         Me.lbl_nombre.Name = "lbl_nombre"
         Me.lbl_nombre.Size = New System.Drawing.Size(47, 13)
         Me.lbl_nombre.TabIndex = 1
@@ -78,7 +78,7 @@ Partial Class RegistrarEmpleado
         'lbl_apellido
         '
         Me.lbl_apellido.AutoSize = True
-        Me.lbl_apellido.Location = New System.Drawing.Point(8, 77)
+        Me.lbl_apellido.Location = New System.Drawing.Point(74, 78)
         Me.lbl_apellido.Name = "lbl_apellido"
         Me.lbl_apellido.Size = New System.Drawing.Size(47, 13)
         Me.lbl_apellido.TabIndex = 1
@@ -87,7 +87,7 @@ Partial Class RegistrarEmpleado
         'lbl_calle
         '
         Me.lbl_calle.AutoSize = True
-        Me.lbl_calle.Location = New System.Drawing.Point(15, 32)
+        Me.lbl_calle.Location = New System.Drawing.Point(66, 30)
         Me.lbl_calle.Name = "lbl_calle"
         Me.lbl_calle.Size = New System.Drawing.Size(33, 13)
         Me.lbl_calle.TabIndex = 1
@@ -96,7 +96,7 @@ Partial Class RegistrarEmpleado
         'lbl_fecha_nacimiento
         '
         Me.lbl_fecha_nacimiento.AutoSize = True
-        Me.lbl_fecha_nacimiento.Location = New System.Drawing.Point(8, 204)
+        Me.lbl_fecha_nacimiento.Location = New System.Drawing.Point(12, 205)
         Me.lbl_fecha_nacimiento.Name = "lbl_fecha_nacimiento"
         Me.lbl_fecha_nacimiento.Size = New System.Drawing.Size(109, 13)
         Me.lbl_fecha_nacimiento.TabIndex = 1
@@ -104,45 +104,45 @@ Partial Class RegistrarEmpleado
         '
         'txt_nombre
         '
-        Me.txt_nombre.Location = New System.Drawing.Point(61, 29)
+        Me.txt_nombre.Location = New System.Drawing.Point(127, 29)
         Me.txt_nombre.Name = "txt_nombre"
-        Me.txt_nombre.Size = New System.Drawing.Size(286, 20)
+        Me.txt_nombre.Size = New System.Drawing.Size(220, 20)
         Me.txt_nombre.TabIndex = 2
         '
         'txt_apellido
         '
-        Me.txt_apellido.Location = New System.Drawing.Point(61, 74)
+        Me.txt_apellido.Location = New System.Drawing.Point(127, 74)
         Me.txt_apellido.Name = "txt_apellido"
-        Me.txt_apellido.Size = New System.Drawing.Size(286, 20)
+        Me.txt_apellido.Size = New System.Drawing.Size(220, 20)
         Me.txt_apellido.TabIndex = 3
         '
         'cmb_tipo_documento
         '
         Me.cmb_tipo_documento.FormattingEnabled = True
-        Me.cmb_tipo_documento.Location = New System.Drawing.Point(116, 119)
+        Me.cmb_tipo_documento.Location = New System.Drawing.Point(127, 119)
         Me.cmb_tipo_documento.Name = "cmb_tipo_documento"
-        Me.cmb_tipo_documento.Size = New System.Drawing.Size(231, 21)
+        Me.cmb_tipo_documento.Size = New System.Drawing.Size(220, 21)
         Me.cmb_tipo_documento.TabIndex = 4
         '
         'txt_numero_documento
         '
-        Me.txt_numero_documento.Location = New System.Drawing.Point(132, 164)
+        Me.txt_numero_documento.Location = New System.Drawing.Point(127, 164)
         Me.txt_numero_documento.Name = "txt_numero_documento"
-        Me.txt_numero_documento.Size = New System.Drawing.Size(214, 20)
+        Me.txt_numero_documento.Size = New System.Drawing.Size(220, 20)
         Me.txt_numero_documento.TabIndex = 5
         '
         'date_fecha_nacimiento
         '
-        Me.date_fecha_nacimiento.Location = New System.Drawing.Point(123, 198)
+        Me.date_fecha_nacimiento.Location = New System.Drawing.Point(127, 198)
         Me.date_fecha_nacimiento.Name = "date_fecha_nacimiento"
-        Me.date_fecha_nacimiento.Size = New System.Drawing.Size(224, 20)
+        Me.date_fecha_nacimiento.Size = New System.Drawing.Size(220, 20)
         Me.date_fecha_nacimiento.TabIndex = 6
         '
         'txt_calle
         '
-        Me.txt_calle.Location = New System.Drawing.Point(54, 29)
+        Me.txt_calle.Location = New System.Drawing.Point(105, 27)
         Me.txt_calle.Name = "txt_calle"
-        Me.txt_calle.Size = New System.Drawing.Size(293, 20)
+        Me.txt_calle.Size = New System.Drawing.Size(220, 20)
         Me.txt_calle.TabIndex = 3
         '
         'cmd_cancelar
@@ -165,15 +165,15 @@ Partial Class RegistrarEmpleado
         '
         'txt_numero_calle
         '
-        Me.txt_numero_calle.Location = New System.Drawing.Point(108, 75)
+        Me.txt_numero_calle.Location = New System.Drawing.Point(105, 73)
         Me.txt_numero_calle.Name = "txt_numero_calle"
-        Me.txt_numero_calle.Size = New System.Drawing.Size(239, 20)
+        Me.txt_numero_calle.Size = New System.Drawing.Size(220, 20)
         Me.txt_numero_calle.TabIndex = 5
         '
         'lbl_numero_calle
         '
         Me.lbl_numero_calle.AutoSize = True
-        Me.lbl_numero_calle.Location = New System.Drawing.Point(15, 78)
+        Me.lbl_numero_calle.Location = New System.Drawing.Point(12, 76)
         Me.lbl_numero_calle.Name = "lbl_numero_calle"
         Me.lbl_numero_calle.Size = New System.Drawing.Size(87, 13)
         Me.lbl_numero_calle.TabIndex = 1
@@ -182,7 +182,7 @@ Partial Class RegistrarEmpleado
         'lbl_ciudad
         '
         Me.lbl_ciudad.AutoSize = True
-        Me.lbl_ciudad.Location = New System.Drawing.Point(15, 124)
+        Me.lbl_ciudad.Location = New System.Drawing.Point(56, 122)
         Me.lbl_ciudad.Name = "lbl_ciudad"
         Me.lbl_ciudad.Size = New System.Drawing.Size(43, 13)
         Me.lbl_ciudad.TabIndex = 1
@@ -202,7 +202,7 @@ Partial Class RegistrarEmpleado
         Me.grp_datos.Controls.Add(Me.cmb_tipo_documento)
         Me.grp_datos.Location = New System.Drawing.Point(6, 21)
         Me.grp_datos.Name = "grp_datos"
-        Me.grp_datos.Size = New System.Drawing.Size(353, 244)
+        Me.grp_datos.Size = New System.Drawing.Size(353, 250)
         Me.grp_datos.TabIndex = 9
         Me.grp_datos.TabStop = False
         Me.grp_datos.Text = "Datos personales"
@@ -219,7 +219,7 @@ Partial Class RegistrarEmpleado
         Me.grp_domicilio.Controls.Add(Me.cmb_ciudad)
         Me.grp_domicilio.Location = New System.Drawing.Point(379, 21)
         Me.grp_domicilio.Name = "grp_domicilio"
-        Me.grp_domicilio.Size = New System.Drawing.Size(353, 244)
+        Me.grp_domicilio.Size = New System.Drawing.Size(350, 250)
         Me.grp_domicilio.TabIndex = 10
         Me.grp_domicilio.TabStop = False
         Me.grp_domicilio.Text = "Domicilio"
@@ -227,7 +227,7 @@ Partial Class RegistrarEmpleado
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(15, 170)
+        Me.Label1.Location = New System.Drawing.Point(62, 168)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 13)
         Me.Label1.TabIndex = 1
@@ -236,24 +236,24 @@ Partial Class RegistrarEmpleado
         'cmb_barrio
         '
         Me.cmb_barrio.FormattingEnabled = True
-        Me.cmb_barrio.Location = New System.Drawing.Point(64, 168)
+        Me.cmb_barrio.Location = New System.Drawing.Point(105, 166)
         Me.cmb_barrio.Name = "cmb_barrio"
-        Me.cmb_barrio.Size = New System.Drawing.Size(283, 21)
+        Me.cmb_barrio.Size = New System.Drawing.Size(220, 21)
         Me.cmb_barrio.TabIndex = 4
         '
         'cmb_ciudad
         '
         Me.cmb_ciudad.FormattingEnabled = True
-        Me.cmb_ciudad.Location = New System.Drawing.Point(64, 121)
+        Me.cmb_ciudad.Location = New System.Drawing.Point(105, 119)
         Me.cmb_ciudad.Name = "cmb_ciudad"
-        Me.cmb_ciudad.Size = New System.Drawing.Size(283, 21)
+        Me.cmb_ciudad.Size = New System.Drawing.Size(220, 21)
         Me.cmb_ciudad.TabIndex = 4
         '
         'RegistrarEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(742, 323)
+        Me.ClientSize = New System.Drawing.Size(734, 323)
         Me.Controls.Add(Me.grp_domicilio)
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)

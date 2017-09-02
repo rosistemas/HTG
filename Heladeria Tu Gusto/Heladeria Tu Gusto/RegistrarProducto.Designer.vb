@@ -39,7 +39,7 @@ Partial Class RegistrarProducto
         'lbl_nombre
         '
         Me.lbl_nombre.AutoSize = True
-        Me.lbl_nombre.Location = New System.Drawing.Point(17, 28)
+        Me.lbl_nombre.Location = New System.Drawing.Point(34, 28)
         Me.lbl_nombre.Name = "lbl_nombre"
         Me.lbl_nombre.Size = New System.Drawing.Size(47, 13)
         Me.lbl_nombre.TabIndex = 0
@@ -48,7 +48,7 @@ Partial Class RegistrarProducto
         'lbl_precio
         '
         Me.lbl_precio.AutoSize = True
-        Me.lbl_precio.Location = New System.Drawing.Point(17, 79)
+        Me.lbl_precio.Location = New System.Drawing.Point(41, 79)
         Me.lbl_precio.Name = "lbl_precio"
         Me.lbl_precio.Size = New System.Drawing.Size(40, 13)
         Me.lbl_precio.TabIndex = 0
@@ -57,7 +57,7 @@ Partial Class RegistrarProducto
         'lbl_tipo
         '
         Me.lbl_tipo.AutoSize = True
-        Me.lbl_tipo.Location = New System.Drawing.Point(17, 181)
+        Me.lbl_tipo.Location = New System.Drawing.Point(50, 181)
         Me.lbl_tipo.Name = "lbl_tipo"
         Me.lbl_tipo.Size = New System.Drawing.Size(31, 13)
         Me.lbl_tipo.TabIndex = 0
@@ -66,7 +66,7 @@ Partial Class RegistrarProducto
         'lbl_descripcion
         '
         Me.lbl_descripcion.AutoSize = True
-        Me.lbl_descripcion.Location = New System.Drawing.Point(17, 130)
+        Me.lbl_descripcion.Location = New System.Drawing.Point(15, 130)
         Me.lbl_descripcion.Name = "lbl_descripcion"
         Me.lbl_descripcion.Size = New System.Drawing.Size(66, 13)
         Me.lbl_descripcion.TabIndex = 0
@@ -74,31 +74,31 @@ Partial Class RegistrarProducto
         '
         'txt_nombre
         '
-        Me.txt_nombre.Location = New System.Drawing.Point(70, 25)
+        Me.txt_nombre.Location = New System.Drawing.Point(90, 25)
         Me.txt_nombre.Name = "txt_nombre"
-        Me.txt_nombre.Size = New System.Drawing.Size(231, 20)
+        Me.txt_nombre.Size = New System.Drawing.Size(220, 20)
         Me.txt_nombre.TabIndex = 1
         '
         'txt_precio
         '
-        Me.txt_precio.Location = New System.Drawing.Point(63, 76)
+        Me.txt_precio.Location = New System.Drawing.Point(90, 76)
         Me.txt_precio.Name = "txt_precio"
-        Me.txt_precio.Size = New System.Drawing.Size(238, 20)
+        Me.txt_precio.Size = New System.Drawing.Size(220, 20)
         Me.txt_precio.TabIndex = 2
         '
         'txt_descripcion
         '
-        Me.txt_descripcion.Location = New System.Drawing.Point(89, 127)
+        Me.txt_descripcion.Location = New System.Drawing.Point(90, 127)
         Me.txt_descripcion.Name = "txt_descripcion"
-        Me.txt_descripcion.Size = New System.Drawing.Size(212, 20)
+        Me.txt_descripcion.Size = New System.Drawing.Size(220, 20)
         Me.txt_descripcion.TabIndex = 1
         '
         'cmb_tipo
         '
         Me.cmb_tipo.FormattingEnabled = True
-        Me.cmb_tipo.Location = New System.Drawing.Point(54, 178)
+        Me.cmb_tipo.Location = New System.Drawing.Point(90, 178)
         Me.cmb_tipo.Name = "cmb_tipo"
-        Me.cmb_tipo.Size = New System.Drawing.Size(247, 21)
+        Me.cmb_tipo.Size = New System.Drawing.Size(220, 21)
         Me.cmb_tipo.TabIndex = 3
         '
         'cmd_aceptar
