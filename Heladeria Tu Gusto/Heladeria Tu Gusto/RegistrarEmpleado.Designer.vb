@@ -22,6 +22,7 @@ Partial Class RegistrarEmpleado
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarEmpleado))
         Me.lbl_tipo_documento = New System.Windows.Forms.Label()
         Me.lbl_numero_documento = New System.Windows.Forms.Label()
         Me.lbl_nombre = New System.Windows.Forms.Label()
@@ -258,6 +259,7 @@ Partial Class RegistrarEmpleado
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
         Me.Controls.Add(Me.cmd_aceptar)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "RegistrarEmpleado"
         Me.Text = "Nuevo empleado"
         Me.grp_datos.ResumeLayout(False)

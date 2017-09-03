@@ -22,6 +22,7 @@ Partial Class RegistrarProveedor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarProveedor))
         Me.grp_domicilio = New System.Windows.Forms.GroupBox()
         Me.lbl_calle = New System.Windows.Forms.Label()
         Me.txt_calle = New System.Windows.Forms.TextBox()
@@ -258,6 +259,7 @@ Partial Class RegistrarProveedor
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
         Me.Controls.Add(Me.cmd_aceptar)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "RegistrarProveedor"
         Me.Text = "Nuevo proveedor"
         Me.grp_domicilio.ResumeLayout(False)
