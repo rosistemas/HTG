@@ -77,21 +77,21 @@ Partial Class RegistrarProducto
         Me.txt_nombre.Location = New System.Drawing.Point(90, 25)
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.Size = New System.Drawing.Size(220, 20)
-        Me.txt_nombre.TabIndex = 1
+        Me.txt_nombre.TabIndex = 0
         '
         'txt_precio
         '
         Me.txt_precio.Location = New System.Drawing.Point(90, 76)
         Me.txt_precio.Name = "txt_precio"
         Me.txt_precio.Size = New System.Drawing.Size(220, 20)
-        Me.txt_precio.TabIndex = 2
+        Me.txt_precio.TabIndex = 1
         '
         'txt_descripcion
         '
         Me.txt_descripcion.Location = New System.Drawing.Point(90, 127)
         Me.txt_descripcion.Name = "txt_descripcion"
         Me.txt_descripcion.Size = New System.Drawing.Size(220, 20)
-        Me.txt_descripcion.TabIndex = 1
+        Me.txt_descripcion.TabIndex = 2
         '
         'cmb_tipo
         '
@@ -106,7 +106,7 @@ Partial Class RegistrarProducto
         Me.cmd_aceptar.Location = New System.Drawing.Point(56, 245)
         Me.cmd_aceptar.Name = "cmd_aceptar"
         Me.cmd_aceptar.Size = New System.Drawing.Size(99, 24)
-        Me.cmd_aceptar.TabIndex = 4
+        Me.cmd_aceptar.TabIndex = 0
         Me.cmd_aceptar.Text = "Aceptar"
         Me.cmd_aceptar.UseVisualStyleBackColor = True
         '
@@ -115,7 +115,7 @@ Partial Class RegistrarProducto
         Me.cmd_cancelar.Location = New System.Drawing.Point(173, 245)
         Me.cmd_cancelar.Name = "cmd_cancelar"
         Me.cmd_cancelar.Size = New System.Drawing.Size(99, 24)
-        Me.cmd_cancelar.TabIndex = 4
+        Me.cmd_cancelar.TabIndex = 1
         Me.cmd_cancelar.Text = "Cancelar"
         Me.cmd_cancelar.UseVisualStyleBackColor = True
         '

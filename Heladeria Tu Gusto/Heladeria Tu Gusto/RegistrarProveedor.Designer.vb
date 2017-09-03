@@ -79,7 +79,7 @@ Partial Class RegistrarProveedor
         Me.txt_calle.Location = New System.Drawing.Point(124, 29)
         Me.txt_calle.Name = "txt_calle"
         Me.txt_calle.Size = New System.Drawing.Size(220, 20)
-        Me.txt_calle.TabIndex = 3
+        Me.txt_calle.TabIndex = 0
         '
         'lbl_numero_calle
         '
@@ -95,7 +95,7 @@ Partial Class RegistrarProveedor
         Me.txt_numero_calle.Location = New System.Drawing.Point(124, 75)
         Me.txt_numero_calle.Name = "txt_numero_calle"
         Me.txt_numero_calle.Size = New System.Drawing.Size(220, 20)
-        Me.txt_numero_calle.TabIndex = 5
+        Me.txt_numero_calle.TabIndex = 1
         '
         'Label1
         '
@@ -121,7 +121,7 @@ Partial Class RegistrarProveedor
         Me.cmb_barrio.Location = New System.Drawing.Point(124, 168)
         Me.cmb_barrio.Name = "cmb_barrio"
         Me.cmb_barrio.Size = New System.Drawing.Size(220, 21)
-        Me.cmb_barrio.TabIndex = 4
+        Me.cmb_barrio.TabIndex = 3
         '
         'cmb_ciudad
         '
@@ -129,7 +129,7 @@ Partial Class RegistrarProveedor
         Me.cmb_ciudad.Location = New System.Drawing.Point(124, 121)
         Me.cmb_ciudad.Name = "cmb_ciudad"
         Me.cmb_ciudad.Size = New System.Drawing.Size(220, 21)
-        Me.cmb_ciudad.TabIndex = 4
+        Me.cmb_ciudad.TabIndex = 2
         '
         'grp_datos
         '
@@ -155,14 +155,14 @@ Partial Class RegistrarProveedor
         Me.txt_razon_social.Location = New System.Drawing.Point(125, 201)
         Me.txt_razon_social.Name = "txt_razon_social"
         Me.txt_razon_social.Size = New System.Drawing.Size(220, 20)
-        Me.txt_razon_social.TabIndex = 2
+        Me.txt_razon_social.TabIndex = 4
         '
         'txt_nombre
         '
         Me.txt_nombre.Location = New System.Drawing.Point(125, 29)
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.Size = New System.Drawing.Size(220, 20)
-        Me.txt_nombre.TabIndex = 2
+        Me.txt_nombre.TabIndex = 0
         '
         'lbl_tipo_documento
         '
@@ -205,7 +205,7 @@ Partial Class RegistrarProveedor
         Me.txt_numero_documento.Location = New System.Drawing.Point(125, 158)
         Me.txt_numero_documento.Name = "txt_numero_documento"
         Me.txt_numero_documento.Size = New System.Drawing.Size(220, 20)
-        Me.txt_numero_documento.TabIndex = 5
+        Me.txt_numero_documento.TabIndex = 3
         '
         'lbl_razon_social
         '
@@ -221,7 +221,7 @@ Partial Class RegistrarProveedor
         Me.txt_mail.Location = New System.Drawing.Point(125, 71)
         Me.txt_mail.Name = "txt_mail"
         Me.txt_mail.Size = New System.Drawing.Size(220, 20)
-        Me.txt_mail.TabIndex = 3
+        Me.txt_mail.TabIndex = 1
         '
         'cmb_tipo_documento
         '
@@ -229,14 +229,14 @@ Partial Class RegistrarProveedor
         Me.cmb_tipo_documento.Location = New System.Drawing.Point(125, 110)
         Me.cmb_tipo_documento.Name = "cmb_tipo_documento"
         Me.cmb_tipo_documento.Size = New System.Drawing.Size(220, 21)
-        Me.cmb_tipo_documento.TabIndex = 4
+        Me.cmb_tipo_documento.TabIndex = 2
         '
         'cmd_cancelar
         '
         Me.cmd_cancelar.Location = New System.Drawing.Point(377, 287)
         Me.cmd_cancelar.Name = "cmd_cancelar"
         Me.cmd_cancelar.Size = New System.Drawing.Size(99, 24)
-        Me.cmd_cancelar.TabIndex = 11
+        Me.cmd_cancelar.TabIndex = 1
         Me.cmd_cancelar.Text = "Cancelar"
         Me.cmd_cancelar.UseVisualStyleBackColor = True
         '
@@ -245,7 +245,7 @@ Partial Class RegistrarProveedor
         Me.cmd_aceptar.Location = New System.Drawing.Point(258, 287)
         Me.cmd_aceptar.Name = "cmd_aceptar"
         Me.cmd_aceptar.Size = New System.Drawing.Size(99, 24)
-        Me.cmd_aceptar.TabIndex = 12
+        Me.cmd_aceptar.TabIndex = 0
         Me.cmd_aceptar.Text = "Aceptar"
         Me.cmd_aceptar.UseVisualStyleBackColor = True
         '
