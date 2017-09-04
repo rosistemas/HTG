@@ -159,6 +159,39 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Edit Property-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice_cream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Add-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Edit Property-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Ice Cream Sundae-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Package-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Resume-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popsicle-1267592_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-2377713_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Banana split-80.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

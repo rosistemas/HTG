@@ -323,6 +323,50 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.ice_2377713_640">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.ice_cream">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_128">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Banana_split_80">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Edit_Property_128">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Edit_Property_1281">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Ice_Cream_Sundae_80">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Package_128">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Resume_80">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.popsicle_1267592_1280">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.supplier">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="T:Heladeria_Tu_Gusto.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.

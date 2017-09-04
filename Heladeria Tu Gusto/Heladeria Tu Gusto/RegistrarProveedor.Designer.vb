@@ -29,9 +29,9 @@ Partial Class RegistrarProveedor
         Me.lbl_numero_calle = New System.Windows.Forms.Label()
         Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lbl_ciudad = New System.Windows.Forms.Label()
+        Me.lbl_localidad = New System.Windows.Forms.Label()
         Me.cmb_barrio = New System.Windows.Forms.ComboBox()
-        Me.cmb_ciudad = New System.Windows.Forms.ComboBox()
+        Me.cmb_localidad = New System.Windows.Forms.ComboBox()
         Me.grp_datos = New System.Windows.Forms.GroupBox()
         Me.txt_razon_social = New System.Windows.Forms.TextBox()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
@@ -56,9 +56,9 @@ Partial Class RegistrarProveedor
         Me.grp_domicilio.Controls.Add(Me.lbl_numero_calle)
         Me.grp_domicilio.Controls.Add(Me.txt_numero_calle)
         Me.grp_domicilio.Controls.Add(Me.Label1)
-        Me.grp_domicilio.Controls.Add(Me.lbl_ciudad)
+        Me.grp_domicilio.Controls.Add(Me.lbl_localidad)
         Me.grp_domicilio.Controls.Add(Me.cmb_barrio)
-        Me.grp_domicilio.Controls.Add(Me.cmb_ciudad)
+        Me.grp_domicilio.Controls.Add(Me.cmb_localidad)
         Me.grp_domicilio.Location = New System.Drawing.Point(377, 22)
         Me.grp_domicilio.Name = "grp_domicilio"
         Me.grp_domicilio.Size = New System.Drawing.Size(353, 244)
@@ -107,30 +107,32 @@ Partial Class RegistrarProveedor
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Barrio:"
         '
-        'lbl_ciudad
+        'lbl_localidad
         '
-        Me.lbl_ciudad.AutoSize = True
-        Me.lbl_ciudad.Location = New System.Drawing.Point(55, 124)
-        Me.lbl_ciudad.Name = "lbl_ciudad"
-        Me.lbl_ciudad.Size = New System.Drawing.Size(43, 13)
-        Me.lbl_ciudad.TabIndex = 1
-        Me.lbl_ciudad.Text = "Ciudad:"
+        Me.lbl_localidad.AutoSize = True
+        Me.lbl_localidad.Location = New System.Drawing.Point(42, 129)
+        Me.lbl_localidad.Name = "lbl_localidad"
+        Me.lbl_localidad.Size = New System.Drawing.Size(56, 13)
+        Me.lbl_localidad.TabIndex = 1
+        Me.lbl_localidad.Text = "Localidad:"
         '
         'cmb_barrio
         '
+        Me.cmb_barrio.Enabled = False
         Me.cmb_barrio.FormattingEnabled = True
         Me.cmb_barrio.Location = New System.Drawing.Point(124, 168)
         Me.cmb_barrio.Name = "cmb_barrio"
         Me.cmb_barrio.Size = New System.Drawing.Size(220, 21)
         Me.cmb_barrio.TabIndex = 3
         '
-        'cmb_ciudad
+        'cmb_localidad
         '
-        Me.cmb_ciudad.FormattingEnabled = True
-        Me.cmb_ciudad.Location = New System.Drawing.Point(124, 121)
-        Me.cmb_ciudad.Name = "cmb_ciudad"
-        Me.cmb_ciudad.Size = New System.Drawing.Size(220, 21)
-        Me.cmb_ciudad.TabIndex = 2
+        Me.cmb_localidad.Enabled = False
+        Me.cmb_localidad.FormattingEnabled = True
+        Me.cmb_localidad.Location = New System.Drawing.Point(124, 121)
+        Me.cmb_localidad.Name = "cmb_localidad"
+        Me.cmb_localidad.Size = New System.Drawing.Size(220, 21)
+        Me.cmb_localidad.TabIndex = 2
         '
         'grp_datos
         '
@@ -275,9 +277,9 @@ Partial Class RegistrarProveedor
     Friend WithEvents lbl_numero_calle As System.Windows.Forms.Label
     Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents lbl_ciudad As System.Windows.Forms.Label
+    Friend WithEvents lbl_localidad As System.Windows.Forms.Label
     Friend WithEvents cmb_barrio As System.Windows.Forms.ComboBox
-    Friend WithEvents cmb_ciudad As System.Windows.Forms.ComboBox
+    Friend WithEvents cmb_localidad As System.Windows.Forms.ComboBox
     Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
     Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
     Friend WithEvents lbl_nombre As System.Windows.Forms.Label

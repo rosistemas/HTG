@@ -41,9 +41,6 @@
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
         'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
         If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
-            txt_descripcion.Clear()
-            txt_nombre.Clear()
-            txt_precio.Clear()
             Me.Close()
             Principal.Show()
         End If
@@ -110,4 +107,5 @@
         End If
         Return true
     End Function
+
 End Class
