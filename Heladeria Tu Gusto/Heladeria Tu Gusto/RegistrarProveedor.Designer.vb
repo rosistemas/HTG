@@ -118,7 +118,6 @@ Partial Class RegistrarProveedor
         '
         'cmb_barrio
         '
-        Me.cmb_barrio.Enabled = False
         Me.cmb_barrio.FormattingEnabled = True
         Me.cmb_barrio.Location = New System.Drawing.Point(124, 168)
         Me.cmb_barrio.Name = "cmb_barrio"
@@ -127,7 +126,6 @@ Partial Class RegistrarProveedor
         '
         'cmb_localidad
         '
-        Me.cmb_localidad.Enabled = False
         Me.cmb_localidad.FormattingEnabled = True
         Me.cmb_localidad.Location = New System.Drawing.Point(124, 121)
         Me.cmb_localidad.Name = "cmb_localidad"

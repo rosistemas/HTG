@@ -39,12 +39,10 @@ Partial Class RegistrarEmpleado
         Me.cmd_aceptar = New System.Windows.Forms.Button()
         Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
         Me.lbl_numero_calle = New System.Windows.Forms.Label()
-        Me.lbl_localidad = New System.Windows.Forms.Label()
         Me.grp_datos = New System.Windows.Forms.GroupBox()
         Me.grp_domicilio = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmb_barrio = New System.Windows.Forms.ComboBox()
-        Me.cmb_localidad = New System.Windows.Forms.ComboBox()
         Me.grp_datos.SuspendLayout()
         Me.grp_domicilio.SuspendLayout()
         Me.SuspendLayout()
@@ -180,15 +178,6 @@ Partial Class RegistrarEmpleado
         Me.lbl_numero_calle.TabIndex = 1
         Me.lbl_numero_calle.Text = "Número de calle:"
         '
-        'lbl_localidad
-        '
-        Me.lbl_localidad.AutoSize = True
-        Me.lbl_localidad.Location = New System.Drawing.Point(43, 122)
-        Me.lbl_localidad.Name = "lbl_localidad"
-        Me.lbl_localidad.Size = New System.Drawing.Size(56, 13)
-        Me.lbl_localidad.TabIndex = 1
-        Me.lbl_localidad.Text = "Localidad:"
-        '
         'grp_datos
         '
         Me.grp_datos.Controls.Add(Me.txt_nombre)
@@ -215,9 +204,7 @@ Partial Class RegistrarEmpleado
         Me.grp_domicilio.Controls.Add(Me.lbl_numero_calle)
         Me.grp_domicilio.Controls.Add(Me.txt_numero_calle)
         Me.grp_domicilio.Controls.Add(Me.Label1)
-        Me.grp_domicilio.Controls.Add(Me.lbl_localidad)
         Me.grp_domicilio.Controls.Add(Me.cmb_barrio)
-        Me.grp_domicilio.Controls.Add(Me.cmb_localidad)
         Me.grp_domicilio.Location = New System.Drawing.Point(379, 21)
         Me.grp_domicilio.Name = "grp_domicilio"
         Me.grp_domicilio.Size = New System.Drawing.Size(350, 250)
@@ -228,7 +215,7 @@ Partial Class RegistrarEmpleado
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(62, 168)
+        Me.Label1.Location = New System.Drawing.Point(62, 117)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 13)
         Me.Label1.TabIndex = 1
@@ -236,21 +223,11 @@ Partial Class RegistrarEmpleado
         '
         'cmb_barrio
         '
-        Me.cmb_barrio.Enabled = False
         Me.cmb_barrio.FormattingEnabled = True
-        Me.cmb_barrio.Location = New System.Drawing.Point(105, 166)
+        Me.cmb_barrio.Location = New System.Drawing.Point(105, 115)
         Me.cmb_barrio.Name = "cmb_barrio"
         Me.cmb_barrio.Size = New System.Drawing.Size(220, 21)
         Me.cmb_barrio.TabIndex = 3
-        '
-        'cmb_localidad
-        '
-        Me.cmb_localidad.Enabled = False
-        Me.cmb_localidad.FormattingEnabled = True
-        Me.cmb_localidad.Location = New System.Drawing.Point(105, 119)
-        Me.cmb_localidad.Name = "cmb_localidad"
-        Me.cmb_localidad.Size = New System.Drawing.Size(220, 21)
-        Me.cmb_localidad.TabIndex = 2
         '
         'RegistrarEmpleado
         '
@@ -287,10 +264,8 @@ Partial Class RegistrarEmpleado
     Friend WithEvents cmd_aceptar As System.Windows.Forms.Button
     Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
     Friend WithEvents lbl_numero_calle As System.Windows.Forms.Label
-    Friend WithEvents lbl_localidad As System.Windows.Forms.Label
     Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
     Friend WithEvents grp_domicilio As System.Windows.Forms.GroupBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cmb_barrio As System.Windows.Forms.ComboBox
-    Friend WithEvents cmb_localidad As System.Windows.Forms.ComboBox
 End Class

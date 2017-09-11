@@ -1,10 +1,10 @@
 ﻿Public Class RegistrarProducto
     'Cadena de conexión generada por el visual studio
     Dim connection_string As String = "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-
+    Dim conex As New Conexiones
     Private Sub RegistrarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Al cargar el formulario, rellenar el comboBox de tipos de producto
-        Me.cargarTiposProductos(cmb_tipo, leerTabla("TipoProducto"), "descripcion", "idTipo")
+        Me.cargarTiposProductos(cmb_tipo, conex.leerTabla("TipoProducto"), "descripcion", "idTipo")
     End Sub
 
     Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
@@ -21,23 +21,6 @@
         cmb_tipo.ValueMember = pk
     End Sub
 
-    Private Function leerTabla(ByVal nombre_tabla As String) As DataTable
-        'Función que retorna una dataTable cargada con los resultados de la consulta SQL
-        Dim conexion As New OleDb.OleDbConnection
-        Dim comando As New OleDb.OleDbCommand
-        Dim tabla As New Data.DataTable
-
-        conexion.ConnectionString = connection_string
-        conexion.Open()
-        comando.Connection = conexion
-        comando.CommandType = CommandType.Text
-        comando.CommandText = "select * from " & nombre_tabla
-
-        tabla.Load(comando.ExecuteReader)
-        conexion.Close()
-        Return tabla
-    End Function
-
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
         'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
         If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
@@ -47,17 +30,8 @@
     End Sub
 
     Private Sub insertar()
-        'Procedimiento para la inserción de los datos en la BD:
-        'En el momento de declarar la sentencia SQL, se le van concatenando los valores
-        'tomados desde el formulario
         'Sentencia = insert into Producto values (idProducto, 'nombre', idTipo, precio, stock, 'descripción')
-        Dim conexion As New OleDb.OleDbConnection
-        Dim comando As New OleDb.OleDbCommand
         Dim sql As String = ""
-        conexion.ConnectionString = connection_string
-        conexion.Open()
-        comando.CommandType = CommandType.Text
-        comando.Connection = conexion
 
         sql = "insert into Producto values"
         sql &= "(" & generarID()                        'idProducto, es generado automáticamente y no se repite
@@ -68,10 +42,7 @@
         sql &= ", '" & txt_descripcion.Text.Trim & "'"  'descripción
         sql &= ")"
 
-        comando.CommandText = sql
-        comando.ExecuteNonQuery()
-        conexion.Close()
-
+        conex.insertar(sql)
     End Sub
 
     Private Function generarID() As Integer

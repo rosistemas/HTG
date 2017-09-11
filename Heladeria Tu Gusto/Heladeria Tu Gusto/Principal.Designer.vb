@@ -66,7 +66,7 @@ Partial Class Principal
         '
         Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadoToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.ProductoToolStripMenuItem, Me.OtrosToolStripMenuItem})
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
-        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.RegistrarToolStripMenuItem.Text = "Registrar"
         '
         'EmpleadoToolStripMenuItem
@@ -116,7 +116,7 @@ Partial Class Principal
         '
         Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4, Me.ToolStripMenuItem5})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ToolStripMenuItem1.Text = "Modificar"
         '
         'ToolStripMenuItem2
@@ -165,7 +165,7 @@ Partial Class Principal
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'PreferenciasToolStripMenuItem

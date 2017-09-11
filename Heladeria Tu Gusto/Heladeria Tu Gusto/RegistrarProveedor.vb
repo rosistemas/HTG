@@ -1,49 +1,28 @@
 ﻿Public Class RegistrarProveedor
     'Cadena de conexión generada por el visual studio
     Dim connection_string As String = "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-
+    Public conex As New Conexiones
+    Private Sub RegistrarProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.cargarCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
+        Me.cargarCombo(cmb_localidad, conex.leerTabla("Localidad"), "nombre", "id")
+        Me.cargarCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
+    End Sub
     Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
         Me.insertar()
         MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
     End Sub
 
-    Private Sub cargarTiposDocumento(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
+    Private Sub cargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
         'Sub rutina que rellena el comboBox con los elementos de una dataTable
-        cmb_tipo_documento.Items.Clear()
-        cmb_tipo_documento.DataSource = tabla
-        cmb_tipo_documento.DisplayMember = descripcion
-        cmb_tipo_documento.ValueMember = pk
+        combo.Items.Clear()
+        combo.DataSource = tabla
+        combo.DisplayMember = descripcion
+        combo.ValueMember = pk
     End Sub
 
-    Private Function leerTabla(ByVal nombre_tabla As String) As DataTable
-        'Función que retorna una dataTable cargada con los resultados de la consulta SQL
-        Dim conexion As New OleDb.OleDbConnection
-        Dim comando As New OleDb.OleDbCommand
-        Dim tabla As New Data.DataTable
-
-        conexion.ConnectionString = connection_string
-        conexion.Open()
-        comando.Connection = conexion
-        comando.CommandType = CommandType.Text
-        comando.CommandText = "select * from " & nombre_tabla
-
-        tabla.Load(comando.ExecuteReader)
-        conexion.Close()
-        Return tabla
-    End Function
-
     Private Sub insertar()
-        'Procedimiento para la inserción de los datos en la BD:
-        'En el momento de declarar la sentencia SQL, se le van concatenando los valores
-        'tomados desde el formulario
         'Sentencia = insert into Producto values (idProveedor, numDoc, tipoDoc, 'razonSocial' , 'mail', idBarrio, 'calle', numCalle, 'nombre')
-        Dim conexion As New OleDb.OleDbConnection
-        Dim comando As New OleDb.OleDbCommand
         Dim sql As String = ""
-        conexion.ConnectionString = connection_string
-        conexion.Open()
-        comando.CommandType = CommandType.Text
-        comando.Connection = conexion
 
         sql = "insert into Proveedor values"
         sql &= "(" & generarID()                                    'idProveedor
@@ -51,16 +30,13 @@
         sql &= ", " & cmb_tipo_documento.SelectedValue              'tipoDoc
         sql &= ", '" & txt_razon_social.Text.Trim & "'"             'razonSocial
         sql &= ", '" & txt_mail.Text.Trim & "'"                     'mail
-        sql &= ", null" & cmb_barrio.SelectedValue                      'idBarrio falso
+        sql &= ", " & cmb_barrio.SelectedValue                      'idBarrio falso
         sql &= ", '" & txt_calle.Text.Trim & "'"                    'calle
         sql &= ", " & Integer.Parse(txt_numero_calle.Text.Trim)     'numCalle
         sql &= ", '" & txt_nombre.Text.Trim & "'"                   'nombre
         sql &= ")"
 
-        comando.CommandText = sql
-        comando.ExecuteNonQuery()
-        conexion.Close()
-
+        conex.insertar(sql)
     End Sub
 
     Private Function generarID() As Integer
@@ -96,11 +72,6 @@
         End If
         Return True
     End Function
-
-    Private Sub RegistrarProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.cargarTiposDocumento(cmb_tipo_documento, leerTabla("TipoDoc"), "descripcion", "id")
-
-    End Sub
 
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
         'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
