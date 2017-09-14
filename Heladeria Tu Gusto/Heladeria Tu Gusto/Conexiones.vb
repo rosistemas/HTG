@@ -39,4 +39,16 @@
         cerrarConexion()
     End Sub
 
+    Public Function consultar(ByVal sql As String) As DataTable
+
+        Dim tabla As New DataTable
+        abrirConexion()
+        comando.Connection = conexion
+        comando.CommandType = CommandType.Text
+        comando.CommandText = sql
+        tabla.Load(comando.ExecuteReader)
+        cerrarConexion()
+        Return tabla
+    End Function
+
 End Class
