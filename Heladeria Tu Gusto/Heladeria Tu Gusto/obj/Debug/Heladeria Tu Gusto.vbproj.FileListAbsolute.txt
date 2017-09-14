@@ -24,3 +24,4 @@ C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Helader
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources

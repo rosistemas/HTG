@@ -76,6 +76,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ModificarEmpleado.Designer.vb">
+      <DependentUpon>ModificarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarProducto.Designer.vb">
+      <DependentUpon>ModificarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarProveedor.Designer.vb">
+      <DependentUpon>ModificarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +136,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ModificarProducto.resx">
+      <DependentUpon>ModificarProducto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
     </EmbeddedResource>
