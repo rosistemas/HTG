@@ -34,6 +34,8 @@ Partial Class RegistrarProducto
         Me.cmd_aceptar = New System.Windows.Forms.Button()
         Me.cmd_cancelar = New System.Windows.Forms.Button()
         Me.grp_datos = New System.Windows.Forms.GroupBox()
+        Me.lbl_guardar = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.grp_datos.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -104,20 +106,22 @@ Partial Class RegistrarProducto
         '
         'cmd_aceptar
         '
-        Me.cmd_aceptar.Location = New System.Drawing.Point(56, 245)
+        Me.cmd_aceptar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
+        Me.cmd_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_aceptar.Location = New System.Drawing.Point(12, 248)
         Me.cmd_aceptar.Name = "cmd_aceptar"
-        Me.cmd_aceptar.Size = New System.Drawing.Size(99, 24)
+        Me.cmd_aceptar.Size = New System.Drawing.Size(60, 60)
         Me.cmd_aceptar.TabIndex = 0
-        Me.cmd_aceptar.Text = "Aceptar"
         Me.cmd_aceptar.UseVisualStyleBackColor = True
         '
         'cmd_cancelar
         '
-        Me.cmd_cancelar.Location = New System.Drawing.Point(173, 245)
+        Me.cmd_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
+        Me.cmd_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_cancelar.Location = New System.Drawing.Point(268, 248)
         Me.cmd_cancelar.Name = "cmd_cancelar"
-        Me.cmd_cancelar.Size = New System.Drawing.Size(99, 24)
+        Me.cmd_cancelar.Size = New System.Drawing.Size(60, 60)
         Me.cmd_cancelar.TabIndex = 1
-        Me.cmd_cancelar.Text = "Cancelar"
         Me.cmd_cancelar.UseVisualStyleBackColor = True
         '
         'grp_datos
@@ -137,11 +141,31 @@ Partial Class RegistrarProducto
         Me.grp_datos.TabStop = False
         Me.grp_datos.Text = "Datos del producto"
         '
+        'lbl_guardar
+        '
+        Me.lbl_guardar.AutoSize = True
+        Me.lbl_guardar.Location = New System.Drawing.Point(21, 232)
+        Me.lbl_guardar.Name = "lbl_guardar"
+        Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_guardar.TabIndex = 6
+        Me.lbl_guardar.Text = "Guardar"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(274, 232)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(49, 13)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "Cancelar"
+        '
         'RegistrarProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(339, 287)
+        Me.ClientSize = New System.Drawing.Size(339, 308)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lbl_guardar)
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
         Me.Controls.Add(Me.cmd_aceptar)
@@ -151,6 +175,7 @@ Partial Class RegistrarProducto
         Me.grp_datos.ResumeLayout(False)
         Me.grp_datos.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents lbl_nombre As System.Windows.Forms.Label
@@ -164,4 +189,6 @@ Partial Class RegistrarProducto
     Friend WithEvents cmd_aceptar As System.Windows.Forms.Button
     Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
     Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
+    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

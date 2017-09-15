@@ -45,6 +45,8 @@ Partial Class RegistrarProveedor
         Me.cmb_tipo_documento = New System.Windows.Forms.ComboBox()
         Me.cmd_cancelar = New System.Windows.Forms.Button()
         Me.cmd_aceptar = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.grp_domicilio.SuspendLayout()
         Me.grp_datos.SuspendLayout()
         Me.SuspendLayout()
@@ -234,27 +236,49 @@ Partial Class RegistrarProveedor
         '
         'cmd_cancelar
         '
-        Me.cmd_cancelar.Location = New System.Drawing.Point(377, 287)
+        Me.cmd_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
+        Me.cmd_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_cancelar.Location = New System.Drawing.Point(670, 285)
         Me.cmd_cancelar.Name = "cmd_cancelar"
-        Me.cmd_cancelar.Size = New System.Drawing.Size(99, 24)
+        Me.cmd_cancelar.Size = New System.Drawing.Size(60, 60)
         Me.cmd_cancelar.TabIndex = 1
-        Me.cmd_cancelar.Text = "Cancelar"
         Me.cmd_cancelar.UseVisualStyleBackColor = True
         '
         'cmd_aceptar
         '
-        Me.cmd_aceptar.Location = New System.Drawing.Point(258, 287)
+        Me.cmd_aceptar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
+        Me.cmd_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_aceptar.Location = New System.Drawing.Point(4, 285)
         Me.cmd_aceptar.Name = "cmd_aceptar"
-        Me.cmd_aceptar.Size = New System.Drawing.Size(99, 24)
+        Me.cmd_aceptar.Size = New System.Drawing.Size(60, 60)
         Me.cmd_aceptar.TabIndex = 0
-        Me.cmd_aceptar.Text = "Aceptar"
         Me.cmd_aceptar.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(676, 269)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Cancelar"
+        '
+        'lbl_guardar
+        '
+        Me.lbl_guardar.AutoSize = True
+        Me.lbl_guardar.Location = New System.Drawing.Point(12, 269)
+        Me.lbl_guardar.Name = "lbl_guardar"
+        Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_guardar.TabIndex = 15
+        Me.lbl_guardar.Text = "Guardar"
         '
         'RegistrarProveedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(742, 323)
+        Me.ClientSize = New System.Drawing.Size(742, 348)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbl_guardar)
         Me.Controls.Add(Me.grp_domicilio)
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
@@ -267,6 +291,7 @@ Partial Class RegistrarProveedor
         Me.grp_datos.ResumeLayout(False)
         Me.grp_datos.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents grp_domicilio As System.Windows.Forms.GroupBox
@@ -291,4 +316,6 @@ Partial Class RegistrarProveedor
     Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
     Friend WithEvents lbl_razon_social As System.Windows.Forms.Label
     Friend WithEvents cmb_tipo_documento As System.Windows.Forms.ComboBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
 End Class
