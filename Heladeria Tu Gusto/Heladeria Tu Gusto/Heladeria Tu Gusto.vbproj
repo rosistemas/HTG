@@ -214,6 +214,15 @@
   <ItemGroup>
     <None Include="Resources\icons8-Banana split-80.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Save as-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Delete-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Add New-40.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -335,7 +335,15 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Banana_split_80">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -356,6 +364,10 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Resume_80">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

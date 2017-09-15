@@ -15,6 +15,7 @@ C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Helader
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
@@ -24,4 +25,3 @@ C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Helader
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
-C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
