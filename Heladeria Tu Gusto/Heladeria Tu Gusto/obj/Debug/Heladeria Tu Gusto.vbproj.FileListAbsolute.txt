@@ -25,3 +25,31 @@ C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Helader
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
+\\Mac\Home\Desktop\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
+\\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
