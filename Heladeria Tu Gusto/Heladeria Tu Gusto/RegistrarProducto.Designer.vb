@@ -34,8 +34,8 @@ Partial Class RegistrarProducto
         Me.cmd_aceptar = New System.Windows.Forms.Button()
         Me.cmd_cancelar = New System.Windows.Forms.Button()
         Me.grp_datos = New System.Windows.Forms.GroupBox()
-        Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.grp_datos.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -141,15 +141,6 @@ Partial Class RegistrarProducto
         Me.grp_datos.TabStop = False
         Me.grp_datos.Text = "Datos del producto"
         '
-        'lbl_guardar
-        '
-        Me.lbl_guardar.AutoSize = True
-        Me.lbl_guardar.Location = New System.Drawing.Point(21, 232)
-        Me.lbl_guardar.Name = "lbl_guardar"
-        Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
-        Me.lbl_guardar.TabIndex = 6
-        Me.lbl_guardar.Text = "Guardar"
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -158,6 +149,15 @@ Partial Class RegistrarProducto
         Me.Label1.Size = New System.Drawing.Size(49, 13)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Cancelar"
+        '
+        'lbl_guardar
+        '
+        Me.lbl_guardar.AutoSize = True
+        Me.lbl_guardar.Location = New System.Drawing.Point(21, 232)
+        Me.lbl_guardar.Name = "lbl_guardar"
+        Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_guardar.TabIndex = 6
+        Me.lbl_guardar.Text = "Guardar"
         '
         'RegistrarProducto
         '
@@ -189,6 +189,6 @@ Partial Class RegistrarProducto
     Friend WithEvents cmd_aceptar As System.Windows.Forms.Button
     Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
     Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
-    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
 End Class

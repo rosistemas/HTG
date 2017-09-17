@@ -4,6 +4,7 @@
     Private Sub RegistrarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.cargarCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
         Me.cargarCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
+
     End Sub
 
 
