@@ -1,5 +1,6 @@
 ﻿Public Class Conexiones
-    Private cadena_conexion As String = "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    'Private cadena_conexion As String = "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    Private cadena_conexion As String = "Provider=SQLNCLI11;Data Source=RODRIGOGOMEB0F2\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     Private conexion As New OleDb.OleDbConnection
     Private comando As New OleDb.OleDbCommand
 
