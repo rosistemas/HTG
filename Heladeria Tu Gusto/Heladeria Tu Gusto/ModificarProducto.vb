@@ -80,8 +80,6 @@
             Me.cargarGrilla()
         Else
             MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Exit Sub
-
         End If
     End Sub
 
