@@ -43,8 +43,6 @@ Partial Class ModificarEmpleado
         Me.cmb_tipo_documento = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.grd_empleados = New System.Windows.Forms.DataGridView()
-        Me.btn_cancelar = New System.Windows.Forms.Button()
-        Me.btn_guardar = New System.Windows.Forms.Button()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.id_documento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.numero_documento = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -58,6 +56,10 @@ Partial Class ModificarEmpleado
         Me.barrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.calle = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.numero_calle = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
+        Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.date_fecha_ingreso = New System.Windows.Forms.DateTimePicker()
+        Me.lbl_fecha_ingreso = New System.Windows.Forms.Label()
         Me.grp_datos.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.grd_empleados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +68,7 @@ Partial Class ModificarEmpleado
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(647, 526)
+        Me.Label1.Location = New System.Drawing.Point(819, 415)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 13)
         Me.Label1.TabIndex = 14
@@ -75,7 +77,7 @@ Partial Class ModificarEmpleado
         'lbl_guardar
         '
         Me.lbl_guardar.AutoSize = True
-        Me.lbl_guardar.Location = New System.Drawing.Point(9, 526)
+        Me.lbl_guardar.Location = New System.Drawing.Point(9, 418)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(87, 13)
         Me.lbl_guardar.TabIndex = 11
@@ -83,25 +85,27 @@ Partial Class ModificarEmpleado
         '
         'grp_datos
         '
-        Me.grp_datos.Controls.Add(Me.lbl_calle)
-        Me.grp_datos.Controls.Add(Me.txt_calle)
-        Me.grp_datos.Controls.Add(Me.lbl_numero_calle)
-        Me.grp_datos.Controls.Add(Me.txt_numero_calle)
-        Me.grp_datos.Controls.Add(Me.Label2)
-        Me.grp_datos.Controls.Add(Me.cmb_barrio)
         Me.grp_datos.Controls.Add(Me.txt_nombre)
-        Me.grp_datos.Controls.Add(Me.lbl_tipo_documento)
-        Me.grp_datos.Controls.Add(Me.lbl_numero_documento)
-        Me.grp_datos.Controls.Add(Me.date_fecha_nacimiento)
-        Me.grp_datos.Controls.Add(Me.lbl_nombre)
-        Me.grp_datos.Controls.Add(Me.lbl_apellido)
-        Me.grp_datos.Controls.Add(Me.txt_numero_documento)
-        Me.grp_datos.Controls.Add(Me.lbl_fecha_nacimiento)
-        Me.grp_datos.Controls.Add(Me.txt_apellido)
         Me.grp_datos.Controls.Add(Me.cmb_tipo_documento)
+        Me.grp_datos.Controls.Add(Me.date_fecha_ingreso)
+        Me.grp_datos.Controls.Add(Me.txt_apellido)
+        Me.grp_datos.Controls.Add(Me.cmb_barrio)
+        Me.grp_datos.Controls.Add(Me.lbl_tipo_documento)
+        Me.grp_datos.Controls.Add(Me.lbl_fecha_nacimiento)
+        Me.grp_datos.Controls.Add(Me.lbl_fecha_ingreso)
+        Me.grp_datos.Controls.Add(Me.lbl_numero_documento)
+        Me.grp_datos.Controls.Add(Me.Label2)
+        Me.grp_datos.Controls.Add(Me.txt_numero_documento)
+        Me.grp_datos.Controls.Add(Me.lbl_numero_calle)
+        Me.grp_datos.Controls.Add(Me.date_fecha_nacimiento)
+        Me.grp_datos.Controls.Add(Me.lbl_calle)
+        Me.grp_datos.Controls.Add(Me.lbl_apellido)
+        Me.grp_datos.Controls.Add(Me.txt_calle)
+        Me.grp_datos.Controls.Add(Me.lbl_nombre)
+        Me.grp_datos.Controls.Add(Me.txt_numero_calle)
         Me.grp_datos.Location = New System.Drawing.Point(12, 254)
         Me.grp_datos.Name = "grp_datos"
-        Me.grp_datos.Size = New System.Drawing.Size(701, 269)
+        Me.grp_datos.Size = New System.Drawing.Size(862, 158)
         Me.grp_datos.TabIndex = 12
         Me.grp_datos.TabStop = False
         Me.grp_datos.Text = "Datos del empleado"
@@ -109,7 +113,7 @@ Partial Class ModificarEmpleado
         'lbl_calle
         '
         Me.lbl_calle.AutoSize = True
-        Me.lbl_calle.Location = New System.Drawing.Point(419, 38)
+        Me.lbl_calle.Location = New System.Drawing.Point(512, 80)
         Me.lbl_calle.Name = "lbl_calle"
         Me.lbl_calle.Size = New System.Drawing.Size(33, 13)
         Me.lbl_calle.TabIndex = 16
@@ -117,7 +121,7 @@ Partial Class ModificarEmpleado
         '
         'txt_calle
         '
-        Me.txt_calle.Location = New System.Drawing.Point(458, 35)
+        Me.txt_calle.Location = New System.Drawing.Point(568, 73)
         Me.txt_calle.Name = "txt_calle"
         Me.txt_calle.Size = New System.Drawing.Size(220, 20)
         Me.txt_calle.TabIndex = 15
@@ -125,7 +129,7 @@ Partial Class ModificarEmpleado
         'lbl_numero_calle
         '
         Me.lbl_numero_calle.AutoSize = True
-        Me.lbl_numero_calle.Location = New System.Drawing.Point(365, 84)
+        Me.lbl_numero_calle.Location = New System.Drawing.Point(458, 105)
         Me.lbl_numero_calle.Name = "lbl_numero_calle"
         Me.lbl_numero_calle.Size = New System.Drawing.Size(87, 13)
         Me.lbl_numero_calle.TabIndex = 17
@@ -133,7 +137,7 @@ Partial Class ModificarEmpleado
         '
         'txt_numero_calle
         '
-        Me.txt_numero_calle.Location = New System.Drawing.Point(458, 81)
+        Me.txt_numero_calle.Location = New System.Drawing.Point(568, 98)
         Me.txt_numero_calle.Name = "txt_numero_calle"
         Me.txt_numero_calle.Size = New System.Drawing.Size(220, 20)
         Me.txt_numero_calle.TabIndex = 18
@@ -141,7 +145,7 @@ Partial Class ModificarEmpleado
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(415, 125)
+        Me.Label2.Location = New System.Drawing.Point(508, 127)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(37, 13)
         Me.Label2.TabIndex = 19
@@ -150,14 +154,14 @@ Partial Class ModificarEmpleado
         'cmb_barrio
         '
         Me.cmb_barrio.FormattingEnabled = True
-        Me.cmb_barrio.Location = New System.Drawing.Point(458, 123)
+        Me.cmb_barrio.Location = New System.Drawing.Point(568, 124)
         Me.cmb_barrio.Name = "cmb_barrio"
         Me.cmb_barrio.Size = New System.Drawing.Size(220, 21)
         Me.cmb_barrio.TabIndex = 20
         '
         'txt_nombre
         '
-        Me.txt_nombre.Location = New System.Drawing.Point(132, 34)
+        Me.txt_nombre.Location = New System.Drawing.Point(131, 22)
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.Size = New System.Drawing.Size(220, 20)
         Me.txt_nombre.TabIndex = 5
@@ -165,7 +169,7 @@ Partial Class ModificarEmpleado
         'lbl_tipo_documento
         '
         Me.lbl_tipo_documento.AutoSize = True
-        Me.lbl_tipo_documento.Location = New System.Drawing.Point(24, 128)
+        Me.lbl_tipo_documento.Location = New System.Drawing.Point(23, 80)
         Me.lbl_tipo_documento.Name = "lbl_tipo_documento"
         Me.lbl_tipo_documento.Size = New System.Drawing.Size(102, 13)
         Me.lbl_tipo_documento.TabIndex = 6
@@ -174,7 +178,7 @@ Partial Class ModificarEmpleado
         'lbl_numero_documento
         '
         Me.lbl_numero_documento.AutoSize = True
-        Me.lbl_numero_documento.Location = New System.Drawing.Point(8, 173)
+        Me.lbl_numero_documento.Location = New System.Drawing.Point(7, 105)
         Me.lbl_numero_documento.Name = "lbl_numero_documento"
         Me.lbl_numero_documento.Size = New System.Drawing.Size(118, 13)
         Me.lbl_numero_documento.TabIndex = 7
@@ -182,7 +186,7 @@ Partial Class ModificarEmpleado
         '
         'date_fecha_nacimiento
         '
-        Me.date_fecha_nacimiento.Location = New System.Drawing.Point(132, 203)
+        Me.date_fecha_nacimiento.Location = New System.Drawing.Point(568, 48)
         Me.date_fecha_nacimiento.Name = "date_fecha_nacimiento"
         Me.date_fecha_nacimiento.Size = New System.Drawing.Size(220, 20)
         Me.date_fecha_nacimiento.TabIndex = 14
@@ -190,7 +194,7 @@ Partial Class ModificarEmpleado
         'lbl_nombre
         '
         Me.lbl_nombre.AutoSize = True
-        Me.lbl_nombre.Location = New System.Drawing.Point(79, 38)
+        Me.lbl_nombre.Location = New System.Drawing.Point(78, 22)
         Me.lbl_nombre.Name = "lbl_nombre"
         Me.lbl_nombre.Size = New System.Drawing.Size(47, 13)
         Me.lbl_nombre.TabIndex = 8
@@ -199,7 +203,7 @@ Partial Class ModificarEmpleado
         'lbl_apellido
         '
         Me.lbl_apellido.AutoSize = True
-        Me.lbl_apellido.Location = New System.Drawing.Point(79, 83)
+        Me.lbl_apellido.Location = New System.Drawing.Point(78, 52)
         Me.lbl_apellido.Name = "lbl_apellido"
         Me.lbl_apellido.Size = New System.Drawing.Size(47, 13)
         Me.lbl_apellido.TabIndex = 9
@@ -207,7 +211,7 @@ Partial Class ModificarEmpleado
         '
         'txt_numero_documento
         '
-        Me.txt_numero_documento.Location = New System.Drawing.Point(132, 169)
+        Me.txt_numero_documento.Location = New System.Drawing.Point(131, 101)
         Me.txt_numero_documento.Name = "txt_numero_documento"
         Me.txt_numero_documento.Size = New System.Drawing.Size(220, 20)
         Me.txt_numero_documento.TabIndex = 13
@@ -215,7 +219,7 @@ Partial Class ModificarEmpleado
         'lbl_fecha_nacimiento
         '
         Me.lbl_fecha_nacimiento.AutoSize = True
-        Me.lbl_fecha_nacimiento.Location = New System.Drawing.Point(17, 210)
+        Me.lbl_fecha_nacimiento.Location = New System.Drawing.Point(436, 52)
         Me.lbl_fecha_nacimiento.Name = "lbl_fecha_nacimiento"
         Me.lbl_fecha_nacimiento.Size = New System.Drawing.Size(109, 13)
         Me.lbl_fecha_nacimiento.TabIndex = 10
@@ -223,7 +227,7 @@ Partial Class ModificarEmpleado
         '
         'txt_apellido
         '
-        Me.txt_apellido.Location = New System.Drawing.Point(132, 79)
+        Me.txt_apellido.Location = New System.Drawing.Point(131, 48)
         Me.txt_apellido.Name = "txt_apellido"
         Me.txt_apellido.Size = New System.Drawing.Size(220, 20)
         Me.txt_apellido.TabIndex = 11
@@ -231,7 +235,7 @@ Partial Class ModificarEmpleado
         'cmb_tipo_documento
         '
         Me.cmb_tipo_documento.FormattingEnabled = True
-        Me.cmb_tipo_documento.Location = New System.Drawing.Point(132, 124)
+        Me.cmb_tipo_documento.Location = New System.Drawing.Point(131, 74)
         Me.cmb_tipo_documento.Name = "cmb_tipo_documento"
         Me.cmb_tipo_documento.Size = New System.Drawing.Size(220, 21)
         Me.cmb_tipo_documento.TabIndex = 12
@@ -257,28 +261,6 @@ Partial Class ModificarEmpleado
         Me.grd_empleados.ReadOnly = True
         Me.grd_empleados.Size = New System.Drawing.Size(850, 211)
         Me.grd_empleados.TabIndex = 0
-        '
-        'btn_cancelar
-        '
-        Me.btn_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
-        Me.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn_cancelar.Location = New System.Drawing.Point(637, 542)
-        Me.btn_cancelar.Name = "btn_cancelar"
-        Me.btn_cancelar.Size = New System.Drawing.Size(70, 70)
-        Me.btn_cancelar.TabIndex = 13
-        Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btn_cancelar.UseVisualStyleBackColor = True
-        '
-        'btn_guardar
-        '
-        Me.btn_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64
-        Me.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn_guardar.Location = New System.Drawing.Point(12, 542)
-        Me.btn_guardar.Name = "btn_guardar"
-        Me.btn_guardar.Size = New System.Drawing.Size(70, 70)
-        Me.btn_guardar.TabIndex = 10
-        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btn_guardar.UseVisualStyleBackColor = True
         '
         'id
         '
@@ -363,11 +345,49 @@ Partial Class ModificarEmpleado
         Me.numero_calle.Name = "numero_calle"
         Me.numero_calle.ReadOnly = True
         '
+        'btn_cancelar
+        '
+        Me.btn_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
+        Me.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_cancelar.Location = New System.Drawing.Point(804, 434)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(70, 70)
+        Me.btn_cancelar.TabIndex = 13
+        Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.btn_cancelar.UseVisualStyleBackColor = True
+        '
+        'btn_guardar
+        '
+        Me.btn_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64
+        Me.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_guardar.Location = New System.Drawing.Point(12, 434)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Size = New System.Drawing.Size(70, 70)
+        Me.btn_guardar.TabIndex = 10
+        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.btn_guardar.UseVisualStyleBackColor = True
+        '
+        'date_fecha_ingreso
+        '
+        Me.date_fecha_ingreso.Location = New System.Drawing.Point(568, 22)
+        Me.date_fecha_ingreso.Name = "date_fecha_ingreso"
+        Me.date_fecha_ingreso.Size = New System.Drawing.Size(220, 20)
+        Me.date_fecha_ingreso.TabIndex = 24
+        '
+        'lbl_fecha_ingreso
+        '
+        Me.lbl_fecha_ingreso.AutoSize = True
+        Me.lbl_fecha_ingreso.Location = New System.Drawing.Point(453, 22)
+        Me.lbl_fecha_ingreso.Name = "lbl_fecha_ingreso"
+        Me.lbl_fecha_ingreso.Size = New System.Drawing.Size(92, 13)
+        Me.lbl_fecha_ingreso.TabIndex = 23
+        Me.lbl_fecha_ingreso.Text = "Fecha de ingreso:"
+        '
         'ModificarEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(886, 624)
+        Me.ClientSize = New System.Drawing.Size(882, 508)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.lbl_guardar)
@@ -420,4 +440,6 @@ Partial Class ModificarEmpleado
     Friend WithEvents barrio As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents calle As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents numero_calle As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents date_fecha_ingreso As System.Windows.Forms.DateTimePicker
+    Friend WithEvents lbl_fecha_ingreso As System.Windows.Forms.Label
 End Class
