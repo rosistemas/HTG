@@ -18,7 +18,7 @@
 
     Private Sub cargarGrilla()
         Dim sql As String
-        sql = "SELECT Empleado.id, Empleado.numDoc, Empleado.tipoDoc, Empleado.nombre, Empleado.apellido, Empleado.fechaNacimiento, Empleado.fechaIngreso, Empleado.fechaEgreso, Empleado.idBarrio, Empleado.calle, Empleado.numCalle, TipoDoc.descripcion, Barrio.nombre as nombre_barrio FROM Empleado INNER JOIN TipoDoc ON Empleado.tipoDoc = TipoDoc.id INNER JOIN Barrio ON Empleado.idBarrio = Barrio.id"
+        sql = "SELECT E.*, T.descripcion, B.nombre as nombre_barrio FROM Empleado E INNER JOIN TipoDoc T ON E.tipoDoc = T.id INNER JOIN Barrio B ON E.idBarrio = B.id"
         Dim tabla As New DataTable
         tabla = conex.consultar(sql)
         Me.grd_empleados.Rows.Clear()
