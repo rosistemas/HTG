@@ -22,10 +22,10 @@ Partial Class ModificarProveedor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarProveedor))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.grd_proveedores = New System.Windows.Forms.DataGridView()
         Me.id_proveedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.numero_documento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.id_tipo_documento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tipo_documento = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -35,6 +35,7 @@ Partial Class ModificarProveedor
         Me.barrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.calle = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.numero_calle = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.id_localidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.localidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lbl_calle = New System.Windows.Forms.Label()
@@ -73,14 +74,14 @@ Partial Class ModificarProveedor
         Me.GroupBox1.Size = New System.Drawing.Size(954, 236)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Selección del empleado"
+        Me.GroupBox1.Text = "Selección del proveedor"
         '
         'grd_proveedores
         '
         Me.grd_proveedores.AllowUserToAddRows = False
         Me.grd_proveedores.AllowUserToDeleteRows = False
         Me.grd_proveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grd_proveedores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_proveedor, Me.nombre, Me.numero_documento, Me.id_tipo_documento, Me.tipo_documento, Me.razon_social, Me.mail, Me.id_barrio, Me.barrio, Me.calle, Me.numero_calle, Me.id_localidad, Me.localidad})
+        Me.grd_proveedores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_proveedor, Me.numero_documento, Me.id_tipo_documento, Me.tipo_documento, Me.razon_social, Me.mail, Me.id_barrio, Me.barrio, Me.calle, Me.numero_calle, Me.nombre, Me.id_localidad, Me.localidad})
         Me.grd_proveedores.Location = New System.Drawing.Point(6, 19)
         Me.grd_proveedores.Name = "grd_proveedores"
         Me.grd_proveedores.ReadOnly = True
@@ -93,12 +94,6 @@ Partial Class ModificarProveedor
         Me.id_proveedor.Name = "id_proveedor"
         Me.id_proveedor.ReadOnly = True
         Me.id_proveedor.Visible = False
-        '
-        'nombre
-        '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
-        Me.nombre.ReadOnly = True
         '
         'numero_documento
         '
@@ -156,6 +151,12 @@ Partial Class ModificarProveedor
         Me.numero_calle.Name = "numero_calle"
         Me.numero_calle.ReadOnly = True
         '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        '
         'id_localidad
         '
         Me.id_localidad.HeaderText = "_ID de localidad"
@@ -172,7 +173,7 @@ Partial Class ModificarProveedor
         'lbl_calle
         '
         Me.lbl_calle.AutoSize = True
-        Me.lbl_calle.Location = New System.Drawing.Point(439, 22)
+        Me.lbl_calle.Location = New System.Drawing.Point(333, 18)
         Me.lbl_calle.Name = "lbl_calle"
         Me.lbl_calle.Size = New System.Drawing.Size(33, 13)
         Me.lbl_calle.TabIndex = 1
@@ -180,31 +181,33 @@ Partial Class ModificarProveedor
         '
         'txt_calle
         '
-        Me.txt_calle.Location = New System.Drawing.Point(478, 19)
+        Me.txt_calle.Location = New System.Drawing.Point(372, 15)
         Me.txt_calle.Name = "txt_calle"
-        Me.txt_calle.Size = New System.Drawing.Size(220, 20)
+        Me.txt_calle.Size = New System.Drawing.Size(140, 20)
         Me.txt_calle.TabIndex = 0
+        Me.txt_calle.Text = "Av. Armada Argentina"
         '
         'lbl_numero_calle
         '
         Me.lbl_numero_calle.AutoSize = True
-        Me.lbl_numero_calle.Location = New System.Drawing.Point(385, 48)
+        Me.lbl_numero_calle.Location = New System.Drawing.Point(518, 18)
         Me.lbl_numero_calle.Name = "lbl_numero_calle"
-        Me.lbl_numero_calle.Size = New System.Drawing.Size(87, 13)
+        Me.lbl_numero_calle.Size = New System.Drawing.Size(22, 13)
         Me.lbl_numero_calle.TabIndex = 1
-        Me.lbl_numero_calle.Text = "Número de calle:"
+        Me.lbl_numero_calle.Text = "N°:"
         '
         'txt_numero_calle
         '
-        Me.txt_numero_calle.Location = New System.Drawing.Point(478, 45)
+        Me.txt_numero_calle.Location = New System.Drawing.Point(546, 15)
         Me.txt_numero_calle.Name = "txt_numero_calle"
-        Me.txt_numero_calle.Size = New System.Drawing.Size(220, 20)
+        Me.txt_numero_calle.Size = New System.Drawing.Size(33, 20)
         Me.txt_numero_calle.TabIndex = 1
+        Me.txt_numero_calle.Text = "1234"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(435, 101)
+        Me.Label1.Location = New System.Drawing.Point(329, 74)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 13)
         Me.Label1.TabIndex = 1
@@ -213,7 +216,7 @@ Partial Class ModificarProveedor
         'lbl_localidad
         '
         Me.lbl_localidad.AutoSize = True
-        Me.lbl_localidad.Location = New System.Drawing.Point(416, 74)
+        Me.lbl_localidad.Location = New System.Drawing.Point(310, 47)
         Me.lbl_localidad.Name = "lbl_localidad"
         Me.lbl_localidad.Size = New System.Drawing.Size(56, 13)
         Me.lbl_localidad.TabIndex = 1
@@ -222,17 +225,17 @@ Partial Class ModificarProveedor
         'cmb_barrio
         '
         Me.cmb_barrio.FormattingEnabled = True
-        Me.cmb_barrio.Location = New System.Drawing.Point(478, 98)
+        Me.cmb_barrio.Location = New System.Drawing.Point(372, 71)
         Me.cmb_barrio.Name = "cmb_barrio"
-        Me.cmb_barrio.Size = New System.Drawing.Size(220, 21)
+        Me.cmb_barrio.Size = New System.Drawing.Size(140, 21)
         Me.cmb_barrio.TabIndex = 3
         '
         'cmb_localidad
         '
         Me.cmb_localidad.FormattingEnabled = True
-        Me.cmb_localidad.Location = New System.Drawing.Point(478, 71)
+        Me.cmb_localidad.Location = New System.Drawing.Point(372, 44)
         Me.cmb_localidad.Name = "cmb_localidad"
-        Me.cmb_localidad.Size = New System.Drawing.Size(220, 21)
+        Me.cmb_localidad.Size = New System.Drawing.Size(140, 21)
         Me.cmb_localidad.TabIndex = 2
         '
         'grp_datos
@@ -255,31 +258,31 @@ Partial Class ModificarProveedor
         Me.grp_datos.Controls.Add(Me.cmb_barrio)
         Me.grp_datos.Controls.Add(Me.cmb_tipo_documento)
         Me.grp_datos.Controls.Add(Me.cmb_localidad)
-        Me.grp_datos.Location = New System.Drawing.Point(18, 254)
+        Me.grp_datos.Location = New System.Drawing.Point(12, 254)
         Me.grp_datos.Name = "grp_datos"
-        Me.grp_datos.Size = New System.Drawing.Size(948, 152)
+        Me.grp_datos.Size = New System.Drawing.Size(598, 122)
         Me.grp_datos.TabIndex = 15
         Me.grp_datos.TabStop = False
-        Me.grp_datos.Text = "Datos personales"
+        Me.grp_datos.Text = "Datos del proveedor"
         '
         'txt_razon_social
         '
-        Me.txt_razon_social.Location = New System.Drawing.Point(133, 124)
+        Me.txt_razon_social.Location = New System.Drawing.Point(133, 41)
         Me.txt_razon_social.Name = "txt_razon_social"
-        Me.txt_razon_social.Size = New System.Drawing.Size(220, 20)
+        Me.txt_razon_social.Size = New System.Drawing.Size(147, 20)
         Me.txt_razon_social.TabIndex = 4
         '
         'txt_nombre
         '
-        Me.txt_nombre.Location = New System.Drawing.Point(134, 19)
+        Me.txt_nombre.Location = New System.Drawing.Point(133, 15)
         Me.txt_nombre.Name = "txt_nombre"
-        Me.txt_nombre.Size = New System.Drawing.Size(220, 20)
+        Me.txt_nombre.Size = New System.Drawing.Size(147, 20)
         Me.txt_nombre.TabIndex = 0
         '
         'lbl_tipo_documento
         '
         Me.lbl_tipo_documento.AutoSize = True
-        Me.lbl_tipo_documento.Location = New System.Drawing.Point(25, 74)
+        Me.lbl_tipo_documento.Location = New System.Drawing.Point(25, 70)
         Me.lbl_tipo_documento.Name = "lbl_tipo_documento"
         Me.lbl_tipo_documento.Size = New System.Drawing.Size(102, 13)
         Me.lbl_tipo_documento.TabIndex = 1
@@ -288,16 +291,16 @@ Partial Class ModificarProveedor
         'lbl_numero_documento
         '
         Me.lbl_numero_documento.AutoSize = True
-        Me.lbl_numero_documento.Location = New System.Drawing.Point(9, 101)
+        Me.lbl_numero_documento.Location = New System.Drawing.Point(193, 70)
         Me.lbl_numero_documento.Name = "lbl_numero_documento"
-        Me.lbl_numero_documento.Size = New System.Drawing.Size(118, 13)
+        Me.lbl_numero_documento.Size = New System.Drawing.Size(22, 13)
         Me.lbl_numero_documento.TabIndex = 1
-        Me.lbl_numero_documento.Text = "Número de documento:"
+        Me.lbl_numero_documento.Text = "N°:"
         '
         'lbl_nombre
         '
         Me.lbl_nombre.AutoSize = True
-        Me.lbl_nombre.Location = New System.Drawing.Point(80, 22)
+        Me.lbl_nombre.Location = New System.Drawing.Point(79, 18)
         Me.lbl_nombre.Name = "lbl_nombre"
         Me.lbl_nombre.Size = New System.Drawing.Size(47, 13)
         Me.lbl_nombre.TabIndex = 1
@@ -306,7 +309,7 @@ Partial Class ModificarProveedor
         'lbl_mail
         '
         Me.lbl_mail.AutoSize = True
-        Me.lbl_mail.Location = New System.Drawing.Point(98, 48)
+        Me.lbl_mail.Location = New System.Drawing.Point(97, 97)
         Me.lbl_mail.Name = "lbl_mail"
         Me.lbl_mail.Size = New System.Drawing.Size(29, 13)
         Me.lbl_mail.TabIndex = 1
@@ -314,15 +317,16 @@ Partial Class ModificarProveedor
         '
         'txt_numero_documento
         '
-        Me.txt_numero_documento.Location = New System.Drawing.Point(133, 98)
+        Me.txt_numero_documento.Location = New System.Drawing.Point(218, 68)
         Me.txt_numero_documento.Name = "txt_numero_documento"
-        Me.txt_numero_documento.Size = New System.Drawing.Size(220, 20)
+        Me.txt_numero_documento.Size = New System.Drawing.Size(62, 20)
         Me.txt_numero_documento.TabIndex = 3
+        Me.txt_numero_documento.Text = "12345678"
         '
         'lbl_razon_social
         '
         Me.lbl_razon_social.AutoSize = True
-        Me.lbl_razon_social.Location = New System.Drawing.Point(56, 127)
+        Me.lbl_razon_social.Location = New System.Drawing.Point(56, 44)
         Me.lbl_razon_social.Name = "lbl_razon_social"
         Me.lbl_razon_social.Size = New System.Drawing.Size(71, 13)
         Me.lbl_razon_social.TabIndex = 1
@@ -330,23 +334,23 @@ Partial Class ModificarProveedor
         '
         'txt_mail
         '
-        Me.txt_mail.Location = New System.Drawing.Point(133, 45)
+        Me.txt_mail.Location = New System.Drawing.Point(132, 94)
         Me.txt_mail.Name = "txt_mail"
-        Me.txt_mail.Size = New System.Drawing.Size(220, 20)
+        Me.txt_mail.Size = New System.Drawing.Size(148, 20)
         Me.txt_mail.TabIndex = 1
         '
         'cmb_tipo_documento
         '
         Me.cmb_tipo_documento.FormattingEnabled = True
-        Me.cmb_tipo_documento.Location = New System.Drawing.Point(133, 71)
+        Me.cmb_tipo_documento.Location = New System.Drawing.Point(133, 67)
         Me.cmb_tipo_documento.Name = "cmb_tipo_documento"
-        Me.cmb_tipo_documento.Size = New System.Drawing.Size(220, 21)
+        Me.cmb_tipo_documento.Size = New System.Drawing.Size(54, 21)
         Me.cmb_tipo_documento.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(911, 412)
+        Me.Label2.Location = New System.Drawing.Point(846, 278)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
         Me.Label2.TabIndex = 20
@@ -356,7 +360,7 @@ Partial Class ModificarProveedor
         '
         Me.btn_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
         Me.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn_cancelar.Location = New System.Drawing.Point(896, 431)
+        Me.btn_cancelar.Location = New System.Drawing.Point(838, 294)
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Size = New System.Drawing.Size(70, 70)
         Me.btn_cancelar.TabIndex = 19
@@ -366,7 +370,7 @@ Partial Class ModificarProveedor
         'lbl_guardar
         '
         Me.lbl_guardar.AutoSize = True
-        Me.lbl_guardar.Location = New System.Drawing.Point(15, 412)
+        Me.lbl_guardar.Location = New System.Drawing.Point(681, 278)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(87, 13)
         Me.lbl_guardar.TabIndex = 18
@@ -376,7 +380,7 @@ Partial Class ModificarProveedor
         '
         Me.btn_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64
         Me.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn_guardar.Location = New System.Drawing.Point(18, 428)
+        Me.btn_guardar.Location = New System.Drawing.Point(690, 294)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Size = New System.Drawing.Size(70, 70)
         Me.btn_guardar.TabIndex = 17
@@ -387,13 +391,14 @@ Partial Class ModificarProveedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(972, 510)
+        Me.ClientSize = New System.Drawing.Size(972, 382)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.lbl_guardar)
         Me.Controls.Add(Me.btn_guardar)
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarProveedor"
         Me.Text = "ModificarProveedor"
         Me.GroupBox1.ResumeLayout(False)
@@ -430,7 +435,6 @@ Partial Class ModificarProveedor
     Friend WithEvents lbl_guardar As System.Windows.Forms.Label
     Friend WithEvents btn_guardar As System.Windows.Forms.Button
     Friend WithEvents id_proveedor As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents numero_documento As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents id_tipo_documento As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents tipo_documento As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -440,6 +444,7 @@ Partial Class ModificarProveedor
     Friend WithEvents barrio As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents calle As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents numero_calle As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents id_localidad As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents localidad As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

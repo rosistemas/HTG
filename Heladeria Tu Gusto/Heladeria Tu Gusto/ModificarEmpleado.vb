@@ -1,8 +1,7 @@
 ﻿Public Class ModificarEmpleado
     Private conex As New Conexiones
     Private id_empleado_seleccionado As Integer = 0
-    Private id_barrio_seleccionado As Integer = 0
-    Private id_documento_seleccionado As Integer = 0
+
     Private Sub ModificarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.cargarGrilla()
     End Sub
@@ -13,6 +12,13 @@
             Me.cargarGrilla()
         Else
             MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
+    Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
+        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+            Me.Close()
+            Principal.Show()
         End If
     End Sub
 
@@ -65,8 +71,6 @@
         Me.cmb_tipo_documento.SelectedValue = tabla.Rows(0)("tipoDoc")
 
         id_empleado_seleccionado = tabla.Rows(0)("id")
-        id_barrio_seleccionado = tabla.Rows(0)("idBarrio")
-        id_documento_seleccionado = tabla.Rows(0)("tipoDoc")
     End Sub
 
     Private Sub cargaCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descriptor As String, pk As String)
@@ -97,10 +101,5 @@
         conex.insertar(sql)
     End Sub
 
-    Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
-            Me.Close()
-            Principal.Show()
-        End If
-    End Sub
+
 End Class

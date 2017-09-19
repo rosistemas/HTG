@@ -36,11 +36,11 @@ Partial Class ModificarProducto
         Me.lbl_tipo = New System.Windows.Forms.Label()
         Me.lbl_nombre = New System.Windows.Forms.Label()
         Me.lbl_precio = New System.Windows.Forms.Label()
+        Me.cmb_tipo = New System.Windows.Forms.ComboBox()
         Me.lbl_descripcion = New System.Windows.Forms.Label()
         Me.txt_precio = New System.Windows.Forms.MaskedTextBox()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.txt_descripcion = New System.Windows.Forms.TextBox()
-        Me.cmb_tipo = New System.Windows.Forms.ComboBox()
         Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_cancelar = New System.Windows.Forms.Button()
@@ -121,7 +121,7 @@ Partial Class ModificarProducto
         Me.grp_datos.Controls.Add(Me.txt_descripcion)
         Me.grp_datos.Location = New System.Drawing.Point(18, 254)
         Me.grp_datos.Name = "grp_datos"
-        Me.grp_datos.Size = New System.Drawing.Size(695, 85)
+        Me.grp_datos.Size = New System.Drawing.Size(453, 101)
         Me.grp_datos.TabIndex = 6
         Me.grp_datos.TabStop = False
         Me.grp_datos.Text = "Datos del producto"
@@ -129,7 +129,7 @@ Partial Class ModificarProducto
         'lbl_tipo
         '
         Me.lbl_tipo.AutoSize = True
-        Me.lbl_tipo.Location = New System.Drawing.Point(429, 51)
+        Me.lbl_tipo.Location = New System.Drawing.Point(19, 51)
         Me.lbl_tipo.Name = "lbl_tipo"
         Me.lbl_tipo.Size = New System.Drawing.Size(31, 13)
         Me.lbl_tipo.TabIndex = 0
@@ -147,16 +147,24 @@ Partial Class ModificarProducto
         'lbl_precio
         '
         Me.lbl_precio.AutoSize = True
-        Me.lbl_precio.Location = New System.Drawing.Point(13, 48)
+        Me.lbl_precio.Location = New System.Drawing.Point(13, 75)
         Me.lbl_precio.Name = "lbl_precio"
         Me.lbl_precio.Size = New System.Drawing.Size(40, 13)
         Me.lbl_precio.TabIndex = 0
         Me.lbl_precio.Text = "Precio:"
         '
+        'cmb_tipo
+        '
+        Me.cmb_tipo.FormattingEnabled = True
+        Me.cmb_tipo.Location = New System.Drawing.Point(59, 45)
+        Me.cmb_tipo.Name = "cmb_tipo"
+        Me.cmb_tipo.Size = New System.Drawing.Size(140, 21)
+        Me.cmb_tipo.TabIndex = 3
+        '
         'lbl_descripcion
         '
         Me.lbl_descripcion.AutoSize = True
-        Me.lbl_descripcion.Location = New System.Drawing.Point(394, 22)
+        Me.lbl_descripcion.Location = New System.Drawing.Point(236, 16)
         Me.lbl_descripcion.Name = "lbl_descripcion"
         Me.lbl_descripcion.Size = New System.Drawing.Size(66, 13)
         Me.lbl_descripcion.TabIndex = 0
@@ -164,37 +172,31 @@ Partial Class ModificarProducto
         '
         'txt_precio
         '
-        Me.txt_precio.Location = New System.Drawing.Point(59, 45)
+        Me.txt_precio.Location = New System.Drawing.Point(59, 72)
         Me.txt_precio.Name = "txt_precio"
-        Me.txt_precio.Size = New System.Drawing.Size(220, 20)
+        Me.txt_precio.Size = New System.Drawing.Size(48, 20)
         Me.txt_precio.TabIndex = 1
+        Me.txt_precio.Text = "123456"
         '
         'txt_nombre
         '
         Me.txt_nombre.Location = New System.Drawing.Point(59, 19)
         Me.txt_nombre.Name = "txt_nombre"
-        Me.txt_nombre.Size = New System.Drawing.Size(220, 20)
+        Me.txt_nombre.Size = New System.Drawing.Size(140, 20)
         Me.txt_nombre.TabIndex = 0
         '
         'txt_descripcion
         '
-        Me.txt_descripcion.Location = New System.Drawing.Point(469, 19)
+        Me.txt_descripcion.Location = New System.Drawing.Point(239, 32)
+        Me.txt_descripcion.Multiline = True
         Me.txt_descripcion.Name = "txt_descripcion"
-        Me.txt_descripcion.Size = New System.Drawing.Size(220, 20)
+        Me.txt_descripcion.Size = New System.Drawing.Size(190, 60)
         Me.txt_descripcion.TabIndex = 2
-        '
-        'cmb_tipo
-        '
-        Me.cmb_tipo.FormattingEnabled = True
-        Me.cmb_tipo.Location = New System.Drawing.Point(469, 45)
-        Me.cmb_tipo.Name = "cmb_tipo"
-        Me.cmb_tipo.Size = New System.Drawing.Size(220, 21)
-        Me.cmb_tipo.TabIndex = 3
         '
         'lbl_guardar
         '
         Me.lbl_guardar.AutoSize = True
-        Me.lbl_guardar.Location = New System.Drawing.Point(15, 342)
+        Me.lbl_guardar.Location = New System.Drawing.Point(532, 260)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(87, 13)
         Me.lbl_guardar.TabIndex = 5
@@ -203,7 +205,7 @@ Partial Class ModificarProducto
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(653, 342)
+        Me.Label1.Location = New System.Drawing.Point(659, 260)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 13)
         Me.Label1.TabIndex = 8
@@ -213,7 +215,7 @@ Partial Class ModificarProducto
         '
         Me.btn_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
         Me.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn_cancelar.Location = New System.Drawing.Point(643, 358)
+        Me.btn_cancelar.Location = New System.Drawing.Point(649, 276)
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Size = New System.Drawing.Size(70, 70)
         Me.btn_cancelar.TabIndex = 7
@@ -224,7 +226,7 @@ Partial Class ModificarProducto
         '
         Me.btn_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64
         Me.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn_guardar.Location = New System.Drawing.Point(18, 358)
+        Me.btn_guardar.Location = New System.Drawing.Point(540, 276)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Size = New System.Drawing.Size(70, 70)
         Me.btn_guardar.TabIndex = 4
@@ -235,7 +237,7 @@ Partial Class ModificarProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(736, 429)
+        Me.ClientSize = New System.Drawing.Size(727, 363)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.lbl_guardar)

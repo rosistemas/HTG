@@ -30,10 +30,11 @@
         sql &= ", " & cmb_tipo_documento.SelectedValue              'tipoDoc
         sql &= ", '" & txt_razon_social.Text.Trim & "'"             'razonSocial
         sql &= ", '" & txt_mail.Text.Trim & "'"                     'mail
-        sql &= ", " & cmb_barrio.SelectedValue                      'idBarrio falso
+        sql &= ", " & cmb_barrio.SelectedValue                      'idBarrio
         sql &= ", '" & txt_calle.Text.Trim & "'"                    'calle
         sql &= ", " & Integer.Parse(txt_numero_calle.Text.Trim)     'numCalle
         sql &= ", '" & txt_nombre.Text.Trim & "'"                   'nombre
+        sql &= ", " & cmb_localidad.SelectedValue                   'idLocalidad
         sql &= ")"
 
         conex.insertar(sql)
