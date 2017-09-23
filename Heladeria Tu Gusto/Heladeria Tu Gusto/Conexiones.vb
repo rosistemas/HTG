@@ -1,5 +1,6 @@
 ﻿Public Class Conexiones
-    'Private cadena_conexion As String = "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    'Cadena conexion rodrigo "Provider=SQLNCLI11;Data Source=RODRIGOGOMEB0F2\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    'Cadena conexion fran "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     Private cadena_conexion As String = "Provider=SQLNCLI11;Data Source=RODRIGOGOMEB0F2\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     Private conexion As New OleDb.OleDbConnection
     Private comando As New OleDb.OleDbCommand
@@ -17,7 +18,7 @@
         End If
     End Sub
 
-    Public Function leerTabla(ByVal nombre_tabla As String) As DataTable
+    Public Function leerTabla(ByRef nombre_tabla As String) As DataTable
         'Función que retorna una dataTable cargada con los resultados de la consulta SQL
         Dim tabla As New Data.DataTable
         abrirConexion()
@@ -31,7 +32,7 @@
         Return tabla
     End Function
 
-    Public Sub insertar(sql As String)
+    Public Sub insertar(ByRef sql As String)
         abrirConexion()
         comando.CommandType = CommandType.Text
         comando.Connection = conexion
@@ -40,7 +41,7 @@
         cerrarConexion()
     End Sub
 
-    Public Function consultar(ByVal sql As String) As DataTable
+    Public Function consultar(ByRef sql As String) As DataTable
 
         Dim tabla As New DataTable
         abrirConexion()
