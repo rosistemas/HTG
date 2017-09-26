@@ -134,6 +134,12 @@
     <Compile Include="RegistrarProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RegistrarVenta.designer.vb">
+      <DependentUpon>RegistrarVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ModificarEmpleado.resx">
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarProveedor.resx">
       <DependentUpon>RegistrarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarVenta.resx">
+      <DependentUpon>RegistrarVenta.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

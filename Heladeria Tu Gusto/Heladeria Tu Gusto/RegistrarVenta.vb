@@ -89,7 +89,7 @@
         mostrar_info_empleado()
     End Sub
 
-    Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
+    Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
         Me.Close()
     End Sub
 
@@ -99,7 +99,7 @@
         End If
     End Sub
 
-    Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
+    Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
         If MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = Windows.Forms.DialogResult.Yes Then
             insertar_en_bd_ticket()
             For i = 0 To grd_detalle_de_venta.Rows.Count - 1
@@ -113,7 +113,6 @@
         End If
     End Sub
 
-
     Private Sub mostrar_info_empleado()
         Dim selected As String = cmb_empleado.SelectedValue
         Dim table As New DataTable
@@ -125,5 +124,4 @@
     Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_empleado.SelectionChangeCommitted
         mostrar_info_empleado()
     End Sub
-
 End Class

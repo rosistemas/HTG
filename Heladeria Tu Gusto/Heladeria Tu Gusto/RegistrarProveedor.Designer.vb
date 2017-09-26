@@ -238,9 +238,9 @@ Partial Class RegistrarProveedor
         '
         Me.cmd_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
         Me.cmd_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.cmd_cancelar.Location = New System.Drawing.Point(670, 285)
+        Me.cmd_cancelar.Location = New System.Drawing.Point(655, 285)
         Me.cmd_cancelar.Name = "cmd_cancelar"
-        Me.cmd_cancelar.Size = New System.Drawing.Size(60, 60)
+        Me.cmd_cancelar.Size = New System.Drawing.Size(75, 46)
         Me.cmd_cancelar.TabIndex = 1
         Me.cmd_cancelar.UseVisualStyleBackColor = True
         '
@@ -250,14 +250,14 @@ Partial Class RegistrarProveedor
         Me.cmd_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.cmd_aceptar.Location = New System.Drawing.Point(4, 285)
         Me.cmd_aceptar.Name = "cmd_aceptar"
-        Me.cmd_aceptar.Size = New System.Drawing.Size(60, 60)
+        Me.cmd_aceptar.Size = New System.Drawing.Size(75, 46)
         Me.cmd_aceptar.TabIndex = 0
         Me.cmd_aceptar.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(676, 269)
+        Me.Label2.Location = New System.Drawing.Point(668, 269)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
         Me.Label2.TabIndex = 16
@@ -266,7 +266,7 @@ Partial Class RegistrarProveedor
         'lbl_guardar
         '
         Me.lbl_guardar.AutoSize = True
-        Me.lbl_guardar.Location = New System.Drawing.Point(12, 269)
+        Me.lbl_guardar.Location = New System.Drawing.Point(19, 269)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
         Me.lbl_guardar.TabIndex = 15
@@ -276,7 +276,7 @@ Partial Class RegistrarProveedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(742, 348)
+        Me.ClientSize = New System.Drawing.Size(742, 336)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lbl_guardar)
         Me.Controls.Add(Me.grp_domicilio)

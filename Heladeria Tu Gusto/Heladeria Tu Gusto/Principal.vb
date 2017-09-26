@@ -23,7 +23,7 @@
         ModificarProducto.Show()
     End Sub
 
-    Private Sub VentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentaToolStripMenuItem.Click
+    Private Sub registrar_venta_Click(sender As Object, e As EventArgs) Handles registrar_venta.Click
         RegistrarVenta.Show()
     End Sub
 End Class

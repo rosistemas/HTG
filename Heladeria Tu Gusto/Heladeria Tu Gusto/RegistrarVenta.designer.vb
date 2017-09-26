@@ -37,13 +37,15 @@ Partial Class RegistrarVenta
         Me.txt_cantidad = New System.Windows.Forms.MaskedTextBox()
         Me.grp_agregar_producto = New System.Windows.Forms.GroupBox()
         Me.cmd_agregar = New System.Windows.Forms.Button()
-        Me.cmd_guardar = New System.Windows.Forms.Button()
-        Me.cmd_cancelar = New System.Windows.Forms.Button()
+        Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.lbl_total = New System.Windows.Forms.Label()
         Me.lbl_total_display = New System.Windows.Forms.Label()
         Me.lbl_id = New System.Windows.Forms.Label()
         Me.lbl_id_venta_display = New System.Windows.Forms.Label()
         Me.lbl_info_empleado = New System.Windows.Forms.Label()
+        Me.lbl_guardar = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.grp_detalle_de_venta.SuspendLayout()
         CType(Me.grd_detalle_de_venta, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grp_agregar_producto.SuspendLayout()
@@ -60,12 +62,12 @@ Partial Class RegistrarVenta
         '
         'grp_detalle_de_venta
         '
-        Me.grp_detalle_de_venta.BackColor = System.Drawing.Color.Silver
+        Me.grp_detalle_de_venta.BackColor = System.Drawing.Color.Transparent
         Me.grp_detalle_de_venta.Controls.Add(Me.grd_detalle_de_venta)
         Me.grp_detalle_de_venta.ForeColor = System.Drawing.Color.Navy
         Me.grp_detalle_de_venta.Location = New System.Drawing.Point(14, 207)
         Me.grp_detalle_de_venta.Name = "grp_detalle_de_venta"
-        Me.grp_detalle_de_venta.Size = New System.Drawing.Size(466, 182)
+        Me.grp_detalle_de_venta.Size = New System.Drawing.Size(466, 173)
         Me.grp_detalle_de_venta.TabIndex = 1
         Me.grp_detalle_de_venta.TabStop = False
         Me.grp_detalle_de_venta.Text = "Detalle de Venta"
@@ -79,7 +81,7 @@ Partial Class RegistrarVenta
         Me.grd_detalle_de_venta.Location = New System.Drawing.Point(9, 19)
         Me.grd_detalle_de_venta.Name = "grd_detalle_de_venta"
         Me.grd_detalle_de_venta.ReadOnly = True
-        Me.grd_detalle_de_venta.Size = New System.Drawing.Size(444, 150)
+        Me.grd_detalle_de_venta.Size = New System.Drawing.Size(444, 143)
         Me.grd_detalle_de_venta.TabIndex = 1
         '
         'col_codigo
@@ -160,7 +162,7 @@ Partial Class RegistrarVenta
         '
         'grp_agregar_producto
         '
-        Me.grp_agregar_producto.BackColor = System.Drawing.Color.Silver
+        Me.grp_agregar_producto.BackColor = System.Drawing.Color.Transparent
         Me.grp_agregar_producto.Controls.Add(Me.cmd_agregar)
         Me.grp_agregar_producto.Controls.Add(Me.txt_cantidad)
         Me.grp_agregar_producto.Controls.Add(Me.txt_codigo_producto)
@@ -187,23 +189,23 @@ Partial Class RegistrarVenta
         Me.cmd_agregar.Text = "AGREGAR"
         Me.cmd_agregar.UseVisualStyleBackColor = False
         '
-        'cmd_guardar
+        'btn_guardar
         '
-        Me.cmd_guardar.Location = New System.Drawing.Point(14, 407)
-        Me.cmd_guardar.Name = "cmd_guardar"
-        Me.cmd_guardar.Size = New System.Drawing.Size(75, 34)
-        Me.cmd_guardar.TabIndex = 6
-        Me.cmd_guardar.Text = "Guardar"
-        Me.cmd_guardar.UseVisualStyleBackColor = True
+        Me.btn_guardar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
+        Me.btn_guardar.Location = New System.Drawing.Point(14, 401)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Size = New System.Drawing.Size(75, 46)
+        Me.btn_guardar.TabIndex = 6
+        Me.btn_guardar.UseVisualStyleBackColor = True
         '
-        'cmd_cancelar
+        'btn_cancelar
         '
-        Me.cmd_cancelar.Location = New System.Drawing.Point(405, 407)
-        Me.cmd_cancelar.Name = "cmd_cancelar"
-        Me.cmd_cancelar.Size = New System.Drawing.Size(75, 34)
-        Me.cmd_cancelar.TabIndex = 6
-        Me.cmd_cancelar.Text = "Cancelar"
-        Me.cmd_cancelar.UseVisualStyleBackColor = True
+        Me.btn_cancelar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
+        Me.btn_cancelar.Location = New System.Drawing.Point(406, 401)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(75, 46)
+        Me.btn_cancelar.TabIndex = 6
+        Me.btn_cancelar.UseVisualStyleBackColor = True
         '
         'lbl_total
         '
@@ -261,13 +263,33 @@ Partial Class RegistrarVenta
         Me.lbl_info_empleado.Text = "Marcelo Liberatori"
         Me.lbl_info_empleado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lbl_guardar
+        '
+        Me.lbl_guardar.AutoSize = True
+        Me.lbl_guardar.Location = New System.Drawing.Point(29, 385)
+        Me.lbl_guardar.Name = "lbl_guardar"
+        Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_guardar.TabIndex = 16
+        Me.lbl_guardar.Text = "Guardar"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(419, 385)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.TabIndex = 17
+        Me.Label2.Text = "Cancelar"
+        '
         'RegistrarVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(493, 454)
-        Me.Controls.Add(Me.cmd_cancelar)
-        Me.Controls.Add(Me.cmd_guardar)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbl_guardar)
+        Me.Controls.Add(Me.btn_cancelar)
+        Me.Controls.Add(Me.btn_guardar)
         Me.Controls.Add(Me.cmb_empleado)
         Me.Controls.Add(Me.grp_detalle_de_venta)
         Me.Controls.Add(Me.lbl_total_display)
@@ -302,12 +324,14 @@ Partial Class RegistrarVenta
     Friend WithEvents txt_cantidad As System.Windows.Forms.MaskedTextBox
     Friend WithEvents grp_agregar_producto As System.Windows.Forms.GroupBox
     Friend WithEvents cmd_agregar As System.Windows.Forms.Button
-    Friend WithEvents cmd_guardar As System.Windows.Forms.Button
-    Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
+    Friend WithEvents btn_guardar As System.Windows.Forms.Button
+    Friend WithEvents btn_cancelar As System.Windows.Forms.Button
     Friend WithEvents lbl_total As System.Windows.Forms.Label
     Friend WithEvents lbl_total_display As System.Windows.Forms.Label
     Friend WithEvents lbl_id As System.Windows.Forms.Label
     Friend WithEvents lbl_id_venta_display As System.Windows.Forms.Label
     Friend WithEvents lbl_info_empleado As System.Windows.Forms.Label
+    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

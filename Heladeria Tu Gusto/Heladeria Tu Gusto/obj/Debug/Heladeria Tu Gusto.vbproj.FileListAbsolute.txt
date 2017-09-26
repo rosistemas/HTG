@@ -55,3 +55,20 @@ C:\Users\Rodrigo\git\pav\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Helader
 \\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 \\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
 \\Mac\Home\Documents\git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
