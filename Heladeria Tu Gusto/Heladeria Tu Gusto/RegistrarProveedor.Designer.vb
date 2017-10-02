@@ -24,22 +24,22 @@ Partial Class RegistrarProveedor
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarProveedor))
         Me.grp_domicilio = New System.Windows.Forms.GroupBox()
+        Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
         Me.lbl_calle = New System.Windows.Forms.Label()
         Me.txt_calle = New System.Windows.Forms.TextBox()
         Me.lbl_numero_calle = New System.Windows.Forms.Label()
-        Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_localidad = New System.Windows.Forms.Label()
         Me.cmb_barrio = New System.Windows.Forms.ComboBox()
         Me.cmb_localidad = New System.Windows.Forms.ComboBox()
         Me.grp_datos = New System.Windows.Forms.GroupBox()
+        Me.txt_numero_documento = New System.Windows.Forms.MaskedTextBox()
         Me.txt_razon_social = New System.Windows.Forms.TextBox()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.lbl_tipo_documento = New System.Windows.Forms.Label()
         Me.lbl_numero_documento = New System.Windows.Forms.Label()
         Me.lbl_nombre = New System.Windows.Forms.Label()
         Me.lbl_mail = New System.Windows.Forms.Label()
-        Me.txt_numero_documento = New System.Windows.Forms.MaskedTextBox()
         Me.lbl_razon_social = New System.Windows.Forms.Label()
         Me.txt_mail = New System.Windows.Forms.TextBox()
         Me.cmb_tipo_documento = New System.Windows.Forms.ComboBox()
@@ -53,25 +53,33 @@ Partial Class RegistrarProveedor
         '
         'grp_domicilio
         '
+        Me.grp_domicilio.Controls.Add(Me.txt_numero_calle)
         Me.grp_domicilio.Controls.Add(Me.lbl_calle)
         Me.grp_domicilio.Controls.Add(Me.txt_calle)
         Me.grp_domicilio.Controls.Add(Me.lbl_numero_calle)
-        Me.grp_domicilio.Controls.Add(Me.txt_numero_calle)
         Me.grp_domicilio.Controls.Add(Me.Label1)
         Me.grp_domicilio.Controls.Add(Me.lbl_localidad)
         Me.grp_domicilio.Controls.Add(Me.cmb_barrio)
         Me.grp_domicilio.Controls.Add(Me.cmb_localidad)
-        Me.grp_domicilio.Location = New System.Drawing.Point(377, 22)
+        Me.grp_domicilio.Location = New System.Drawing.Point(12, 160)
         Me.grp_domicilio.Name = "grp_domicilio"
-        Me.grp_domicilio.Size = New System.Drawing.Size(353, 244)
+        Me.grp_domicilio.Size = New System.Drawing.Size(353, 120)
         Me.grp_domicilio.TabIndex = 14
         Me.grp_domicilio.TabStop = False
         Me.grp_domicilio.Text = "Domicilio"
         '
+        'txt_numero_calle
+        '
+        Me.txt_numero_calle.Location = New System.Drawing.Point(284, 29)
+        Me.txt_numero_calle.Mask = "99999999"
+        Me.txt_numero_calle.Name = "txt_numero_calle"
+        Me.txt_numero_calle.Size = New System.Drawing.Size(60, 20)
+        Me.txt_numero_calle.TabIndex = 4
+        '
         'lbl_calle
         '
         Me.lbl_calle.AutoSize = True
-        Me.lbl_calle.Location = New System.Drawing.Point(65, 32)
+        Me.lbl_calle.Location = New System.Drawing.Point(85, 32)
         Me.lbl_calle.Name = "lbl_calle"
         Me.lbl_calle.Size = New System.Drawing.Size(33, 13)
         Me.lbl_calle.TabIndex = 1
@@ -81,29 +89,22 @@ Partial Class RegistrarProveedor
         '
         Me.txt_calle.Location = New System.Drawing.Point(124, 29)
         Me.txt_calle.Name = "txt_calle"
-        Me.txt_calle.Size = New System.Drawing.Size(220, 20)
+        Me.txt_calle.Size = New System.Drawing.Size(100, 20)
         Me.txt_calle.TabIndex = 0
         '
         'lbl_numero_calle
         '
         Me.lbl_numero_calle.AutoSize = True
-        Me.lbl_numero_calle.Location = New System.Drawing.Point(11, 78)
+        Me.lbl_numero_calle.Location = New System.Drawing.Point(234, 32)
         Me.lbl_numero_calle.Name = "lbl_numero_calle"
-        Me.lbl_numero_calle.Size = New System.Drawing.Size(87, 13)
+        Me.lbl_numero_calle.Size = New System.Drawing.Size(47, 13)
         Me.lbl_numero_calle.TabIndex = 1
-        Me.lbl_numero_calle.Text = "Número de calle:"
-        '
-        'txt_numero_calle
-        '
-        Me.txt_numero_calle.Location = New System.Drawing.Point(124, 75)
-        Me.txt_numero_calle.Name = "txt_numero_calle"
-        Me.txt_numero_calle.Size = New System.Drawing.Size(220, 20)
-        Me.txt_numero_calle.TabIndex = 1
+        Me.lbl_numero_calle.Text = "Número:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(61, 170)
+        Me.Label1.Location = New System.Drawing.Point(81, 85)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 13)
         Me.Label1.TabIndex = 1
@@ -112,7 +113,7 @@ Partial Class RegistrarProveedor
         'lbl_localidad
         '
         Me.lbl_localidad.AutoSize = True
-        Me.lbl_localidad.Location = New System.Drawing.Point(42, 129)
+        Me.lbl_localidad.Location = New System.Drawing.Point(65, 58)
         Me.lbl_localidad.Name = "lbl_localidad"
         Me.lbl_localidad.Size = New System.Drawing.Size(56, 13)
         Me.lbl_localidad.TabIndex = 1
@@ -121,7 +122,7 @@ Partial Class RegistrarProveedor
         'cmb_barrio
         '
         Me.cmb_barrio.FormattingEnabled = True
-        Me.cmb_barrio.Location = New System.Drawing.Point(124, 168)
+        Me.cmb_barrio.Location = New System.Drawing.Point(124, 82)
         Me.cmb_barrio.Name = "cmb_barrio"
         Me.cmb_barrio.Size = New System.Drawing.Size(220, 21)
         Me.cmb_barrio.TabIndex = 3
@@ -129,33 +130,41 @@ Partial Class RegistrarProveedor
         'cmb_localidad
         '
         Me.cmb_localidad.FormattingEnabled = True
-        Me.cmb_localidad.Location = New System.Drawing.Point(124, 121)
+        Me.cmb_localidad.Location = New System.Drawing.Point(124, 55)
         Me.cmb_localidad.Name = "cmb_localidad"
         Me.cmb_localidad.Size = New System.Drawing.Size(220, 21)
         Me.cmb_localidad.TabIndex = 2
         '
         'grp_datos
         '
+        Me.grp_datos.Controls.Add(Me.txt_numero_documento)
         Me.grp_datos.Controls.Add(Me.txt_razon_social)
         Me.grp_datos.Controls.Add(Me.txt_nombre)
         Me.grp_datos.Controls.Add(Me.lbl_tipo_documento)
         Me.grp_datos.Controls.Add(Me.lbl_numero_documento)
         Me.grp_datos.Controls.Add(Me.lbl_nombre)
         Me.grp_datos.Controls.Add(Me.lbl_mail)
-        Me.grp_datos.Controls.Add(Me.txt_numero_documento)
         Me.grp_datos.Controls.Add(Me.lbl_razon_social)
         Me.grp_datos.Controls.Add(Me.txt_mail)
         Me.grp_datos.Controls.Add(Me.cmb_tipo_documento)
-        Me.grp_datos.Location = New System.Drawing.Point(4, 22)
+        Me.grp_datos.Location = New System.Drawing.Point(12, 12)
         Me.grp_datos.Name = "grp_datos"
-        Me.grp_datos.Size = New System.Drawing.Size(353, 244)
+        Me.grp_datos.Size = New System.Drawing.Size(353, 142)
         Me.grp_datos.TabIndex = 13
         Me.grp_datos.TabStop = False
         Me.grp_datos.Text = "Datos personales"
         '
+        'txt_numero_documento
+        '
+        Me.txt_numero_documento.Location = New System.Drawing.Point(285, 81)
+        Me.txt_numero_documento.Mask = "99999999"
+        Me.txt_numero_documento.Name = "txt_numero_documento"
+        Me.txt_numero_documento.Size = New System.Drawing.Size(60, 20)
+        Me.txt_numero_documento.TabIndex = 5
+        '
         'txt_razon_social
         '
-        Me.txt_razon_social.Location = New System.Drawing.Point(125, 201)
+        Me.txt_razon_social.Location = New System.Drawing.Point(125, 108)
         Me.txt_razon_social.Name = "txt_razon_social"
         Me.txt_razon_social.Size = New System.Drawing.Size(220, 20)
         Me.txt_razon_social.TabIndex = 4
@@ -170,7 +179,7 @@ Partial Class RegistrarProveedor
         'lbl_tipo_documento
         '
         Me.lbl_tipo_documento.AutoSize = True
-        Me.lbl_tipo_documento.Location = New System.Drawing.Point(16, 118)
+        Me.lbl_tipo_documento.Location = New System.Drawing.Point(17, 84)
         Me.lbl_tipo_documento.Name = "lbl_tipo_documento"
         Me.lbl_tipo_documento.Size = New System.Drawing.Size(102, 13)
         Me.lbl_tipo_documento.TabIndex = 1
@@ -179,11 +188,11 @@ Partial Class RegistrarProveedor
         'lbl_numero_documento
         '
         Me.lbl_numero_documento.AutoSize = True
-        Me.lbl_numero_documento.Location = New System.Drawing.Point(0, 161)
+        Me.lbl_numero_documento.Location = New System.Drawing.Point(234, 84)
         Me.lbl_numero_documento.Name = "lbl_numero_documento"
-        Me.lbl_numero_documento.Size = New System.Drawing.Size(118, 13)
+        Me.lbl_numero_documento.Size = New System.Drawing.Size(47, 13)
         Me.lbl_numero_documento.TabIndex = 1
-        Me.lbl_numero_documento.Text = "Número de documento:"
+        Me.lbl_numero_documento.Text = "Número:"
         '
         'lbl_nombre
         '
@@ -197,23 +206,16 @@ Partial Class RegistrarProveedor
         'lbl_mail
         '
         Me.lbl_mail.AutoSize = True
-        Me.lbl_mail.Location = New System.Drawing.Point(89, 75)
+        Me.lbl_mail.Location = New System.Drawing.Point(89, 59)
         Me.lbl_mail.Name = "lbl_mail"
         Me.lbl_mail.Size = New System.Drawing.Size(29, 13)
         Me.lbl_mail.TabIndex = 1
         Me.lbl_mail.Text = "Mail:"
         '
-        'txt_numero_documento
-        '
-        Me.txt_numero_documento.Location = New System.Drawing.Point(125, 158)
-        Me.txt_numero_documento.Name = "txt_numero_documento"
-        Me.txt_numero_documento.Size = New System.Drawing.Size(220, 20)
-        Me.txt_numero_documento.TabIndex = 3
-        '
         'lbl_razon_social
         '
         Me.lbl_razon_social.AutoSize = True
-        Me.lbl_razon_social.Location = New System.Drawing.Point(47, 204)
+        Me.lbl_razon_social.Location = New System.Drawing.Point(47, 111)
         Me.lbl_razon_social.Name = "lbl_razon_social"
         Me.lbl_razon_social.Size = New System.Drawing.Size(71, 13)
         Me.lbl_razon_social.TabIndex = 1
@@ -221,7 +223,7 @@ Partial Class RegistrarProveedor
         '
         'txt_mail
         '
-        Me.txt_mail.Location = New System.Drawing.Point(125, 71)
+        Me.txt_mail.Location = New System.Drawing.Point(125, 55)
         Me.txt_mail.Name = "txt_mail"
         Me.txt_mail.Size = New System.Drawing.Size(220, 20)
         Me.txt_mail.TabIndex = 1
@@ -229,16 +231,16 @@ Partial Class RegistrarProveedor
         'cmb_tipo_documento
         '
         Me.cmb_tipo_documento.FormattingEnabled = True
-        Me.cmb_tipo_documento.Location = New System.Drawing.Point(125, 110)
+        Me.cmb_tipo_documento.Location = New System.Drawing.Point(125, 81)
         Me.cmb_tipo_documento.Name = "cmb_tipo_documento"
-        Me.cmb_tipo_documento.Size = New System.Drawing.Size(220, 21)
+        Me.cmb_tipo_documento.Size = New System.Drawing.Size(100, 21)
         Me.cmb_tipo_documento.TabIndex = 2
         '
         'cmd_cancelar
         '
         Me.cmd_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
         Me.cmd_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.cmd_cancelar.Location = New System.Drawing.Point(655, 285)
+        Me.cmd_cancelar.Location = New System.Drawing.Point(290, 303)
         Me.cmd_cancelar.Name = "cmd_cancelar"
         Me.cmd_cancelar.Size = New System.Drawing.Size(75, 46)
         Me.cmd_cancelar.TabIndex = 1
@@ -248,7 +250,7 @@ Partial Class RegistrarProveedor
         '
         Me.cmd_aceptar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
         Me.cmd_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.cmd_aceptar.Location = New System.Drawing.Point(4, 285)
+        Me.cmd_aceptar.Location = New System.Drawing.Point(12, 303)
         Me.cmd_aceptar.Name = "cmd_aceptar"
         Me.cmd_aceptar.Size = New System.Drawing.Size(75, 46)
         Me.cmd_aceptar.TabIndex = 0
@@ -257,7 +259,7 @@ Partial Class RegistrarProveedor
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(668, 269)
+        Me.Label2.Location = New System.Drawing.Point(303, 287)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
         Me.Label2.TabIndex = 16
@@ -266,7 +268,7 @@ Partial Class RegistrarProveedor
         'lbl_guardar
         '
         Me.lbl_guardar.AutoSize = True
-        Me.lbl_guardar.Location = New System.Drawing.Point(19, 269)
+        Me.lbl_guardar.Location = New System.Drawing.Point(27, 287)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
         Me.lbl_guardar.TabIndex = 15
@@ -276,7 +278,7 @@ Partial Class RegistrarProveedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(742, 336)
+        Me.ClientSize = New System.Drawing.Size(378, 353)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lbl_guardar)
         Me.Controls.Add(Me.grp_domicilio)
@@ -298,7 +300,6 @@ Partial Class RegistrarProveedor
     Friend WithEvents lbl_calle As System.Windows.Forms.Label
     Friend WithEvents txt_calle As System.Windows.Forms.TextBox
     Friend WithEvents lbl_numero_calle As System.Windows.Forms.Label
-    Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lbl_localidad As System.Windows.Forms.Label
     Friend WithEvents cmb_barrio As System.Windows.Forms.ComboBox
@@ -312,10 +313,11 @@ Partial Class RegistrarProveedor
     Friend WithEvents cmd_aceptar As System.Windows.Forms.Button
     Friend WithEvents txt_razon_social As System.Windows.Forms.TextBox
     Friend WithEvents lbl_tipo_documento As System.Windows.Forms.Label
-    Friend WithEvents lbl_numero_documento As System.Windows.Forms.Label
-    Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
     Friend WithEvents lbl_razon_social As System.Windows.Forms.Label
     Friend WithEvents cmb_tipo_documento As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents lbl_guardar As System.Windows.Forms.Label
+    Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
+    Private WithEvents lbl_numero_documento As System.Windows.Forms.Label
+    Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
 End Class

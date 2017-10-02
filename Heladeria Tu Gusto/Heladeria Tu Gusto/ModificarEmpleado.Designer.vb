@@ -36,14 +36,12 @@ Partial Class ModificarEmpleado
         Me.lbl_fecha_ingreso = New System.Windows.Forms.Label()
         Me.lbl_numero_documento = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txt_numero_documento = New System.Windows.Forms.MaskedTextBox()
         Me.lbl_numero_calle = New System.Windows.Forms.Label()
         Me.date_fecha_nacimiento = New System.Windows.Forms.DateTimePicker()
         Me.lbl_calle = New System.Windows.Forms.Label()
         Me.lbl_apellido = New System.Windows.Forms.Label()
         Me.txt_calle = New System.Windows.Forms.TextBox()
         Me.lbl_nombre = New System.Windows.Forms.Label()
-        Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.grd_empleados = New System.Windows.Forms.DataGridView()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -61,6 +59,8 @@ Partial Class ModificarEmpleado
         Me.numero_calle = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.txt_numero_documento = New System.Windows.Forms.MaskedTextBox()
+        Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
         Me.grp_datos.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.grd_empleados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,6 +86,8 @@ Partial Class ModificarEmpleado
         '
         'grp_datos
         '
+        Me.grp_datos.Controls.Add(Me.txt_numero_calle)
+        Me.grp_datos.Controls.Add(Me.txt_numero_documento)
         Me.grp_datos.Controls.Add(Me.txt_nombre)
         Me.grp_datos.Controls.Add(Me.cmb_tipo_documento)
         Me.grp_datos.Controls.Add(Me.date_fecha_ingreso)
@@ -96,14 +98,12 @@ Partial Class ModificarEmpleado
         Me.grp_datos.Controls.Add(Me.lbl_fecha_ingreso)
         Me.grp_datos.Controls.Add(Me.lbl_numero_documento)
         Me.grp_datos.Controls.Add(Me.Label2)
-        Me.grp_datos.Controls.Add(Me.txt_numero_documento)
         Me.grp_datos.Controls.Add(Me.lbl_numero_calle)
         Me.grp_datos.Controls.Add(Me.date_fecha_nacimiento)
         Me.grp_datos.Controls.Add(Me.lbl_calle)
         Me.grp_datos.Controls.Add(Me.lbl_apellido)
         Me.grp_datos.Controls.Add(Me.txt_calle)
         Me.grp_datos.Controls.Add(Me.lbl_nombre)
-        Me.grp_datos.Controls.Add(Me.txt_numero_calle)
         Me.grp_datos.Location = New System.Drawing.Point(12, 254)
         Me.grp_datos.Name = "grp_datos"
         Me.grp_datos.Size = New System.Drawing.Size(624, 127)
@@ -193,14 +193,6 @@ Partial Class ModificarEmpleado
         Me.Label2.TabIndex = 19
         Me.Label2.Text = "Barrio:"
         '
-        'txt_numero_documento
-        '
-        Me.txt_numero_documento.Location = New System.Drawing.Point(192, 75)
-        Me.txt_numero_documento.Name = "txt_numero_documento"
-        Me.txt_numero_documento.Size = New System.Drawing.Size(61, 20)
-        Me.txt_numero_documento.TabIndex = 13
-        Me.txt_numero_documento.Text = "123456789"
-        '
         'lbl_numero_calle
         '
         Me.lbl_numero_calle.AutoSize = True
@@ -250,13 +242,6 @@ Partial Class ModificarEmpleado
         Me.lbl_nombre.Size = New System.Drawing.Size(47, 13)
         Me.lbl_nombre.TabIndex = 8
         Me.lbl_nombre.Text = "Nombre:"
-        '
-        'txt_numero_calle
-        '
-        Me.txt_numero_calle.Location = New System.Drawing.Point(586, 73)
-        Me.txt_numero_calle.Name = "txt_numero_calle"
-        Me.txt_numero_calle.Size = New System.Drawing.Size(33, 20)
-        Me.txt_numero_calle.TabIndex = 18
         '
         'GroupBox1
         '
@@ -385,6 +370,22 @@ Partial Class ModificarEmpleado
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn_guardar.UseVisualStyleBackColor = True
         '
+        'txt_numero_documento
+        '
+        Me.txt_numero_documento.Location = New System.Drawing.Point(193, 75)
+        Me.txt_numero_documento.Mask = "99999999"
+        Me.txt_numero_documento.Name = "txt_numero_documento"
+        Me.txt_numero_documento.Size = New System.Drawing.Size(60, 20)
+        Me.txt_numero_documento.TabIndex = 25
+        '
+        'txt_numero_calle
+        '
+        Me.txt_numero_calle.Location = New System.Drawing.Point(586, 73)
+        Me.txt_numero_calle.Mask = "9999"
+        Me.txt_numero_calle.Name = "txt_numero_calle"
+        Me.txt_numero_calle.Size = New System.Drawing.Size(33, 20)
+        Me.txt_numero_calle.TabIndex = 26
+        '
         'ModificarEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -420,14 +421,12 @@ Partial Class ModificarEmpleado
     Friend WithEvents date_fecha_nacimiento As System.Windows.Forms.DateTimePicker
     Friend WithEvents lbl_nombre As System.Windows.Forms.Label
     Friend WithEvents lbl_apellido As System.Windows.Forms.Label
-    Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
     Friend WithEvents lbl_fecha_nacimiento As System.Windows.Forms.Label
     Friend WithEvents txt_apellido As System.Windows.Forms.TextBox
     Friend WithEvents cmb_tipo_documento As System.Windows.Forms.ComboBox
     Friend WithEvents lbl_calle As System.Windows.Forms.Label
     Friend WithEvents txt_calle As System.Windows.Forms.TextBox
     Friend WithEvents lbl_numero_calle As System.Windows.Forms.Label
-    Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents cmb_barrio As System.Windows.Forms.ComboBox
     Friend WithEvents id As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -445,4 +444,6 @@ Partial Class ModificarEmpleado
     Friend WithEvents numero_calle As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents date_fecha_ingreso As System.Windows.Forms.DateTimePicker
     Friend WithEvents lbl_fecha_ingreso As System.Windows.Forms.Label
+    Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
 End Class

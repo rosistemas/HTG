@@ -140,6 +140,7 @@
     <Compile Include="RegistrarVenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Validador.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ModificarEmpleado.resx">

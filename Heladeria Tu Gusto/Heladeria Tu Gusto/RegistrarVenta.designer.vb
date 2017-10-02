@@ -22,6 +22,7 @@ Partial Class RegistrarVenta
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarVenta))
         Me.lbl_empleado = New System.Windows.Forms.Label()
         Me.grp_detalle_de_venta = New System.Windows.Forms.GroupBox()
         Me.grd_detalle_de_venta = New System.Windows.Forms.DataGridView()
@@ -54,7 +55,7 @@ Partial Class RegistrarVenta
         'lbl_empleado
         '
         Me.lbl_empleado.AutoSize = True
-        Me.lbl_empleado.Location = New System.Drawing.Point(22, 41)
+        Me.lbl_empleado.Location = New System.Drawing.Point(22, 14)
         Me.lbl_empleado.Name = "lbl_empleado"
         Me.lbl_empleado.Size = New System.Drawing.Size(57, 13)
         Me.lbl_empleado.TabIndex = 0
@@ -65,7 +66,7 @@ Partial Class RegistrarVenta
         Me.grp_detalle_de_venta.BackColor = System.Drawing.Color.Transparent
         Me.grp_detalle_de_venta.Controls.Add(Me.grd_detalle_de_venta)
         Me.grp_detalle_de_venta.ForeColor = System.Drawing.Color.Navy
-        Me.grp_detalle_de_venta.Location = New System.Drawing.Point(14, 207)
+        Me.grp_detalle_de_venta.Location = New System.Drawing.Point(14, 180)
         Me.grp_detalle_de_venta.Name = "grp_detalle_de_venta"
         Me.grp_detalle_de_venta.Size = New System.Drawing.Size(466, 173)
         Me.grp_detalle_de_venta.TabIndex = 1
@@ -121,7 +122,7 @@ Partial Class RegistrarVenta
         'cmb_empleado
         '
         Me.cmb_empleado.FormattingEnabled = True
-        Me.cmb_empleado.Location = New System.Drawing.Point(85, 38)
+        Me.cmb_empleado.Location = New System.Drawing.Point(85, 11)
         Me.cmb_empleado.Name = "cmb_empleado"
         Me.cmb_empleado.Size = New System.Drawing.Size(57, 21)
         Me.cmb_empleado.TabIndex = 2
@@ -169,7 +170,7 @@ Partial Class RegistrarVenta
         Me.grp_agregar_producto.Controls.Add(Me.lbl_cantidad)
         Me.grp_agregar_producto.Controls.Add(Me.lbl_codigo_producto)
         Me.grp_agregar_producto.ForeColor = System.Drawing.Color.Navy
-        Me.grp_agregar_producto.Location = New System.Drawing.Point(14, 82)
+        Me.grp_agregar_producto.Location = New System.Drawing.Point(14, 55)
         Me.grp_agregar_producto.Name = "grp_agregar_producto"
         Me.grp_agregar_producto.Size = New System.Drawing.Size(466, 107)
         Me.grp_agregar_producto.TabIndex = 5
@@ -192,7 +193,7 @@ Partial Class RegistrarVenta
         'btn_guardar
         '
         Me.btn_guardar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
-        Me.btn_guardar.Location = New System.Drawing.Point(14, 401)
+        Me.btn_guardar.Location = New System.Drawing.Point(14, 374)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Size = New System.Drawing.Size(75, 46)
         Me.btn_guardar.TabIndex = 6
@@ -201,7 +202,7 @@ Partial Class RegistrarVenta
         'btn_cancelar
         '
         Me.btn_cancelar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
-        Me.btn_cancelar.Location = New System.Drawing.Point(406, 401)
+        Me.btn_cancelar.Location = New System.Drawing.Point(406, 374)
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Size = New System.Drawing.Size(75, 46)
         Me.btn_cancelar.TabIndex = 6
@@ -211,7 +212,7 @@ Partial Class RegistrarVenta
         '
         Me.lbl_total.AutoSize = True
         Me.lbl_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_total.Location = New System.Drawing.Point(138, 409)
+        Me.lbl_total.Location = New System.Drawing.Point(138, 382)
         Me.lbl_total.Name = "lbl_total"
         Me.lbl_total.Size = New System.Drawing.Size(66, 25)
         Me.lbl_total.TabIndex = 0
@@ -222,7 +223,7 @@ Partial Class RegistrarVenta
         Me.lbl_total_display.BackColor = System.Drawing.Color.Silver
         Me.lbl_total_display.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_total_display.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lbl_total_display.Location = New System.Drawing.Point(199, 409)
+        Me.lbl_total_display.Location = New System.Drawing.Point(199, 382)
         Me.lbl_total_display.Name = "lbl_total_display"
         Me.lbl_total_display.Size = New System.Drawing.Size(138, 25)
         Me.lbl_total_display.TabIndex = 0
@@ -234,17 +235,17 @@ Partial Class RegistrarVenta
         Me.lbl_id.AutoSize = True
         Me.lbl_id.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_id.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lbl_id.Location = New System.Drawing.Point(354, 9)
+        Me.lbl_id.Location = New System.Drawing.Point(353, 11)
         Me.lbl_id.Name = "lbl_id"
-        Me.lbl_id.Size = New System.Drawing.Size(50, 13)
+        Me.lbl_id.Size = New System.Drawing.Size(51, 13)
         Me.lbl_id.TabIndex = 0
-        Me.lbl_id.Text = "Id Venta:"
+        Me.lbl_id.Text = "ID venta:"
         '
         'lbl_id_venta_display
         '
         Me.lbl_id_venta_display.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_id_venta_display.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lbl_id_venta_display.Location = New System.Drawing.Point(402, 9)
+        Me.lbl_id_venta_display.Location = New System.Drawing.Point(401, 11)
         Me.lbl_id_venta_display.Name = "lbl_id_venta_display"
         Me.lbl_id_venta_display.Size = New System.Drawing.Size(71, 13)
         Me.lbl_id_venta_display.TabIndex = 0
@@ -256,17 +257,16 @@ Partial Class RegistrarVenta
         Me.lbl_info_empleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_info_empleado.ForeColor = System.Drawing.Color.Black
         Me.lbl_info_empleado.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lbl_info_empleado.Location = New System.Drawing.Point(148, 38)
+        Me.lbl_info_empleado.Location = New System.Drawing.Point(148, 11)
         Me.lbl_info_empleado.Name = "lbl_info_empleado"
         Me.lbl_info_empleado.Size = New System.Drawing.Size(149, 21)
         Me.lbl_info_empleado.TabIndex = 0
-        Me.lbl_info_empleado.Text = "Marcelo Liberatori"
         Me.lbl_info_empleado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lbl_guardar
         '
         Me.lbl_guardar.AutoSize = True
-        Me.lbl_guardar.Location = New System.Drawing.Point(29, 385)
+        Me.lbl_guardar.Location = New System.Drawing.Point(29, 358)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
         Me.lbl_guardar.TabIndex = 16
@@ -275,7 +275,7 @@ Partial Class RegistrarVenta
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(419, 385)
+        Me.Label2.Location = New System.Drawing.Point(419, 358)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
         Me.Label2.TabIndex = 17
@@ -285,7 +285,7 @@ Partial Class RegistrarVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(493, 454)
+        Me.ClientSize = New System.Drawing.Size(493, 428)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lbl_guardar)
         Me.Controls.Add(Me.btn_cancelar)
@@ -299,6 +299,7 @@ Partial Class RegistrarVenta
         Me.Controls.Add(Me.lbl_total)
         Me.Controls.Add(Me.lbl_empleado)
         Me.Controls.Add(Me.grp_agregar_producto)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "RegistrarVenta"
         Me.Text = "Registrar Venta"
         Me.grp_detalle_de_venta.ResumeLayout(False)

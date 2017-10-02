@@ -38,13 +38,13 @@ Partial Class ModificarProducto
         Me.lbl_precio = New System.Windows.Forms.Label()
         Me.cmb_tipo = New System.Windows.Forms.ComboBox()
         Me.lbl_descripcion = New System.Windows.Forms.Label()
-        Me.txt_precio = New System.Windows.Forms.MaskedTextBox()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.txt_descripcion = New System.Windows.Forms.TextBox()
         Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.txt_precio = New System.Windows.Forms.MaskedTextBox()
         CType(Me.grd_productos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.grp_datos.SuspendLayout()
@@ -170,14 +170,6 @@ Partial Class ModificarProducto
         Me.lbl_descripcion.TabIndex = 0
         Me.lbl_descripcion.Text = "Descripción:"
         '
-        'txt_precio
-        '
-        Me.txt_precio.Location = New System.Drawing.Point(59, 72)
-        Me.txt_precio.Name = "txt_precio"
-        Me.txt_precio.Size = New System.Drawing.Size(48, 20)
-        Me.txt_precio.TabIndex = 1
-        Me.txt_precio.Text = "123456"
-        '
         'txt_nombre
         '
         Me.txt_nombre.Location = New System.Drawing.Point(59, 19)
@@ -233,6 +225,13 @@ Partial Class ModificarProducto
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn_guardar.UseVisualStyleBackColor = True
         '
+        'txt_precio
+        '
+        Me.txt_precio.Location = New System.Drawing.Point(59, 72)
+        Me.txt_precio.Name = "txt_precio"
+        Me.txt_precio.Size = New System.Drawing.Size(48, 20)
+        Me.txt_precio.TabIndex = 1
+        '
         'ModificarProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -263,7 +262,6 @@ Partial Class ModificarProducto
     Friend WithEvents lbl_nombre As System.Windows.Forms.Label
     Friend WithEvents lbl_precio As System.Windows.Forms.Label
     Friend WithEvents lbl_descripcion As System.Windows.Forms.Label
-    Friend WithEvents txt_precio As System.Windows.Forms.MaskedTextBox
     Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
     Friend WithEvents txt_descripcion As System.Windows.Forms.TextBox
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -278,4 +276,5 @@ Partial Class ModificarProducto
     Friend WithEvents lbl_guardar As System.Windows.Forms.Label
     Friend WithEvents btn_cancelar As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txt_precio As System.Windows.Forms.MaskedTextBox
 End Class

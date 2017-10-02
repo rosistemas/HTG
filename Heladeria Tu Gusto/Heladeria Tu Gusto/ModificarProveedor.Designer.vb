@@ -41,7 +41,6 @@ Partial Class ModificarProveedor
         Me.lbl_calle = New System.Windows.Forms.Label()
         Me.txt_calle = New System.Windows.Forms.TextBox()
         Me.lbl_numero_calle = New System.Windows.Forms.Label()
-        Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_localidad = New System.Windows.Forms.Label()
         Me.cmb_barrio = New System.Windows.Forms.ComboBox()
@@ -53,7 +52,6 @@ Partial Class ModificarProveedor
         Me.lbl_numero_documento = New System.Windows.Forms.Label()
         Me.lbl_nombre = New System.Windows.Forms.Label()
         Me.lbl_mail = New System.Windows.Forms.Label()
-        Me.txt_numero_documento = New System.Windows.Forms.MaskedTextBox()
         Me.lbl_razon_social = New System.Windows.Forms.Label()
         Me.txt_mail = New System.Windows.Forms.TextBox()
         Me.cmb_tipo_documento = New System.Windows.Forms.ComboBox()
@@ -61,6 +59,8 @@ Partial Class ModificarProveedor
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.txt_numero_documento = New System.Windows.Forms.MaskedTextBox()
+        Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.grd_proveedores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grp_datos.SuspendLayout()
@@ -185,7 +185,6 @@ Partial Class ModificarProveedor
         Me.txt_calle.Name = "txt_calle"
         Me.txt_calle.Size = New System.Drawing.Size(140, 20)
         Me.txt_calle.TabIndex = 0
-        Me.txt_calle.Text = "Av. Armada Argentina"
         '
         'lbl_numero_calle
         '
@@ -195,14 +194,6 @@ Partial Class ModificarProveedor
         Me.lbl_numero_calle.Size = New System.Drawing.Size(22, 13)
         Me.lbl_numero_calle.TabIndex = 1
         Me.lbl_numero_calle.Text = "N°:"
-        '
-        'txt_numero_calle
-        '
-        Me.txt_numero_calle.Location = New System.Drawing.Point(546, 15)
-        Me.txt_numero_calle.Name = "txt_numero_calle"
-        Me.txt_numero_calle.Size = New System.Drawing.Size(33, 20)
-        Me.txt_numero_calle.TabIndex = 1
-        Me.txt_numero_calle.Text = "1234"
         '
         'Label1
         '
@@ -240,6 +231,8 @@ Partial Class ModificarProveedor
         '
         'grp_datos
         '
+        Me.grp_datos.Controls.Add(Me.txt_numero_calle)
+        Me.grp_datos.Controls.Add(Me.txt_numero_documento)
         Me.grp_datos.Controls.Add(Me.lbl_calle)
         Me.grp_datos.Controls.Add(Me.txt_razon_social)
         Me.grp_datos.Controls.Add(Me.txt_nombre)
@@ -247,11 +240,9 @@ Partial Class ModificarProveedor
         Me.grp_datos.Controls.Add(Me.lbl_numero_calle)
         Me.grp_datos.Controls.Add(Me.lbl_tipo_documento)
         Me.grp_datos.Controls.Add(Me.lbl_numero_documento)
-        Me.grp_datos.Controls.Add(Me.txt_numero_calle)
         Me.grp_datos.Controls.Add(Me.lbl_nombre)
         Me.grp_datos.Controls.Add(Me.lbl_mail)
         Me.grp_datos.Controls.Add(Me.Label1)
-        Me.grp_datos.Controls.Add(Me.txt_numero_documento)
         Me.grp_datos.Controls.Add(Me.lbl_razon_social)
         Me.grp_datos.Controls.Add(Me.lbl_localidad)
         Me.grp_datos.Controls.Add(Me.txt_mail)
@@ -260,7 +251,7 @@ Partial Class ModificarProveedor
         Me.grp_datos.Controls.Add(Me.cmb_localidad)
         Me.grp_datos.Location = New System.Drawing.Point(12, 254)
         Me.grp_datos.Name = "grp_datos"
-        Me.grp_datos.Size = New System.Drawing.Size(598, 122)
+        Me.grp_datos.Size = New System.Drawing.Size(588, 122)
         Me.grp_datos.TabIndex = 15
         Me.grp_datos.TabStop = False
         Me.grp_datos.Text = "Datos del proveedor"
@@ -314,14 +305,6 @@ Partial Class ModificarProveedor
         Me.lbl_mail.Size = New System.Drawing.Size(29, 13)
         Me.lbl_mail.TabIndex = 1
         Me.lbl_mail.Text = "Mail:"
-        '
-        'txt_numero_documento
-        '
-        Me.txt_numero_documento.Location = New System.Drawing.Point(218, 68)
-        Me.txt_numero_documento.Name = "txt_numero_documento"
-        Me.txt_numero_documento.Size = New System.Drawing.Size(62, 20)
-        Me.txt_numero_documento.TabIndex = 3
-        Me.txt_numero_documento.Text = "12345678"
         '
         'lbl_razon_social
         '
@@ -387,6 +370,22 @@ Partial Class ModificarProveedor
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn_guardar.UseVisualStyleBackColor = True
         '
+        'txt_numero_documento
+        '
+        Me.txt_numero_documento.Location = New System.Drawing.Point(212, 67)
+        Me.txt_numero_documento.Mask = "99999999"
+        Me.txt_numero_documento.Name = "txt_numero_documento"
+        Me.txt_numero_documento.Size = New System.Drawing.Size(68, 20)
+        Me.txt_numero_documento.TabIndex = 5
+        '
+        'txt_numero_calle
+        '
+        Me.txt_numero_calle.Location = New System.Drawing.Point(546, 15)
+        Me.txt_numero_calle.Mask = "9999"
+        Me.txt_numero_calle.Name = "txt_numero_calle"
+        Me.txt_numero_calle.Size = New System.Drawing.Size(31, 20)
+        Me.txt_numero_calle.TabIndex = 6
+        '
         'ModificarProveedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -414,7 +413,6 @@ Partial Class ModificarProveedor
     Friend WithEvents lbl_calle As System.Windows.Forms.Label
     Friend WithEvents txt_calle As System.Windows.Forms.TextBox
     Friend WithEvents lbl_numero_calle As System.Windows.Forms.Label
-    Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lbl_localidad As System.Windows.Forms.Label
     Friend WithEvents cmb_barrio As System.Windows.Forms.ComboBox
@@ -426,7 +424,6 @@ Partial Class ModificarProveedor
     Friend WithEvents lbl_numero_documento As System.Windows.Forms.Label
     Friend WithEvents lbl_nombre As System.Windows.Forms.Label
     Friend WithEvents lbl_mail As System.Windows.Forms.Label
-    Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
     Friend WithEvents lbl_razon_social As System.Windows.Forms.Label
     Friend WithEvents txt_mail As System.Windows.Forms.TextBox
     Friend WithEvents cmb_tipo_documento As System.Windows.Forms.ComboBox
@@ -447,4 +444,6 @@ Partial Class ModificarProveedor
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents id_localidad As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents localidad As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
 End Class

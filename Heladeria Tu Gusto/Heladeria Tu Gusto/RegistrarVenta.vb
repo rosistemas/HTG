@@ -1,6 +1,6 @@
 ﻿Public Class RegistrarVenta
     Dim cadena_conexion As String = "Provider=SQLNCLI11;Data Source=RODRIGOGOMEB0F2\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Dim conex As New Conexiones
+    ReadOnly conex As New Conexiones
     Private Sub cmd_agregar_Click(sender As Object, e As EventArgs) Handles cmd_agregar.Click
         If Len(txt_codigo_producto.Text.Trim) = 0 Or Len(txt_cantidad.Text.Trim) = 0 Then
             MsgBox("Debe ingresar los datos de la venta.", MsgBoxStyle.Critical, "¡Error crítico!")

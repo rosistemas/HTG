@@ -1,5 +1,5 @@
 ﻿Public Class ModificarProveedor
-    Private conex As New Conexiones
+    Private ReadOnly conex As New Conexiones
     Private id_proveedor_seleccionado As Integer = 0
 
     Private Sub ModificarProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load

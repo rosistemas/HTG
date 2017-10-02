@@ -1,10 +1,9 @@
 ﻿Public Class RegistrarProducto
     'Cadena de conexión generada por el visual studio
-    Dim connection_string As String = "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Dim conex As New Conexiones
+    ReadOnly _conex As New Conexiones
     Private Sub RegistrarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Al cargar el formulario, rellenar el comboBox de tipos de producto
-        Me.cargarTiposProductos(cmb_tipo, conex.leerTabla("TipoProducto"), "descripcion", "idTipo")
+        Me.cargarTiposProductos(cmb_tipo, _conex.leerTabla("TipoProducto"), "descripcion", "idTipo")
     End Sub
 
     Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
@@ -13,7 +12,7 @@
         MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
     End Sub
 
-    Private Sub cargarTiposProductos(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
+    Private Sub CargarTiposProductos(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
         'Sub rutina que rellena el comboBox con los elementos de una dataTable
         cmb_tipo.Items.Clear()
         cmb_tipo.DataSource = tabla
@@ -29,19 +28,19 @@
         End If
     End Sub
 
-    Private Sub insertar()
+    Private Sub Insertar()
         'Sentencia = insert into Producto values (idProducto, 'nombre', idTipo, precio, stock, 'descripción')
         Dim sql As String = ""
 
         sql = "insert into Producto values"
-        sql &= "(" & conex.generar_id_consecutivo("Producto", "idProducto")   'idProducto, es generado automáticamente y no se repite
+        sql &= "(" & _conex.generar_id_consecutivo("Producto", "idProducto")   'idProducto, es generado automáticamente y no se repite
         sql &= ", '" & txt_nombre.Text.Trim & "'"       'nombre
         sql &= ", " & cmb_tipo.SelectedValue            'idTipo
-        sql &= ", " & Integer.Parse(txt_precio.Text.Trim) 'precio
+        sql &= ", " & Double.Parse(txt_precio.Text.Trim) 'precio
         sql &= ", 20"                                   'stock
         sql &= ", '" & txt_descripcion.Text.Trim & "'"  'descripción
         sql &= ")"
 
-        conex.insertar(sql)
+        _conex.insertar(sql)
     End Sub
 End Class

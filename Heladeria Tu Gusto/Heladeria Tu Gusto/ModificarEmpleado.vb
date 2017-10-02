@@ -1,5 +1,5 @@
 ﻿Public Class ModificarEmpleado
-    Private conex As New Conexiones
+    Private ReadOnly conex As New Conexiones
     Private id_empleado_seleccionado As Integer = 0
 
     Private Sub ModificarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load

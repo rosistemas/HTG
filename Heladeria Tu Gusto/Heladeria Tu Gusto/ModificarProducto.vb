@@ -1,5 +1,5 @@
 ﻿Public Class ModificarProducto
-    Private conex As New Conexiones
+    Private ReadOnly conex As New Conexiones
     Private id_producto_seleccionado As Integer = 0
     Private id_tipo_producto_seleccionado As Integer = 0
 
@@ -88,8 +88,7 @@
         'Actualizar nombre, precio, idTipo, descripcion
         Dim sql As String = ""
         sql &= "update Producto"
-        sql &= " set nombre = '" & Me.txt_nombre.Text.Trim & "'"
-        sql &= ", precio = " & Integer.Parse(txt_precio.Text.Trim)
+        sql &= " set nombre = '" & Double.Parse(txt_precio.Text.Trim)
         sql &= ", descripcion = '" & Me.txt_descripcion.Text.Trim & "'"
         sql &= ", idTipo = " & Me.cmb_tipo.SelectedValue
         'Restricción where, prestar atención a los espacios
