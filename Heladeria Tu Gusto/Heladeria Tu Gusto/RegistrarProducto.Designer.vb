@@ -22,6 +22,7 @@ Partial Class RegistrarProducto
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarProducto))
         Me.lbl_nombre = New System.Windows.Forms.Label()
         Me.lbl_precio = New System.Windows.Forms.Label()
@@ -33,15 +34,16 @@ Partial Class RegistrarProducto
         Me.cmd_aceptar = New System.Windows.Forms.Button()
         Me.cmd_cancelar = New System.Windows.Forms.Button()
         Me.grp_datos = New System.Windows.Forms.GroupBox()
-        Me.txt_precio = New System.Windows.Forms.MaskedTextBox()
+        Me.txt_precio = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_guardar = New System.Windows.Forms.Label()
-        Me.grp_datos.SuspendLayout()
-        Me.SuspendLayout()
+        Me.toolTip_Precio = New System.Windows.Forms.ToolTip(Me.components)
+        Me.grp_datos.SuspendLayout
+        Me.SuspendLayout
         '
         'lbl_nombre
         '
-        Me.lbl_nombre.AutoSize = True
+        Me.lbl_nombre.AutoSize = true
         Me.lbl_nombre.Location = New System.Drawing.Point(37, 28)
         Me.lbl_nombre.Name = "lbl_nombre"
         Me.lbl_nombre.Size = New System.Drawing.Size(47, 13)
@@ -50,7 +52,7 @@ Partial Class RegistrarProducto
         '
         'lbl_precio
         '
-        Me.lbl_precio.AutoSize = True
+        Me.lbl_precio.AutoSize = true
         Me.lbl_precio.Location = New System.Drawing.Point(189, 122)
         Me.lbl_precio.Name = "lbl_precio"
         Me.lbl_precio.Size = New System.Drawing.Size(77, 13)
@@ -59,7 +61,7 @@ Partial Class RegistrarProducto
         '
         'lbl_tipo
         '
-        Me.lbl_tipo.AutoSize = True
+        Me.lbl_tipo.AutoSize = true
         Me.lbl_tipo.Location = New System.Drawing.Point(53, 122)
         Me.lbl_tipo.Name = "lbl_tipo"
         Me.lbl_tipo.Size = New System.Drawing.Size(31, 13)
@@ -68,7 +70,7 @@ Partial Class RegistrarProducto
         '
         'lbl_descripcion
         '
-        Me.lbl_descripcion.AutoSize = True
+        Me.lbl_descripcion.AutoSize = true
         Me.lbl_descripcion.Location = New System.Drawing.Point(18, 58)
         Me.lbl_descripcion.Name = "lbl_descripcion"
         Me.lbl_descripcion.Size = New System.Drawing.Size(66, 13)
@@ -85,14 +87,14 @@ Partial Class RegistrarProducto
         'txt_descripcion
         '
         Me.txt_descripcion.Location = New System.Drawing.Point(90, 55)
-        Me.txt_descripcion.Multiline = True
+        Me.txt_descripcion.Multiline = true
         Me.txt_descripcion.Name = "txt_descripcion"
         Me.txt_descripcion.Size = New System.Drawing.Size(220, 57)
         Me.txt_descripcion.TabIndex = 2
         '
         'cmb_tipo
         '
-        Me.cmb_tipo.FormattingEnabled = True
+        Me.cmb_tipo.FormattingEnabled = true
         Me.cmb_tipo.Location = New System.Drawing.Point(90, 118)
         Me.cmb_tipo.Name = "cmb_tipo"
         Me.cmb_tipo.Size = New System.Drawing.Size(93, 21)
@@ -106,7 +108,7 @@ Partial Class RegistrarProducto
         Me.cmd_aceptar.Name = "cmd_aceptar"
         Me.cmd_aceptar.Size = New System.Drawing.Size(75, 46)
         Me.cmd_aceptar.TabIndex = 0
-        Me.cmd_aceptar.UseVisualStyleBackColor = True
+        Me.cmd_aceptar.UseVisualStyleBackColor = true
         '
         'cmd_cancelar
         '
@@ -116,7 +118,7 @@ Partial Class RegistrarProducto
         Me.cmd_cancelar.Name = "cmd_cancelar"
         Me.cmd_cancelar.Size = New System.Drawing.Size(75, 46)
         Me.cmd_cancelar.TabIndex = 1
-        Me.cmd_cancelar.UseVisualStyleBackColor = True
+        Me.cmd_cancelar.UseVisualStyleBackColor = true
         '
         'grp_datos
         '
@@ -132,20 +134,19 @@ Partial Class RegistrarProducto
         Me.grp_datos.Name = "grp_datos"
         Me.grp_datos.Size = New System.Drawing.Size(316, 153)
         Me.grp_datos.TabIndex = 5
-        Me.grp_datos.TabStop = False
+        Me.grp_datos.TabStop = false
         Me.grp_datos.Text = "Datos del producto"
         '
         'txt_precio
         '
-        Me.txt_precio.Location = New System.Drawing.Point(268, 118)
-        Me.txt_precio.Mask = "999.99"
+        Me.txt_precio.Location = New System.Drawing.Point(270, 119)
         Me.txt_precio.Name = "txt_precio"
-        Me.txt_precio.Size = New System.Drawing.Size(42, 20)
+        Me.txt_precio.Size = New System.Drawing.Size(40, 20)
         Me.txt_precio.TabIndex = 4
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(268, 169)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 13)
@@ -154,7 +155,7 @@ Partial Class RegistrarProducto
         '
         'lbl_guardar
         '
-        Me.lbl_guardar.AutoSize = True
+        Me.lbl_guardar.AutoSize = true
         Me.lbl_guardar.Location = New System.Drawing.Point(29, 169)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
@@ -163,7 +164,7 @@ Partial Class RegistrarProducto
         '
         'RegistrarProducto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(339, 234)
         Me.Controls.Add(Me.Label1)
@@ -171,15 +172,15 @@ Partial Class RegistrarProducto
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
         Me.Controls.Add(Me.cmd_aceptar)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarProducto"
         Me.Text = "Nuevo producto"
-        Me.grp_datos.ResumeLayout(False)
-        Me.grp_datos.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.grp_datos.ResumeLayout(false)
+        Me.grp_datos.PerformLayout
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents lbl_nombre As System.Windows.Forms.Label
     Friend WithEvents lbl_precio As System.Windows.Forms.Label
     Friend WithEvents lbl_tipo As System.Windows.Forms.Label
@@ -192,5 +193,6 @@ Partial Class RegistrarProducto
     Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lbl_guardar As System.Windows.Forms.Label
-    Friend WithEvents txt_precio As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txt_precio As TextBox
+    Friend WithEvents toolTip_Precio As ToolTip
 End Class

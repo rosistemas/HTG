@@ -2,73 +2,72 @@
     'Cadena conexion rodrigo "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     'Cadena conexion rodrigo netbook Provider=SQLNCLI11;Data Source=RODRIGO-PC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto
     'Cadena conexion fran "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Private ReadOnly cadena_conexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Private ReadOnly conexion As New OleDb.OleDbConnection
-    Private ReadOnly comando As New OleDb.OleDbCommand
+    Private ReadOnly _cadenaConexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    Private ReadOnly _conexion As New OleDb.OleDbConnection
+    Private ReadOnly _comando As New OleDb.OleDbCommand
 
-    Private Sub abrirConexion()
-        If conexion.ConnectionString = "" Then
-            conexion.ConnectionString = cadena_conexion
+    Private Sub AbrirConexion()
+        If _conexion.ConnectionString = "" Then
+            _conexion.ConnectionString = _cadenaConexion
         End If
 
-        If conexion.State = ConnectionState.Closed Then
-            conexion.Open()
-        End If
-    End Sub
-
-    Private Sub cerrarConexion()
-        If conexion.State = ConnectionState.Open Then
-            conexion.Close()
+        If _conexion.State = ConnectionState.Closed Then
+            _conexion.Open()
         End If
     End Sub
 
-    Public Function leerTabla(ByRef nombre_tabla As String) As DataTable
+    Private Sub CerrarConexion()
+        If _conexion.State = ConnectionState.Open Then
+            _conexion.Close()
+        End If
+    End Sub
+
+    Public Function LeerTabla(ByRef nombreTabla As String) As DataTable
         'Función que retorna una dataTable cargada con los resultados de la consulta SQL
         Dim tabla As New Data.DataTable
         abrirConexion()
 
-        comando.Connection = conexion
-        comando.CommandType = CommandType.Text
-        comando.CommandText = "select * from " & nombre_tabla
+        _comando.Connection = _conexion
+        _comando.CommandType = CommandType.Text
+        _comando.CommandText = "select * from " & nombreTabla
 
-        tabla.Load(comando.ExecuteReader)
+        tabla.Load(_comando.ExecuteReader)
         cerrarConexion()
         Return tabla
     End Function
 
-    Public Sub insertar(ByRef sql As String)
+    Public Sub Insertar(ByRef sql As String)
         abrirConexion()
-        comando.CommandType = CommandType.Text
-        comando.Connection = conexion
-        comando.CommandText = sql
-        comando.ExecuteNonQuery()
+        _comando.CommandType = CommandType.Text
+        _comando.Connection = _conexion
+        _comando.CommandText = sql
+        _comando.ExecuteNonQuery()
         cerrarConexion()
     End Sub
 
-    Public Function consultar(ByRef sql As String) As DataTable
+    Public Function Consultar(ByRef sql As String) As DataTable
 
         Dim tabla As New DataTable
         abrirConexion()
-        comando.Connection = conexion
-        comando.CommandType = CommandType.Text
-        comando.CommandText = sql
-        tabla.Load(comando.ExecuteReader)
+        _comando.Connection = _conexion
+        _comando.CommandType = CommandType.Text
+        _comando.CommandText = sql
+        tabla.Load(_comando.ExecuteReader)
         cerrarConexion()
         Return tabla
     End Function
 
-    Public Function generar_id_consecutivo(ByRef nombre_tabla As String, ByRef pk As String) As Integer
+    Public Function Generar_id_consecutivo(ByRef nombreTabla As String, ByRef pk As String) As Integer
         Dim tabla As New DataTable
         Me.abrirConexion()
-        tabla = Me.consultar("select * from " & nombre_tabla & " order by " & pk)
-
+        tabla = Me.consultar("select * from " & nombreTabla & " order by " & pk)
+        Me.cerrarConexion()
         If tabla.Rows.Count = 0 Then
             Return 1
         Else
-            Dim ultima_pos As Integer = (tabla.Rows.Count - 1)
-            Return tabla.Rows(ultima_pos)(pk) + 1
+            Dim ultimaPos As Integer = (tabla.Rows.Count - 1)
+            Return tabla.Rows(ultimaPos)(pk) + 1
         End If
-        Me.cerrarConexion()
     End Function
 
 End Class

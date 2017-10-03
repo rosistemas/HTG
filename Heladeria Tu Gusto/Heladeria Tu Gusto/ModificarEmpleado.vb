@@ -1,32 +1,43 @@
 ﻿Public Class ModificarEmpleado
-    Private ReadOnly conex As New Conexiones
-    Private id_empleado_seleccionado As Integer = 0
+    ReadOnly _conex As New Conexiones
+    Private _idEmpleadoSeleccionado As Integer = 0
+    ReadOnly _validador as New Validador
 
     Private Sub ModificarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.cargarGrilla()
     End Sub
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
-        If MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes Then
-            Me.modificar()
-            Me.cargarGrilla()
-        Else
-            MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        If _validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+
+            If _
+                MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución",
+                                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes _
+                Then
+                Me.modificar()
+                Me.cargarGrilla()
+            Else
+                MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information)
+            End If
         End If
     End Sub
 
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+        If _
+            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
             Me.Close()
             Principal.Show()
         End If
     End Sub
 
-    Private Sub cargarGrilla()
+    Private Sub CargarGrilla()
         Dim sql As String
-        sql = "SELECT E.*, T.descripcion, B.nombre as nombre_barrio FROM Empleado E INNER JOIN TipoDoc T ON E.tipoDoc = T.id INNER JOIN Barrio B ON E.idBarrio = B.id"
+        sql =
+            "SELECT E.*, T.descripcion, B.nombre as nombre_barrio FROM Empleado E INNER JOIN TipoDoc T ON E.tipoDoc = T.id INNER JOIN Barrio B ON E.idBarrio = B.id"
         Dim tabla As New DataTable
-        tabla = conex.consultar(sql)
+        tabla = _conex.consultar(sql)
         Me.grd_empleados.Rows.Clear()
         For i = 0 To tabla.Rows.Count - 1
             Me.grd_empleados.Rows.Add()
@@ -46,11 +57,13 @@
         Next
     End Sub
 
-    Private Sub grd_empleados_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles grd_empleados.CellDoubleClick
+    Private Sub grd_empleados_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) _
+        Handles grd_empleados.CellDoubleClick
         Dim tabla As New DataTable
 
         Dim sql As String
-        sql = "SELECT Empleado.id, Empleado.numDoc, Empleado.tipoDoc, Empleado.nombre, Empleado.apellido, Empleado.fechaNacimiento, Empleado.fechaIngreso, Empleado.fechaEgreso, Empleado.idBarrio, Empleado.calle, Empleado.numCalle, TipoDoc.descripcion, Barrio.nombre as nombre_barrio FROM Empleado INNER JOIN TipoDoc ON Empleado.tipoDoc = TipoDoc.id INNER JOIN Barrio ON Empleado.idBarrio = Barrio.id"
+        sql =
+            "SELECT Empleado.id, Empleado.numDoc, Empleado.tipoDoc, Empleado.nombre, Empleado.apellido, Empleado.fechaNacimiento, Empleado.fechaIngreso, Empleado.fechaEgreso, Empleado.idBarrio, Empleado.calle, Empleado.numCalle, TipoDoc.descripcion, Barrio.nombre as nombre_barrio FROM Empleado INNER JOIN TipoDoc ON Empleado.tipoDoc = TipoDoc.id INNER JOIN Barrio ON Empleado.idBarrio = Barrio.id"
         sql &= " WHERE "
         sql &= " Empleado.id = " & grd_empleados.CurrentRow.Cells(0).Value
         sql &= " AND "
@@ -58,22 +71,22 @@
         sql &= " AND "
         sql &= " Barrio.id = " & grd_empleados.CurrentRow.Cells(9).Value
 
-        tabla = conex.consultar(sql)
+        tabla = _conex.consultar(sql)
         Me.txt_nombre.Text = tabla.Rows(0)("nombre")
         Me.txt_apellido.Text = tabla.Rows(0)("apellido")
         Me.txt_numero_documento.Text = tabla.Rows(0)("numDoc")
         Me.txt_calle.Text = tabla.Rows(0)("calle")
         Me.txt_numero_calle.Text = tabla.Rows(0)("numCalle")
         'cargar los combos
-        Me.cargaCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
-        Me.cargaCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
+        Me.cargaCombo(cmb_barrio, _conex.leerTabla("Barrio"), "nombre", "id")
+        Me.cargaCombo(cmb_tipo_documento, _conex.leerTabla("TipoDoc"), "descripcion", "id")
         Me.cmb_barrio.SelectedValue = tabla.Rows(0)("idBarrio")
         Me.cmb_tipo_documento.SelectedValue = tabla.Rows(0)("tipoDoc")
 
-        id_empleado_seleccionado = tabla.Rows(0)("id")
+        _idEmpleadoSeleccionado = tabla.Rows(0)("id")
     End Sub
 
-    Private Sub cargaCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descriptor As String, pk As String)
+    Private Sub CargaCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descriptor As String, pk As String)
         combo.DataSource = Nothing
         'Limpiar el comboBox
         combo.Items.Clear()
@@ -85,7 +98,7 @@
         combo.ValueMember = pk
     End Sub
 
-    Private Sub modificar()
+    Private Sub Modificar()
         Dim sql As String = ""
         sql &= "update Empleado"
         sql &= " set nombre = '" & Me.txt_nombre.Text.Trim & "'"
@@ -97,9 +110,16 @@
         sql &= ", idBarrio = " & Me.cmb_barrio.SelectedValue
         sql &= ", calle = '" & Me.txt_calle.Text.Trim & "'"
         sql &= ", numCalle = " & Integer.Parse(txt_numero_calle.Text.Trim)
-        sql &= " where id = " & id_empleado_seleccionado
-        conex.insertar(sql)
+        sql &= " where id = " & _idEmpleadoSeleccionado
+        _conex.insertar(sql)
     End Sub
 
-
+    Private Sub ModificarEmpleado_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If _
+            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No _
+            Then
+            e.Cancel = True
+        End If
+    End Sub
 End Class

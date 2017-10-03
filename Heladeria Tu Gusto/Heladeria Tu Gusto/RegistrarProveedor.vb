@@ -1,29 +1,33 @@
 ﻿Public Class RegistrarProveedor
-    Public conex As New Conexiones
+    ReadOnly conex As New Conexiones
+    ReadOnly _validador as New Validador
+
     Private Sub RegistrarProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.cargarCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
-        Me.cargarCombo(cmb_localidad, conex.leerTabla("Localidad"), "nombre", "id")
-        Me.cargarCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
-    End Sub
-    Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
-        Me.insertar()
-        MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
+        cargarCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
+        cargarCombo(cmb_localidad, conex.leerTabla("Localidad"), "nombre", "id")
+        cargarCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
     End Sub
 
-    Private Sub cargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
-        'Sub rutina que rellena el comboBox con los elementos de una dataTable
+    Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
+        If _validador.Verificar_vacios(Me.Controls) = Validador.EstadoValidacion.SinErrores Then
+            Insertar()
+            MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
+        End If
+    End Sub
+
+    Private Sub CargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
+
         combo.Items.Clear()
         combo.DataSource = tabla
         combo.DisplayMember = descripcion
         combo.ValueMember = pk
     End Sub
 
-    Private Sub insertar()
-        'Sentencia = insert into Producto values (idProveedor, numDoc, tipoDoc, 'razonSocial' , 'mail', idBarrio, 'calle', numCalle, 'nombre')
+    Private Sub Insertar()
         Dim sql As String = ""
 
         sql = "insert into Proveedor values"
-        sql &= "(" & conex.generar_id_consecutivo("Proveedor", "idProveedor")                  'idProveedor
+        sql &= "(" & conex.Generar_id_consecutivo("Proveedor", "idProveedor")'idProveedor
         sql &= ", " & Integer.Parse(txt_numero_documento.Text.Trim) 'numDoc
         sql &= ", " & cmb_tipo_documento.SelectedValue              'tipoDoc
         sql &= ", '" & txt_razon_social.Text.Trim & "'"             'razonSocial
@@ -38,12 +42,19 @@
         conex.insertar(sql)
     End Sub
 
-    Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
+    Private Sub Cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
         'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+        If _
+            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
             Principal.Show()
         End If
     End Sub
 
+    Private Sub RegistrarProveedor_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
 End Class

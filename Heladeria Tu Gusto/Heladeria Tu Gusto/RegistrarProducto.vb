@@ -1,18 +1,22 @@
 ﻿Public Class RegistrarProducto
-    'Cadena de conexión generada por el visual studio
     ReadOnly _conex As New Conexiones
+    ReadOnly _validador as New Validador
+
     Private Sub RegistrarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Al cargar el formulario, rellenar el comboBox de tipos de producto
-        Me.cargarTiposProductos(cmb_tipo, _conex.leerTabla("TipoProducto"), "descripcion", "idTipo")
+        CargarTiposProductos(cmb_tipo, _conex.leerTabla("TipoProducto"), "descripcion", "idTipo")
     End Sub
 
-    Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
+    Private Sub Cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
         'Llamar al procedimiento de inserción e informar que fue correcto.
-        Me.insertar()
-        MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
+        If _validador.Verificar_vacios(Me.Controls) = Validador.EstadoValidacion.SinErrores Then
+            Insertar()
+            MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
+        End If
     End Sub
 
-    Private Sub CargarTiposProductos(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
+    Private Sub CargarTiposProductos(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String,
+                                     pk As String)
         'Sub rutina que rellena el comboBox con los elementos de una dataTable
         cmb_tipo.Items.Clear()
         cmb_tipo.DataSource = tabla
@@ -20,10 +24,12 @@
         cmb_tipo.ValueMember = pk
     End Sub
 
-    Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
+    Private Sub Cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
         'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
-            Me.Close()
+        If _
+            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+            Close()
             Principal.Show()
         End If
     End Sub
@@ -33,7 +39,8 @@
         Dim sql As String = ""
 
         sql = "insert into Producto values"
-        sql &= "(" & _conex.generar_id_consecutivo("Producto", "idProducto")   'idProducto, es generado automáticamente y no se repite
+        sql &= "(" & _conex.Generar_id_consecutivo("Producto", "idProducto") _
+        'idProducto, es generado automáticamente y no se repite
         sql &= ", '" & txt_nombre.Text.Trim & "'"       'nombre
         sql &= ", " & cmb_tipo.SelectedValue            'idTipo
         sql &= ", " & Double.Parse(txt_precio.Text.Trim) 'precio
@@ -42,5 +49,15 @@
         sql &= ")"
 
         _conex.insertar(sql)
+    End Sub
+
+    Private Sub txt_precio_MouseHover(sender As Object, e As EventArgs) Handles txt_precio.MouseHover
+        toolTip_Precio.SetToolTip(txt_precio, "Recuerde que para precios con centavos, debe utilizar el punto (.)")
+    End Sub
+
+    Private Sub RegistrarProducto_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
     End Sub
 End Class

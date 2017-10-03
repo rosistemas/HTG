@@ -1,5 +1,6 @@
 ﻿Public Class RegistrarEmpleado
     ReadOnly conex As New Conexiones
+    ReadOnly _validador as New Validador
     Private Sub RegistrarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.cargarCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
         Me.cargarCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
@@ -8,8 +9,10 @@
 
 
     Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
-        Me.insertar()
-        MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
+        If _validador.Verificar_vacios(Me.Controls) = Validador.EstadoValidacion.SinErrores Then
+            Me.Insertar()
+            MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
+        End If
     End Sub
 
     Private Sub cargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
@@ -26,7 +29,7 @@
         'tomados desde el formulario
         Dim sql As String = ""
         sql = "insert into Empleado values"
-        sql &= "(" & conex.generar_id_consecutivo("Empleado", "id")  'idEmpleado
+        sql &= "(" & conex.Generar_id_consecutivo("Empleado", "id")  'idEmpleado
         sql &= ", " & Integer.Parse(txt_numero_documento.Text.Trim) 'numDoc
         sql &= ", " & cmb_tipo_documento.SelectedValue              'tipoDoc
         sql &= ", '" & txt_nombre.Text.Trim & "'"                   'nombre
@@ -50,4 +53,9 @@
         End If
     End Sub
 
+    Private Sub RegistrarEmpleado_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
 End Class

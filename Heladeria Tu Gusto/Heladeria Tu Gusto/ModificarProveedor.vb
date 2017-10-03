@@ -1,5 +1,6 @@
 ﻿Public Class ModificarProveedor
-    Private ReadOnly conex As New Conexiones
+    ReadOnly _conex As New Conexiones
+    ReadOnly _validador as New Validador
     Private id_proveedor_seleccionado As Integer = 0
 
     Private Sub ModificarProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -7,22 +8,30 @@
     End Sub
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
-        If MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes Then
-            Me.modificar()
-            Me.cargarGrilla()
-        Else
-            MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        If _validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+            If _
+                MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución",
+                                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes _
+                Then
+                Me.modificar()
+                Me.cargarGrilla()
+            Else
+                MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information)
+            End If
         End If
     End Sub
 
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+        If _
+            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
             Me.Close()
             Principal.Show()
         End If
     End Sub
 
-    Private Sub cargarGrilla()
+    Private Sub CargarGrilla()
         Dim sql As String
         sql = "select P.*, L.id as id_localidad, L.nombre as nombre_localidad,"
         sql &= " B.id as id_barrio, B.nombre as nombre_barrio, D.*"
@@ -32,7 +41,7 @@
         sql &= " inner join TipoDoc D on p.tipoDoc = D.id"
 
         Dim tabla As New DataTable
-        tabla = conex.consultar(sql)
+        tabla = _conex.consultar(sql)
         Me.grd_proveedores.Rows.Clear()
         For i = 0 To tabla.Rows.Count - 1
             Me.grd_proveedores.Rows.Add()
@@ -52,7 +61,8 @@
         Next
     End Sub
 
-    Private Sub grd_proveedores_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles grd_proveedores.CellDoubleClick
+    Private Sub grd_proveedores_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) _
+        Handles grd_proveedores.CellDoubleClick
         Dim tabla As New DataTable
         Dim sql As String
         sql = "select P.*, L.id as id_localidad, L.nombre as nombre_localidad,"
@@ -70,7 +80,7 @@
         sql &= " AND "
         sql &= " L.id = " & grd_proveedores.CurrentRow.Cells(11).Value
 
-        tabla = conex.consultar(sql)
+        tabla = _conex.consultar(sql)
         Me.txt_nombre.Text = tabla.Rows(0)("nombre")
         Me.txt_mail.Text = tabla.Rows(0)("mail")
         Me.txt_numero_documento.Text = tabla.Rows(0)("numDoc")
@@ -78,16 +88,16 @@
         Me.txt_calle.Text = tabla.Rows(0)("calle")
         Me.txt_numero_calle.Text = tabla.Rows(0)("numCalle")
         'cargar los combos
-        Me.cargaCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
-        Me.cargaCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
-        Me.cargaCombo(cmb_localidad, conex.leerTabla("Localidad"), "nombre", "id")
+        Me.cargaCombo(cmb_barrio, _conex.leerTabla("Barrio"), "nombre", "id")
+        Me.cargaCombo(cmb_tipo_documento, _conex.leerTabla("TipoDoc"), "descripcion", "id")
+        Me.cargaCombo(cmb_localidad, _conex.leerTabla("Localidad"), "nombre", "id")
         Me.cmb_barrio.SelectedValue = tabla.Rows(0)("idBarrio")
         Me.cmb_tipo_documento.SelectedValue = tabla.Rows(0)("tipoDoc")
 
         id_proveedor_seleccionado = tabla.Rows(0)("idProveedor")
     End Sub
 
-    Private Sub cargaCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descriptor As String, pk As String)
+    Private Sub CargaCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descriptor As String, pk As String)
         combo.DataSource = Nothing
         'Limpiar el comboBox
         combo.Items.Clear()
@@ -99,7 +109,7 @@
         combo.ValueMember = pk
     End Sub
 
-    Private Sub modificar()
+    Private Sub Modificar()
         Dim sql As String = ""
         sql &= "update Proveedor"
         sql &= " set numDoc = " & Integer.Parse(txt_numero_documento.Text.Trim)
@@ -112,6 +122,15 @@
         sql &= ", nombre = '" & Me.txt_nombre.Text.Trim & "'"
         sql &= ", idLocalidad = " & cmb_localidad.SelectedValue
         sql &= " where idProveedor = " & id_proveedor_seleccionado
-        conex.insertar(sql)
+        _conex.insertar(sql)
+    End Sub
+
+    Private Sub ModificarProveedor_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If _
+            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No _
+            Then
+            e.Cancel = True
+        End If
     End Sub
 End Class

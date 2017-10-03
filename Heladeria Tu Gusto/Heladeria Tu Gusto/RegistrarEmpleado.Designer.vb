@@ -40,18 +40,18 @@ Partial Class RegistrarEmpleado
         Me.grp_datos = New System.Windows.Forms.GroupBox()
         Me.txt_numero_documento = New System.Windows.Forms.MaskedTextBox()
         Me.grp_domicilio = New System.Windows.Forms.GroupBox()
-        Me.txt_numero_calle = New System.Windows.Forms.MaskedTextBox()
+        Me.txt_numero_calle = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmb_barrio = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lbl_guardar = New System.Windows.Forms.Label()
-        Me.grp_datos.SuspendLayout()
-        Me.grp_domicilio.SuspendLayout()
-        Me.SuspendLayout()
+        Me.grp_datos.SuspendLayout
+        Me.grp_domicilio.SuspendLayout
+        Me.SuspendLayout
         '
         'lbl_tipo_documento
         '
-        Me.lbl_tipo_documento.AutoSize = True
+        Me.lbl_tipo_documento.AutoSize = true
         Me.lbl_tipo_documento.Location = New System.Drawing.Point(19, 117)
         Me.lbl_tipo_documento.Name = "lbl_tipo_documento"
         Me.lbl_tipo_documento.Size = New System.Drawing.Size(102, 13)
@@ -60,7 +60,7 @@ Partial Class RegistrarEmpleado
         '
         'lbl_numero_documento
         '
-        Me.lbl_numero_documento.AutoSize = True
+        Me.lbl_numero_documento.AutoSize = true
         Me.lbl_numero_documento.Location = New System.Drawing.Point(234, 117)
         Me.lbl_numero_documento.Name = "lbl_numero_documento"
         Me.lbl_numero_documento.Size = New System.Drawing.Size(47, 13)
@@ -69,7 +69,7 @@ Partial Class RegistrarEmpleado
         '
         'lbl_nombre
         '
-        Me.lbl_nombre.AutoSize = True
+        Me.lbl_nombre.AutoSize = true
         Me.lbl_nombre.Location = New System.Drawing.Point(74, 30)
         Me.lbl_nombre.Name = "lbl_nombre"
         Me.lbl_nombre.Size = New System.Drawing.Size(47, 13)
@@ -78,7 +78,7 @@ Partial Class RegistrarEmpleado
         '
         'lbl_apellido
         '
-        Me.lbl_apellido.AutoSize = True
+        Me.lbl_apellido.AutoSize = true
         Me.lbl_apellido.Location = New System.Drawing.Point(74, 76)
         Me.lbl_apellido.Name = "lbl_apellido"
         Me.lbl_apellido.Size = New System.Drawing.Size(47, 13)
@@ -87,7 +87,7 @@ Partial Class RegistrarEmpleado
         '
         'lbl_calle
         '
-        Me.lbl_calle.AutoSize = True
+        Me.lbl_calle.AutoSize = true
         Me.lbl_calle.Location = New System.Drawing.Point(78, 30)
         Me.lbl_calle.Name = "lbl_calle"
         Me.lbl_calle.Size = New System.Drawing.Size(33, 13)
@@ -96,7 +96,7 @@ Partial Class RegistrarEmpleado
         '
         'lbl_fecha_nacimiento
         '
-        Me.lbl_fecha_nacimiento.AutoSize = True
+        Me.lbl_fecha_nacimiento.AutoSize = true
         Me.lbl_fecha_nacimiento.Location = New System.Drawing.Point(12, 162)
         Me.lbl_fecha_nacimiento.Name = "lbl_fecha_nacimiento"
         Me.lbl_fecha_nacimiento.Size = New System.Drawing.Size(109, 13)
@@ -119,7 +119,7 @@ Partial Class RegistrarEmpleado
         '
         'cmb_tipo_documento
         '
-        Me.cmb_tipo_documento.FormattingEnabled = True
+        Me.cmb_tipo_documento.FormattingEnabled = true
         Me.cmb_tipo_documento.Location = New System.Drawing.Point(127, 113)
         Me.cmb_tipo_documento.Name = "cmb_tipo_documento"
         Me.cmb_tipo_documento.Size = New System.Drawing.Size(100, 21)
@@ -147,7 +147,7 @@ Partial Class RegistrarEmpleado
         Me.cmd_cancelar.Name = "cmd_cancelar"
         Me.cmd_cancelar.Size = New System.Drawing.Size(75, 46)
         Me.cmd_cancelar.TabIndex = 1
-        Me.cmd_cancelar.UseVisualStyleBackColor = True
+        Me.cmd_cancelar.UseVisualStyleBackColor = true
         '
         'cmd_aceptar
         '
@@ -157,11 +157,11 @@ Partial Class RegistrarEmpleado
         Me.cmd_aceptar.Name = "cmd_aceptar"
         Me.cmd_aceptar.Size = New System.Drawing.Size(75, 46)
         Me.cmd_aceptar.TabIndex = 0
-        Me.cmd_aceptar.UseVisualStyleBackColor = True
+        Me.cmd_aceptar.UseVisualStyleBackColor = true
         '
         'lbl_numero_calle
         '
-        Me.lbl_numero_calle.AutoSize = True
+        Me.lbl_numero_calle.AutoSize = true
         Me.lbl_numero_calle.Location = New System.Drawing.Point(234, 30)
         Me.lbl_numero_calle.Name = "lbl_numero_calle"
         Me.lbl_numero_calle.Size = New System.Drawing.Size(47, 13)
@@ -184,7 +184,7 @@ Partial Class RegistrarEmpleado
         Me.grp_datos.Name = "grp_datos"
         Me.grp_datos.Size = New System.Drawing.Size(353, 185)
         Me.grp_datos.TabIndex = 9
-        Me.grp_datos.TabStop = False
+        Me.grp_datos.TabStop = false
         Me.grp_datos.Text = "Datos personales"
         '
         'txt_numero_documento
@@ -207,20 +207,19 @@ Partial Class RegistrarEmpleado
         Me.grp_domicilio.Name = "grp_domicilio"
         Me.grp_domicilio.Size = New System.Drawing.Size(353, 90)
         Me.grp_domicilio.TabIndex = 10
-        Me.grp_domicilio.TabStop = False
+        Me.grp_domicilio.TabStop = false
         Me.grp_domicilio.Text = "Domicilio"
         '
         'txt_numero_calle
         '
         Me.txt_numero_calle.Location = New System.Drawing.Point(287, 27)
-        Me.txt_numero_calle.Mask = "99999999"
         Me.txt_numero_calle.Name = "txt_numero_calle"
         Me.txt_numero_calle.Size = New System.Drawing.Size(57, 20)
         Me.txt_numero_calle.TabIndex = 1
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(74, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 13)
@@ -229,7 +228,7 @@ Partial Class RegistrarEmpleado
         '
         'cmb_barrio
         '
-        Me.cmb_barrio.FormattingEnabled = True
+        Me.cmb_barrio.FormattingEnabled = true
         Me.cmb_barrio.Location = New System.Drawing.Point(127, 53)
         Me.cmb_barrio.Name = "cmb_barrio"
         Me.cmb_barrio.Size = New System.Drawing.Size(217, 21)
@@ -237,7 +236,7 @@ Partial Class RegistrarEmpleado
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(298, 307)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
@@ -246,7 +245,7 @@ Partial Class RegistrarEmpleado
         '
         'lbl_guardar
         '
-        Me.lbl_guardar.AutoSize = True
+        Me.lbl_guardar.AutoSize = true
         Me.lbl_guardar.Location = New System.Drawing.Point(25, 307)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
@@ -255,7 +254,7 @@ Partial Class RegistrarEmpleado
         '
         'RegistrarEmpleado
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(362, 373)
         Me.Controls.Add(Me.Label2)
@@ -264,17 +263,17 @@ Partial Class RegistrarEmpleado
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
         Me.Controls.Add(Me.cmd_aceptar)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarEmpleado"
         Me.Text = "Nuevo empleado"
-        Me.grp_datos.ResumeLayout(False)
-        Me.grp_datos.PerformLayout()
-        Me.grp_domicilio.ResumeLayout(False)
-        Me.grp_domicilio.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.grp_datos.ResumeLayout(false)
+        Me.grp_datos.PerformLayout
+        Me.grp_domicilio.ResumeLayout(false)
+        Me.grp_domicilio.PerformLayout
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents lbl_tipo_documento As System.Windows.Forms.Label
     Friend WithEvents lbl_numero_documento As System.Windows.Forms.Label
     Friend WithEvents lbl_nombre As System.Windows.Forms.Label
@@ -296,5 +295,5 @@ Partial Class RegistrarEmpleado
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents lbl_guardar As System.Windows.Forms.Label
     Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents txt_numero_calle As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txt_numero_calle As TextBox
 End Class

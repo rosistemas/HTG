@@ -73,3 +73,4 @@ C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\ob
 C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.CoreCompileInputs.cache
