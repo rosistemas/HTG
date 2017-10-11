@@ -76,6 +76,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Modificar Provincia.designer.vb">
+      <DependentUpon>Modificar Provincia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar Provincia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarBarrio.designer.vb">
+      <DependentUpon>ModificarBarrio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarBarrio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModificarEmpleado.Designer.vb">
       <DependentUpon>ModificarEmpleado.vb</DependentUpon>
     </Compile>
@@ -92,6 +104,12 @@
       <DependentUpon>ModificarProveedor.vb</DependentUpon>
     </Compile>
     <Compile Include="ModificarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_Localidad.designer.vb">
+      <DependentUpon>Modificar_Localidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_Localidad.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Principal.vb">
@@ -116,6 +134,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Registrar Barrio.designer.vb">
+      <DependentUpon>Registrar Barrio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar Barrio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar Localidad.designer.vb">
+      <DependentUpon>Registrar Localidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar Localidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarCompra.designer.vb">
+      <DependentUpon>RegistrarCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RegistrarEmpleado.Designer.vb">
       <DependentUpon>RegistrarEmpleado.vb</DependentUpon>
     </Compile>
@@ -134,6 +170,12 @@
     <Compile Include="RegistrarProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RegistrarProvincia.designer.vb">
+      <DependentUpon>RegistrarProvincia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarProvincia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RegistrarVenta.designer.vb">
       <DependentUpon>RegistrarVenta.vb</DependentUpon>
     </Compile>
@@ -143,6 +185,12 @@
     <Compile Include="Validador.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Modificar Provincia.resx">
+      <DependentUpon>Modificar Provincia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarBarrio.resx">
+      <DependentUpon>ModificarBarrio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarEmpleado.resx">
       <DependentUpon>ModificarEmpleado.vb</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarProveedor.resx">
       <DependentUpon>ModificarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_Localidad.resx">
+      <DependentUpon>Modificar_Localidad.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
@@ -161,6 +212,15 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registrar Barrio.resx">
+      <DependentUpon>Registrar Barrio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar Localidad.resx">
+      <DependentUpon>Registrar Localidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarCompra.resx">
+      <DependentUpon>RegistrarCompra.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarEmpleado.resx">
       <DependentUpon>RegistrarEmpleado.vb</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarProveedor.resx">
       <DependentUpon>RegistrarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarProvincia.resx">
+      <DependentUpon>RegistrarProvincia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarVenta.resx">
       <DependentUpon>RegistrarVenta.vb</DependentUpon>

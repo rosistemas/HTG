@@ -74,3 +74,47 @@ C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\ob
 C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
 C:\Users\Rodrigo\Git\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.CoreCompileInputs.cache
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarCompra.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto-master-bd4aa256c9546469394e7ea7d4bd25ae9b956f3e\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarCompra.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Modificar_Provincia.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarBarrio.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Modificar_Localidad.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Registrar_Barrio.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Registrar_Localidad.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProvincia.resources

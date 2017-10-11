@@ -44,7 +44,7 @@
         sql &= ", '" & txt_nombre.Text.Trim & "'"       'nombre
         sql &= ", " & cmb_tipo.SelectedValue            'idTipo
         sql &= ", " & Double.Parse(txt_precio.Text.Trim) 'precio
-        sql &= ", 20"                                   'stock
+        sql &= ", 0"                                 'stock
         sql &= ", '" & txt_descripcion.Text.Trim & "'"  'descripción
         sql &= ")"
 

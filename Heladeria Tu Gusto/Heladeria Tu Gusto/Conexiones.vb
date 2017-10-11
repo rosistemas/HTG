@@ -2,7 +2,7 @@
     'Cadena conexion rodrigo "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     'Cadena conexion rodrigo netbook Provider=SQLNCLI11;Data Source=RODRIGO-PC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto
     'Cadena conexion fran "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Private ReadOnly _cadenaConexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    Private ReadOnly _cadenaConexion As String = "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     Private ReadOnly _conexion As New OleDb.OleDbConnection
     Private ReadOnly _comando As New OleDb.OleDbCommand
 

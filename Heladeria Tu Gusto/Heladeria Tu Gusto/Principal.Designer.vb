@@ -26,10 +26,11 @@ Partial Class Principal
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.registrar_venta = New System.Windows.Forms.ToolStripMenuItem()
+        Me.registrar_producto = New System.Windows.Forms.ToolStripMenuItem()
         Me.registrar_empleado = New System.Windows.Forms.ToolStripMenuItem()
         Me.registrar_proveedor = New System.Windows.Forms.ToolStripMenuItem()
-        Me.registrar_producto = New System.Windows.Forms.ToolStripMenuItem()
-        Me.registrar_venta = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OtrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProvinciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,8 +47,9 @@ Partial Class Principal
         Me.PreferenciasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AccesosDirectosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout
-        Me.SuspendLayout
+        Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
+        Me.SuspendLayout()
         '
         'MenuStrip1
         '
@@ -67,40 +69,52 @@ Partial Class Principal
         '
         'RegistrarToolStripMenuItem
         '
-        Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registrar_empleado, Me.registrar_proveedor, Me.registrar_producto, Me.registrar_venta, Me.OtrosToolStripMenuItem})
+        Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registrar_venta, Me.registrar_producto, Me.registrar_empleado, Me.registrar_proveedor, Me.CompraToolStripMenuItem, Me.OtrosToolStripMenuItem})
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
-        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RegistrarToolStripMenuItem.Text = "Registrar"
+        '
+        'registrar_venta
+        '
+        Me.registrar_venta.Name = "registrar_venta"
+        Me.registrar_venta.ShortcutKeyDisplayString = "(Ctrl+0)"
+        Me.registrar_venta.Size = New System.Drawing.Size(176, 22)
+        Me.registrar_venta.Tag = ""
+        Me.registrar_venta.Text = "Venta"
+        '
+        'registrar_producto
+        '
+        Me.registrar_producto.Name = "registrar_producto"
+        Me.registrar_producto.ShortcutKeyDisplayString = "(Ctrl+1)"
+        Me.registrar_producto.Size = New System.Drawing.Size(176, 22)
+        Me.registrar_producto.Text = "Producto"
         '
         'registrar_empleado
         '
         Me.registrar_empleado.Name = "registrar_empleado"
-        Me.registrar_empleado.Size = New System.Drawing.Size(128, 22)
+        Me.registrar_empleado.ShortcutKeyDisplayString = "(Ctrl+2)"
+        Me.registrar_empleado.Size = New System.Drawing.Size(176, 22)
         Me.registrar_empleado.Text = "Empleado"
         '
         'registrar_proveedor
         '
         Me.registrar_proveedor.Name = "registrar_proveedor"
-        Me.registrar_proveedor.Size = New System.Drawing.Size(128, 22)
+        Me.registrar_proveedor.ShortcutKeyDisplayString = "(Ctrl+3)"
+        Me.registrar_proveedor.Size = New System.Drawing.Size(176, 22)
         Me.registrar_proveedor.Text = "Proveedor"
         '
-        'registrar_producto
+        'CompraToolStripMenuItem
         '
-        Me.registrar_producto.Name = "registrar_producto"
-        Me.registrar_producto.Size = New System.Drawing.Size(128, 22)
-        Me.registrar_producto.Text = "Producto"
-        '
-        'registrar_venta
-        '
-        Me.registrar_venta.Name = "registrar_venta"
-        Me.registrar_venta.Size = New System.Drawing.Size(128, 22)
-        Me.registrar_venta.Text = "Venta"
+        Me.CompraToolStripMenuItem.Name = "CompraToolStripMenuItem"
+        Me.CompraToolStripMenuItem.ShortcutKeyDisplayString = "(Ctrl+4)"
+        Me.CompraToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.CompraToolStripMenuItem.Text = "Compra"
         '
         'OtrosToolStripMenuItem
         '
         Me.OtrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LocalidadToolStripMenuItem, Me.ProvinciaToolStripMenuItem, Me.BarrioToolStripMenuItem})
         Me.OtrosToolStripMenuItem.Name = "OtrosToolStripMenuItem"
-        Me.OtrosToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.OtrosToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
         Me.OtrosToolStripMenuItem.Text = "Otros"
         '
         'LocalidadToolStripMenuItem
@@ -123,34 +137,37 @@ Partial Class Principal
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.modificar_empleado, Me.modificar_proveedor, Me.modificar_producto, Me.ToolStripMenuItem5})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.modificar_producto, Me.modificar_empleado, Me.modificar_proveedor, Me.ToolStripMenuItem5})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem1.Text = "Modificar"
         '
         'modificar_empleado
         '
         Me.modificar_empleado.Name = "modificar_empleado"
-        Me.modificar_empleado.Size = New System.Drawing.Size(128, 22)
+        Me.modificar_empleado.ShortcutKeyDisplayString = "(Alt+2)"
+        Me.modificar_empleado.Size = New System.Drawing.Size(172, 22)
         Me.modificar_empleado.Text = "Empleado"
         '
         'modificar_proveedor
         '
         Me.modificar_proveedor.Name = "modificar_proveedor"
-        Me.modificar_proveedor.Size = New System.Drawing.Size(128, 22)
+        Me.modificar_proveedor.ShortcutKeyDisplayString = "(Alt+3)"
+        Me.modificar_proveedor.Size = New System.Drawing.Size(172, 22)
         Me.modificar_proveedor.Text = "Proveedor"
         '
         'modificar_producto
         '
         Me.modificar_producto.Name = "modificar_producto"
-        Me.modificar_producto.Size = New System.Drawing.Size(128, 22)
+        Me.modificar_producto.ShortcutKeyDisplayString = "(Alt+1)"
+        Me.modificar_producto.Size = New System.Drawing.Size(172, 22)
         Me.modificar_producto.Text = "Producto"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.modificarLocalidad, Me.modificarProvincia, Me.momdificarBarrio})
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(128, 22)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(172, 22)
         Me.ToolStripMenuItem5.Text = "Otros"
         '
         'modificarLocalidad
@@ -174,7 +191,7 @@ Partial Class Principal
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'PreferenciasToolStripMenuItem
@@ -185,7 +202,7 @@ Partial Class Principal
         '
         'AyudaToolStripMenuItem
         '
-        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AccesosDirectosToolStripMenuItem})
+        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AccesosDirectosToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
         Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.AyudaToolStripMenuItem.Text = "Ayuda"
@@ -195,6 +212,12 @@ Partial Class Principal
         Me.AccesosDirectosToolStripMenuItem.Name = "AccesosDirectosToolStripMenuItem"
         Me.AccesosDirectosToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.AccesosDirectosToolStripMenuItem.Text = "Accesos directos"
+        '
+        'AcercaDeToolStripMenuItem
+        '
+        Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
         '
         'Principal
         '
@@ -238,4 +261,6 @@ End Sub
     Friend WithEvents registrar_venta As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AccesosDirectosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CompraToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AcercaDeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -1,6 +1,6 @@
 ﻿Public Class RegistrarVenta
     Dim cadena_conexion As String = "Provider=SQLNCLI11;Data Source=RODRIGOGOMEB0F2\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    ReadOnly conex As New Conexiones
+    Dim conex As New Conexiones
     Private Sub cmd_agregar_Click(sender As Object, e As EventArgs) Handles cmd_agregar.Click
         If Len(txt_codigo_producto.Text.Trim) = 0 Or Len(txt_cantidad.Text.Trim) = 0 Then
             MsgBox("Debe ingresar los datos de la venta.", MsgBoxStyle.Critical, "¡Error crítico!")
@@ -12,6 +12,10 @@
 
         If tabla.Rows.Count = 0 Then
             MsgBox("El código de producto ingresado es inexistente.", MsgBoxStyle.Critical, "¡Producto no encontrado!")
+            Exit Sub
+        End If
+
+        If validar_stock() = False Then
             Exit Sub
         End If
 
@@ -32,7 +36,7 @@
         grd_detalle_de_venta.Rows(ultima_pos).Cells("col_precio").Value = tabla.Rows(0)("precio")
         grd_detalle_de_venta.Rows(ultima_pos).Cells("col_subtotal").Value = (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
         lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) + (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
-       
+
     End Sub
 
     Private Function generar_id_venta()
@@ -73,6 +77,50 @@
         conex.insertar(sql)
     End Sub
 
+    Private Function validar_stock() As Boolean
+
+        Dim stock_actual As Integer
+        Dim sql As String
+        Dim tabla As New DataTable
+        sql = "select stock from producto where idProducto = " & txt_codigo_producto.Text.Trim
+        tabla = conex.consultar(sql)
+        stock_actual = tabla.Rows(0)("stock")
+        For i = 0 To grd_detalle_de_venta.Rows.Count - 1
+            If grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value = txt_codigo_producto.Text.Trim Then
+                stock_actual = stock_actual - Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value)
+            End If
+        Next
+        If stock_actual < Integer.Parse(txt_cantidad.Text.Trim) Then
+            MsgBox("No se encuentra stock", MsgBoxStyle.Exclamation, "Stock insuficiente")
+            Return False
+        Else
+            Return True
+        End If
+
+
+    End Function
+
+    Private Sub descontar_stock()
+        Dim stock_actual As Integer
+        Dim sql As String
+
+
+        For i = 0 To grd_detalle_de_venta.Rows.Count - 1
+            Dim tabla As New DataTable
+            sql = "select stock from producto where idProducto = " & grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
+            tabla = conex.consultar(sql)
+            stock_actual = tabla.Rows(0)("stock")
+            Dim stock_resultante As Integer
+
+            stock_resultante = stock_actual - Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value)
+            sql = "update producto set stock = " & stock_resultante & " where idProducto = " & grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
+            conex.insertar(sql)
+        Next
+
+
+
+
+    End Sub
 
     Private Sub cargar_combo(ByRef combo As ComboBox, ByRef tabla As DataTable, ByRef pk As String, ByRef desc As String)
         combo.DataSource = Nothing
@@ -100,17 +148,25 @@
     End Sub
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
+
+        If validar_info() = False Then
+            MsgBox("No se han cargado datos", MsgBoxStyle.Critical, "No se puede guardar")
+            Exit Sub
+        End If
+
         If MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = Windows.Forms.DialogResult.Yes Then
             insertar_en_bd_ticket()
             For i = 0 To grd_detalle_de_venta.Rows.Count - 1
                 insertar_en_bd_detalle_ticket(grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value, grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value, grd_detalle_de_venta.Rows(i).Cells("col_precio").Value)
             Next
+            descontar_stock()
             lbl_total_display.Text = 0
             grd_detalle_de_venta.Rows.Clear()
             lbl_id_venta_display.Text = generar_id_venta()
             txt_cantidad.Text = ""
             txt_codigo_producto.Text = ""
         End If
+        MsgBox("Los datos de han guardado con éxito.", MsgBoxStyle.Information, "Datos registrados")
     End Sub
 
     Private Sub mostrar_info_empleado()
@@ -121,7 +177,17 @@
         lbl_info_empleado.Text = table.Rows(0)("nombre") & " " & table.Rows(0)("apellido")
     End Sub
 
+    Private Function validar_info() As Boolean
+        If grd_detalle_de_venta.Rows.Count = 0 Then
+            Return False
+        Else
+            Return True
+        End If
+    End Function
+
     Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_empleado.SelectionChangeCommitted
         mostrar_info_empleado()
     End Sub
+
+
 End Class

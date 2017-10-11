@@ -28,10 +28,14 @@ Public Class Principal
     Private Sub registrar_venta_Click(sender As Object, e As EventArgs) Handles registrar_venta.Click
         RegistrarVenta.Show()
     End Sub
+    Private Sub CompraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CompraToolStripMenuItem.Click
+        RegistrarCompra.Show()
+    End Sub
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         KeyPreview = True
     End Sub
+
 
     Private Sub Principal_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         If (e.Control AndAlso e.KeyCode = Keys.NumPad0) Then
@@ -58,6 +62,11 @@ Public Class Principal
         If (e.Alt AndAlso  e.Alt AndAlso e.KeyCode = Keys.NumPad3) Then
             ModificarProveedor.Show()
         End If
+        If (e.Control AndAlso e.KeyCode = Keys.NumPad4) Then
+            RegistrarCompra.Show()
+        End If
+
+
 
     End Sub
 
@@ -72,5 +81,47 @@ Public Class Principal
         explicacion.Append("Alt + 3: Modificar un proveedor" )
 
         MessageBox.Show(explicacion.ToString(),"Acerca de los accesos directos", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+   
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ProvinciaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProvinciaToolStripMenuItem.Click
+        RegistrarProvincia.Show()
+    End Sub
+
+    Private Sub LocalidadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LocalidadToolStripMenuItem.Click
+        Registrar_Localidad.Show()
+    End Sub
+
+    Private Sub BarrioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BarrioToolStripMenuItem.Click
+        Registrar_Barrio.Show()
+    End Sub
+
+    Private Sub modificarProvincia_Click(sender As Object, e As EventArgs) Handles modificarProvincia.Click
+        Modificar_Provincia.Show()
+    End Sub
+
+    Private Sub momdificarBarrio_Click(sender As Object, e As EventArgs) Handles momdificarBarrio.Click
+        ModificarBarrio.Show()
+    End Sub
+
+    Private Sub modificarLocalidad_Click(sender As Object, e As EventArgs) Handles modificarLocalidad.Click
+        Modificar_Localidad.Show()
+    End Sub
+
+    Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
+        Dim mensaje As New StringBuilder
+        mensaje.Append("DESARROLLADORES").AppendLine()
+        mensaje.Append("Rodrigo Gomez").AppendLine()
+        mensaje.Append("Daniel Caminos").AppendLine()
+        mensaje.Append("Francisco Castillo").AppendLine()
+        mensaje.Append("Tomas Bianco").AppendLine()
+        mensaje.AppendLine()
+        mensaje.AppendLine()
+        mensaje.Append("Todos los derechos reservados...")
+        MessageBox.Show(mensaje.ToString, "HELADERIA TU GUSTO", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 End Class
