@@ -36,9 +36,9 @@ Partial Class Principal
         Me.ProvinciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarrioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.modificar_producto = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificar_empleado = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificar_proveedor = New System.Windows.Forms.ToolStripMenuItem()
-        Me.modificar_producto = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificarLocalidad = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificarProvincia = New System.Windows.Forms.ToolStripMenuItem()
@@ -71,7 +71,7 @@ Partial Class Principal
         '
         Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registrar_venta, Me.registrar_producto, Me.registrar_empleado, Me.registrar_proveedor, Me.CompraToolStripMenuItem, Me.OtrosToolStripMenuItem})
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
-        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.RegistrarToolStripMenuItem.Text = "Registrar"
         '
         'registrar_venta
@@ -139,8 +139,15 @@ Partial Class Principal
         '
         Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.modificar_producto, Me.modificar_empleado, Me.modificar_proveedor, Me.ToolStripMenuItem5})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ToolStripMenuItem1.Text = "Modificar"
+        '
+        'modificar_producto
+        '
+        Me.modificar_producto.Name = "modificar_producto"
+        Me.modificar_producto.ShortcutKeyDisplayString = "(Alt+1)"
+        Me.modificar_producto.Size = New System.Drawing.Size(172, 22)
+        Me.modificar_producto.Text = "Producto"
         '
         'modificar_empleado
         '
@@ -155,13 +162,6 @@ Partial Class Principal
         Me.modificar_proveedor.ShortcutKeyDisplayString = "(Alt+3)"
         Me.modificar_proveedor.Size = New System.Drawing.Size(172, 22)
         Me.modificar_proveedor.Text = "Proveedor"
-        '
-        'modificar_producto
-        '
-        Me.modificar_producto.Name = "modificar_producto"
-        Me.modificar_producto.ShortcutKeyDisplayString = "(Alt+1)"
-        Me.modificar_producto.Size = New System.Drawing.Size(172, 22)
-        Me.modificar_producto.Text = "Producto"
         '
         'ToolStripMenuItem5
         '
@@ -191,7 +191,7 @@ Partial Class Principal
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'PreferenciasToolStripMenuItem

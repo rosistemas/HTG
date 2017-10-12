@@ -76,6 +76,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Inicio.designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modificar Provincia.designer.vb">
       <DependentUpon>Modificar Provincia.vb</DependentUpon>
     </Compile>
@@ -182,9 +188,13 @@
     <Compile Include="RegistrarVenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Transicion.vb" />
     <Compile Include="Validador.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modificar Provincia.resx">
       <DependentUpon>Modificar Provincia.vb</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +311,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-Add New-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\efecto.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

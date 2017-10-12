@@ -124,4 +124,8 @@ Public Class Principal
         mensaje.Append("Todos los derechos reservados...")
         MessageBox.Show(mensaje.ToString, "HELADERIA TU GUSTO", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
+    Private Sub Principal_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Inicio.Close()
+    End Sub
 End Class
