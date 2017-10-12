@@ -134,16 +134,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Registrar Barrio.designer.vb">
-      <DependentUpon>Registrar Barrio.vb</DependentUpon>
+    <Compile Include="RegistrarBarrio.designer.vb">
+      <DependentUpon>RegistrarBarrio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Registrar Barrio.vb">
+    <Compile Include="RegistrarBarrio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrar Localidad.designer.vb">
-      <DependentUpon>Registrar Localidad.vb</DependentUpon>
+    <Compile Include="RegistrarLocalidad.designer.vb">
+      <DependentUpon>RegistrarLocalidad.vb</DependentUpon>
     </Compile>
-    <Compile Include="Registrar Localidad.vb">
+    <Compile Include="RegistrarLocalidad.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistrarCompra.designer.vb">
@@ -212,11 +212,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registrar Barrio.resx">
-      <DependentUpon>Registrar Barrio.vb</DependentUpon>
+    <EmbeddedResource Include="RegistrarBarrio.resx">
+      <DependentUpon>RegistrarBarrio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registrar Localidad.resx">
-      <DependentUpon>Registrar Localidad.vb</DependentUpon>
+    <EmbeddedResource Include="RegistrarLocalidad.resx">
+      <DependentUpon>RegistrarLocalidad.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCompra.resx">
       <DependentUpon>RegistrarCompra.vb</DependentUpon>

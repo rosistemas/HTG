@@ -22,77 +22,105 @@ Partial Class RegistrarProvincia
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarProvincia))
+        Me.lbl_nombre = New System.Windows.Forms.Label()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
-        Me.button_cancel = New System.Windows.Forms.Button()
-        Me.button_save = New System.Windows.Forms.Button()
+        Me.cmd_cancelar = New System.Windows.Forms.Button()
+        Me.cmd_guardar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox1.SuspendLayout()
-        Me.SuspendLayout()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_guardar = New System.Windows.Forms.Label()
+        Me.GroupBox1.SuspendLayout
+        Me.SuspendLayout
         '
-        'Label1
+        'lbl_nombre
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 49)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre"
+        Me.lbl_nombre.AutoSize = true
+        Me.lbl_nombre.Location = New System.Drawing.Point(7, 22)
+        Me.lbl_nombre.Name = "lbl_nombre"
+        Me.lbl_nombre.Size = New System.Drawing.Size(47, 13)
+        Me.lbl_nombre.TabIndex = 0
+        Me.lbl_nombre.Text = "Nombre:"
         '
         'txt_nombre
         '
-        Me.txt_nombre.Location = New System.Drawing.Point(115, 49)
+        Me.txt_nombre.Location = New System.Drawing.Point(60, 19)
         Me.txt_nombre.Name = "txt_nombre"
-        Me.txt_nombre.Size = New System.Drawing.Size(100, 20)
+        Me.txt_nombre.Size = New System.Drawing.Size(127, 20)
         Me.txt_nombre.TabIndex = 1
         '
-        'button_cancel
+        'cmd_cancelar
         '
-        Me.button_cancel.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
-        Me.button_cancel.Location = New System.Drawing.Point(140, 118)
-        Me.button_cancel.Name = "button_cancel"
-        Me.button_cancel.Size = New System.Drawing.Size(75, 65)
-        Me.button_cancel.TabIndex = 3
-        Me.button_cancel.UseVisualStyleBackColor = True
+        Me.cmd_cancelar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
+        Me.cmd_cancelar.Location = New System.Drawing.Point(152, 91)
+        Me.cmd_cancelar.Name = "cmd_cancelar"
+        Me.cmd_cancelar.Size = New System.Drawing.Size(75, 46)
+        Me.cmd_cancelar.TabIndex = 3
+        Me.cmd_cancelar.UseVisualStyleBackColor = true
         '
-        'button_save
+        'cmd_guardar
         '
-        Me.button_save.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64
-        Me.button_save.Location = New System.Drawing.Point(9, 118)
-        Me.button_save.Name = "button_save"
-        Me.button_save.Size = New System.Drawing.Size(71, 65)
-        Me.button_save.TabIndex = 2
-        Me.button_save.UseVisualStyleBackColor = True
+        Me.cmd_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
+        Me.cmd_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_guardar.Location = New System.Drawing.Point(12, 91)
+        Me.cmd_guardar.Name = "cmd_guardar"
+        Me.cmd_guardar.Size = New System.Drawing.Size(75, 46)
+        Me.cmd_guardar.TabIndex = 2
+        Me.cmd_guardar.UseVisualStyleBackColor = true
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.button_cancel)
+        Me.GroupBox1.Controls.Add(Me.lbl_nombre)
         Me.GroupBox1.Controls.Add(Me.txt_nombre)
-        Me.GroupBox1.Controls.Add(Me.button_save)
-        Me.GroupBox1.Location = New System.Drawing.Point(24, 21)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(233, 208)
+        Me.GroupBox1.Size = New System.Drawing.Size(215, 60)
         Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.TabStop = false
         Me.GroupBox1.Text = "Nueva Provincia"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = true
+        Me.Label2.Location = New System.Drawing.Point(164, 75)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "Cancelar"
+        '
+        'lbl_guardar
+        '
+        Me.lbl_guardar.AutoSize = true
+        Me.lbl_guardar.Location = New System.Drawing.Point(27, 75)
+        Me.lbl_guardar.Name = "lbl_guardar"
+        Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_guardar.TabIndex = 17
+        Me.lbl_guardar.Text = "Guardar"
         '
         'RegistrarProvincia
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(241, 147)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbl_guardar)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.cmd_cancelar)
+        Me.Controls.Add(Me.cmd_guardar)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarProvincia"
-        Me.Text = "RegistrarProvincia"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.ResumeLayout(False)
+        Me.Text = "Registrar provincia"
+        Me.GroupBox1.ResumeLayout(false)
+        Me.GroupBox1.PerformLayout
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+End Sub
+    Friend WithEvents lbl_nombre As System.Windows.Forms.Label
     Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
-    Friend WithEvents button_save As System.Windows.Forms.Button
-    Friend WithEvents button_cancel As System.Windows.Forms.Button
+    Friend WithEvents cmd_guardar As System.Windows.Forms.Button
+    Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lbl_guardar As Label
 End Class

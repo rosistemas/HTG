@@ -44,7 +44,7 @@ Partial Class RegistrarProveedor
         Me.txt_mail = New System.Windows.Forms.TextBox()
         Me.cmb_tipo_documento = New System.Windows.Forms.ComboBox()
         Me.cmd_cancelar = New System.Windows.Forms.Button()
-        Me.cmd_aceptar = New System.Windows.Forms.Button()
+        Me.cmd_guardar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.grp_domicilio.SuspendLayout
@@ -245,15 +245,15 @@ Partial Class RegistrarProveedor
         Me.cmd_cancelar.TabIndex = 1
         Me.cmd_cancelar.UseVisualStyleBackColor = true
         '
-        'cmd_aceptar
+        'cmd_guardar
         '
-        Me.cmd_aceptar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
-        Me.cmd_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.cmd_aceptar.Location = New System.Drawing.Point(12, 303)
-        Me.cmd_aceptar.Name = "cmd_aceptar"
-        Me.cmd_aceptar.Size = New System.Drawing.Size(75, 46)
-        Me.cmd_aceptar.TabIndex = 0
-        Me.cmd_aceptar.UseVisualStyleBackColor = true
+        Me.cmd_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
+        Me.cmd_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_guardar.Location = New System.Drawing.Point(12, 303)
+        Me.cmd_guardar.Name = "cmd_guardar"
+        Me.cmd_guardar.Size = New System.Drawing.Size(75, 46)
+        Me.cmd_guardar.TabIndex = 0
+        Me.cmd_guardar.UseVisualStyleBackColor = true
         '
         'Label2
         '
@@ -283,7 +283,7 @@ Partial Class RegistrarProveedor
         Me.Controls.Add(Me.grp_domicilio)
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
-        Me.Controls.Add(Me.cmd_aceptar)
+        Me.Controls.Add(Me.cmd_guardar)
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarProveedor"
         Me.Text = "Nuevo proveedor"
@@ -309,7 +309,7 @@ End Sub
     Friend WithEvents lbl_mail As System.Windows.Forms.Label
     Friend WithEvents txt_mail As System.Windows.Forms.TextBox
     Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
-    Friend WithEvents cmd_aceptar As System.Windows.Forms.Button
+    Friend WithEvents cmd_guardar As System.Windows.Forms.Button
     Friend WithEvents txt_razon_social As System.Windows.Forms.TextBox
     Friend WithEvents lbl_tipo_documento As System.Windows.Forms.Label
     Friend WithEvents lbl_razon_social As System.Windows.Forms.Label

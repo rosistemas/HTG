@@ -31,7 +31,7 @@ Partial Class RegistrarProducto
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.txt_descripcion = New System.Windows.Forms.TextBox()
         Me.cmb_tipo = New System.Windows.Forms.ComboBox()
-        Me.cmd_aceptar = New System.Windows.Forms.Button()
+        Me.cmd_guardar = New System.Windows.Forms.Button()
         Me.cmd_cancelar = New System.Windows.Forms.Button()
         Me.grp_datos = New System.Windows.Forms.GroupBox()
         Me.txt_precio = New System.Windows.Forms.TextBox()
@@ -100,15 +100,15 @@ Partial Class RegistrarProducto
         Me.cmb_tipo.Size = New System.Drawing.Size(93, 21)
         Me.cmb_tipo.TabIndex = 3
         '
-        'cmd_aceptar
+        'cmd_guardar
         '
-        Me.cmd_aceptar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
-        Me.cmd_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.cmd_aceptar.Location = New System.Drawing.Point(12, 185)
-        Me.cmd_aceptar.Name = "cmd_aceptar"
-        Me.cmd_aceptar.Size = New System.Drawing.Size(75, 46)
-        Me.cmd_aceptar.TabIndex = 0
-        Me.cmd_aceptar.UseVisualStyleBackColor = true
+        Me.cmd_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
+        Me.cmd_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_guardar.Location = New System.Drawing.Point(12, 185)
+        Me.cmd_guardar.Name = "cmd_guardar"
+        Me.cmd_guardar.Size = New System.Drawing.Size(75, 46)
+        Me.cmd_guardar.TabIndex = 0
+        Me.cmd_guardar.UseVisualStyleBackColor = true
         '
         'cmd_cancelar
         '
@@ -171,7 +171,7 @@ Partial Class RegistrarProducto
         Me.Controls.Add(Me.lbl_guardar)
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
-        Me.Controls.Add(Me.cmd_aceptar)
+        Me.Controls.Add(Me.cmd_guardar)
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarProducto"
         Me.Text = "Nuevo producto"
@@ -188,7 +188,7 @@ End Sub
     Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
     Friend WithEvents txt_descripcion As System.Windows.Forms.TextBox
     Friend WithEvents cmb_tipo As System.Windows.Forms.ComboBox
-    Friend WithEvents cmd_aceptar As System.Windows.Forms.Button
+    Friend WithEvents cmd_guardar As System.Windows.Forms.Button
     Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
     Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
     Friend WithEvents Label1 As System.Windows.Forms.Label

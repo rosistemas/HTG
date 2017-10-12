@@ -2,386 +2,479 @@
 <doc>
 <assembly>
 <name>
-HeladeriaTuGusto
+Heladeria Tu Gusto
 </name>
 </assembly>
 <members>
-<member name="T:Heladeria_Tu_Gusto.DataSet1.BarrioDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.CompraDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.DetallesTurnoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.DetalleTicketDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.EmpleadoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.LocalidadDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProductoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorXProductoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProvinciaDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXEmpleadoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXProveedorDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TicketDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoDocDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoProductoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoTelefonoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TurnoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.BarrioRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.CompraRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.DetallesTurnoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.DetalleTicketRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.EmpleadoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.LocalidadRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProductoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorXProductoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProvinciaRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXEmpleadoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXProveedorRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TicketRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoDocRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoProductoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoTelefonoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TurnoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.BarrioRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.CompraRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.DetallesTurnoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.DetalleTicketRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.EmpleadoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.LocalidadRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProductoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorXProductoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.ProvinciaRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXEmpleadoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXProveedorRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TicketRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoDocRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoProductoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TipoTelefonoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1.TurnoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.BarrioTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.CompraTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.DetallesTurnoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.DetalleTicketTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.EmpleadoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.LocalidadTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.ProductoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.ProveedorTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.ProveedorXProductoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.ProvinciaTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TelefonoXEmpleadoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TelefonoXProveedorTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TicketTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TipoDocTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TipoProductoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TipoTelefonoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TurnoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Heladeria_Tu_Gusto.DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Heladeria_Tu_Gusto.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Heladeria_Tu_Gusto.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateAll(Heladeria_Tu_Gusto.DataSet1)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.ResourceManager">
-	<summary>
+<member name="T:Heladeria_Tu_Gusto.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.ResourceManager">
+<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.Culture">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.Culture">
+<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.ice_2377713_640">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.ice_2377713_640">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.ice_cream">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.ice_cream">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_128">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_128">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Banana_split_80">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Banana_split_80">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Edit_Property_128">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Edit_Property_128">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Edit_Property_1281">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Edit_Property_1281">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Ice_Cream_Sundae_80">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Ice_Cream_Sundae_80">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Package_128">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Package_128">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Resume_80">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Resume_80">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.popsicle_1267592_1280">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.popsicle_1267592_1280">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.supplier">
-	<summary>
+</member>
+<member name="P:Heladeria_Tu_Gusto.My.Resources.Resources.supplier">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="T:Heladeria_Tu_Gusto.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.BarrioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.CompraDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.DetallesTurnoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.DetalleTicketDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.EmpleadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.LocalidadDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProductoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorXProductoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProvinciaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXEmpleadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXProveedorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TicketDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoDocDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoProductoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoTelefonoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TurnoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.BarrioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.CompraRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.DetallesTurnoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.DetalleTicketRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.EmpleadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.LocalidadRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProductoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorXProductoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProvinciaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXEmpleadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXProveedorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TicketRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoDocRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoProductoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoTelefonoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TurnoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.BarrioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.CompraRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.DetallesTurnoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.DetalleTicketRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.EmpleadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.LocalidadRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProductoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProveedorXProductoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.ProvinciaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXEmpleadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TelefonoXProveedorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TicketRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoDocRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoProductoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TipoTelefonoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1.TurnoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.BarrioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.CompraTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.DetallesTurnoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.DetalleTicketTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.EmpleadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.LocalidadTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.ProductoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.ProveedorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.ProveedorXProductoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.ProvinciaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TelefonoXEmpleadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TelefonoXProveedorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TicketTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TipoDocTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TipoProductoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TipoTelefonoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TurnoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Heladeria_Tu_Gusto.DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Heladeria_Tu_Gusto.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Heladeria_Tu_Gusto.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateAll(Heladeria_Tu_Gusto.DataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
 </summary>
 </member>
 </members>

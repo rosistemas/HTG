@@ -35,7 +35,7 @@ Partial Class RegistrarEmpleado
         Me.date_fecha_nacimiento = New System.Windows.Forms.DateTimePicker()
         Me.txt_calle = New System.Windows.Forms.TextBox()
         Me.cmd_cancelar = New System.Windows.Forms.Button()
-        Me.cmd_aceptar = New System.Windows.Forms.Button()
+        Me.cmd_guardar = New System.Windows.Forms.Button()
         Me.lbl_numero_calle = New System.Windows.Forms.Label()
         Me.grp_datos = New System.Windows.Forms.GroupBox()
         Me.txt_numero_documento = New System.Windows.Forms.MaskedTextBox()
@@ -149,15 +149,15 @@ Partial Class RegistrarEmpleado
         Me.cmd_cancelar.TabIndex = 1
         Me.cmd_cancelar.UseVisualStyleBackColor = true
         '
-        'cmd_aceptar
+        'cmd_guardar
         '
-        Me.cmd_aceptar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
-        Me.cmd_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.cmd_aceptar.Location = New System.Drawing.Point(9, 323)
-        Me.cmd_aceptar.Name = "cmd_aceptar"
-        Me.cmd_aceptar.Size = New System.Drawing.Size(75, 46)
-        Me.cmd_aceptar.TabIndex = 0
-        Me.cmd_aceptar.UseVisualStyleBackColor = true
+        Me.cmd_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
+        Me.cmd_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_guardar.Location = New System.Drawing.Point(9, 323)
+        Me.cmd_guardar.Name = "cmd_guardar"
+        Me.cmd_guardar.Size = New System.Drawing.Size(75, 46)
+        Me.cmd_guardar.TabIndex = 0
+        Me.cmd_guardar.UseVisualStyleBackColor = true
         '
         'lbl_numero_calle
         '
@@ -262,7 +262,7 @@ Partial Class RegistrarEmpleado
         Me.Controls.Add(Me.grp_domicilio)
         Me.Controls.Add(Me.grp_datos)
         Me.Controls.Add(Me.cmd_cancelar)
-        Me.Controls.Add(Me.cmd_aceptar)
+        Me.Controls.Add(Me.cmd_guardar)
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarEmpleado"
         Me.Text = "Nuevo empleado"
@@ -286,7 +286,7 @@ End Sub
     Friend WithEvents date_fecha_nacimiento As System.Windows.Forms.DateTimePicker
     Friend WithEvents txt_calle As System.Windows.Forms.TextBox
     Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
-    Friend WithEvents cmd_aceptar As System.Windows.Forms.Button
+    Friend WithEvents cmd_guardar As System.Windows.Forms.Button
     Friend WithEvents lbl_numero_calle As System.Windows.Forms.Label
     Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
     Friend WithEvents grp_domicilio As System.Windows.Forms.GroupBox

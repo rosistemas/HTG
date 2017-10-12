@@ -1,65 +1,29 @@
 ﻿Public Class RegistrarProvincia
-    Dim connection_string As String = "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=master"
-    Private Function generarID() As Integer
-        'Función que genera un número aleatorio entre 100 y 1000
-        Dim id As Integer
-        Dim r As New Random
-        id = r.Next(100, 1001)
-        Dim disponible As Boolean
-        disponible = idEstaDisponible(id)
 
-        If Not disponible Then
-            generarID()
-        End If
-        Return id
-    End Function
+    dim _conex as Conexiones
 
-    Private Function idEstaDisponible(id As Integer) As Boolean
-        'Función auxiliar que verifica si el número generado en generarID() ya existe en la BD como una PK
-        Dim conexion As New OleDb.OleDbConnection
-        Dim cmd As New OleDb.OleDbCommand
-        Dim tabla As New Data.DataTable
-        conexion.ConnectionString = connection_string
-        conexion.Open()
-        cmd.Connection = conexion
-        cmd.CommandType = CommandType.Text
-        cmd.CommandText = "select * from Provincia where id = " & id
-        tabla.Load(cmd.ExecuteReader)
-        conexion.Close()
+    Private Sub Insertar()
 
-        If Not (tabla.Rows.Count = 0) Then 'Si la tabla devuelta por la consulta no está vacía...
-            'El registro ya existe
-            Return False
-        End If
-        Return True
-    End Function
-    Private Sub insertar()
-        'Procedimiento para la inserción de los datos en la BD:
-        'En el momento de declarar la sentencia SQL, se le van concatenando los valores
-        'tomados desde el formulario
         Dim sql As String = ""
         sql = "insert into Provincia values"
-        sql &= "(" & generarID()                                    'idProvincia
+        sql &= "(" & _conex.Generar_id_consecutivo("Provincia", "idProvincia") _
+        'idProvincia
         sql &= ", '" & txt_nombre.Text.Trim & "')"                  'nombre
 
-        Dim c As New Conexiones
-        c.insertar(sql)
-
+        _conex.Insertar(sql)
     End Sub
-
-
-    Private Sub button_save_Click(sender As Object, e As EventArgs) Handles button_save.Click
+    
+    Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
         Me.insertar()
         MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
     End Sub
 
-    Private Sub button_cancel_Click(sender As Object, e As EventArgs) Handles button_cancel.Click
-        'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
-            Me.Close()
+    Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
+        If _
+            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning) = DialogResult.Yes Then
+            Close()
             Principal.Show()
         End If
     End Sub
-
-
 End Class

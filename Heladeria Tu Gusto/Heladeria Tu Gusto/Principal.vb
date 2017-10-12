@@ -93,11 +93,11 @@ Public Class Principal
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LocalidadToolStripMenuItem.Click
-        Registrar_Localidad.Show()
+        RegistrarLocalidad.Show()
     End Sub
 
     Private Sub BarrioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BarrioToolStripMenuItem.Click
-        Registrar_Barrio.Show()
+        RegistrarBarrio.Show()
     End Sub
 
     Private Sub modificarProvincia_Click(sender As Object, e As EventArgs) Handles modificarProvincia.Click

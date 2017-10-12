@@ -1,35 +1,42 @@
 ﻿Public Class RegistrarEmpleado
-    ReadOnly conex As New Conexiones
-    ReadOnly _validador as New Validador
+    ReadOnly _conex As New Conexiones
+    ReadOnly _validador As New Validador
+
+    Public ReadOnly Property Conex As Conexiones
+        Get
+            Return _conex
+        End Get
+    End Property
+
+    Public ReadOnly Property Validador As Validador
+        Get
+            Return _validador
+        End Get
+    End Property
+
     Private Sub RegistrarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.cargarCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
-        Me.cargarCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
-
+        Me.CargarCombo(cmb_tipo_documento, Conex.LeerTabla("TipoDoc"), "descripcion", "id")
+        Me.CargarCombo(cmb_barrio, Conex.LeerTabla("Barrio"), "nombre", "id")
     End Sub
-
-
-    Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
-        If _validador.Verificar_vacios(Me.Controls) = Validador.EstadoValidacion.SinErrores Then
+    
+    Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
+        If Validador.Verificar_vacios(Me.Controls) = Validador.EstadoValidacion.SinErrores Then
             Me.Insertar()
             MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
         End If
     End Sub
 
-    Private Sub cargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
-        'Sub rutina que rellena el comboBox con los elementos de una dataTable
+    Private Sub CargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
         combo.Items.Clear()
         combo.DataSource = tabla
         combo.DisplayMember = descripcion
         combo.ValueMember = pk
     End Sub
 
-    Private Sub insertar()
-        'Procedimiento para la inserción de los datos en la BD:
-        'En el momento de declarar la sentencia SQL, se le van concatenando los valores
-        'tomados desde el formulario
+    Private Sub Insertar()
         Dim sql As String = ""
         sql = "insert into Empleado values"
-        sql &= "(" & conex.Generar_id_consecutivo("Empleado", "id")  'idEmpleado
+        sql &= "(" & Conex.Generar_id_consecutivo("Empleado", "id")  'idEmpleado
         sql &= ", " & Integer.Parse(txt_numero_documento.Text.Trim) 'numDoc
         sql &= ", " & cmb_tipo_documento.SelectedValue              'tipoDoc
         sql &= ", '" & txt_nombre.Text.Trim & "'"                   'nombre
@@ -42,15 +49,11 @@
         sql &= ", " & Integer.Parse(txt_numero_calle.Text.Trim)     'numCalle
         sql &= ")"
 
-        conex.insertar(sql)
+        Conex.Insertar(sql)
     End Sub
 
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
-        'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
-            Me.Close()
-            Principal.Show()
-        End If
+        Close()
     End Sub
 
     Private Sub RegistrarEmpleado_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

@@ -1,15 +1,27 @@
 ﻿Public Class RegistrarProveedor
-    ReadOnly conex As New Conexiones
-    ReadOnly _validador as New Validador
+    ReadOnly _conex As New Conexiones
+    ReadOnly _validador As New Validador
+
+    Public ReadOnly Property Conex As Conexiones
+        Get
+            Return _conex
+        End Get
+    End Property
+
+    Public ReadOnly Property Validador As Validador
+        Get
+            Return _validador
+        End Get
+    End Property
 
     Private Sub RegistrarProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cargarCombo(cmb_tipo_documento, conex.leerTabla("TipoDoc"), "descripcion", "id")
-        cargarCombo(cmb_localidad, conex.leerTabla("Localidad"), "nombre", "id")
-        cargarCombo(cmb_barrio, conex.leerTabla("Barrio"), "nombre", "id")
+        CargarCombo(cmb_tipo_documento, Conex.LeerTabla("TipoDoc"), "descripcion", "id")
+        CargarCombo(cmb_localidad, Conex.LeerTabla("Localidad"), "nombre", "id")
+        CargarCombo(cmb_barrio, Conex.LeerTabla("Barrio"), "nombre", "id")
     End Sub
 
-    Private Sub cmd_aceptar_Click(sender As Object, e As EventArgs) Handles cmd_aceptar.Click
-        If _validador.Verificar_vacios(Me.Controls) = Validador.EstadoValidacion.SinErrores Then
+    Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
+        If Validador.Verificar_vacios(Me.Controls) = Validador.EstadoValidacion.SinErrores Then
             Insertar()
             MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
         End If
@@ -27,7 +39,7 @@
         Dim sql As String = ""
 
         sql = "insert into Proveedor values"
-        sql &= "(" & conex.Generar_id_consecutivo("Proveedor", "idProveedor")'idProveedor
+        sql &= "(" & Conex.Generar_id_consecutivo("Proveedor", "idProveedor") 'idProveedor
         sql &= ", " & Integer.Parse(txt_numero_documento.Text.Trim) 'numDoc
         sql &= ", " & cmb_tipo_documento.SelectedValue              'tipoDoc
         sql &= ", '" & txt_razon_social.Text.Trim & "'"             'razonSocial
@@ -39,22 +51,18 @@
         sql &= ", " & cmb_localidad.SelectedValue                   'idLocalidad
         sql &= ")"
 
-        conex.insertar(sql)
+        Conex.Insertar(sql)
     End Sub
 
     Private Sub Cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
         'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
-        If _
-            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Me.Close()
-            Principal.Show()
-        End If
+        Close()
     End Sub
 
     Private Sub RegistrarProveedor_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
             e.Cancel = True
         End If
+        Principal.Show()
     End Sub
 End Class

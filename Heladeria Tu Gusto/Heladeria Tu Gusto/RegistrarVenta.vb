@@ -1,6 +1,15 @@
-﻿Public Class RegistrarVenta
-    Dim cadena_conexion As String = "Provider=SQLNCLI11;Data Source=RODRIGOGOMEB0F2\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Dim conex As New Conexiones
+﻿Imports Heladeria_Tu_Gusto
+
+Public Class RegistrarVenta
+
+    Dim ReadOnly _conex As New Conexiones
+
+    Public ReadOnly Property Conex As Conexiones
+        Get
+            Return _conex
+        End Get
+    End Property
+
     Private Sub cmd_agregar_Click(sender As Object, e As EventArgs) Handles cmd_agregar.Click
         If Len(txt_codigo_producto.Text.Trim) = 0 Or Len(txt_cantidad.Text.Trim) = 0 Then
             MsgBox("Debe ingresar los datos de la venta.", MsgBoxStyle.Critical, "¡Error crítico!")
@@ -8,7 +17,7 @@
         End If
 
         Dim tabla As New DataTable
-        tabla = conex.consultar("select * from Producto where idProducto = " & txt_codigo_producto.Text.Trim)
+        tabla = Conex.Consultar("select * from Producto where idProducto = " & txt_codigo_producto.Text.Trim)
 
         If tabla.Rows.Count = 0 Then
             MsgBox("El código de producto ingresado es inexistente.", MsgBoxStyle.Critical, "¡Producto no encontrado!")
@@ -21,105 +30,106 @@
 
         For i = 0 To grd_detalle_de_venta.Rows.Count - 1
             If grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value = txt_codigo_producto.Text.Trim Then
-                grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value = Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value) + Integer.Parse(txt_cantidad.Text.Trim)
-                grd_detalle_de_venta.Rows(i).Cells("col_subtotal").Value = Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_subtotal").Value) + (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
-                lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) + (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
+                grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value =
+                    Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value) +
+                    Integer.Parse(txt_cantidad.Text.Trim)
+                grd_detalle_de_venta.Rows(i).Cells("col_subtotal").Value =
+                    Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_subtotal").Value) +
+                    (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
+                lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) +
+                                         (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
                 Exit Sub
             End If
         Next
 
         grd_detalle_de_venta.Rows.Add()
-        Dim ultima_pos As Integer = (grd_detalle_de_venta.Rows.Count - 1)
-        grd_detalle_de_venta.Rows(ultima_pos).Cells("col_codigo").Value = tabla.Rows(0)("idProducto")
-        grd_detalle_de_venta.Rows(ultima_pos).Cells("col_nombre").Value = tabla.Rows(0)("nombre")
-        grd_detalle_de_venta.Rows(ultima_pos).Cells("col_cantidad").Value = txt_cantidad.Text.Trim
-        grd_detalle_de_venta.Rows(ultima_pos).Cells("col_precio").Value = tabla.Rows(0)("precio")
-        grd_detalle_de_venta.Rows(ultima_pos).Cells("col_subtotal").Value = (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
-        lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) + (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
-
+        Dim ultimaPos As Integer = (grd_detalle_de_venta.Rows.Count - 1)
+        grd_detalle_de_venta.Rows(ultimaPos).Cells("col_codigo").Value = tabla.Rows(0)("idProducto")
+        grd_detalle_de_venta.Rows(ultimaPos).Cells("col_nombre").Value = tabla.Rows(0)("nombre")
+        grd_detalle_de_venta.Rows(ultimaPos).Cells("col_cantidad").Value = txt_cantidad.Text.Trim
+        grd_detalle_de_venta.Rows(ultimaPos).Cells("col_precio").Value = tabla.Rows(0)("precio")
+        grd_detalle_de_venta.Rows(ultimaPos).Cells("col_subtotal").Value =
+            (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
+        lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) +
+                                 (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
     End Sub
 
     Private Function generar_id_venta()
         Dim tabla As New DataTable
         Dim id As Integer
-        tabla = conex.consultar("select * from Ticket order by id")
+        tabla = Conex.Consultar("select * from Ticket order by id")
 
         If tabla.Rows.Count = 0 Then
             id = 1
 
         Else
-            Dim ultima_pos As Integer = (tabla.Rows.Count - 1)
-            id = tabla.Rows(ultima_pos)("id") + 1
+            Dim ultimaPos As Integer = (tabla.Rows.Count - 1)
+            id = tabla.Rows(ultimaPos)("id") + 1
         End If
 
         Return id
-
     End Function
 
     Private Sub insertar_en_bd_ticket()
-        Dim sql As String = ""
+        Dim sql = ""
         sql = "insert into ticket values("
         sql &= lbl_id_venta_display.Text.Trim & ", "
         sql &= cmb_empleado.SelectedValue & ", '"
         sql &= Format(Date.Parse(DateString), "yyyy/MM/dd") & "', '"
         sql &= TimeString & "', "
         sql &= lbl_total_display.Text.Trim & ")"
-        conex.insertar(sql)
+        Conex.Insertar(sql)
     End Sub
 
-    Private Sub insertar_en_bd_detalle_ticket(ByRef id_prod As Integer, ByRef cant As Integer, precio As Double)
-        Dim sql As String = ""
+    Private Sub insertar_en_bd_detalle_ticket(ByRef idProd As Integer, ByRef cant As Integer, precio As Double)
+        Dim sql = ""
         sql = "insert into DetalleTicket values("
         sql &= lbl_id_venta_display.Text.Trim & ", "
-        sql &= id_prod & ", "
+        sql &= idProd & ", "
         sql &= cant & ", "
         sql &= precio & ")"
-        conex.insertar(sql)
+        Conex.Insertar(sql)
     End Sub
 
     Private Function validar_stock() As Boolean
 
-        Dim stock_actual As Integer
+        Dim stockActual As Integer
         Dim sql As String
         Dim tabla As New DataTable
         sql = "select stock from producto where idProducto = " & txt_codigo_producto.Text.Trim
-        tabla = conex.consultar(sql)
-        stock_actual = tabla.Rows(0)("stock")
+        tabla = Conex.Consultar(sql)
+        stockActual = tabla.Rows(0)("stock")
         For i = 0 To grd_detalle_de_venta.Rows.Count - 1
             If grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value = txt_codigo_producto.Text.Trim Then
-                stock_actual = stock_actual - Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value)
+                stockActual = stockActual - Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value)
             End If
         Next
-        If stock_actual < Integer.Parse(txt_cantidad.Text.Trim) Then
+        If stockActual < Integer.Parse(txt_cantidad.Text.Trim) Then
             MsgBox("No se encuentra stock", MsgBoxStyle.Exclamation, "Stock insuficiente")
             Return False
         Else
             Return True
         End If
-
-
     End Function
 
     Private Sub descontar_stock()
-        Dim stock_actual As Integer
+        Dim stockActual As Integer
         Dim sql As String
 
 
         For i = 0 To grd_detalle_de_venta.Rows.Count - 1
             Dim tabla As New DataTable
-            sql = "select stock from producto where idProducto = " & grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
-            tabla = conex.consultar(sql)
-            stock_actual = tabla.Rows(0)("stock")
-            Dim stock_resultante As Integer
+            sql = "select stock from producto where idProducto = " &
+                  grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
+            tabla = Conex.Consultar(sql)
+            stockActual = tabla.Rows(0)("stock")
+            Dim stockResultante As Integer
 
-            stock_resultante = stock_actual - Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value)
-            sql = "update producto set stock = " & stock_resultante & " where idProducto = " & grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
-            conex.insertar(sql)
+            stockResultante = stockActual - Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value)
+            sql = "update producto set stock = " & stockResultante & " where idProducto = " &
+                  grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
+            Conex.Insertar(sql)
         Next
-
-
-
-
     End Sub
 
     Private Sub cargar_combo(ByRef combo As ComboBox, ByRef tabla As DataTable, ByRef pk As String, ByRef desc As String)
@@ -128,23 +138,26 @@
         combo.DataSource = tabla
         combo.ValueMember = pk
         combo.DisplayMember = desc
-
     End Sub
 
     Private Sub RegistrarVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cargar_combo(cmb_empleado, conex.leerTabla("empleado"), "id", "id")
+        cargar_combo(cmb_empleado, Conex.LeerTabla("empleado"), "id", "id")
         lbl_id_venta_display.Text = generar_id_venta()
         mostrar_info_empleado()
     End Sub
 
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
-        Me.Close()
+        Close()
     End Sub
 
     Private Sub RegistrarVenta_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+        If _
+            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
+            Then
             e.Cancel = True
         End If
+        Principal.Show()
     End Sub
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
@@ -154,10 +167,15 @@
             Exit Sub
         End If
 
-        If MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = Windows.Forms.DialogResult.Yes Then
+        If _
+            MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.Yes _
+            Then
             insertar_en_bd_ticket()
             For i = 0 To grd_detalle_de_venta.Rows.Count - 1
-                insertar_en_bd_detalle_ticket(grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value, grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value, grd_detalle_de_venta.Rows(i).Cells("col_precio").Value)
+                insertar_en_bd_detalle_ticket(grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value,
+                                              grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value,
+                                              grd_detalle_de_venta.Rows(i).Cells("col_precio").Value)
             Next
             descontar_stock()
             lbl_total_display.Text = 0
@@ -173,7 +191,7 @@
         Dim selected As String = cmb_empleado.SelectedValue
         Dim table As New DataTable
         Dim sql As String = "select * from empleado where id = " & selected
-        table = conex.consultar(sql)
+        table = Conex.Consultar(sql)
         lbl_info_empleado.Text = table.Rows(0)("nombre") & " " & table.Rows(0)("apellido")
     End Sub
 
@@ -185,9 +203,8 @@
         End If
     End Function
 
-    Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_empleado.SelectionChangeCommitted
+    Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) _
+        Handles cmb_empleado.SelectionChangeCommitted
         mostrar_info_empleado()
     End Sub
-
-
 End Class
