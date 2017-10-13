@@ -39,17 +39,17 @@ Partial Class Principal
         Me.modificar_producto = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificar_empleado = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificar_proveedor = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.modificarLocalidad = New System.Windows.Forms.ToolStripMenuItem()
-        Me.modificarProvincia = New System.Windows.Forms.ToolStripMenuItem()
-        Me.momdificarBarrio = New System.Windows.Forms.ToolStripMenuItem()
+        Me.modificar_otros = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PreferenciasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AccesosDirectosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout()
-        Me.SuspendLayout()
+        Me.modificar_barrio = New System.Windows.Forms.ToolStripMenuItem()
+        Me.modificar_localidad = New System.Windows.Forms.ToolStripMenuItem()
+        Me.modificar_provincia = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout
+        Me.SuspendLayout
         '
         'MenuStrip1
         '
@@ -71,7 +71,7 @@ Partial Class Principal
         '
         Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registrar_venta, Me.registrar_producto, Me.registrar_empleado, Me.registrar_proveedor, Me.CompraToolStripMenuItem, Me.OtrosToolStripMenuItem})
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
-        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RegistrarToolStripMenuItem.Text = "Registrar"
         '
         'registrar_venta
@@ -137,9 +137,9 @@ Partial Class Principal
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.modificar_producto, Me.modificar_empleado, Me.modificar_proveedor, Me.ToolStripMenuItem5})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.modificar_producto, Me.modificar_empleado, Me.modificar_proveedor, Me.modificar_otros})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem1.Text = "Modificar"
         '
         'modificar_producto
@@ -163,35 +163,17 @@ Partial Class Principal
         Me.modificar_proveedor.Size = New System.Drawing.Size(172, 22)
         Me.modificar_proveedor.Text = "Proveedor"
         '
-        'ToolStripMenuItem5
+        'modificar_otros
         '
-        Me.ToolStripMenuItem5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.modificarLocalidad, Me.modificarProvincia, Me.momdificarBarrio})
-        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(172, 22)
-        Me.ToolStripMenuItem5.Text = "Otros"
-        '
-        'modificarLocalidad
-        '
-        Me.modificarLocalidad.Name = "modificarLocalidad"
-        Me.modificarLocalidad.Size = New System.Drawing.Size(125, 22)
-        Me.modificarLocalidad.Text = "Localidad"
-        '
-        'modificarProvincia
-        '
-        Me.modificarProvincia.Name = "modificarProvincia"
-        Me.modificarProvincia.Size = New System.Drawing.Size(125, 22)
-        Me.modificarProvincia.Text = "Provincia"
-        '
-        'momdificarBarrio
-        '
-        Me.momdificarBarrio.Name = "momdificarBarrio"
-        Me.momdificarBarrio.Size = New System.Drawing.Size(125, 22)
-        Me.momdificarBarrio.Text = "Barrio"
+        Me.modificar_otros.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.modificar_barrio, Me.modificar_localidad, Me.modificar_provincia})
+        Me.modificar_otros.Name = "modificar_otros"
+        Me.modificar_otros.Size = New System.Drawing.Size(172, 22)
+        Me.modificar_otros.Text = "Otros"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'PreferenciasToolStripMenuItem
@@ -218,6 +200,24 @@ Partial Class Principal
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
         Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
+        '
+        'modificar_barrio
+        '
+        Me.modificar_barrio.Name = "modificar_barrio"
+        Me.modificar_barrio.Size = New System.Drawing.Size(152, 22)
+        Me.modificar_barrio.Text = "Barrio"
+        '
+        'modificar_localidad
+        '
+        Me.modificar_localidad.Name = "modificar_localidad"
+        Me.modificar_localidad.Size = New System.Drawing.Size(152, 22)
+        Me.modificar_localidad.Text = "Localidad"
+        '
+        'modificar_provincia
+        '
+        Me.modificar_provincia.Name = "modificar_provincia"
+        Me.modificar_provincia.Size = New System.Drawing.Size(152, 22)
+        Me.modificar_provincia.Text = "Provincia"
         '
         'Principal
         '
@@ -253,14 +253,14 @@ End Sub
     Friend WithEvents modificar_empleado As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents modificar_proveedor As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents modificar_producto As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem5 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents modificarLocalidad As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents modificarProvincia As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents momdificarBarrio As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents modificar_otros As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PreferenciasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents registrar_venta As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AccesosDirectosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CompraToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents modificar_barrio As ToolStripMenuItem
+    Friend WithEvents modificar_localidad As ToolStripMenuItem
+    Friend WithEvents modificar_provincia As ToolStripMenuItem
 End Class

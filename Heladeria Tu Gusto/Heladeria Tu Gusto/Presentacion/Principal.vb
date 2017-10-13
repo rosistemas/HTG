@@ -1,6 +1,7 @@
 ﻿Imports System.Text
 
 Public Class Principal
+
     Private Sub registrar_empleado_Click(sender As Object, e As EventArgs) Handles registrar_empleado.Click
         RegistrarEmpleado.Show()
     End Sub
@@ -28,6 +29,7 @@ Public Class Principal
     Private Sub registrar_venta_Click(sender As Object, e As EventArgs) Handles registrar_venta.Click
         RegistrarVenta.Show()
     End Sub
+
     Private Sub CompraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CompraToolStripMenuItem.Click
         RegistrarCompra.Show()
     End Sub
@@ -35,8 +37,7 @@ Public Class Principal
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         KeyPreview = True
     End Sub
-
-
+    
     Private Sub Principal_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         If (e.Control AndAlso e.KeyCode = Keys.NumPad0) Then
             RegistrarVenta.Show()
@@ -83,9 +84,8 @@ Public Class Principal
         MessageBox.Show(explicacion.ToString(),"Acerca de los accesos directos", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
-   
-    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
-        Me.Close()
+   Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+        Close()
     End Sub
 
     Private Sub ProvinciaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProvinciaToolStripMenuItem.Click
@@ -100,17 +100,6 @@ Public Class Principal
         RegistrarBarrio.Show()
     End Sub
 
-    Private Sub modificarProvincia_Click(sender As Object, e As EventArgs) Handles modificarProvincia.Click
-        Modificar_Provincia.Show()
-    End Sub
-
-    Private Sub momdificarBarrio_Click(sender As Object, e As EventArgs) Handles momdificarBarrio.Click
-        ModificarBarrio.Show()
-    End Sub
-
-    Private Sub modificarLocalidad_Click(sender As Object, e As EventArgs) Handles modificarLocalidad.Click
-        Modificar_Localidad.Show()
-    End Sub
 
     Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
         Dim mensaje As New StringBuilder
@@ -127,5 +116,17 @@ Public Class Principal
 
     Private Sub Principal_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Inicio.Close()
+    End Sub
+
+    Private Sub modificar_barrio_Click(sender As Object, e As EventArgs) Handles modificar_barrio.Click
+        ModificarBarrio.Show()
+    End Sub
+
+    Private Sub modificar_localidad_Click(sender As Object, e As EventArgs) Handles modificar_localidad.Click
+        ModificarLocalidad.Show()
+    End Sub
+
+    Private Sub modificar_provincia_Click(sender As Object, e As EventArgs) Handles modificar_provincia.Click
+        ModificarProvincia.Show()
     End Sub
 End Class
