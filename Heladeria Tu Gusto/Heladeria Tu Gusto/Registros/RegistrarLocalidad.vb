@@ -10,7 +10,7 @@
     Private Sub Insertar()
         Dim sql As String = ""
         sql = "insert into Localidad values"
-        sql &= "(" & Conex.Generar_id_consecutivo("Localidad", "idLocalidad") _
+        sql &= "(" & Conex.Generar_id_consecutivo("Localidad", "id") _
         'idLocalidad
         sql &= ", '" & txt_nombre.Text.Trim & "'"                   'nombre
         sql &= ", " & cmb_provincia.SelectedValue & ")"            'Combo provincia

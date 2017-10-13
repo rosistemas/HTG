@@ -1,18 +1,18 @@
-﻿Public Class RegistrarProvincia
+﻿Public Class RegistrarTipoProducto
+
 
     Dim _conex As New Conexiones
 
     Private Sub Insertar()
 
         Dim sql As String = ""
-        sql = "insert into Provincia values"
-        sql &= "(" & _conex.Generar_id_consecutivo("Provincia", "id") _
-        'idProvincia
-        sql &= ", '" & txt_nombre.Text.Trim & "')"                  'nombre
-
+        sql = "insert into TipoProducto values"
+        sql &= "(" & _conex.Generar_id_consecutivo("TipoProducto", "idTipo") _
+        
+        sql &= ", '" & txt_nombre.Text.Trim & "')"               
         _conex.Insertar(sql)
     End Sub
-    
+
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
         Me.insertar()
         MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
@@ -27,3 +27,4 @@
         End If
     End Sub
 End Class
+

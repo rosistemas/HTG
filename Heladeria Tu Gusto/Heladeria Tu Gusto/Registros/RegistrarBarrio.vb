@@ -12,7 +12,7 @@ Public Class RegistrarBarrio
     Private Sub Insertar()
         Dim sql As String = ""
         sql = "insert into Barrio values"
-        sql &= "(" & Conex.Generar_id_consecutivo("Barrio", "idBarrio")                               'idBarrio
+        sql &= "(" & Conex.Generar_id_consecutivo("Barrio", "id")                               'idBarrio
         sql &= ", '" & txt_nombre.Text.Trim & "'"                   'nombre
         sql &= ", " & cmb_localidad.SelectedValue & ")"            'Combo localidad
 

@@ -178,6 +178,12 @@
     <Compile Include="Registros\RegistrarProvincia.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Registros\RegistrarTipoProducto.Designer.vb">
+      <DependentUpon>RegistrarTipoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistrarTipoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Registros\RegistrarVenta.designer.vb">
       <DependentUpon>RegistrarVenta.vb</DependentUpon>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\RegistrarProvincia.resx">
       <DependentUpon>RegistrarProvincia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\RegistrarTipoProducto.resx">
+      <DependentUpon>RegistrarTipoProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\RegistrarVenta.resx">
       <DependentUpon>RegistrarVenta.vb</DependentUpon>

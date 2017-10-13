@@ -171,3 +171,56 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Helader
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Inicio.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProvincia.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarBarrio.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarLocalidad.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarBarrio.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarLocalidad.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarCompra.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProvincia.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Inicio.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProvincia.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarBarrio.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarLocalidad.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarBarrio.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarLocalidad.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarCompra.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProvincia.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTipoProducto.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
+C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml

@@ -2,8 +2,9 @@
     Dim contador As Integer = 0
 
     Sub PlayBackgroundSoundResource()
+        'My.Computer.Audio.Play("C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\Resources\efecto.wav)
         'My.Computer.Audio.Play("C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\Resources\efecto.wav")
-        My.Computer.Audio.Play("C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\Resources\efecto.wav")
+        My.Computer.Audio.Play("C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\Resources\efecto.wav")
 
     End Sub
 

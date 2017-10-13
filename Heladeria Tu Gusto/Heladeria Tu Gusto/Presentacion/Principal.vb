@@ -129,4 +129,9 @@ Public Class Principal
     Private Sub modificar_provincia_Click(sender As Object, e As EventArgs) Handles modificar_provincia.Click
         ModificarProvincia.Show()
     End Sub
+
+    Private Sub TipoProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TipoProductoToolStripMenuItem.Click
+        RegistrarTipoProducto.Show()
+
+    End Sub
 End Class
