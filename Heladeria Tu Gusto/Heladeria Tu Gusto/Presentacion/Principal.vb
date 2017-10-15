@@ -134,4 +134,8 @@ Public Class Principal
         RegistrarTipoProducto.Show()
 
     End Sub
+
+    Private Sub TurnoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TurnoToolStripMenuItem.Click
+        RegistrarTurno.Show()
+    End Sub
 End Class

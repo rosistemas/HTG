@@ -128,12 +128,10 @@ C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeri
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Inicio.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Modificar_Provincia.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarBarrio.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Modificar_Localidad.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarBarrio.resources
@@ -224,3 +222,7 @@ C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj
 C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
 C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
 C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProvincia.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarLocalidad.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTipoProducto.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
