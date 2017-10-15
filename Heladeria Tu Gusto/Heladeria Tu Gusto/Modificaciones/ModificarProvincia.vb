@@ -1,23 +1,7 @@
-﻿Imports Heladeria_Tu_Gusto
-
-Public Class ModificarProvincia
-    Dim ReadOnly _conex As New Conexiones
-    Dim Private _idProvinciaSeleccionada As Integer = 0
-
-    Public ReadOnly Property Conex As Conexiones
-        Get
-            Return _conex
-        End Get
-    End Property
-
-    Public Property IdProvinciaSeleccionada As Integer
-        Get
-            Return _idProvinciaSeleccionada
-        End Get
-        Set(value As Integer)
-            _idProvinciaSeleccionada = value
-        End Set
-    End Property
+﻿Public Class ModificarProvincia
+    Private ReadOnly Property Conex As Conexiones = New Conexiones
+    Private ReadOnly Property Asistente As AsistenteFormulario = new AsistenteFormulario
+    Private Property IdProvinciaSeleccionada As Integer = 0
 
     Private Sub Modificar_Provincia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cargarGrilla()
@@ -27,8 +11,12 @@ Public Class ModificarProvincia
         If _
             MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución",
                             MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes Then
-            Me.modificar()
-            Me.cargarGrilla()
+
+            if Asistente.VerificarVacios(Controls) = AsistenteFormulario.EstadoValidacion.SinErrores then
+                Modificar()
+                CargarGrilla()
+                Asistente.LimpiarFormulario(Controls)
+            End If
         Else
             MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK,
                             MessageBoxIcon.Information)
@@ -70,8 +58,8 @@ Public Class ModificarProvincia
     End Sub
 
     Private Sub Modificar()
-        Dim sql As String = "update Provincia set nombre = '" & txt_nombre.Text.Trim & "' where id = " &
-                            IdProvinciaSeleccionada
-        Conex.Insertar(sql)
+       Dim sql As String = "update Provincia set nombre = '" & txt_nombre.Text.Trim & "' where id = " &
+                                IdProvinciaSeleccionada
+            Conex.Insertar(sql)
     End Sub
 End Class
