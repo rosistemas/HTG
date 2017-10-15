@@ -35,7 +35,6 @@ Partial Class Principal
         Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProvinciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarrioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TipoProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificar_producto = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificar_empleado = New System.Windows.Forms.ToolStripMenuItem()
@@ -49,7 +48,7 @@ Partial Class Principal
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AccesosDirectosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TurnoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TipoProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,7 +70,7 @@ Partial Class Principal
         '
         'RegistrarToolStripMenuItem
         '
-        Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registrar_venta, Me.registrar_producto, Me.registrar_empleado, Me.registrar_proveedor, Me.CompraToolStripMenuItem, Me.TurnoToolStripMenuItem, Me.OtrosToolStripMenuItem})
+        Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registrar_venta, Me.registrar_producto, Me.registrar_empleado, Me.registrar_proveedor, Me.CompraToolStripMenuItem, Me.OtrosToolStripMenuItem})
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
         Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RegistrarToolStripMenuItem.Text = "Registrar"
@@ -122,26 +121,20 @@ Partial Class Principal
         'LocalidadToolStripMenuItem
         '
         Me.LocalidadToolStripMenuItem.Name = "LocalidadToolStripMenuItem"
-        Me.LocalidadToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.LocalidadToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LocalidadToolStripMenuItem.Text = "Localidad"
         '
         'ProvinciaToolStripMenuItem
         '
         Me.ProvinciaToolStripMenuItem.Name = "ProvinciaToolStripMenuItem"
-        Me.ProvinciaToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.ProvinciaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProvinciaToolStripMenuItem.Text = "Provincia"
         '
         'BarrioToolStripMenuItem
         '
         Me.BarrioToolStripMenuItem.Name = "BarrioToolStripMenuItem"
-        Me.BarrioToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.BarrioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BarrioToolStripMenuItem.Text = "Barrio"
-        '
-        'TipoProductoToolStripMenuItem
-        '
-        Me.TipoProductoToolStripMenuItem.Name = "TipoProductoToolStripMenuItem"
-        Me.TipoProductoToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
-        Me.TipoProductoToolStripMenuItem.Text = "Tipo Producto"
         '
         'ToolStripMenuItem1
         '
@@ -227,11 +220,11 @@ Partial Class Principal
         Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
         '
-        'TurnoToolStripMenuItem
+        'TipoProductoToolStripMenuItem
         '
-        Me.TurnoToolStripMenuItem.Name = "TurnoToolStripMenuItem"
-        Me.TurnoToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
-        Me.TurnoToolStripMenuItem.Text = "Turno"
+        Me.TipoProductoToolStripMenuItem.Name = "TipoProductoToolStripMenuItem"
+        Me.TipoProductoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TipoProductoToolStripMenuItem.Text = "Tipo Producto"
         '
         'Principal
         '
@@ -278,5 +271,4 @@ End Sub
     Friend WithEvents modificar_localidad As ToolStripMenuItem
     Friend WithEvents modificar_provincia As ToolStripMenuItem
     Friend WithEvents TipoProductoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TurnoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

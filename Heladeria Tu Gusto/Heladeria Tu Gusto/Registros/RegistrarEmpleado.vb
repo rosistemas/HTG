@@ -1,10 +1,10 @@
 ﻿Public Class RegistrarEmpleado
     ReadOnly _conex As New Conexiones
     ReadOnly _validador As New Validador
-    ReadOnly _asistente As New AsistenteFormulario
+    ReadOnly _asistente as New AsistenteFormulario
 
     ReadOnly Property Asistente As AsistenteFormulario
-        Get
+        get
             Return _asistente
         End Get
     End Property

@@ -184,12 +184,6 @@
     <Compile Include="Registros\RegistrarTipoProducto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registros\RegistrarTurno.Designer.vb">
-      <DependentUpon>RegistrarTurno.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Registros\RegistrarTurno.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Registros\RegistrarVenta.designer.vb">
       <DependentUpon>RegistrarVenta.vb</DependentUpon>
     </Compile>
@@ -253,9 +247,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\RegistrarTipoProducto.resx">
       <DependentUpon>RegistrarTipoProducto.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registros\RegistrarTurno.resx">
-      <DependentUpon>RegistrarTurno.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\RegistrarVenta.resx">
       <DependentUpon>RegistrarVenta.vb</DependentUpon>
