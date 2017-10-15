@@ -78,12 +78,6 @@
     <Compile Include="Presentacion\Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modificaciones\ModificarProvincia.designer.vb">
-      <DependentUpon>ModificarProvincia.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Modificaciones\ModificarProvincia.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Modificaciones\ModificarBarrio.designer.vb">
       <DependentUpon>ModificarBarrio.vb</DependentUpon>
     </Compile>
@@ -184,6 +178,12 @@
     <Compile Include="Registros\RegistrarTipoProducto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Registros\RegistrarTurno.Designer.vb">
+      <DependentUpon>RegistrarTurno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistrarTurno.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Registros\RegistrarVenta.designer.vb">
       <DependentUpon>RegistrarVenta.vb</DependentUpon>
     </Compile>
@@ -196,9 +196,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Presentacion\Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modificaciones\ModificarProvincia.resx">
-      <DependentUpon>ModificarProvincia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modificaciones\ModificarBarrio.resx">
       <DependentUpon>ModificarBarrio.vb</DependentUpon>
@@ -247,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\RegistrarTipoProducto.resx">
       <DependentUpon>RegistrarTipoProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\RegistrarTurno.resx">
+      <DependentUpon>RegistrarTurno.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\RegistrarVenta.resx">
       <DependentUpon>RegistrarVenta.vb</DependentUpon>
