@@ -138,4 +138,8 @@ Public Class Principal
     Private Sub TurnoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TurnoToolStripMenuItem.Click
         RegistrarTurno.Show()
     End Sub
+
+    Private Sub ReporteDeVentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeVentasToolStripMenuItem.Click
+        Reporte.Show()
+    End Sub
 End Class

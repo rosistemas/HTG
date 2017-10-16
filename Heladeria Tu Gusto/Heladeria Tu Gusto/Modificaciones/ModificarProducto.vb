@@ -2,6 +2,7 @@
     ReadOnly _conex As New Conexiones
     ReadOnly _validador as New Validador
     Private id_producto_seleccionado As Integer = 0
+    Private id_tipo_producto_seleccionado As Integer = 0
 
     Private Sub ModificarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.cargarGrilla()
