@@ -22,149 +22,192 @@ Partial Class ModificarBarrio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.grd_Barrios = New System.Windows.Forms.DataGridView()
-        Me.IdBarrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre_barrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.id_Localidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarBarrio))
+        Me.grd_datos = New System.Windows.Forms.GroupBox()
+        Me.cmb_localidades = New System.Windows.Forms.ComboBox()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
-        Me.txt_localidad = New System.Windows.Forms.TextBox()
+        Me.lbl_nombre_localidad = New System.Windows.Forms.Label()
+        Me.lbl_nombre_barrio = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.grd_barrios = New System.Windows.Forms.DataGridView()
+        Me.Id_barrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre_barrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_localidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre_localidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cmd_cancelar = New System.Windows.Forms.Button()
+        Me.cmd_guardar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.button_cancelar = New System.Windows.Forms.Button()
-        Me.button_guardar = New System.Windows.Forms.Button()
-        Me.GroupBox1.SuspendLayout
-        CType(Me.grd_Barrios,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.GroupBox2.SuspendLayout
-        Me.SuspendLayout
+        Me.lbl_guardar = New System.Windows.Forms.Label()
+        Me.grd_datos.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.grd_barrios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
-        'GroupBox1
+        'grd_datos
         '
-        Me.GroupBox1.Controls.Add(Me.grd_Barrios)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(285, 145)
-        Me.GroupBox1.TabIndex = 1
-        Me.GroupBox1.TabStop = false
-        Me.GroupBox1.Text = "Seleccionar Barrio"
+        Me.grd_datos.Controls.Add(Me.cmb_localidades)
+        Me.grd_datos.Controls.Add(Me.txt_nombre)
+        Me.grd_datos.Controls.Add(Me.lbl_nombre_localidad)
+        Me.grd_datos.Controls.Add(Me.lbl_nombre_barrio)
+        Me.grd_datos.Location = New System.Drawing.Point(3, 163)
+        Me.grd_datos.Name = "grd_datos"
+        Me.grd_datos.Size = New System.Drawing.Size(285, 76)
+        Me.grd_datos.TabIndex = 6
+        Me.grd_datos.TabStop = False
+        Me.grd_datos.Text = "DatosBarrio"
         '
-        'grd_Barrios
+        'cmb_localidades
         '
-        Me.grd_Barrios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grd_Barrios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdBarrio, Me.nombre_barrio, Me.id_Localidad})
-        Me.grd_Barrios.Location = New System.Drawing.Point(17, 19)
-        Me.grd_Barrios.Name = "grd_Barrios"
-        Me.grd_Barrios.Size = New System.Drawing.Size(254, 96)
-        Me.grd_Barrios.TabIndex = 7
-        '
-        'IdBarrio
-        '
-        Me.IdBarrio.HeaderText = "ID BARRIO"
-        Me.IdBarrio.Name = "IdBarrio"
-        '
-        'nombre_barrio
-        '
-        Me.nombre_barrio.HeaderText = "NOMBRE"
-        Me.nombre_barrio.Name = "nombre_barrio"
-        '
-        'id_Localidad
-        '
-        Me.id_Localidad.HeaderText = "Id Localidad"
-        Me.id_Localidad.Name = "id_Localidad"
-        Me.id_Localidad.Visible = false
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.txt_nombre)
-        Me.GroupBox2.Controls.Add(Me.txt_localidad)
-        Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Location = New System.Drawing.Point(3, 163)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(285, 76)
-        Me.GroupBox2.TabIndex = 2
-        Me.GroupBox2.TabStop = false
-        Me.GroupBox2.Text = "DatosBarrio"
+        Me.cmb_localidades.FormattingEnabled = True
+        Me.cmb_localidades.Location = New System.Drawing.Point(128, 19)
+        Me.cmb_localidades.Name = "cmb_localidades"
+        Me.cmb_localidades.Size = New System.Drawing.Size(143, 21)
+        Me.cmb_localidades.TabIndex = 7
         '
         'txt_nombre
         '
-        Me.txt_nombre.Location = New System.Drawing.Point(98, 45)
+        Me.txt_nombre.Location = New System.Drawing.Point(128, 48)
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.Size = New System.Drawing.Size(143, 20)
         Me.txt_nombre.TabIndex = 6
         '
-        'txt_localidad
+        'lbl_nombre_localidad
         '
-        Me.txt_localidad.Location = New System.Drawing.Point(98, 19)
-        Me.txt_localidad.Name = "txt_localidad"
-        Me.txt_localidad.Size = New System.Drawing.Size(143, 20)
-        Me.txt_localidad.TabIndex = 5
+        Me.lbl_nombre_localidad.AutoSize = True
+        Me.lbl_nombre_localidad.Location = New System.Drawing.Point(36, 22)
+        Me.lbl_nombre_localidad.Name = "lbl_nombre_localidad"
+        Me.lbl_nombre_localidad.Size = New System.Drawing.Size(56, 13)
+        Me.lbl_nombre_localidad.TabIndex = 3
+        Me.lbl_nombre_localidad.Text = "Localidad:"
+        '
+        'lbl_nombre_barrio
+        '
+        Me.lbl_nombre_barrio.AutoSize = True
+        Me.lbl_nombre_barrio.Location = New System.Drawing.Point(12, 51)
+        Me.lbl_nombre_barrio.Name = "lbl_nombre_barrio"
+        Me.lbl_nombre_barrio.Size = New System.Drawing.Size(80, 13)
+        Me.lbl_nombre_barrio.TabIndex = 4
+        Me.lbl_nombre_barrio.Text = "Nuevo nombre:"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.grd_barrios)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(285, 145)
+        Me.GroupBox1.TabIndex = 5
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Seleccionar Barrio"
+        '
+        'grd_barrios
+        '
+        Me.grd_barrios.AllowUserToAddRows = False
+        Me.grd_barrios.AllowUserToDeleteRows = False
+        Me.grd_barrios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grd_barrios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id_barrio, Me.nombre_barrio, Me.id_localidad, Me.nombre_localidad})
+        Me.grd_barrios.Location = New System.Drawing.Point(17, 19)
+        Me.grd_barrios.Name = "grd_barrios"
+        Me.grd_barrios.ReadOnly = True
+        Me.grd_barrios.Size = New System.Drawing.Size(254, 96)
+        Me.grd_barrios.TabIndex = 7
+        '
+        'Id_barrio
+        '
+        Me.Id_barrio.HeaderText = "ID Barrio"
+        Me.Id_barrio.Name = "Id_barrio"
+        Me.Id_barrio.ReadOnly = True
+        Me.Id_barrio.Visible = False
+        '
+        'nombre_barrio
+        '
+        Me.nombre_barrio.HeaderText = "Barrio"
+        Me.nombre_barrio.Name = "nombre_barrio"
+        Me.nombre_barrio.ReadOnly = True
+        '
+        'id_localidad
+        '
+        Me.id_localidad.HeaderText = "ID Localidad"
+        Me.id_localidad.Name = "id_localidad"
+        Me.id_localidad.ReadOnly = True
+        Me.id_localidad.Visible = False
+        '
+        'nombre_localidad
+        '
+        Me.nombre_localidad.HeaderText = "Localidad"
+        Me.nombre_localidad.Name = "nombre_localidad"
+        Me.nombre_localidad.ReadOnly = True
+        '
+        'cmd_cancelar
+        '
+        Me.cmd_cancelar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
+        Me.cmd_cancelar.Location = New System.Drawing.Point(213, 258)
+        Me.cmd_cancelar.Name = "cmd_cancelar"
+        Me.cmd_cancelar.Size = New System.Drawing.Size(75, 64)
+        Me.cmd_cancelar.TabIndex = 4
+        Me.cmd_cancelar.UseVisualStyleBackColor = True
+        '
+        'cmd_guardar
+        '
+        Me.cmd_guardar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64
+        Me.cmd_guardar.Location = New System.Drawing.Point(3, 258)
+        Me.cmd_guardar.Name = "cmd_guardar"
+        Me.cmd_guardar.Size = New System.Drawing.Size(75, 64)
+        Me.cmd_guardar.TabIndex = 3
+        Me.cmd_guardar.UseVisualStyleBackColor = True
         '
         'Label1
         '
-        Me.Label1.AutoSize = true
-        Me.Label1.Location = New System.Drawing.Point(10, 26)
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(225, 242)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 13)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Localidad:"
+        Me.Label1.Size = New System.Drawing.Size(49, 13)
+        Me.Label1.TabIndex = 29
+        Me.Label1.Text = "Cancelar"
         '
-        'Label2
+        'lbl_guardar
         '
-        Me.Label2.AutoSize = true
-        Me.Label2.Location = New System.Drawing.Point(10, 48)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Nombre:"
-        '
-        'button_cancelar
-        '
-        Me.button_cancelar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
-        Me.button_cancelar.Location = New System.Drawing.Point(213, 256)
-        Me.button_cancelar.Name = "button_cancelar"
-        Me.button_cancelar.Size = New System.Drawing.Size(75, 64)
-        Me.button_cancelar.TabIndex = 4
-        Me.button_cancelar.UseVisualStyleBackColor = true
-        '
-        'button_guardar
-        '
-        Me.button_guardar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Save_as_64
-        Me.button_guardar.Location = New System.Drawing.Point(3, 256)
-        Me.button_guardar.Name = "button_guardar"
-        Me.button_guardar.Size = New System.Drawing.Size(75, 64)
-        Me.button_guardar.TabIndex = 3
-        Me.button_guardar.UseVisualStyleBackColor = true
+        Me.lbl_guardar.AutoSize = True
+        Me.lbl_guardar.Location = New System.Drawing.Point(0, 242)
+        Me.lbl_guardar.Name = "lbl_guardar"
+        Me.lbl_guardar.Size = New System.Drawing.Size(87, 13)
+        Me.lbl_guardar.TabIndex = 28
+        Me.lbl_guardar.Text = "Guardar cambios"
         '
         'ModificarBarrio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(296, 328)
-        Me.Controls.Add(Me.button_cancelar)
-        Me.Controls.Add(Me.button_guardar)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.ClientSize = New System.Drawing.Size(296, 327)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lbl_guardar)
+        Me.Controls.Add(Me.grd_datos)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.cmd_cancelar)
+        Me.Controls.Add(Me.cmd_guardar)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarBarrio"
         Me.Text = "ModificarBarrio"
-        Me.GroupBox1.ResumeLayout(false)
-        CType(Me.grd_Barrios,System.ComponentModel.ISupportInitialize).EndInit
-        Me.GroupBox2.ResumeLayout(false)
-        Me.GroupBox2.PerformLayout
-        Me.ResumeLayout(false)
+        Me.grd_datos.ResumeLayout(False)
+        Me.grd_datos.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        CType(Me.grd_barrios, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
 
-End Sub
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents grd_Barrios As System.Windows.Forms.DataGridView
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    End Sub
+    Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
+    Friend WithEvents cmd_guardar As System.Windows.Forms.Button
+    Friend WithEvents grd_datos As System.Windows.Forms.GroupBox
+    Friend WithEvents cmb_localidades As System.Windows.Forms.ComboBox
     Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
-    Friend WithEvents txt_localidad As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents button_cancelar As System.Windows.Forms.Button
-    Friend WithEvents button_guardar As System.Windows.Forms.Button
-    Friend WithEvents IdBarrio As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents lbl_nombre_localidad As System.Windows.Forms.Label
+    Friend WithEvents lbl_nombre_barrio As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents grd_barrios As System.Windows.Forms.DataGridView
+    Friend WithEvents Id_barrio As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre_barrio As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents id_Localidad As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents id_localidad As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents nombre_localidad As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
 End Class

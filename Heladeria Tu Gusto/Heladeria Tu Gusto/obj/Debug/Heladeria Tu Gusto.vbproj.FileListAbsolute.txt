@@ -161,7 +161,6 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Helader
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProvincia.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.CoreCompileInputs.cache
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
@@ -225,3 +224,5 @@ C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarLocalidad.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTipoProducto.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTipoProducto.resources
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources

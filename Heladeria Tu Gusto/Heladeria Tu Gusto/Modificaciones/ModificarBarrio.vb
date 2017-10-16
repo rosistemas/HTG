@@ -1,51 +1,36 @@
-﻿Public Class ModificarBarrio
+﻿ Public Class ModificarBarrio
 
-
-
-    Private conex As New Conexiones
+    Private Property Conex As Conexiones = New Conexiones
+    Private Property Asistente As AsistenteFormulario = New AsistenteFormulario
 
     Private Sub Modificar_Provincia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.cargarGrilla()
+        cargarGrilla()
     End Sub
 
-
-
-    'Private Sub button_guardar_Click(sender As Object, e As EventArgs)
-    '    If MessageBox.Show("¿Está seguro de querer modificar los datos de la localidad seleccionada?", "Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes Then
-    '        Me.modificar()
-    '        Me.cargarGrilla()
-    '    Else
-    '        MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information)
-    '    End If
-    'End Sub
-
-    Private Sub button_cancel_Click(sender As Object, e As EventArgs) Handles button_cancelar.Click
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
-            Me.Close()
+    Private Sub cmd_cancel_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
+        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+            Close()
             Principal.Show()
         End If
     End Sub
-   
-    Private Sub cargarGrilla()
+
+    Private Sub CargarGrilla()
         Dim sql As String
         sql = "select * from Barrio"
 
         Dim tabla As New DataTable
         tabla = conex.consultar(sql)
-        Me.grd_Barrios.Rows.Clear()
+        Me.grd_barrios.Rows.Clear()
         For i = 0 To tabla.Rows.Count - 1
-            Me.grd_Barrios.Rows.Add()
-            Me.grd_Barrios.Rows(i).Cells("idBarrio").Value = tabla.Rows(i)("id")
-            Me.grd_Barrios.Rows(i).Cells("nombre_barrio").Value = tabla.Rows(i)("nombre")
-            Me.grd_Barrios.Rows(i).Cells("id_localidad").Value = tabla.Rows(i)("idLocalidad")
+            Me.grd_barrios.Rows.Add()
+            Me.grd_barrios.Rows(i).Cells("idBarrio").Value = tabla.Rows(i)("id")
+            Me.grd_barrios.Rows(i).Cells("nombre_barrio").Value = tabla.Rows(i)("nombre")
+            Me.grd_barrios.Rows(i).Cells("id_localidad").Value = tabla.Rows(i)("idLocalidad")
         Next
 
     End Sub
 
-
-
-
-    Private Sub modificar()
+    Private Sub Modificar()
         Dim tabla As New DataTable
         Dim sql As String
         sql = "select id from Localidad l where l.nombre = " & Integer.Parse(txt_nombre.Text.Trim)
@@ -55,11 +40,8 @@
         conex.insertar(sql)
     End Sub
 
-
-
-
-    Private Sub button_guardar_Click_1(sender As Object, e As EventArgs) Handles button_guardar.Click
-        If MessageBox.Show("¿Está seguro de querer modificar los datos de la localidad seleccionada?", "Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes Then
+    Private Sub cmd_guardar_Click_1(sender As Object, e As EventArgs) Handles cmd_guardar.Click
+        If MessageBox.Show("¿Está seguro de querer modificar los datos de la localidad seleccionada?", "Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes Then
             Me.modificar()
             Me.cargarGrilla()
         Else
@@ -67,18 +49,10 @@
         End If
     End Sub
 
-    Private Sub grd_Barrios_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grd_Barrios.CellContentClick
-        Dim tabla As New DataTable
-        Dim sql As String
-        Dim idlocalidadString As String
+    Private Sub grd_barrios_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles grd_barrios.CellDoubleClick
 
-        sql = "select * from Barrio where id = " & grd_Barrios.CurrentRow.Cells(0).Value
+        Asistente.CargarCombo(cmb_localidades, Conex.LeerTabla("Barrio"), "nombre", "id")
+        txt_nombre.Text = grd_barrios.CurrentRow.Cells("nombre_barrio").Value
 
-        tabla = conex.consultar(sql)
-        Me.txt_nombre.Text = tabla.Rows(0)("nombre")
-        idlocalidadString = tabla.Rows(0)("idLocalidad")
-        sql = "select * from Localidad where id = " & idlocalidadString
-        tabla = conex.consultar(sql)
-        Me.txt_localidad.Text = tabla.Rows(0)("nombre")
     End Sub
 End Class
