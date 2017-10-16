@@ -1,7 +1,7 @@
 ﻿ Public Class ModificarLocalidad
     Private Property Conex As Conexiones = New Conexiones
     Private Property LocalidadSeleccionada As Integer
-    Public Property Asistente As AsistenteFormulario = New AsistenteFormulario
+    Private Property Asistente As AsistenteFormulario = New AsistenteFormulario
 
 
     Private Sub Modificar_Provincia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -11,7 +11,7 @@
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
         If _
             MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+                            MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
             Principal.Show()
         End If

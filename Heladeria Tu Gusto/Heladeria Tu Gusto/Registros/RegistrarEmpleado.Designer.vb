@@ -1,9 +1,12 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿Imports System.ComponentModel
+Imports Microsoft.VisualBasic.CompilerServices
+
+<DesignerGenerated()> _
 Partial Class RegistrarEmpleado
-    Inherits System.Windows.Forms.Form
+    Inherits Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -15,12 +18,12 @@ Partial Class RegistrarEmpleado
     End Sub
 
     'Required by the Windows Form Designer
-    Private components As System.ComponentModel.IContainer
+    Private components As IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarEmpleado))
         Me.lbl_tipo_documento = New System.Windows.Forms.Label()
@@ -265,7 +268,7 @@ Partial Class RegistrarEmpleado
         Me.Controls.Add(Me.cmd_guardar)
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarEmpleado"
-        Me.Text = "Nuevo empleado"
+        Me.Text = "Registrar empleado"
         Me.grp_datos.ResumeLayout(false)
         Me.grp_datos.PerformLayout
         Me.grp_domicilio.ResumeLayout(false)
@@ -274,26 +277,26 @@ Partial Class RegistrarEmpleado
         Me.PerformLayout
 
 End Sub
-    Friend WithEvents lbl_tipo_documento As System.Windows.Forms.Label
-    Friend WithEvents lbl_numero_documento As System.Windows.Forms.Label
-    Friend WithEvents lbl_nombre As System.Windows.Forms.Label
-    Friend WithEvents lbl_apellido As System.Windows.Forms.Label
-    Friend WithEvents lbl_calle As System.Windows.Forms.Label
-    Friend WithEvents lbl_fecha_nacimiento As System.Windows.Forms.Label
-    Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
-    Friend WithEvents txt_apellido As System.Windows.Forms.TextBox
-    Friend WithEvents cmb_tipo_documento As System.Windows.Forms.ComboBox
-    Friend WithEvents date_fecha_nacimiento As System.Windows.Forms.DateTimePicker
-    Friend WithEvents txt_calle As System.Windows.Forms.TextBox
-    Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
-    Friend WithEvents cmd_guardar As System.Windows.Forms.Button
-    Friend WithEvents lbl_numero_calle As System.Windows.Forms.Label
-    Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
-    Friend WithEvents grp_domicilio As System.Windows.Forms.GroupBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents cmb_barrio As System.Windows.Forms.ComboBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
-    Friend WithEvents txt_numero_documento As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents lbl_tipo_documento As Label
+    Friend WithEvents lbl_numero_documento As Label
+    Friend WithEvents lbl_nombre As Label
+    Friend WithEvents lbl_apellido As Label
+    Friend WithEvents lbl_calle As Label
+    Friend WithEvents lbl_fecha_nacimiento As Label
+    Friend WithEvents txt_nombre As TextBox
+    Friend WithEvents txt_apellido As TextBox
+    Friend WithEvents cmb_tipo_documento As ComboBox
+    Friend WithEvents date_fecha_nacimiento As DateTimePicker
+    Friend WithEvents txt_calle As TextBox
+    Friend WithEvents cmd_cancelar As Button
+    Friend WithEvents cmd_guardar As Button
+    Friend WithEvents lbl_numero_calle As Label
+    Friend WithEvents grp_datos As GroupBox
+    Friend WithEvents grp_domicilio As GroupBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cmb_barrio As ComboBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lbl_guardar As Label
+    Friend WithEvents txt_numero_documento As MaskedTextBox
     Friend WithEvents txt_numero_calle As TextBox
 End Class

@@ -66,7 +66,7 @@ cmb_primer_ayudante.SelectedValue = cmb_segundo_ayudante.SelectedValue Then
 
             If _
                 MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, _
-                                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = Windows.Forms.DialogResult.No Then
+                                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No Then
 
                 Exit Sub
 
@@ -126,7 +126,7 @@ cmb_primer_ayudante.SelectedValue = cmb_segundo_ayudante.SelectedValue Then
 
             If _
                 MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, _
-                                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = Windows.Forms.DialogResult.No Then
+                                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No Then
 
                 Exit Sub
 
@@ -252,7 +252,7 @@ cmb_primer_ayudante.SelectedValue = cmb_segundo_ayudante.SelectedValue Then
 
         If _
             MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, _
-                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No Then
 
             e.Cancel = True
 

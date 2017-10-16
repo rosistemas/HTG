@@ -1,9 +1,12 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿Imports System.ComponentModel
+Imports Microsoft.VisualBasic.CompilerServices
+
+<DesignerGenerated()> _
 Partial Class RegistrarProducto
-    Inherits System.Windows.Forms.Form
+    Inherits Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -15,12 +18,12 @@ Partial Class RegistrarProducto
     End Sub
 
     'Required by the Windows Form Designer
-    Private components As System.ComponentModel.IContainer
+    Private components As IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarProducto))
@@ -174,25 +177,25 @@ Partial Class RegistrarProducto
         Me.Controls.Add(Me.cmd_guardar)
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarProducto"
-        Me.Text = "Nuevo producto"
+        Me.Text = "Registrar producto"
         Me.grp_datos.ResumeLayout(false)
         Me.grp_datos.PerformLayout
         Me.ResumeLayout(false)
         Me.PerformLayout
 
 End Sub
-    Friend WithEvents lbl_nombre As System.Windows.Forms.Label
-    Friend WithEvents lbl_precio As System.Windows.Forms.Label
-    Friend WithEvents lbl_tipo As System.Windows.Forms.Label
-    Friend WithEvents lbl_descripcion As System.Windows.Forms.Label
-    Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
-    Friend WithEvents txt_descripcion As System.Windows.Forms.TextBox
-    Friend WithEvents cmb_tipo As System.Windows.Forms.ComboBox
-    Friend WithEvents cmd_guardar As System.Windows.Forms.Button
-    Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
-    Friend WithEvents grp_datos As System.Windows.Forms.GroupBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
+    Friend WithEvents lbl_nombre As Label
+    Friend WithEvents lbl_precio As Label
+    Friend WithEvents lbl_tipo As Label
+    Friend WithEvents lbl_descripcion As Label
+    Friend WithEvents txt_nombre As TextBox
+    Friend WithEvents txt_descripcion As TextBox
+    Friend WithEvents cmb_tipo As ComboBox
+    Friend WithEvents cmd_guardar As Button
+    Friend WithEvents cmd_cancelar As Button
+    Friend WithEvents grp_datos As GroupBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lbl_guardar As Label
     Friend WithEvents txt_precio As TextBox
     Friend WithEvents toolTip_Precio As ToolTip
 End Class

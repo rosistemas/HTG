@@ -2,7 +2,6 @@
     ReadOnly _conex As New Conexiones
     ReadOnly _validador as New Validador
     Private id_producto_seleccionado As Integer = 0
-    Private id_tipo_producto_seleccionado As Integer = 0
 
     Private Sub ModificarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.cargarGrilla()
@@ -81,7 +80,7 @@
         If _validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.SinErrores Then
             If _
                 MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución",
-                                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes _
+                                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes _
                 Then
                 Me.modificar()
                 Me.cargarGrilla()
@@ -108,7 +107,7 @@
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
         If _
             MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+                            MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
             Principal.Show()
         End If
@@ -121,7 +120,7 @@
     Private Sub ModificarProducto_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If _
             MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No _
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
             Then
             e.Cancel = True
         End If

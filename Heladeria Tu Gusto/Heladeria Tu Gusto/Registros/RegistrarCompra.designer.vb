@@ -1,9 +1,13 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿Imports System.ComponentModel
+Imports Heladeria_Tu_Gusto.My.Resources
+Imports Microsoft.VisualBasic.CompilerServices
+
+<DesignerGenerated()> _
 Partial Class RegistrarCompra
-    Inherits System.Windows.Forms.Form
+    Inherits Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -15,13 +19,14 @@ Partial Class RegistrarCompra
     End Sub
 
     'Required by the Windows Form Designer
-    Private components As System.ComponentModel.IContainer
+    Private components As IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarCompra))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.btn_cancelar = New System.Windows.Forms.Button()
@@ -399,6 +404,7 @@ Partial Class RegistrarCompra
         Me.Controls.Add(Me.lbl_total)
         Me.Controls.Add(Me.lbl_empleado)
         Me.Controls.Add(Me.grp_producto)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "RegistrarCompra"
         Me.Text = "Registrar Compra"
         Me.grp_detalle_de_proveedor.ResumeLayout(false)
@@ -410,35 +416,35 @@ Partial Class RegistrarCompra
         Me.PerformLayout
 
 End Sub
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents lbl_guardar As System.Windows.Forms.Label
-    Friend WithEvents btn_cancelar As System.Windows.Forms.Button
-    Friend WithEvents btn_guardar As System.Windows.Forms.Button
-    Friend WithEvents cmb_empleado As System.Windows.Forms.ComboBox
-    Friend WithEvents grp_detalle_de_proveedor As System.Windows.Forms.GroupBox
-    Friend WithEvents lbl_total_display As System.Windows.Forms.Label
-    Friend WithEvents lbl_id_compra_display As System.Windows.Forms.Label
-    Friend WithEvents lbl_info_empleado As System.Windows.Forms.Label
-    Friend WithEvents lbl_id As System.Windows.Forms.Label
-    Friend WithEvents lbl_total As System.Windows.Forms.Label
-    Friend WithEvents lbl_empleado As System.Windows.Forms.Label
-    Friend WithEvents grp_producto As System.Windows.Forms.GroupBox
-    Friend WithEvents msk_cantidad As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents lbl_cantidad As System.Windows.Forms.Label
-    Friend WithEvents lbl_producto As System.Windows.Forms.Label
-    Friend WithEvents cmb_producto As System.Windows.Forms.ComboBox
-    Friend WithEvents grd_telefonos As System.Windows.Forms.DataGridView
-    Friend WithEvents col_tipo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents col_numero As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents lbl_mail_proveedor As System.Windows.Forms.Label
-    Friend WithEvents lbl_nombre_proveedor As System.Windows.Forms.Label
-    Friend WithEvents lbl_display_mail_proveedor As System.Windows.Forms.Label
-    Friend WithEvents lbl_id_proveedor As System.Windows.Forms.Label
-    Friend WithEvents lbl_display_nombre_proveedor As System.Windows.Forms.Label
-    Friend WithEvents lbl_display_id_proveedor As System.Windows.Forms.Label
-    Friend WithEvents msk_precio As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents lbl_precio As System.Windows.Forms.Label
-    Friend WithEvents lbl_telefonos As System.Windows.Forms.Label
-    Friend WithEvents lbl_razon_social_proveedor As System.Windows.Forms.Label
-    Friend WithEvents lbl_display_razon_social_proveedor As System.Windows.Forms.Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lbl_guardar As Label
+    Friend WithEvents btn_cancelar As Button
+    Friend WithEvents btn_guardar As Button
+    Friend WithEvents cmb_empleado As ComboBox
+    Friend WithEvents grp_detalle_de_proveedor As GroupBox
+    Friend WithEvents lbl_total_display As Label
+    Friend WithEvents lbl_id_compra_display As Label
+    Friend WithEvents lbl_info_empleado As Label
+    Friend WithEvents lbl_id As Label
+    Friend WithEvents lbl_total As Label
+    Friend WithEvents lbl_empleado As Label
+    Friend WithEvents grp_producto As GroupBox
+    Friend WithEvents msk_cantidad As MaskedTextBox
+    Friend WithEvents lbl_cantidad As Label
+    Friend WithEvents lbl_producto As Label
+    Friend WithEvents cmb_producto As ComboBox
+    Friend WithEvents grd_telefonos As DataGridView
+    Friend WithEvents col_tipo As DataGridViewTextBoxColumn
+    Friend WithEvents col_numero As DataGridViewTextBoxColumn
+    Friend WithEvents lbl_mail_proveedor As Label
+    Friend WithEvents lbl_nombre_proveedor As Label
+    Friend WithEvents lbl_display_mail_proveedor As Label
+    Friend WithEvents lbl_id_proveedor As Label
+    Friend WithEvents lbl_display_nombre_proveedor As Label
+    Friend WithEvents lbl_display_id_proveedor As Label
+    Friend WithEvents msk_precio As MaskedTextBox
+    Friend WithEvents lbl_precio As Label
+    Friend WithEvents lbl_telefonos As Label
+    Friend WithEvents lbl_razon_social_proveedor As Label
+    Friend WithEvents lbl_display_razon_social_proveedor As Label
 End Class

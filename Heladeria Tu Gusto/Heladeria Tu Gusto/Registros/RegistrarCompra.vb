@@ -103,7 +103,7 @@ Public Class RegistrarCompra
     Private Sub RegistrarCompra_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If _
             MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No _
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
             Then
             e.Cancel = True
         End If
@@ -115,13 +115,13 @@ Public Class RegistrarCompra
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
 
-        If ValidarInfo() = False and Validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.ConErrores Then
+        If ValidarInfo() = False And Validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.ConErrores Then
             MsgBox("No se han cargado datos", MsgBoxStyle.Critical, "No se puede guardar")
             Exit Sub
         End If
         If _
             MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = Windows.Forms.DialogResult.No _
+                            MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No _
             Then
             Exit Sub
         End If
@@ -138,7 +138,7 @@ Public Class RegistrarCompra
         sql &= cmb_producto.SelectedValue & ")"
         Conex.Insertar(sql)
         ActualizarStock()
-        lbl_id_compra_display.Text = Conex.Generar_id_consecutivo("Compra","id")
+        lbl_id_compra_display.Text = Conex.Generar_id_consecutivo("Compra", "id")
         msk_cantidad.Clear()
         msk_precio.Clear()
         MsgBox("Los datos de han guardado con éxito.", MsgBoxStyle.Information, "Datos registrados")

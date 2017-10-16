@@ -30,6 +30,7 @@
         If Validador.Verificar_vacios(Me.Controls) = Validador.EstadoValidacion.SinErrores Then
             Me.Insertar()
             MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
+            Asistente.LimpiarFormulario(Controls)
         End If
     End Sub
 
@@ -37,16 +38,18 @@
         Dim sql As String = ""
         sql = "insert into Empleado values"
         sql &= "(" & Conex.Generar_id_consecutivo("Empleado", "id")  'idEmpleado
-        sql &= ", " & Integer.Parse(txt_numero_documento.Text.Trim) 'numDoc
+        sql &= ", " & txt_numero_documento.Text.Trim                'numDoc
         sql &= ", " & cmb_tipo_documento.SelectedValue              'tipoDoc
         sql &= ", '" & txt_nombre.Text.Trim & "'"                   'nombre
         sql &= ", '" & txt_apellido.Text.Trim & "'"                 'apellido
         sql &= ", '" & date_fecha_nacimiento.Value.Date & "'"       'fechaNacimiento
         sql &= ", '" & DateTime.Today.Date & "'"                    'fechaIngreso
-        sql &= ", null" '& cmb_barrio.SelectedValue                 'fechaEgreso
-        sql &= ", " & cmb_barrio.SelectedValue                 'idBarrio falso
+        sql &= ", null" '                                           'fechaEgreso
+        sql &= ", " & cmb_barrio.SelectedValue                      'idBarrio
         sql &= ", '" & txt_calle.Text.Trim & "'"                    'calle
-        sql &= ", " & Integer.Parse(txt_numero_calle.Text.Trim)     'numCalle
+        sql &= ", " & txt_numero_calle.Text.Trim                    'numCalle
+        sql &= ", null"                                             'idLocalidad
+        sql &= ", null"                                             'idProvincia    
         sql &= ")"
 
         Conex.Insertar(sql)
@@ -59,7 +62,7 @@
     Private Sub RegistrarEmpleado_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If _
             MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No _
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
             Then
             e.Cancel = True
         End If

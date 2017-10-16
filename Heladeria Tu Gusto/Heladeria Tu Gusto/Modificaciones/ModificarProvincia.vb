@@ -10,7 +10,7 @@
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
         If _
             MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = Windows.Forms.DialogResult.Yes Then
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes Then
 
             If Asistente.VerificarVacios(Controls) = AsistenteFormulario.EstadoValidacion.SinErrores Then
                 Modificar()
@@ -26,7 +26,7 @@
     Private Sub cmd_cancel_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
         If _
             MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+                            MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
             Principal.Show()
         End If

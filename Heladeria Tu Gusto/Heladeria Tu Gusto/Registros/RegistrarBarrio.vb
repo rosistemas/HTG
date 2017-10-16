@@ -29,7 +29,7 @@ Public Class RegistrarBarrio
         'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
         If _
             MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning) = Windows.Forms.DialogResult.Yes Then
+                            MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
             Principal.Show()
         End If
