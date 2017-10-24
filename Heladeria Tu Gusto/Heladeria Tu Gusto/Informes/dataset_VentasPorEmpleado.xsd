@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dataset_VentasPorEmpleado" targetNamespace="http://tempuri.org/dataset_VentasPorEmpleado.xsd" xmlns:mstns="http://tempuri.org/dataset_VentasPorEmpleado.xsd" xmlns="http://tempuri.org/dataset_VentasPorEmpleado.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dataset_VentasPorEmpleado" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dataset_VentasPorEmpleado" msprop:Generator_UserDSName="dataset_VentasPorEmpleado">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VentasPorEmpleado" msprop:Generator_TableClassName="VentasPorEmpleadoDataTable" msprop:Generator_TableVarName="tableVentasPorEmpleado" msprop:Generator_RowChangedName="VentasPorEmpleadoRowChanged" msprop:Generator_TablePropName="VentasPorEmpleado" msprop:Generator_RowDeletingName="VentasPorEmpleadoRowDeleting" msprop:Generator_RowChangingName="VentasPorEmpleadoRowChanging" msprop:Generator_RowEvHandlerName="VentasPorEmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="VentasPorEmpleadoRowDeleted" msprop:Generator_RowClassName="VentasPorEmpleadoRow" msprop:Generator_UserTableName="VentasPorEmpleado" msprop:Generator_RowEvArgName="VentasPorEmpleadoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="legajo" msprop:Generator_ColumnVarNameInTable="columnLegajo" msprop:Generator_ColumnPropNameInRow="Legajo" msprop:Generator_ColumnPropNameInTable="LegajoColumn" msprop:Generator_UserColumnName="legajo" type="xs:int" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="apellido" msprop:Generator_ColumnVarNameInTable="columnapellido" msprop:Generator_ColumnPropNameInRow="apellido" msprop:Generator_ColumnPropNameInTable="apellidoColumn" msprop:Generator_UserColumnName="apellido" type="xs:string" minOccurs="0" />
+              <xs:element name="idVenta" msprop:Generator_ColumnVarNameInTable="columnidVenta" msprop:Generator_ColumnPropNameInRow="idVenta" msprop:Generator_ColumnPropNameInTable="idVentaColumn" msprop:Generator_UserColumnName="idVenta" type="xs:int" minOccurs="0" />
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="hora" msprop:Generator_ColumnVarNameInTable="columnhora" msprop:Generator_ColumnPropNameInRow="hora" msprop:Generator_ColumnPropNameInTable="horaColumn" msprop:Generator_UserColumnName="hora" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="totalVendido" msprop:Generator_ColumnVarNameInTable="columntotalVendido" msprop:Generator_ColumnPropNameInRow="totalVendido" msprop:Generator_ColumnPropNameInTable="totalVendidoColumn" msprop:Generator_UserColumnName="totalVendido" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

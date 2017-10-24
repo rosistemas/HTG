@@ -90,6 +90,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Informes\dataset_VentasPorEmpleado.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataset_VentasPorEmpleado.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Informes\Reporte.Designer.vb">
       <DependentUpon>Reporte.vb</DependentUpon>
     </Compile>
@@ -100,6 +105,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Ventas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\VentasPorEmpleado.Designer.vb">
+      <DependentUpon>VentasPorEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\VentasPorEmpleado.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Logica\AsistenteFormulario.vb" />
     <Compile Include="Logica\Conexiones.vb" />
@@ -235,6 +246,10 @@
     <EmbeddedResource Include="Informes\Reporte.resx">
       <DependentUpon>Reporte.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Informes\report_VentasPorEmpleado.rdlc" />
+    <EmbeddedResource Include="Informes\VentasPorEmpleado.resx">
+      <DependentUpon>VentasPorEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modificaciones\ModificarProvincia.resx">
       <DependentUpon>ModificarProvincia.vb</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +312,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Informes\dataset_VentasPorEmpleado.xsc">
+      <DependentUpon>dataset_VentasPorEmpleado.xsd</DependentUpon>
+    </None>
+    <None Include="Informes\dataset_VentasPorEmpleado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataset_VentasPorEmpleado.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Informes\dataset_VentasPorEmpleado.xss">
+      <DependentUpon>dataset_VentasPorEmpleado.xsd</DependentUpon>
+    </None>
     <None Include="Informes\Ventas.xsc">
       <DependentUpon>Ventas.xsd</DependentUpon>
     </None>
@@ -379,7 +405,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

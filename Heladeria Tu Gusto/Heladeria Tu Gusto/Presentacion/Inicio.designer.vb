@@ -25,11 +25,11 @@ Partial Class Inicio
     'Do not modify it using the code editor.
     <DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New Container()
-        Dim resources As ComponentResourceManager = New ComponentResourceManager(GetType(Inicio))
-        Me.timer_inicio = New Timer(Me.components)
-        Me.PictureBox1 = New PictureBox()
-        CType(Me.PictureBox1, ISupportInitialize).BeginInit()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inicio))
+        Me.timer_inicio = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'timer_inicio
@@ -37,26 +37,24 @@ Partial Class Inicio
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        Me.PictureBox1.Location = New Point(0, 0)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New Size(738, 265)
+        Me.PictureBox1.Size = New System.Drawing.Size(738, 265)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'Inicio
         '
-        Me.AutoScaleDimensions = New SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = AutoScaleMode.Font
-        Me.ClientSize = New Size(736, 263)
+        Me.ClientSize = New System.Drawing.Size(736, 263)
         Me.Controls.Add(Me.PictureBox1)
-        Me.FormBorderStyle = FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Inicio"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
-        Me.StartPosition = FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
-        CType(Me.PictureBox1, ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

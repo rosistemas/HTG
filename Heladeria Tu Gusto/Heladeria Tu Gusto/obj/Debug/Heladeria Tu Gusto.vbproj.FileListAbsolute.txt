@@ -119,30 +119,6 @@ C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gu
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Registrar_Localidad.resources
 C:\Users\FRAN-NOTEBOOK\Facultad\PAV\Git Clone\Heladeria_Tu_Gusto\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProvincia.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Inicio.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarBarrio.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarBarrio.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarLocalidad.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarCompra.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProvincia.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Inicio.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProvincia.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarBarrio.resources
@@ -221,9 +197,6 @@ C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj
 C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
 C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
 C:\GitKraken Principal\Para romper\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarLocalidad.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTipoProducto.resources
-C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTipoProducto.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\SqlServerTypes\x64\msvcr120.dll
@@ -287,3 +260,93 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANT
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Reporte.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\RdlCompile.cache
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\RdlCompile.compiled
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Reporte.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.VentasPorEmpleado.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProvincia.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Inicio.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarBarrio.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProveedor.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarLocalidad.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Principal.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Resources.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarBarrio.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarLocalidad.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarCompra.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProvincia.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTipoProducto.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\RdlCompile.cache
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\RdlCompile.compiled
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
+C:\Users\FRAN-NOTEBOOK\Facultad\PAV\GitHub Clone\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb

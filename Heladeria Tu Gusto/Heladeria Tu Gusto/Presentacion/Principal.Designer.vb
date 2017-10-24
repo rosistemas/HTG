@@ -50,12 +50,13 @@ Partial Class Principal
         Me.modificar_provincia = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PreferenciasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReporteDeVentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AccesosDirectosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReporteDeVentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout
-        Me.SuspendLayout
+        Me.EmpleadosPorVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
+        Me.SuspendLayout()
         '
         'MenuStrip1
         '
@@ -214,10 +215,16 @@ Partial Class Principal
         '
         'PreferenciasToolStripMenuItem
         '
-        Me.PreferenciasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteDeVentasToolStripMenuItem})
+        Me.PreferenciasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteDeVentasToolStripMenuItem, Me.EmpleadosPorVentaToolStripMenuItem})
         Me.PreferenciasToolStripMenuItem.Name = "PreferenciasToolStripMenuItem"
         Me.PreferenciasToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.PreferenciasToolStripMenuItem.Text = "Reportes"
+        '
+        'ReporteDeVentasToolStripMenuItem
+        '
+        Me.ReporteDeVentasToolStripMenuItem.Name = "ReporteDeVentasToolStripMenuItem"
+        Me.ReporteDeVentasToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.ReporteDeVentasToolStripMenuItem.Text = "Reporte de ventas"
         '
         'AyudaToolStripMenuItem
         '
@@ -238,11 +245,11 @@ Partial Class Principal
         Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
         '
-        'ReporteDeVentasToolStripMenuItem
+        'EmpleadosPorVentaToolStripMenuItem
         '
-        Me.ReporteDeVentasToolStripMenuItem.Name = "ReporteDeVentasToolStripMenuItem"
-        Me.ReporteDeVentasToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.ReporteDeVentasToolStripMenuItem.Text = "Reporte de ventas"
+        Me.EmpleadosPorVentaToolStripMenuItem.Name = "EmpleadosPorVentaToolStripMenuItem"
+        Me.EmpleadosPorVentaToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.EmpleadosPorVentaToolStripMenuItem.Text = "Empleados por Venta"
         '
         'Principal
         '
@@ -291,4 +298,5 @@ End Sub
     Friend WithEvents TipoProductoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TurnoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReporteDeVentasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EmpleadosPorVentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
