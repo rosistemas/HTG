@@ -15,9 +15,19 @@
     End Property
 
     Private Sub RegistrarProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim tabla As New DataTable
+        tabla = Conex.Consultar("select * from Provincia")
+
+
         CargarCombo(cmb_tipo_documento, Conex.LeerTabla("TipoDoc"), "descripcion", "id")
-        CargarCombo(cmb_localidad, Conex.LeerTabla("Localidad"), "nombre", "id")
-        CargarCombo(cmb_barrio, Conex.LeerTabla("Barrio"), "nombre", "id")
+        CargarCombo(cmb_producto, Conex.Consultar("select * from producto p where p.idProducto not in (select p1.idProducto from proveedor p1)"), "nombre", "idProducto")
+        CargarCombo(cmb_provincia, tabla, "nombre", "id")
+        cmb_localidad.DataSource = Nothing
+        cmb_barrio.DataSource = Nothing
+        cmb_localidad.Items.Clear()
+        cmb_barrio.Items.Clear()
+
+        
     End Sub
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
@@ -28,6 +38,8 @@
     End Sub
 
     Private Sub CargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descripcion As String, pk As String)
+
+        combo.DataSource = Nothing
 
         combo.Items.Clear()
         combo.DataSource = tabla
@@ -49,6 +61,8 @@
         sql &= ", " & Integer.Parse(txt_numero_calle.Text.Trim)     'numCalle
         sql &= ", '" & txt_nombre.Text.Trim & "'"                   'nombre
         sql &= ", " & cmb_localidad.SelectedValue                   'idLocalidad
+        sql &= ", " & cmb_producto.SelectedValue                   'idProducto
+        sql &= ", " & cmb_provincia.SelectedValue                   'idProvincia
         sql &= ")"
 
         Conex.Insertar(sql)
@@ -65,4 +79,26 @@
         End If
         Principal.Show()
     End Sub
+
+    Private Sub cmb_localidad_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_localidad.SelectionChangeCommitted
+        cmb_barrio.DataSource = Nothing
+        cmb_barrio.Items.Clear()
+        Dim sql As String = "select * from barrio where idLocalidad = " & cmb_localidad.SelectedValue
+        CargarCombo(cmb_barrio, Conex.Consultar(sql), "nombre", "id")
+    End Sub
+
+    
+    Private Sub cmb_provincia_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_provincia.SelectionChangeCommitted
+
+        cmb_localidad.DataSource = Nothing
+        cmb_barrio.DataSource = Nothing
+        cmb_localidad.Items.Clear()
+        cmb_barrio.Items.Clear()
+        Dim sql As String = "select * from localidad where idProvincia = " & cmb_provincia.SelectedValue
+        CargarCombo(cmb_localidad, Conex.Consultar(sql), "nombre", "id")
+
+        
+    End Sub
+
+    
 End Class

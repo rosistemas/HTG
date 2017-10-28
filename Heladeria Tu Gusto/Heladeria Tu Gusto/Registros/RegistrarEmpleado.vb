@@ -23,7 +23,13 @@
 
     Private Sub RegistrarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Asistente.CargarCombo(cmb_tipo_documento, Conex.LeerTabla("TipoDoc"), "descripcion", "id")
-        Asistente.CargarCombo(cmb_barrio, Conex.LeerTabla("Barrio"), "nombre", "id")
+        cmb_barrio.DataSource = Nothing
+        cmb_localidad.DataSource = Nothing
+        cmb_barrio.Items.Clear()
+        cmb_localidad.Items.Clear()
+        Asistente.CargarCombo(cmb_provincia, Conex.LeerTabla("Provincia"), "nombre", "id")
+       
+
     End Sub
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
@@ -48,8 +54,8 @@
         sql &= ", " & cmb_barrio.SelectedValue                      'idBarrio
         sql &= ", '" & txt_calle.Text.Trim & "'"                    'calle
         sql &= ", " & txt_numero_calle.Text.Trim                    'numCalle
-        sql &= ", null"                                             'idLocalidad
-        sql &= ", null"                                             'idProvincia    
+        sql &= ", " & cmb_localidad.SelectedValue                                             'idLocalidad
+        sql &= ", " & cmb_provincia.SelectedValue                                             'idProvincia    
         sql &= ")"
 
         Conex.Insertar(sql)
@@ -66,5 +72,15 @@
             Then
             e.Cancel = True
         End If
+    End Sub
+
+    Private Sub cmb_provincia_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_provincia.SelectionChangeCommitted
+        cmb_barrio.DataSource = Nothing
+        cmb_barrio.Items.Clear()
+        Asistente.CargarCombo(cmb_localidad, Conex.Consultar("select * from localidad l where l.idProvincia = " & cmb_provincia.SelectedValue), "nombre", "id")
+    End Sub
+
+    Private Sub cmb_localidad_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_localidad.SelectionChangeCommitted
+        Asistente.CargarCombo(cmb_barrio, Conex.Consultar("select * from barrio l where l.idLocalidad = " & cmb_localidad.SelectedValue), "nombre", "id")
     End Sub
 End Class

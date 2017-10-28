@@ -142,7 +142,10 @@ Public Class RegistrarVenta
 
     Private Sub RegistrarVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cargar_combo(cmb_empleado, Conex.LeerTabla("empleado"), "id", "id")
+        cargar_combo(cmb_producto, Conex.LeerTabla("producto"), "idProducto", "nombre")
         lbl_id_venta_display.Text = generar_id_venta()
+        txt_codigo_producto.Text = cmb_producto.SelectedValue
+
         mostrar_info_empleado()
     End Sub
 
@@ -206,5 +209,10 @@ Public Class RegistrarVenta
     Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) _
         Handles cmb_empleado.SelectionChangeCommitted
         mostrar_info_empleado()
+    End Sub
+
+    Private Sub cmb_producto_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_producto.SelectionChangeCommitted
+
+        txt_codigo_producto.Text = cmb_producto.SelectedValue
     End Sub
 End Class
