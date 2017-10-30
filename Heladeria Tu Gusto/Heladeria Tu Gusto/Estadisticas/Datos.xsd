@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Datos" targetNamespace="http://tempuri.org/Datos.xsd" xmlns:mstns="http://tempuri.org/Datos.xsd" xmlns="http://tempuri.org/Datos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Datos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Datos" msprop:Generator_UserDSName="Datos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GraficoBarrasProductosVendidos" msprop:Generator_TableClassName="GraficoBarrasProductosVendidosDataTable" msprop:Generator_TableVarName="tableGraficoBarrasProductosVendidos" msprop:Generator_TablePropName="GraficoBarrasProductosVendidos" msprop:Generator_RowDeletingName="GraficoBarrasProductosVendidosRowDeleting" msprop:Generator_RowChangingName="GraficoBarrasProductosVendidosRowChanging" msprop:Generator_RowEvHandlerName="GraficoBarrasProductosVendidosRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoBarrasProductosVendidosRowDeleted" msprop:Generator_UserTableName="GraficoBarrasProductosVendidos" msprop:Generator_RowChangedName="GraficoBarrasProductosVendidosRowChanged" msprop:Generator_RowEvArgName="GraficoBarrasProductosVendidosRowChangeEvent" msprop:Generator_RowClassName="GraficoBarrasProductosVendidosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GraficoTortaPorcentajeVendidos" msprop:Generator_TableClassName="GraficoTortaPorcentajeVendidosDataTable" msprop:Generator_TableVarName="tableGraficoTortaPorcentajeVendidos" msprop:Generator_TablePropName="GraficoTortaPorcentajeVendidos" msprop:Generator_RowDeletingName="GraficoTortaPorcentajeVendidosRowDeleting" msprop:Generator_RowChangingName="GraficoTortaPorcentajeVendidosRowChanging" msprop:Generator_RowEvHandlerName="GraficoTortaPorcentajeVendidosRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoTortaPorcentajeVendidosRowDeleted" msprop:Generator_UserTableName="GraficoTortaPorcentajeVendidos" msprop:Generator_RowChangedName="GraficoTortaPorcentajeVendidosRowChanged" msprop:Generator_RowEvArgName="GraficoTortaPorcentajeVendidosRowChangeEvent" msprop:Generator_RowClassName="GraficoTortaPorcentajeVendidosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="porcentaje" msprop:Generator_ColumnVarNameInTable="columnporcentaje" msprop:Generator_ColumnPropNameInRow="porcentaje" msprop:Generator_ColumnPropNameInTable="porcentajeColumn" msprop:Generator_UserColumnName="porcentaje" type="xs:double" minOccurs="0" />
+              <xs:element name="precio" msprop:Generator_ColumnVarNameInTable="columnprecio" msprop:Generator_ColumnPropNameInRow="precio" msprop:Generator_ColumnPropNameInTable="precioColumn" msprop:Generator_UserColumnName="precio" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

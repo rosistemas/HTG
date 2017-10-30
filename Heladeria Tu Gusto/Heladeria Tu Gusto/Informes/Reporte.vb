@@ -1,4 +1,4 @@
-﻿Public Class Reporte
+﻿Public Class InformeDeVentas
     Private Property Conex As Conexiones = New Conexiones
 
     Private Sub Reporte_Load(sender As Object, e As EventArgs) Handles MyBase.Load

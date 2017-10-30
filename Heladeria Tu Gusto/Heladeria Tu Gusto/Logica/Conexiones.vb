@@ -2,31 +2,13 @@
 
 Public Class Conexiones
     'Cadena conexion rodrigo "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    'Cadena conexion rodrigo netbook Provider=SQLNCLI11;Data Source=RODRIGO-PC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto
+    'Cadena conexion rodrigo netbook ""Provider=SQLNCLI11;Data Source=RODRIGO-PC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     'Cadena conexion fran "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Private ReadOnly _cadenaConexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-LF51CMQ\SQLEXPRESS01;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Private ReadOnly _conexion As New OleDbConnection
-    Private ReadOnly _comando As New OleDbCommand
 
-    Public ReadOnly Property CadenaConexion As String
-        Get
-            Return _cadenaConexion
-        End Get
-    End Property
-
-    Public ReadOnly Property Conexion As OleDbConnection
-        Get
-            Return _conexion
-        End Get
-    End Property
-
-    Public ReadOnly Property Comando As OleDbCommand
-        Get
-            Return _comando
-        End Get
-    End Property
-
-
+    Private  Property CadenaConexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    Private  Property Conexion As OleDbConnection = New OleDbConnection
+    Private  Property Comando As OleDbCommand = New OleDbCommand
+    
     Private Sub AbrirConexion()
         If Conexion.ConnectionString = "" Then
             Conexion.ConnectionString = CadenaConexion
@@ -90,5 +72,4 @@ Public Class Conexiones
             Return tabla.Rows(ultimaPos)(pk) + 1
         End If
     End Function
-
 End Class

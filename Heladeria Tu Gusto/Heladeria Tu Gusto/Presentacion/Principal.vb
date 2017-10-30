@@ -140,10 +140,14 @@ Public Class Principal
     End Sub
 
     Private Sub ReporteDeVentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeVentasToolStripMenuItem.Click
-        Reporte.Show()
+        InformeDeVentas.Show()
     End Sub
 
     Private Sub EmpleadosPorVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpleadosPorVentaToolStripMenuItem.Click
         VentasPorEmpleado.Show()
+    End Sub
+
+    Private Sub EstadísticasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EstadísticasToolStripMenuItem.Click
+        Estadisticas.Show()
     End Sub
 End Class

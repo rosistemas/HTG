@@ -90,6 +90,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Estadisticas\Datos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Datos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\Estadisticas.Designer.vb">
+      <DependentUpon>Estadisticas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\Estadisticas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Informes\dataset_VentasPorEmpleado.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -242,6 +253,11 @@
     <Compile Include="Logica\Validador.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Estadisticas\Estadisticas.resx">
+      <DependentUpon>Estadisticas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas\ProductosVendidos.rdlc" />
+    <EmbeddedResource Include="Estadisticas\PorcentajeDeIngresos.rdlc" />
     <EmbeddedResource Include="Informes\Reporte.rdlc" />
     <EmbeddedResource Include="Informes\Reporte.resx">
       <DependentUpon>Reporte.vb</DependentUpon>
@@ -312,6 +328,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Estadisticas\Datos.xsc">
+      <DependentUpon>Datos.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\Datos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Datos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Estadisticas\Datos.xss">
+      <DependentUpon>Datos.xsd</DependentUpon>
+    </None>
     <None Include="Informes\dataset_VentasPorEmpleado.xsc">
       <DependentUpon>dataset_VentasPorEmpleado.xsd</DependentUpon>
     </None>
@@ -390,23 +417,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\efecto.wav" />
-    <Content Include="SqlServerTypes\Loader.cs" />
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
