@@ -30,6 +30,14 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="GraficoBarrasVentaPorHorario" msprop:Generator_TableClassName="GraficoBarrasVentaPorHorarioDataTable" msprop:Generator_TableVarName="tableGraficoBarrasVentaPorHorario" msprop:Generator_RowChangedName="GraficoBarrasVentaPorHorarioRowChanged" msprop:Generator_TablePropName="GraficoBarrasVentaPorHorario" msprop:Generator_RowDeletingName="GraficoBarrasVentaPorHorarioRowDeleting" msprop:Generator_RowChangingName="GraficoBarrasVentaPorHorarioRowChanging" msprop:Generator_RowEvHandlerName="GraficoBarrasVentaPorHorarioRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoBarrasVentaPorHorarioRowDeleted" msprop:Generator_RowClassName="GraficoBarrasVentaPorHorarioRow" msprop:Generator_UserTableName="GraficoBarrasVentaPorHorario" msprop:Generator_RowEvArgName="GraficoBarrasVentaPorHorarioRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="horario" msprop:Generator_ColumnVarNameInTable="columnhorario" msprop:Generator_ColumnPropNameInRow="horario" msprop:Generator_ColumnPropNameInTable="horarioColumn" msprop:Generator_UserColumnName="horario" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>

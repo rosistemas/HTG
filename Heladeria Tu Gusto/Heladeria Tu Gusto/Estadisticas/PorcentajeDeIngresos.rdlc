@@ -63,7 +63,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>1.04979cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -75,7 +75,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Producto</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -107,7 +109,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cantidad</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -138,8 +142,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Total</Value>
-                                  <Style />
+                                  <Value>Porcentaje sobre el total de ventas</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -286,8 +292,8 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>1.12685cm</Top>
             <Left>11.89363cm</Left>
-            <Height>1.2cm</Height>
-            <Width>10cm</Width>
+            <Height>1.64979cm</Height>
+            <Width>9.99999cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -613,7 +619,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
+                <Caption>Total de ventas visto como el porcentaje que implica cada producto dentro del rango seleccionado</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -645,7 +651,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>0.17639cm</Top>
             <Left>0.26141cm</Left>
-            <Height>8.88938cm</Height>
+            <Height>10.72064cm</Height>
             <Width>11.45583cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -689,7 +695,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.29017in</Height>
+        <Height>4.95684in</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -700,7 +706,7 @@
           </BackgroundImage>
         </Style>
       </Body>
-      <Width>8.61954in</Width>
+      <Width>8.66121in</Width>
       <Page>
         <PageHeader>
           <Height>1.33766cm</Height>
@@ -750,7 +756,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.16417cm</Height>
+          <Height>1.03188cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>

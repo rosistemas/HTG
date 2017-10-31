@@ -258,6 +258,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estadisticas\ProductosVendidos.rdlc" />
     <EmbeddedResource Include="Estadisticas\PorcentajeDeIngresos.rdlc" />
+    <EmbeddedResource Include="Estadisticas\VentasPorHorario.rdlc" />
     <EmbeddedResource Include="Informes\Reporte.rdlc" />
     <EmbeddedResource Include="Informes\Reporte.resx">
       <DependentUpon>Reporte.vb</DependentUpon>

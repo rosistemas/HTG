@@ -66,7 +66,9 @@ Public Class Principal
         If (e.Control AndAlso e.KeyCode = Keys.NumPad4) Then
             RegistrarCompra.Show()
         End If
-
+        If (e.Control AndAlso e.KeyCode = Keys.R) Then
+            Estadisticas.Show()
+        End If
 
 
     End Sub
@@ -107,7 +109,6 @@ Public Class Principal
         mensaje.Append("Rodrigo Gomez").AppendLine()
         mensaje.Append("Daniel Caminos").AppendLine()
         mensaje.Append("Francisco Castillo").AppendLine()
-        mensaje.Append("Tomas Bianco").AppendLine()
         mensaje.AppendLine()
         mensaje.AppendLine()
         mensaje.Append("Todos los derechos reservados...")
