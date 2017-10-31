@@ -587,9 +587,9 @@ Partial Public Class Datos
         
         Private columncantidad As Global.System.Data.DataColumn
         
-        Private columnporcentaje As Global.System.Data.DataColumn
+        Private columntotal As Global.System.Data.DataColumn
         
-        Private columnprecio As Global.System.Data.DataColumn
+        Private columnporcentaje As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
@@ -644,17 +644,17 @@ Partial Public Class Datos
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public ReadOnly Property porcentajeColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property totalColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnporcentaje
+                Return Me.columntotal
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public ReadOnly Property precioColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property porcentajeColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnprecio
+                Return Me.columnporcentaje
             End Get
         End Property
         
@@ -695,9 +695,9 @@ Partial Public Class Datos
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Overloads Function AddGraficoTortaPorcentajeVendidosRow(ByVal nombre As String, ByVal cantidad As Integer, ByVal porcentaje As Double, ByVal precio As String) As GraficoTortaPorcentajeVendidosRow
+        Public Overloads Function AddGraficoTortaPorcentajeVendidosRow(ByVal nombre As String, ByVal cantidad As Integer, ByVal total As Double, ByVal porcentaje As Double) As GraficoTortaPorcentajeVendidosRow
             Dim rowGraficoTortaPorcentajeVendidosRow As GraficoTortaPorcentajeVendidosRow = CType(Me.NewRow,GraficoTortaPorcentajeVendidosRow)
-            Dim columnValuesArray() As Object = New Object() {nombre, cantidad, porcentaje, precio}
+            Dim columnValuesArray() As Object = New Object() {nombre, cantidad, total, porcentaje}
             rowGraficoTortaPorcentajeVendidosRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowGraficoTortaPorcentajeVendidosRow)
             Return rowGraficoTortaPorcentajeVendidosRow
@@ -722,8 +722,8 @@ Partial Public Class Datos
         Friend Sub InitVars()
             Me.columnnombre = MyBase.Columns("nombre")
             Me.columncantidad = MyBase.Columns("cantidad")
+            Me.columntotal = MyBase.Columns("total")
             Me.columnporcentaje = MyBase.Columns("porcentaje")
-            Me.columnprecio = MyBase.Columns("precio")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -733,10 +733,10 @@ Partial Public Class Datos
             MyBase.Columns.Add(Me.columnnombre)
             Me.columncantidad = New Global.System.Data.DataColumn("cantidad", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columncantidad)
+            Me.columntotal = New Global.System.Data.DataColumn("total", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columntotal)
             Me.columnporcentaje = New Global.System.Data.DataColumn("porcentaje", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnporcentaje)
-            Me.columnprecio = New Global.System.Data.DataColumn("precio", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnprecio)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -987,6 +987,22 @@ Partial Public Class Datos
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property total() As Double
+            Get
+                Try 
+                    Return CType(Me(Me.tableGraficoTortaPorcentajeVendidos.totalColumn),Double)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'total' de la tabla 'GraficoTortaPorcentajeVendidos' es DB"& _ 
+                            "Null.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableGraficoTortaPorcentajeVendidos.totalColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Property porcentaje() As Double
             Get
                 Try 
@@ -998,22 +1014,6 @@ Partial Public Class Datos
             End Get
             Set
                 Me(Me.tableGraficoTortaPorcentajeVendidos.porcentajeColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property precio() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tableGraficoTortaPorcentajeVendidos.precioColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'precio' de la tabla 'GraficoTortaPorcentajeVendidos' es D"& _ 
-                            "BNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableGraficoTortaPorcentajeVendidos.precioColumn) = value
             End Set
         End Property
         
@@ -1043,6 +1043,18 @@ Partial Public Class Datos
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IstotalNull() As Boolean
+            Return Me.IsNull(Me.tableGraficoTortaPorcentajeVendidos.totalColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SettotalNull()
+            Me(Me.tableGraficoTortaPorcentajeVendidos.totalColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Function IsporcentajeNull() As Boolean
             Return Me.IsNull(Me.tableGraficoTortaPorcentajeVendidos.porcentajeColumn)
         End Function
@@ -1051,18 +1063,6 @@ Partial Public Class Datos
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Sub SetporcentajeNull()
             Me(Me.tableGraficoTortaPorcentajeVendidos.porcentajeColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Function IsprecioNull() As Boolean
-            Return Me.IsNull(Me.tableGraficoTortaPorcentajeVendidos.precioColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Sub SetprecioNull()
-            Me(Me.tableGraficoTortaPorcentajeVendidos.precioColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     

@@ -24,6 +24,10 @@ Partial Class Estadisticas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.GraficoBarrasProductosVendidosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Datos = New Heladeria_Tu_Gusto.Datos()
+        Me.GraficoTortaPorcentajeVendidosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.rv_productos_vendidos = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,24 +35,38 @@ Partial Class Estadisticas
         Me.txt_li_productos_vendidos = New System.Windows.Forms.TextBox()
         Me.btn_graficar_productos_vendidos = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.lbl_mostrar_reporte = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.rv_porcentaje_ingresos = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.lbl_presione_porcentaje_ventas = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_ls_porcentaje_ventas = New System.Windows.Forms.TextBox()
+        Me.txt_li_porcentaje_ventas = New System.Windows.Forms.TextBox()
         Me.btn_graficar_porcentaje_ganancias = New System.Windows.Forms.Button()
-        Me.rv_porcentaje_ingresos = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.GraficoBarrasProductosVendidosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Datos = New Heladeria_Tu_Gusto.Datos()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.lbl_presione_productos_vendidos = New System.Windows.Forms.Label()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        CType(Me.GraficoBarrasProductosVendidosBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Datos,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.GraficoTortaPorcentajeVendidosBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage2.SuspendLayout
         Me.TabPage1.SuspendLayout
         Me.TabControl1.SuspendLayout
-        CType(Me.GraficoBarrasProductosVendidosBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Datos,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
+        '
+        'GraficoBarrasProductosVendidosBindingSource
+        '
+        Me.GraficoBarrasProductosVendidosBindingSource.DataMember = "GraficoBarrasProductosVendidos"
+        Me.GraficoBarrasProductosVendidosBindingSource.DataSource = Me.Datos
+        '
+        'Datos
+        '
+        Me.Datos.DataSetName = "Datos"
+        Me.Datos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'GraficoTortaPorcentajeVendidosBindingSource
+        '
+        Me.GraficoTortaPorcentajeVendidosBindingSource.DataMember = "GraficoTortaPorcentajeVendidos"
+        Me.GraficoTortaPorcentajeVendidosBindingSource.DataSource = Me.Datos
         '
         'rv_productos_vendidos
         '
@@ -110,69 +128,45 @@ Partial Class Estadisticas
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.rv_porcentaje_ingresos)
-        Me.TabPage2.Controls.Add(Me.Label3)
+        Me.TabPage2.Controls.Add(Me.lbl_presione_porcentaje_ventas)
         Me.TabPage2.Controls.Add(Me.Label4)
         Me.TabPage2.Controls.Add(Me.Label5)
-        Me.TabPage2.Controls.Add(Me.TextBox1)
-        Me.TabPage2.Controls.Add(Me.TextBox2)
+        Me.TabPage2.Controls.Add(Me.txt_ls_porcentaje_ventas)
+        Me.TabPage2.Controls.Add(Me.txt_li_porcentaje_ventas)
         Me.TabPage2.Controls.Add(Me.btn_graficar_porcentaje_ganancias)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(851, 570)
+        Me.TabPage2.Size = New System.Drawing.Size(851, 665)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.Text = "Porcentaje de ventas"
         Me.TabPage2.UseVisualStyleBackColor = true
         '
-        'TabPage1
+        'rv_porcentaje_ingresos
         '
-        Me.TabPage1.Controls.Add(Me.lbl_mostrar_reporte)
-        Me.TabPage1.Controls.Add(Me.rv_productos_vendidos)
-        Me.TabPage1.Controls.Add(Me.Label2)
-        Me.TabPage1.Controls.Add(Me.Label1)
-        Me.TabPage1.Controls.Add(Me.txt_ls_productos_vendidos)
-        Me.TabPage1.Controls.Add(Me.txt_li_productos_vendidos)
-        Me.TabPage1.Controls.Add(Me.btn_graficar_productos_vendidos)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(851, 570)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Productos vendidos"
-        Me.TabPage1.UseVisualStyleBackColor = true
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+        Me.rv_porcentaje_ingresos.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 12)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(859, 596)
-        Me.TabControl1.TabIndex = 0
+        ReportDataSource2.Name = "DataSet1"
+        ReportDataSource2.Value = Me.GraficoTortaPorcentajeVendidosBindingSource
+        Me.rv_porcentaje_ingresos.LocalReport.DataSources.Add(ReportDataSource2)
+        Me.rv_porcentaje_ingresos.LocalReport.ReportEmbeddedResource = "Heladeria_Tu_Gusto.PorcentajeDeIngresos.rdlc"
+        Me.rv_porcentaje_ingresos.Location = New System.Drawing.Point(7, 58)
+        Me.rv_porcentaje_ingresos.Name = "rv_porcentaje_ingresos"
+        Me.rv_porcentaje_ingresos.ServerReport.BearerToken = Nothing
+        Me.rv_porcentaje_ingresos.Size = New System.Drawing.Size(838, 601)
+        Me.rv_porcentaje_ingresos.TabIndex = 14
+        Me.rv_porcentaje_ingresos.Visible = false
         '
-        'lbl_mostrar_reporte
+        'lbl_presione_porcentaje_ventas
         '
-        Me.lbl_mostrar_reporte.AutoSize = true
-        Me.lbl_mostrar_reporte.BackColor = System.Drawing.Color.Silver
-        Me.lbl_mostrar_reporte.Location = New System.Drawing.Point(322, 22)
-        Me.lbl_mostrar_reporte.Name = "lbl_mostrar_reporte"
-        Me.lbl_mostrar_reporte.Size = New System.Drawing.Size(206, 13)
-        Me.lbl_mostrar_reporte.TabIndex = 7
-        Me.lbl_mostrar_reporte.Text = "Presione graficar para visualizar el reporte."
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = true
-        Me.Label3.BackColor = System.Drawing.Color.Silver
-        Me.Label3.Location = New System.Drawing.Point(320, 22)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(206, 13)
-        Me.Label3.TabIndex = 13
-        Me.Label3.Text = "Presione graficar para visualizar el reporte."
+        Me.lbl_presione_porcentaje_ventas.AutoSize = true
+        Me.lbl_presione_porcentaje_ventas.BackColor = System.Drawing.Color.Silver
+        Me.lbl_presione_porcentaje_ventas.Location = New System.Drawing.Point(320, 22)
+        Me.lbl_presione_porcentaje_ventas.Name = "lbl_presione_porcentaje_ventas"
+        Me.lbl_presione_porcentaje_ventas.Size = New System.Drawing.Size(206, 13)
+        Me.lbl_presione_porcentaje_ventas.TabIndex = 13
+        Me.lbl_presione_porcentaje_ventas.Text = "Presione graficar para visualizar el reporte."
         '
         'Label4
         '
@@ -192,19 +186,19 @@ Partial Class Estadisticas
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Límite inferior:"
         '
-        'TextBox1
+        'txt_ls_porcentaje_ventas
         '
-        Me.TextBox1.Location = New System.Drawing.Point(89, 32)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 10
+        Me.txt_ls_porcentaje_ventas.Location = New System.Drawing.Point(89, 32)
+        Me.txt_ls_porcentaje_ventas.Name = "txt_ls_porcentaje_ventas"
+        Me.txt_ls_porcentaje_ventas.Size = New System.Drawing.Size(100, 20)
+        Me.txt_ls_porcentaje_ventas.TabIndex = 10
         '
-        'TextBox2
+        'txt_li_porcentaje_ventas
         '
-        Me.TextBox2.Location = New System.Drawing.Point(89, 6)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 9
+        Me.txt_li_porcentaje_ventas.Location = New System.Drawing.Point(89, 6)
+        Me.txt_li_porcentaje_ventas.Name = "txt_li_porcentaje_ventas"
+        Me.txt_li_porcentaje_ventas.Size = New System.Drawing.Size(100, 20)
+        Me.txt_li_porcentaje_ventas.TabIndex = 9
         '
         'btn_graficar_porcentaje_ganancias
         '
@@ -215,42 +209,62 @@ Partial Class Estadisticas
         Me.btn_graficar_porcentaje_ganancias.Text = "Graficar"
         Me.btn_graficar_porcentaje_ganancias.UseVisualStyleBackColor = true
         '
-        'rv_porcentaje_ingresos
+        'TabPage1
         '
-        Me.rv_porcentaje_ingresos.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+        Me.TabPage1.Controls.Add(Me.lbl_presione_productos_vendidos)
+        Me.TabPage1.Controls.Add(Me.rv_productos_vendidos)
+        Me.TabPage1.Controls.Add(Me.Label2)
+        Me.TabPage1.Controls.Add(Me.Label1)
+        Me.TabPage1.Controls.Add(Me.txt_ls_productos_vendidos)
+        Me.TabPage1.Controls.Add(Me.txt_li_productos_vendidos)
+        Me.TabPage1.Controls.Add(Me.btn_graficar_productos_vendidos)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(851, 570)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Productos vendidos"
+        Me.TabPage1.UseVisualStyleBackColor = true
+        '
+        'lbl_presione_productos_vendidos
+        '
+        Me.lbl_presione_productos_vendidos.AutoSize = true
+        Me.lbl_presione_productos_vendidos.BackColor = System.Drawing.Color.Silver
+        Me.lbl_presione_productos_vendidos.Location = New System.Drawing.Point(327, 23)
+        Me.lbl_presione_productos_vendidos.Name = "lbl_presione_productos_vendidos"
+        Me.lbl_presione_productos_vendidos.Size = New System.Drawing.Size(206, 13)
+        Me.lbl_presione_productos_vendidos.TabIndex = 7
+        Me.lbl_presione_productos_vendidos.Text = "Presione graficar para visualizar el reporte."
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.rv_porcentaje_ingresos.Location = New System.Drawing.Point(7, 58)
-        Me.rv_porcentaje_ingresos.Name = "rv_porcentaje_ingresos"
-        Me.rv_porcentaje_ingresos.ServerReport.BearerToken = Nothing
-        Me.rv_porcentaje_ingresos.Size = New System.Drawing.Size(838, 506)
-        Me.rv_porcentaje_ingresos.TabIndex = 14
-        '
-        'GraficoBarrasProductosVendidosBindingSource
-        '
-        Me.GraficoBarrasProductosVendidosBindingSource.DataMember = "GraficoBarrasProductosVendidos"
-        Me.GraficoBarrasProductosVendidosBindingSource.DataSource = Me.Datos
-        '
-        'Datos
-        '
-        Me.Datos.DataSetName = "Datos"
-        Me.Datos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 12)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(859, 691)
+        Me.TabControl1.TabIndex = 0
         '
         'Estadisticas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(883, 620)
+        Me.ClientSize = New System.Drawing.Size(883, 715)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "Estadisticas"
         Me.Text = "Estadisticas"
+        CType(Me.GraficoBarrasProductosVendidosBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Datos,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.GraficoTortaPorcentajeVendidosBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage2.ResumeLayout(false)
         Me.TabPage2.PerformLayout
         Me.TabPage1.ResumeLayout(false)
         Me.TabPage1.PerformLayout
         Me.TabControl1.ResumeLayout(false)
-        CType(Me.GraficoBarrasProductosVendidosBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Datos,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
 
 End Sub
@@ -265,12 +279,13 @@ End Sub
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents GraficoBarrasProductosVendidosBindingSource As BindingSource
     Friend WithEvents Datos As Datos
-    Friend WithEvents lbl_mostrar_reporte As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lbl_presione_productos_vendidos As Label
+    Friend WithEvents lbl_presione_porcentaje_ventas As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_ls_porcentaje_ventas As TextBox
+    Friend WithEvents txt_li_porcentaje_ventas As TextBox
     Friend WithEvents btn_graficar_porcentaje_ganancias As Button
     Friend WithEvents rv_porcentaje_ingresos As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents GraficoTortaPorcentajeVendidosBindingSource As BindingSource
 End Class

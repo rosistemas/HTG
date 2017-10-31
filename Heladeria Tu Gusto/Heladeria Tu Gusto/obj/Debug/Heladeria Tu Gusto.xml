@@ -107,12 +107,27 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Heladeria_Tu_Gusto.Datos.GraficoTortaPorcentajeVendidosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Heladeria_Tu_Gusto.Datos.GraficoBarrasProductosVendidosRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
+<member name="T:Heladeria_Tu_Gusto.Datos.GraficoTortaPorcentajeVendidosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
 <member name="T:Heladeria_Tu_Gusto.Datos.GraficoBarrasProductosVendidosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Heladeria_Tu_Gusto.Datos.GraficoTortaPorcentajeVendidosRowChangeEvent">
 <summary>
 Row event argument class
 </summary>

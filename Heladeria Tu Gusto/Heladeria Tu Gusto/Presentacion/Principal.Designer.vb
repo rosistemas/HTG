@@ -216,7 +216,7 @@ Partial Class Principal
         '
         'PreferenciasToolStripMenuItem
         '
-        Me.PreferenciasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteDeVentasToolStripMenuItem, Me.EmpleadosPorVentaToolStripMenuItem, Me.EstadísticasToolStripMenuItem})
+        Me.PreferenciasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EstadísticasToolStripMenuItem, Me.ReporteDeVentasToolStripMenuItem, Me.EmpleadosPorVentaToolStripMenuItem})
         Me.PreferenciasToolStripMenuItem.Name = "PreferenciasToolStripMenuItem"
         Me.PreferenciasToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.PreferenciasToolStripMenuItem.Text = "Reportes"

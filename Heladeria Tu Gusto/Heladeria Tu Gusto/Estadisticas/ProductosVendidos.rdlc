@@ -211,7 +211,7 @@
             <Top>14.04965cm</Top>
             <Left>4.74076cm</Left>
             <Height>1.27938cm</Height>
-            <Width>11.87917cm</Width>
+            <Width>11.87916cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -571,7 +571,7 @@
                 <Color>LightGrey</Color>
                 <Style>None</Style>
               </Border>
-              <BackgroundGradientType>TopBottom</BackgroundGradientType>
+              <BackgroundGradientType>DiagonalRight</BackgroundGradientType>
             </Style>
           </Chart>
           <Textbox Name="Textbox9">
