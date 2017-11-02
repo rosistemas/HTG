@@ -1,20 +1,15 @@
 ﻿Public Class RegistrarProvincia
-
-    Dim _conex As New Conexiones
-
+    Private Property  Conex as Conexiones = new Conexiones
     Private Sub Insertar()
-
-        Dim sql As String = ""
+        Dim sql
         sql = "insert into Provincia values"
-        sql &= "(" & _conex.Generar_id_consecutivo("Provincia", "id") _
-        'idProvincia
-        sql &= ", '" & txt_nombre.Text.Trim & "')"                  'nombre
-
-        _conex.Insertar(sql)
+        sql &= "(" & Conex.Generar_id_consecutivo("Provincia", "id")  'idProvincia
+        sql &= ", '" & txt_nombre.Text.Trim & "')"                     'nombre
+        Conex.Insertar(sql)
     End Sub
     
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
-        Me.insertar()
+        insertar()
         MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
     End Sub
 

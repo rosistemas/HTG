@@ -1,34 +1,15 @@
-﻿Imports Heladeria_Tu_Gusto
+﻿Public Class RegistrarCompra
+    Private Property Conex As Conexiones = New Conexiones
 
-Public Class RegistrarCompra
-    Dim ReadOnly _conex As New Conexiones
-    Dim ReadOnly _validador as New Validador
+    Private Property Validador As Validador = New Validador
 
-    Public ReadOnly Property Conex As Conexiones
-        Get
-            Return _conex
-        End Get
-    End Property
-
-    Public ReadOnly Property Validador As Validador
-        Get
-            Return _validador
-        End Get
-    End Property
+    Private Property Asistente As AsistenteFormulario = new AsistenteFormulario
 
     Private Sub RegistrarCompra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CargarCombo(cmb_empleado, Conex.LeerTabla("Empleado"), "id", "id")
-        CargarCombo(cmb_producto, Conex.LeerTabla("Producto"), "idProducto", "nombre")
+        Asistente.CargarCombo(cmb_empleado, Conex.LeerTabla("Empleado"), "id", "id")
+        Asistente.CargarCombo(cmb_producto, Conex.LeerTabla("Producto"), "idProducto", "nombre")
         MostrarInfoEmpleado()
-        lbl_id_compra_display.Text = Conex.Generar_id_consecutivo("Compra","id")
-    End Sub
-
-    Private Sub CargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, ByRef pk As String, ByRef desc As String)
-        combo.DataSource = Nothing
-        combo.Items.Clear()
-        combo.DataSource = tabla
-        combo.ValueMember = pk
-        combo.DisplayMember = desc
+        lbl_id_compra_display.Text = Conex.Generar_id_consecutivo("Compra", "id")
     End Sub
 
     Private Sub MostrarInfoEmpleado()
@@ -38,7 +19,7 @@ Public Class RegistrarCompra
         table = Conex.Consultar(sql)
         lbl_info_empleado.Text = table.Rows(0)("nombre") & " " & table.Rows(0)("apellido")
     End Sub
-    
+
     Private Sub MostrarInfoProveedor()
         Dim productoSeleccionado As String = cmb_producto.SelectedValue
         Dim tabla As New DataTable
@@ -51,8 +32,7 @@ Public Class RegistrarCompra
             lbl_display_nombre_proveedor.Text = ""
 
             grd_telefonos.Rows.Clear()
-            MsgBox("No se ha registrado un proveedor para el producto seleccionado.", MsgBoxStyle.Exclamation,
-                   "Proveedor no asociado")
+            MsgBox("No se ha registrado un proveedor para el producto seleccionado.", MsgBoxStyle.Exclamation, "Proveedor no asociado")
             Exit Sub
         End If
         lbl_display_id_proveedor.Text = tabla.Rows(0)("idProveedor")
@@ -73,13 +53,11 @@ Public Class RegistrarCompra
         Next
     End Sub
 
-    Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) _
-        Handles cmb_empleado.SelectionChangeCommitted
+    Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_empleado.SelectionChangeCommitted
         MostrarInfoEmpleado()
     End Sub
 
-    Private Sub cmb_producto_SelectionChangeCommitted(sender As Object, e As EventArgs) _
-        Handles cmb_producto.SelectionChangeCommitted
+    Private Sub cmb_producto_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_producto.SelectionChangeCommitted
         MostrarInfoProveedor()
     End Sub
 
@@ -88,7 +66,6 @@ Public Class RegistrarCompra
             lbl_total_display.Text = "0"
             Exit Sub
         End If
-
         lbl_total_display.Text = Double.Parse(msk_cantidad.Text)*Double.Parse(msk_precio.Text)
     End Sub
 
@@ -101,10 +78,7 @@ Public Class RegistrarCompra
     End Sub
 
     Private Sub RegistrarCompra_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If _
-            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
-            Then
+        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No Then
             e.Cancel = True
         End If
     End Sub
@@ -119,13 +93,10 @@ Public Class RegistrarCompra
             MsgBox("No se han cargado datos", MsgBoxStyle.Critical, "No se puede guardar")
             Exit Sub
         End If
-        If _
-            MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No _
-            Then
+        If MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No Then
             Exit Sub
         End If
-        Dim sql As String = ""
+        Dim sql = ""
         sql = "insert into Compra values("
         sql &= lbl_id_compra_display.Text.Trim & ", "
         sql &= lbl_display_id_proveedor.Text.Trim & ", "
@@ -145,7 +116,7 @@ Public Class RegistrarCompra
     End Sub
 
     Private Sub ActualizarStock()
-        Dim sql As String = ""
+        Dim sql = ""
         Dim table As New DataTable
         sql = "select stock from producto where idProducto = " & cmb_producto.SelectedValue
         table = Conex.Consultar(sql)

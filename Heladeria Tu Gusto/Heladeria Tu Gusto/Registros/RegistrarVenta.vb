@@ -1,14 +1,6 @@
-﻿Imports Heladeria_Tu_Gusto
-
-Public Class RegistrarVenta
-
-    Dim ReadOnly _conex As New Conexiones
-
-    Public ReadOnly Property Conex As Conexiones
-        Get
-            Return _conex
-        End Get
-    End Property
+﻿Public Class RegistrarVenta
+    Private Property Conex As Conexiones = New Conexiones
+    Private Property Asistente As AsistenteFormulario = new AsistenteFormulario
 
     Private Sub cmd_agregar_Click(sender As Object, e As EventArgs) Handles cmd_agregar.Click
         If Len(txt_codigo_producto.Text.Trim) = 0 Or Len(txt_cantidad.Text.Trim) = 0 Then
@@ -30,14 +22,9 @@ Public Class RegistrarVenta
 
         For i = 0 To grd_detalle_de_venta.Rows.Count - 1
             If grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value = txt_codigo_producto.Text.Trim Then
-                grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value =
-                    Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value) +
-                    Integer.Parse(txt_cantidad.Text.Trim)
-                grd_detalle_de_venta.Rows(i).Cells("col_subtotal").Value =
-                    Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_subtotal").Value) +
-                    (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
-                lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) +
-                                         (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
+                grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value = Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value) + Integer.Parse(txt_cantidad.Text.Trim)
+                grd_detalle_de_venta.Rows(i).Cells("col_subtotal").Value = Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_subtotal").Value) + (Integer.Parse(txt_cantidad.Text.Trim)*Integer.Parse(tabla.Rows(0)("precio")))
+                lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) + (Integer.Parse(txt_cantidad.Text.Trim)*Integer.Parse(tabla.Rows(0)("precio")))
                 Exit Sub
             End If
         Next
@@ -48,10 +35,8 @@ Public Class RegistrarVenta
         grd_detalle_de_venta.Rows(ultimaPos).Cells("col_nombre").Value = tabla.Rows(0)("nombre")
         grd_detalle_de_venta.Rows(ultimaPos).Cells("col_cantidad").Value = txt_cantidad.Text.Trim
         grd_detalle_de_venta.Rows(ultimaPos).Cells("col_precio").Value = tabla.Rows(0)("precio")
-        grd_detalle_de_venta.Rows(ultimaPos).Cells("col_subtotal").Value =
-            (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
-        lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) +
-                                 (Integer.Parse(txt_cantidad.Text.Trim) * Integer.Parse(tabla.Rows(0)("precio")))
+        grd_detalle_de_venta.Rows(ultimaPos).Cells("col_subtotal").Value = (Integer.Parse(txt_cantidad.Text.Trim)*Integer.Parse(tabla.Rows(0)("precio")))
+        lbl_total_display.Text = Integer.Parse(lbl_total_display.Text.Trim) + (Integer.Parse(txt_cantidad.Text.Trim)*Integer.Parse(tabla.Rows(0)("precio")))
     End Sub
 
     Private Function generar_id_venta()
@@ -119,33 +104,22 @@ Public Class RegistrarVenta
 
         For i = 0 To grd_detalle_de_venta.Rows.Count - 1
             Dim tabla As New DataTable
-            sql = "select stock from producto where idProducto = " &
-                  grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
+            sql = "select stock from producto where idProducto = " & grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
             tabla = Conex.Consultar(sql)
             stockActual = tabla.Rows(0)("stock")
             Dim stockResultante As Integer
 
             stockResultante = stockActual - Integer.Parse(grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value)
-            sql = "update producto set stock = " & stockResultante & " where idProducto = " &
-                  grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
+            sql = "update producto set stock = " & stockResultante & " where idProducto = " & grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value
             Conex.Insertar(sql)
         Next
     End Sub
 
-    Private Sub cargar_combo(ByRef combo As ComboBox, ByRef tabla As DataTable, ByRef pk As String, ByRef desc As String)
-        combo.DataSource = Nothing
-        combo.Items.Clear()
-        combo.DataSource = tabla
-        combo.ValueMember = pk
-        combo.DisplayMember = desc
-    End Sub
-
     Private Sub RegistrarVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cargar_combo(cmb_empleado, Conex.LeerTabla("empleado"), "id", "id")
-        cargar_combo(cmb_producto, Conex.LeerTabla("producto"), "idProducto", "nombre")
+        Asistente.CargarCombo(cmb_empleado, Conex.LeerTabla("empleado"), "id", "id")
+        Asistente.CargarCombo(cmb_producto, Conex.LeerTabla("producto"), "idProducto", "nombre")
         lbl_id_venta_display.Text = generar_id_venta()
         txt_codigo_producto.Text = cmb_producto.SelectedValue
-
         mostrar_info_empleado()
     End Sub
 
@@ -154,10 +128,7 @@ Public Class RegistrarVenta
     End Sub
 
     Private Sub RegistrarVenta_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If _
-            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
-            Then
+        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No Then
             e.Cancel = True
         End If
         Principal.Show()
@@ -170,15 +141,10 @@ Public Class RegistrarVenta
             Exit Sub
         End If
 
-        If _
-            MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.Yes _
-            Then
+        If MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.Yes Then
             insertar_en_bd_ticket()
             For i = 0 To grd_detalle_de_venta.Rows.Count - 1
-                insertar_en_bd_detalle_ticket(grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value,
-                                              grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value,
-                                              grd_detalle_de_venta.Rows(i).Cells("col_precio").Value)
+                insertar_en_bd_detalle_ticket(grd_detalle_de_venta.Rows(i).Cells("col_codigo").Value, grd_detalle_de_venta.Rows(i).Cells("col_cantidad").Value, grd_detalle_de_venta.Rows(i).Cells("col_precio").Value)
             Next
             descontar_stock()
             lbl_total_display.Text = 0
@@ -206,8 +172,7 @@ Public Class RegistrarVenta
         End If
     End Function
 
-    Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) _
-        Handles cmb_empleado.SelectionChangeCommitted
+    Private Sub cmb_empleado_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_empleado.SelectionChangeCommitted
         mostrar_info_empleado()
     End Sub
 
