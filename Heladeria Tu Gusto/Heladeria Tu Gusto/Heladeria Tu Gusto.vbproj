@@ -418,6 +418,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\efecto.wav" />
+    <None Include="Resources\icons8-user.png" />
+    <None Include="Resources\icons8-customer.png" />
+    <None Include="Resources\icons8-Sales Performance-100.png" />
+    <None Include="Resources\icons8-statistics.png" />
+    <None Include="Resources\icons8-calendar-plus.png" />
+    <None Include="Resources\Proveedor.png" />
+    <None Include="Resources\icons8-Buy-128.png" />
+    <None Include="Resources\icons8-Checkout-128.png" />
+    <None Include="Resources\Fondo 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -151,4 +151,36 @@ Public Class Principal
     Private Sub EstadísticasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EstadísticasToolStripMenuItem.Click
         Estadisticas.Show()
     End Sub
+
+    Private Sub pb_registrar_venta_Click(sender As Object, e As EventArgs) Handles pb_registrar_venta.Click
+        RegistrarVenta.Show()
+    End Sub
+
+    Private Sub pb_registrar_compra_Click(sender As Object, e As EventArgs) Handles pb_registrar_compra.Click
+        RegistrarCompra.Show()
+    End Sub
+
+    Private Sub pb_registrar_empleado_Click(sender As Object, e As EventArgs) Handles pb_registrar_empleado.Click
+        RegistrarEmpleado.Show()
+    End Sub
+
+    Private Sub pb_registrar_producto_Click(sender As Object, e As EventArgs) Handles pb_registrar_producto.Click
+        RegistrarProducto.Show()
+    End Sub
+
+    Private Sub pb_registrar_turno_Click(sender As Object, e As EventArgs) Handles pb_registrar_turno.Click
+        RegistrarTurno.Show()
+    End Sub
+
+    Private Sub pb_estadisticas_Click(sender As Object, e As EventArgs) Handles pb_estadisticas.Click
+        Estadisticas.Show()
+    End Sub
+
+    Private Sub pb_ventas_Click(sender As Object, e As EventArgs) Handles pb_ventas.Click
+        InformeDeVentas.Show()
+    End Sub
+
+    Private Sub pb_ventas_empleado_Click(sender As Object, e As EventArgs) Handles pb_ventas_empleado.Click
+        VentasPorEmpleado.Show()
+    End Sub
 End Class

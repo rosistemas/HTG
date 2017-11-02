@@ -325,19 +325,14 @@ C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj
 C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
 C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\RdlCompile.cache
 C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\RdlCompile.compiled
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Inicio.resources
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.Common.dll
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.Design.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.WinForms.dll
@@ -349,7 +344,6 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\stdole.
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
@@ -371,10 +365,10 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microso
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\VSLangProj2.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
@@ -386,6 +380,7 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Micr
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
@@ -414,12 +409,15 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\pt\Micr
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Estadisticas.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.InformeDeVentas.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.VentasPorEmpleado.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProvincia.resources
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Inicio.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarBarrio.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarEmpleado.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProducto.resources
@@ -431,13 +429,14 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Helader
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarLocalidad.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarCompra.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarEmpleado.resources
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProducto.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProveedor.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarProvincia.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTipoProducto.resources
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarVenta.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.GenerateResource.Cache
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbproj.CoreCompileInputs.cache
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
