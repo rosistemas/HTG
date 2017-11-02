@@ -5,9 +5,9 @@ Public Class Conexiones
     'Cadena conexion rodrigo netbook ""Provider=SQLNCLI11;Data Source=RODRIGO-PC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     'Cadena conexion fran "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
 
-    Private  Property CadenaConexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
-    Private  Property Conexion As OleDbConnection = New OleDbConnection
-    Private  Property Comando As OleDbCommand = New OleDbCommand
+    Private Property CadenaConexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    Private Property Conexion As OleDbConnection = New OleDbConnection
+    Private Property Comando As OleDbCommand = New OleDbCommand
     
     Private Sub AbrirConexion()
         If Conexion.ConnectionString = "" Then
@@ -49,7 +49,6 @@ Public Class Conexiones
     End Sub
 
     Public Function Consultar(ByRef sql As String) As DataTable
-
         Dim tabla As New DataTable
         AbrirConexion()
         Comando.Connection = Conexion
@@ -62,9 +61,9 @@ Public Class Conexiones
 
     Public Function Generar_id_consecutivo(ByRef nombreTabla As String, ByRef pk As String) As Integer
         Dim tabla As New DataTable
-        Me.AbrirConexion()
-        tabla = Me.Consultar("select * from " & nombreTabla & " order by " & pk)
-        Me.CerrarConexion()
+        AbrirConexion()
+        tabla = Consultar("select * from " & nombreTabla & " order by " & pk)
+        CerrarConexion()
         If tabla.Rows.Count = 0 Then
             Return 1
         Else

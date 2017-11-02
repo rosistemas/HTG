@@ -12,7 +12,7 @@
         If _
             MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
                             MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Me.Close()
+            Close()
             Principal.Show()
         End If
     End Sub

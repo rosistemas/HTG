@@ -27,22 +27,22 @@
         If _
             MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
                             MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Me.Close()
+            Close()
             Principal.Show()
         End If
     End Sub
 
     Private Sub CargarGrilla()
-        Dim sql As String
+        Dim sql
         sql = "select * from Provincia"
 
         Dim tabla As New DataTable
         tabla = Conex.Consultar(sql)
         Me.grd_Provincia.Rows.Clear()
         For i = 0 To tabla.Rows.Count - 1
-            Me.grd_Provincia.Rows.Add()
-            Me.grd_Provincia.Rows(i).Cells("id_provincia").Value = tabla.Rows(i)("id")
-            Me.grd_Provincia.Rows(i).Cells("nombre_Provincia").Value = tabla.Rows(i)("nombre")
+            grd_Provincia.Rows.Add()
+            grd_Provincia.Rows(i).Cells("id_provincia").Value = tabla.Rows(i)("id")
+            grd_Provincia.Rows(i).Cells("nombre_Provincia").Value = tabla.Rows(i)("nombre")
         Next
     End Sub
 

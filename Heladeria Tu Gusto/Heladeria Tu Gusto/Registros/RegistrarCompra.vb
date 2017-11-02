@@ -1,8 +1,5 @@
 ﻿Public Class RegistrarCompra
     Private Property Conex As Conexiones = New Conexiones
-
-    Private Property Validador As Validador = New Validador
-
     Private Property Asistente As AsistenteFormulario = new AsistenteFormulario
 
     Private Sub RegistrarCompra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -89,7 +86,7 @@
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
 
-        If ValidarInfo() = False And Validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.ConErrores Then
+        If ValidarInfo() = False And Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.ConErrores Then
             MsgBox("No se han cargado datos", MsgBoxStyle.Critical, "No se puede guardar")
             Exit Sub
         End If

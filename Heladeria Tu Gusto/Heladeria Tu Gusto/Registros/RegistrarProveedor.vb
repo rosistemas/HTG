@@ -1,6 +1,5 @@
 ﻿Public Class RegistrarProveedor
     Private Property Conex As Conexiones = New Conexiones
-    Private Property Validador As Validador = New Validador
     Private Property Asistente As AsistenteFormulario = New AsistenteFormulario
 
 
@@ -17,7 +16,7 @@
     End Sub
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
-        If Validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+        If Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.SinErrores Then
             Insertar()
             MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
         End If

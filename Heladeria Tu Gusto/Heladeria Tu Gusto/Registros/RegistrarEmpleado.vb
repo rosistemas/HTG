@@ -1,7 +1,6 @@
 ﻿Public Class RegistrarEmpleado
     Private Property Asistente As AsistenteFormulario = New AsistenteFormulario
     Private Property Conex As Conexiones = New Conexiones
-    Private Property Validador As Validador = New Validador
 
     Private Sub RegistrarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Asistente.CargarCombo(cmb_tipo_documento, Conex.LeerTabla("TipoDoc"), "descripcion", "id")
@@ -13,7 +12,7 @@
     End Sub
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
-        If Validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+        If Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.SinErrores Then
             Insertar()
             MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
             Asistente.LimpiarFormulario(Controls)

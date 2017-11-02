@@ -1,8 +1,5 @@
 ﻿Public Class RegistrarProducto
-    Public ReadOnly Property Conex As Conexiones = New Conexiones
-
-    Public ReadOnly Property Validador As Validador = New Validador
-
+    Private Property Conex As Conexiones = New Conexiones
     Private Property  Asistente As AsistenteFormulario = new AsistenteFormulario
 
     Private Sub RegistrarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -12,7 +9,7 @@
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
         'Llamar al procedimiento de inserción e informar que fue correcto.
-        If Validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+        If Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.SinErrores Then
             Insertar()
             MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
         End If
@@ -27,8 +24,7 @@
         'Sentencia = insert into Producto values (idProducto, 'nombre', idTipo, precio, stock, 'descripción')
         Dim sql
         sql = "insert into Producto values"
-        sql &= "(" & Conex.Generar_id_consecutivo("Producto", "idProducto") _
-        'idProducto
+        sql &= "(" & Conex.Generar_id_consecutivo("Producto", "idProducto") 'idProducto
         sql &= ", '" & txt_nombre.Text.Trim & "'"       'nombre
         sql &= ", " & cmb_tipo.SelectedValue            'idTipo
         sql &= ", " & Double.Parse(txt_precio.Text.Trim) 'precio

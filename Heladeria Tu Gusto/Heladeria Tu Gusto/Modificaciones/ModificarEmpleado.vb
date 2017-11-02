@@ -4,7 +4,7 @@
     Private Property Conex As Conexiones = New Conexiones
 
     Private Sub ModificarEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.CargarGrilla()
+        CargarGrilla()
     End Sub
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
@@ -21,13 +21,13 @@
 
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
         If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Me.Close()
+            Close()
             Principal.Show()
         End If
     End Sub
 
     Private Sub CargarGrilla()
-        Dim sql As String
+        Dim sql
         sql = "SELECT E.*, T.descripcion, B.nombre as nombre_barrio FROM Empleado E INNER JOIN TipoDoc T ON E.tipoDoc = T.id INNER JOIN Barrio B ON E.idBarrio = B.id"
         Dim tabla As New DataTable
         tabla = Conex.Consultar(sql)
@@ -66,8 +66,8 @@
     End Sub
 
     Private Sub Modificar()
-        Dim sql As String = ""
-        sql &= "update Empleado"
+        Dim sql
+        sql = "update Empleado"
         sql &= " set nombre = '" & Me.txt_nombre.Text.Trim & "'"
         sql &= ", numDoc = " & Integer.Parse(txt_numero_documento.Text.Trim)
         sql &= ", tipoDoc = " & Me.cmb_tipo_documento.SelectedValue

@@ -1,48 +1,42 @@
-﻿Public Class RegistrarTurno
-    Dim asistente As New AsistenteFormulario
-    Dim conex As New Conexiones
+﻿Imports Heladeria_Tu_Gusto
+
+Public Class RegistrarTurno
+    Private Property Asistente As AsistenteFormulario = New AsistenteFormulario
+    Private Property Conex As Conexiones = New Conexiones
 
     Private Sub RegistrarTurno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        asistente.CargarCombo(cmb_turno, conex.LeerTabla("Turno"), "descripcion", "id")
-        asistente.CargarCombo(cmb_supervisor, conex.LeerTabla("Empleado"), "id", "id")
-        asistente.CargarCombo(cmb_primer_ayudante, conex.LeerTabla("Empleado"), "id", "id")
-        asistente.CargarCombo(cmb_segundo_ayudante, conex.LeerTabla("Empleado"), "id", "id")
-        asistente.MostrarInfoEmpleado(cmb_supervisor, lbl_display_supervisor)
-        asistente.MostrarInfoEmpleado(cmb_primer_ayudante, lbl_display_primer_ayudante)
-        asistente.MostrarInfoEmpleado(cmb_segundo_ayudante, lbl_display_segundo_ayudante)
+        Asistente.CargarCombo(cmb_turno, Conex.LeerTabla("Turno"), "descripcion", "id")
+        Asistente.CargarCombo(cmb_supervisor, Conex.LeerTabla("Empleado"), "id", "id")
+        Asistente.CargarCombo(cmb_primer_ayudante, Conex.LeerTabla("Empleado"), "id", "id")
+        Asistente.CargarCombo(cmb_segundo_ayudante, Conex.LeerTabla("Empleado"), "id", "id")
+        Asistente.MostrarInfoEmpleado(cmb_supervisor, lbl_display_supervisor)
+        Asistente.MostrarInfoEmpleado(cmb_primer_ayudante, lbl_display_primer_ayudante)
+        Asistente.MostrarInfoEmpleado(cmb_segundo_ayudante, lbl_display_segundo_ayudante)
     End Sub
 
-    Private Sub cmb_supervisor_SelectionChangeCommitted(sender As Object, e As EventArgs) _
-        Handles cmb_supervisor.SelectionChangeCommitted
-        asistente.MostrarInfoEmpleado(cmb_supervisor, lbl_display_supervisor)
+    Private Sub cmb_supervisor_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_supervisor.SelectionChangeCommitted
+        Asistente.MostrarInfoEmpleado(cmb_supervisor, lbl_display_supervisor)
     End Sub
 
-    Private Sub cmb_primer_ayudante_SelectionChangeCommitted(sender As Object, e As EventArgs) _
-        Handles cmb_primer_ayudante.SelectionChangeCommitted
-        asistente.MostrarInfoEmpleado(cmb_primer_ayudante, lbl_display_primer_ayudante)
+    Private Sub cmb_primer_ayudante_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_primer_ayudante.SelectionChangeCommitted
+        Asistente.MostrarInfoEmpleado(cmb_primer_ayudante, lbl_display_primer_ayudante)
     End Sub
 
-    Private Sub cmb_segundo_ayudante_SelectionChangeCommitted(sender As Object, e As EventArgs) _
-        Handles cmb_segundo_ayudante.SelectionChangeCommitted
-        asistente.MostrarInfoEmpleado(cmb_segundo_ayudante, lbl_display_segundo_ayudante)
+    Private Sub cmb_segundo_ayudante_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmb_segundo_ayudante.SelectionChangeCommitted
+        Asistente.MostrarInfoEmpleado(cmb_segundo_ayudante, lbl_display_segundo_ayudante)
     End Sub
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
         If chk_un_ayudante.Checked = False Then
-            If cmb_supervisor.SelectedValue = cmb_primer_ayudante.SelectedValue Or
-               cmb_supervisor.SelectedValue = cmb_segundo_ayudante.SelectedValue Or
-               cmb_primer_ayudante.SelectedValue = cmb_segundo_ayudante.SelectedValue Then
-                MsgBox("Un mismo empleado no puede cubrir más de un rol en un turno.", MsgBoxStyle.Critical,
-                       "Error de coherencia")
+            If cmb_supervisor.SelectedValue = cmb_primer_ayudante.SelectedValue Or cmb_supervisor.SelectedValue = cmb_segundo_ayudante.SelectedValue Or cmb_primer_ayudante.SelectedValue = cmb_segundo_ayudante.SelectedValue Then
+                MsgBox("Un mismo empleado no puede cubrir más de un rol en un turno.", MsgBoxStyle.Critical, "Error de coherencia")
                 Exit Sub
             End If
             If validar_fecha_futura() = False Then
                 MsgBox("No puede asignar un turno a un día pasado.", MsgBoxStyle.Critical, "Error de coherencia")
                 Exit Sub
             End If
-            If _
-                MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo,
-                                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No Then
+            If MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No Then
                 Exit Sub
             End If
             Dim tabla As New DataTable
@@ -52,19 +46,18 @@
                 Exit Sub
             End If
 
-            Dim sql As String = ""
+            Dim sql
             sql = "insert into detallesturno values("
             sql &= cmb_turno.SelectedValue & ", '"
             sql &= date_fecha.Value.Date & "', "
             sql &= cmb_supervisor.SelectedValue & ", "
             sql &= cmb_primer_ayudante.SelectedValue & ", "
             sql &= cmb_segundo_ayudante.SelectedValue & ")"
-            conex.Insertar(sql)
+            Conex.Insertar(sql)
             MsgBox("El turno se ha guardado con éxito.", MsgBoxStyle.Information, "Datos guardados")
         Else
             If cmb_supervisor.SelectedValue = cmb_primer_ayudante.SelectedValue Then
-                MsgBox("Un mismo empleado no puede cubrir más de un rol en un turno.", MsgBoxStyle.Critical,
-                       "Error de coherencia")
+                MsgBox("Un mismo empleado no puede cubrir más de un rol en un turno.", MsgBoxStyle.Critical, "Error de coherencia")
                 Exit Sub
             End If
             If validar_fecha_futura() = False Then
@@ -72,9 +65,7 @@
                 Exit Sub
             End If
 
-            If _
-                MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo,
-                                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No Then
+            If MessageBox.Show("¿Está seguro que desea registrar?", "Confirmar registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) = DialogResult.No Then
                 Exit Sub
             End If
             Dim tabla As New DataTable
@@ -90,7 +81,7 @@
             sql &= cmb_supervisor.SelectedValue & ", "
             sql &= cmb_primer_ayudante.SelectedValue & ", "
             sql &= "null)"
-            conex.Insertar(sql)
+            Conex.Insertar(sql)
             MsgBox("El turno se ha guardado con éxito.", MsgBoxStyle.Information, "Datos guardados")
         End If
     End Sub
@@ -99,7 +90,7 @@
         Dim tabla As New DataTable
         Dim validacion As String = "select * from detallesTurno where idTurno = " & cmb_turno.SelectedValue
         validacion &= " and fecha = '" & date_fecha.Value.Date & "'"
-        tabla = conex.Consultar(validacion)
+        tabla = Conex.Consultar(validacion)
         Return tabla
     End Function
 
@@ -123,8 +114,8 @@
         Else
             cmb_segundo_ayudante.Enabled = True
             lbl_segundo_ayudante.Enabled = True
-            asistente.CargarCombo(cmb_segundo_ayudante, conex.LeerTabla("Empleado"), "id", "id")
-            asistente.MostrarInfoEmpleado(cmb_segundo_ayudante, lbl_display_segundo_ayudante)
+            Asistente.CargarCombo(cmb_segundo_ayudante, Conex.LeerTabla("Empleado"), "id", "id")
+            Asistente.MostrarInfoEmpleado(cmb_segundo_ayudante, lbl_display_segundo_ayudante)
         End If
     End Sub
 
@@ -137,9 +128,7 @@
     End Sub
 
     Private Sub RegistrarTurno_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If _
-            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No Then
+        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No Then
             e.Cancel = True
         End If
     End Sub

@@ -1,24 +1,24 @@
 ﻿Public Class ModificarProducto
-    ReadOnly _conex As New Conexiones
-    ReadOnly _validador as New Validador
+    Private Property  Conex as Conexiones = New Conexiones
+    Private Property Validador As Validador = New Validador
+    Private Property Asistente as AsistenteFormulario = New AsistenteFormulario
     Private id_producto_seleccionado As Integer = 0
     Private id_tipo_producto_seleccionado As Integer = 0
 
     Private Sub ModificarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.cargarGrilla()
+        cargarGrilla()
     End Sub
 
     Private Sub CargarGrilla()
-        Dim sql As String = ""
+        Dim sql
         sql =
             "SELECT        Producto.idProducto, Producto.nombre, Producto.idTipo, Producto.precio, Producto.stock, Producto.descripcion, TipoProducto.descripcion as descripcionTipo "
         sql &= "FROM            Producto INNER JOIN TipoProducto ON"
         sql &= "            Producto.idTipo = TipoProducto.idTipo"
 
-        Dim c As Integer = 0
         'Limpiar valores previos si es que había
         Dim tabla As New DataTable
-        tabla = _conex.consultar(sql)
+        tabla = Conex.consultar(sql)
         Me.grd_productos.Rows.Clear()
         'Desde la fila 0 hasta cantidad de filas -1
         For c = 0 To tabla.Rows.Count - 1
@@ -49,7 +49,7 @@
         sql &= " AND "
         sql &= "Producto.idTipo = " & Me.grd_productos.CurrentRow.Cells(6).Value
 
-        tabla = _conex.consultar(Sql)
+        tabla = Conex.consultar(Sql)
 
 
         'Cargar los elementos del formulario con los nuevos datos traídos de la BD
@@ -58,33 +58,21 @@
         Me.txt_nombre.Text = tabla.Rows(0)("nombre")
         Me.txt_precio.Text = tabla.Rows(0)("precio")
         Me.txt_descripcion.Text = tabla.Rows(0)("descripcion")
-        Me.cargaCombo(cmb_tipo, _conex.leerTabla("TipoProducto"), "descripcion", "idTipo")
+        Asistente.CargarCombo(cmb_tipo, Conex.leerTabla("TipoProducto"), "descripcion", "idTipo")
         Me.cmb_tipo.SelectedValue = tabla.Rows(0)("idTipo")
         Me.id_producto_seleccionado = tabla.Rows(0)("idProducto")
         Me.id_tipo_producto_seleccionado = tabla.Rows(0)("idTipo")
         'Bloquear los elementos correspondientes a la PK
     End Sub
 
-    Private Sub CargaCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descriptor As String, pk As String)
-        combo.DataSource = Nothing
-        'Limpiar el comboBox
-        combo.Items.Clear()
-        'Le asigno una nueva fuente
-        combo.DataSource = tabla
-        'Asociar un texto para mostrar
-        combo.DisplayMember = descriptor
-        'Asignarle un valor a ese texto mostrado
-        combo.ValueMember = pk
-    End Sub
-
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
-        If _validador.Verificar_vacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+        If Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.SinErrores Then
             If _
                 MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes _
                 Then
-                Me.modificar()
-                Me.cargarGrilla()
+                modificar()
+                cargarGrilla()
             Else
                 MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK,
                                 MessageBoxIcon.Information)
@@ -95,21 +83,21 @@
     Private Sub Modificar()
         'Sentencia = insert into Producto values (idProducto, 'nombre', idTipo, precio, stock, 'descripción')
         'Actualizar nombre, precio, idTipo, descripcion
-        Dim sql As String = ""
-        sql &= "update Producto"
+        Dim sql
+        sql = "update Producto"
         sql &= " set nombre = '" & Double.Parse(txt_precio.Text.Trim)
         sql &= ", descripcion = '" & Me.txt_descripcion.Text.Trim & "'"
         sql &= ", idTipo = " & Me.cmb_tipo.SelectedValue
         'Restricción where, prestar atención a los espacios
         sql &= " where idProducto = " & id_producto_seleccionado
-        _conex.insertar(sql)
+        Conex.insertar(sql)
     End Sub
 
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
         If _
             MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
                             MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Me.Close()
+            Close()
             Principal.Show()
         End If
     End Sub
