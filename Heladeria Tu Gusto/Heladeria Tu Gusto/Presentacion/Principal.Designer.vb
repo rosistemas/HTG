@@ -76,19 +76,22 @@ Partial Class Principal
         Me.pb_ventas = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.pb_estadisticas = New System.Windows.Forms.PictureBox()
-        Me.MenuStrip1.SuspendLayout
-        CType(Me.pb_registrar_venta,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.pb_registrar_compra,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.gb_registrar.SuspendLayout
-        CType(Me.pb_registrar_turno,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.pb_registrar_proveedor,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.pb_registrar_producto,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.pb_registrar_empleado,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.gb_estadisticas.SuspendLayout
-        CType(Me.pb_ventas_empleado,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.pb_ventas,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.pb_estadisticas,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.MenuStrip1.SuspendLayout()
+        CType(Me.pb_registrar_venta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb_registrar_compra, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gb_registrar.SuspendLayout()
+        CType(Me.pb_registrar_turno, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb_registrar_proveedor, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb_registrar_producto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb_registrar_empleado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gb_estadisticas.SuspendLayout()
+        CType(Me.pb_ventas_empleado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb_ventas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb_estadisticas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'MenuStrip1
         '
@@ -300,13 +303,13 @@ Partial Class Principal
         Me.pb_registrar_venta.Name = "pb_registrar_venta"
         Me.pb_registrar_venta.Size = New System.Drawing.Size(70, 70)
         Me.pb_registrar_venta.TabIndex = 1
-        Me.pb_registrar_venta.TabStop = false
+        Me.pb_registrar_venta.TabStop = False
         '
         'Label1
         '
-        Me.Label1.AutoSize = true
+        Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Label1.Location = New System.Drawing.Point(11, 18)
         Me.Label1.Name = "Label1"
@@ -316,9 +319,9 @@ Partial Class Principal
         '
         'Label2
         '
-        Me.Label2.AutoSize = true
+        Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Label2.Location = New System.Drawing.Point(405, 18)
         Me.Label2.Name = "Label2"
@@ -336,13 +339,13 @@ Partial Class Principal
         Me.pb_registrar_compra.Name = "pb_registrar_compra"
         Me.pb_registrar_compra.Size = New System.Drawing.Size(70, 70)
         Me.pb_registrar_compra.TabIndex = 3
-        Me.pb_registrar_compra.TabStop = false
+        Me.pb_registrar_compra.TabStop = False
         '
         'gb_registrar
         '
-        Me.gb_registrar.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
-            Or System.Windows.Forms.AnchorStyles.Left)  _
-            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.gb_registrar.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gb_registrar.BackColor = System.Drawing.Color.Transparent
         Me.gb_registrar.Controls.Add(Me.Label6)
         Me.gb_registrar.Controls.Add(Me.pb_registrar_turno)
@@ -356,20 +359,20 @@ Partial Class Principal
         Me.gb_registrar.Controls.Add(Me.Label2)
         Me.gb_registrar.Controls.Add(Me.Label1)
         Me.gb_registrar.Controls.Add(Me.pb_registrar_compra)
-        Me.gb_registrar.Font = New System.Drawing.Font("Arial", 10!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.gb_registrar.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gb_registrar.ForeColor = System.Drawing.Color.SaddleBrown
         Me.gb_registrar.Location = New System.Drawing.Point(12, 201)
         Me.gb_registrar.Name = "gb_registrar"
         Me.gb_registrar.Size = New System.Drawing.Size(485, 375)
         Me.gb_registrar.TabIndex = 5
-        Me.gb_registrar.TabStop = false
+        Me.gb_registrar.TabStop = False
         Me.gb_registrar.Text = "Registrar"
         '
         'Label6
         '
-        Me.Label6.AutoSize = true
+        Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Label6.Location = New System.Drawing.Point(421, 263)
         Me.Label6.Name = "Label6"
@@ -387,13 +390,13 @@ Partial Class Principal
         Me.pb_registrar_turno.Name = "pb_registrar_turno"
         Me.pb_registrar_turno.Size = New System.Drawing.Size(70, 70)
         Me.pb_registrar_turno.TabIndex = 11
-        Me.pb_registrar_turno.TabStop = false
+        Me.pb_registrar_turno.TabStop = False
         '
         'Label5
         '
-        Me.Label5.AutoSize = true
+        Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Peru
         Me.Label5.Location = New System.Drawing.Point(400, 140)
         Me.Label5.Name = "Label5"
@@ -411,13 +414,13 @@ Partial Class Principal
         Me.pb_registrar_proveedor.Name = "pb_registrar_proveedor"
         Me.pb_registrar_proveedor.Size = New System.Drawing.Size(70, 70)
         Me.pb_registrar_proveedor.TabIndex = 9
-        Me.pb_registrar_proveedor.TabStop = false
+        Me.pb_registrar_proveedor.TabStop = False
         '
         'Label4
         '
-        Me.Label4.AutoSize = true
+        Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Peru
         Me.Label4.Location = New System.Drawing.Point(6, 140)
         Me.Label4.Name = "Label4"
@@ -435,13 +438,13 @@ Partial Class Principal
         Me.pb_registrar_producto.Name = "pb_registrar_producto"
         Me.pb_registrar_producto.Size = New System.Drawing.Size(70, 70)
         Me.pb_registrar_producto.TabIndex = 7
-        Me.pb_registrar_producto.TabStop = false
+        Me.pb_registrar_producto.TabStop = False
         '
         'Label3
         '
-        Me.Label3.AutoSize = true
+        Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Label3.Location = New System.Drawing.Point(6, 263)
         Me.Label3.Name = "Label3"
@@ -459,36 +462,38 @@ Partial Class Principal
         Me.pb_registrar_empleado.Name = "pb_registrar_empleado"
         Me.pb_registrar_empleado.Size = New System.Drawing.Size(70, 70)
         Me.pb_registrar_empleado.TabIndex = 5
-        Me.pb_registrar_empleado.TabStop = false
+        Me.pb_registrar_empleado.TabStop = False
         '
         'gb_estadisticas
         '
-        Me.gb_estadisticas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
-            Or System.Windows.Forms.AnchorStyles.Left)  _
-            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.gb_estadisticas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gb_estadisticas.BackColor = System.Drawing.Color.Transparent
+        Me.gb_estadisticas.Controls.Add(Me.Label10)
+        Me.gb_estadisticas.Controls.Add(Me.PictureBox1)
         Me.gb_estadisticas.Controls.Add(Me.Label9)
         Me.gb_estadisticas.Controls.Add(Me.pb_ventas_empleado)
         Me.gb_estadisticas.Controls.Add(Me.Label8)
         Me.gb_estadisticas.Controls.Add(Me.pb_ventas)
         Me.gb_estadisticas.Controls.Add(Me.Label7)
         Me.gb_estadisticas.Controls.Add(Me.pb_estadisticas)
-        Me.gb_estadisticas.Font = New System.Drawing.Font("Arial", 10!, System.Drawing.FontStyle.Bold)
+        Me.gb_estadisticas.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold)
         Me.gb_estadisticas.ForeColor = System.Drawing.Color.SaddleBrown
         Me.gb_estadisticas.Location = New System.Drawing.Point(15, 594)
         Me.gb_estadisticas.Name = "gb_estadisticas"
         Me.gb_estadisticas.Size = New System.Drawing.Size(485, 132)
         Me.gb_estadisticas.TabIndex = 6
-        Me.gb_estadisticas.TabStop = false
+        Me.gb_estadisticas.TabStop = False
         Me.gb_estadisticas.Text = "Estadísticas y reportes"
         '
         'Label9
         '
-        Me.Label9.AutoSize = true
+        Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label9.Location = New System.Drawing.Point(157, 19)
+        Me.Label9.Location = New System.Drawing.Point(105, 19)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(178, 19)
         Me.Label9.TabIndex = 12
@@ -500,17 +505,17 @@ Partial Class Principal
         Me.pb_ventas_empleado.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_user
         Me.pb_ventas_empleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pb_ventas_empleado.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pb_ventas_empleado.Location = New System.Drawing.Point(212, 51)
+        Me.pb_ventas_empleado.Location = New System.Drawing.Point(160, 51)
         Me.pb_ventas_empleado.Name = "pb_ventas_empleado"
         Me.pb_ventas_empleado.Size = New System.Drawing.Size(70, 70)
         Me.pb_ventas_empleado.TabIndex = 11
-        Me.pb_ventas_empleado.TabStop = false
+        Me.pb_ventas_empleado.TabStop = False
         '
         'Label8
         '
-        Me.Label8.AutoSize = true
+        Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Label8.Location = New System.Drawing.Point(418, 19)
         Me.Label8.Name = "Label8"
@@ -528,13 +533,13 @@ Partial Class Principal
         Me.pb_ventas.Name = "pb_ventas"
         Me.pb_ventas.Size = New System.Drawing.Size(70, 70)
         Me.pb_ventas.TabIndex = 9
-        Me.pb_ventas.TabStop = false
+        Me.pb_ventas.TabStop = False
         '
         'Label7
         '
-        Me.Label7.AutoSize = true
+        Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Label7.Location = New System.Drawing.Point(5, 19)
         Me.Label7.Name = "Label7"
@@ -552,11 +557,35 @@ Partial Class Principal
         Me.pb_estadisticas.Name = "pb_estadisticas"
         Me.pb_estadisticas.Size = New System.Drawing.Size(70, 70)
         Me.pb_estadisticas.TabIndex = 7
-        Me.pb_estadisticas.TabStop = false
+        Me.pb_estadisticas.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Resume_80
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Location = New System.Drawing.Point(309, 51)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(70, 70)
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.Label10.Location = New System.Drawing.Point(305, 19)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(68, 19)
+        Me.Label10.TabIndex = 14
+        Me.Label10.Text = "Factura"
         '
         'Principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.Fondo_2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -564,27 +593,28 @@ Partial Class Principal
         Me.Controls.Add(Me.gb_estadisticas)
         Me.Controls.Add(Me.gb_registrar)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.DoubleBuffered = true
-        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
+        Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Principal"
         Me.Text = "Heladería Tu Gusto"
-        Me.MenuStrip1.ResumeLayout(false)
-        Me.MenuStrip1.PerformLayout
-        CType(Me.pb_registrar_venta,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.pb_registrar_compra,System.ComponentModel.ISupportInitialize).EndInit
-        Me.gb_registrar.ResumeLayout(false)
-        Me.gb_registrar.PerformLayout
-        CType(Me.pb_registrar_turno,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.pb_registrar_proveedor,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.pb_registrar_producto,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.pb_registrar_empleado,System.ComponentModel.ISupportInitialize).EndInit
-        Me.gb_estadisticas.ResumeLayout(false)
-        Me.gb_estadisticas.PerformLayout
-        CType(Me.pb_ventas_empleado,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.pb_ventas,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.pb_estadisticas,System.ComponentModel.ISupportInitialize).EndInit
-        Me.ResumeLayout(false)
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        CType(Me.pb_registrar_venta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb_registrar_compra, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gb_registrar.ResumeLayout(False)
+        Me.gb_registrar.PerformLayout()
+        CType(Me.pb_registrar_turno, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb_registrar_proveedor, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb_registrar_producto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb_registrar_empleado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gb_estadisticas.ResumeLayout(False)
+        Me.gb_estadisticas.PerformLayout()
+        CType(Me.pb_ventas_empleado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb_ventas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb_estadisticas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
         Me.PerformLayout
 
 End Sub
@@ -638,4 +668,6 @@ End Sub
     Friend WithEvents pb_ventas_empleado As PictureBox
     Friend WithEvents Label8 As Label
     Friend WithEvents pb_ventas As PictureBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

@@ -440,3 +440,7 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Helader
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Estadisticas.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.InformeDeVentas.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ComprobanteFactural.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Comprobante_Factura.resources

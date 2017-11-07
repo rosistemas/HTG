@@ -5,7 +5,7 @@ Public Class Conexiones
     'Cadena conexion rodrigo netbook ""Provider=SQLNCLI11;Data Source=RODRIGO-PC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     'Cadena conexion fran "Provider=SQLNCLI11;Data Source=localhost\SQLExpress;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
 
-    Private Property CadenaConexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-UH7QCBC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
+    Private Property CadenaConexion As String = "Provider=SQLNCLI11;Data Source=DESKTOP-LF51CMQ\SQLEXPRESS01;Integrated Security=SSPI;Initial Catalog=HeladeriaTuGusto"
     Private Property Conexion As OleDbConnection = New OleDbConnection
     Private Property Comando As OleDbCommand = New OleDbCommand
     

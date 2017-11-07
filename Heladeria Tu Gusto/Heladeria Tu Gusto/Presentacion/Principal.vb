@@ -183,4 +183,9 @@ Public Class Principal
     Private Sub pb_ventas_empleado_Click(sender As Object, e As EventArgs) Handles pb_ventas_empleado.Click
         VentasPorEmpleado.Show()
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Comprobante_Factura.Show()
+
+    End Sub
 End Class

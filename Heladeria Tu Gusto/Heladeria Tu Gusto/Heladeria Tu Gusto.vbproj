@@ -101,6 +101,17 @@
     <Compile Include="Estadisticas\Estadisticas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Informes\Comprobante Factura.Designer.vb">
+      <DependentUpon>Comprobante Factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\Comprobante Factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\datasetFactura.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datasetFactura.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Informes\dataset_VentasPorEmpleado.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -259,11 +270,15 @@
     <EmbeddedResource Include="Estadisticas\ProductosVendidos.rdlc" />
     <EmbeddedResource Include="Estadisticas\PorcentajeDeIngresos.rdlc" />
     <EmbeddedResource Include="Estadisticas\VentasPorHorario.rdlc" />
+    <EmbeddedResource Include="Informes\Comprobante Factura.resx">
+      <DependentUpon>Comprobante Factura.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Informes\Reporte.rdlc" />
     <EmbeddedResource Include="Informes\Reporte.resx">
       <DependentUpon>Reporte.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informes\report_VentasPorEmpleado.rdlc" />
+    <EmbeddedResource Include="Informes\rptComprobanteFactura.rdlc" />
     <EmbeddedResource Include="Informes\VentasPorEmpleado.resx">
       <DependentUpon>VentasPorEmpleado.vb</DependentUpon>
     </EmbeddedResource>
@@ -339,6 +354,17 @@
     </None>
     <None Include="Estadisticas\Datos.xss">
       <DependentUpon>Datos.xsd</DependentUpon>
+    </None>
+    <None Include="Informes\datasetFactura.xsc">
+      <DependentUpon>datasetFactura.xsd</DependentUpon>
+    </None>
+    <None Include="Informes\datasetFactura.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datasetFactura.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Informes\datasetFactura.xss">
+      <DependentUpon>datasetFactura.xsd</DependentUpon>
     </None>
     <None Include="Informes\dataset_VentasPorEmpleado.xsc">
       <DependentUpon>dataset_VentasPorEmpleado.xsd</DependentUpon>
