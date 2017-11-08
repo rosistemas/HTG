@@ -24,15 +24,26 @@ Partial Class Comprobante_Factura
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Comprobante_Factura))
+        Me.TablaFacturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DatasetFactura = New Heladeria_Tu_Gusto.datasetFactura()
         Me.cmb_factura = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.DatasetFactura = New Heladeria_Tu_Gusto.datasetFactura()
-        Me.TablaFacturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        CType(Me.DatasetFactura, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TablaFacturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DatasetFactura, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'TablaFacturaBindingSource
+        '
+        Me.TablaFacturaBindingSource.DataMember = "TablaFactura"
+        Me.TablaFacturaBindingSource.DataSource = Me.DatasetFactura
+        '
+        'DatasetFactura
+        '
+        Me.DatasetFactura.DataSetName = "datasetFactura"
+        Me.DatasetFactura.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'cmb_factura
         '
@@ -62,6 +73,9 @@ Partial Class Comprobante_Factura
         '
         'ReportViewer1
         '
+        Me.ReportViewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.TablaFacturaBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
@@ -69,18 +83,8 @@ Partial Class Comprobante_Factura
         Me.ReportViewer1.Location = New System.Drawing.Point(12, 65)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(458, 456)
+        Me.ReportViewer1.Size = New System.Drawing.Size(478, 456)
         Me.ReportViewer1.TabIndex = 6
-        '
-        'DatasetFactura
-        '
-        Me.DatasetFactura.DataSetName = "datasetFactura"
-        Me.DatasetFactura.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TablaFacturaBindingSource
-        '
-        Me.TablaFacturaBindingSource.DataMember = "TablaFactura"
-        Me.TablaFacturaBindingSource.DataSource = Me.DatasetFactura
         '
         'Comprobante_Factura
         '
@@ -91,10 +95,11 @@ Partial Class Comprobante_Factura
         Me.Controls.Add(Me.cmb_factura)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Comprobante_Factura"
-        Me.Text = "Comprobante_Factura"
-        CType(Me.DatasetFactura, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Comprobante de factura"
         CType(Me.TablaFacturaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DatasetFactura, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

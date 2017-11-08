@@ -444,6 +444,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\efecto.wav" />
+    <None Include="Resources\icons8-invoice.png" />
     <None Include="Resources\icons8-user.png" />
     <None Include="Resources\icons8-customer.png" />
     <None Include="Resources\icons8-Sales Performance-100.png" />

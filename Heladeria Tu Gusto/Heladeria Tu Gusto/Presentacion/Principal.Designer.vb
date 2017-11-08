@@ -70,14 +70,14 @@ Partial Class Principal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.pb_registrar_empleado = New System.Windows.Forms.PictureBox()
         Me.gb_estadisticas = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.pb_factura = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.pb_ventas_empleado = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.pb_ventas = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.pb_estadisticas = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.pb_registrar_venta, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb_registrar_compra, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,10 +87,10 @@ Partial Class Principal
         CType(Me.pb_registrar_producto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb_registrar_empleado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gb_estadisticas.SuspendLayout()
+        CType(Me.pb_factura, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb_ventas_empleado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb_ventas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb_estadisticas, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -471,7 +471,7 @@ Partial Class Principal
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gb_estadisticas.BackColor = System.Drawing.Color.Transparent
         Me.gb_estadisticas.Controls.Add(Me.Label10)
-        Me.gb_estadisticas.Controls.Add(Me.PictureBox1)
+        Me.gb_estadisticas.Controls.Add(Me.pb_factura)
         Me.gb_estadisticas.Controls.Add(Me.Label9)
         Me.gb_estadisticas.Controls.Add(Me.pb_ventas_empleado)
         Me.gb_estadisticas.Controls.Add(Me.Label8)
@@ -486,6 +486,30 @@ Partial Class Principal
         Me.gb_estadisticas.TabIndex = 6
         Me.gb_estadisticas.TabStop = False
         Me.gb_estadisticas.Text = "Estadísticas y reportes"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.Label10.Location = New System.Drawing.Point(311, 19)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(68, 19)
+        Me.Label10.TabIndex = 14
+        Me.Label10.Text = "Factura"
+        '
+        'pb_factura
+        '
+        Me.pb_factura.BackColor = System.Drawing.Color.Transparent
+        Me.pb_factura.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_invoice
+        Me.pb_factura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pb_factura.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pb_factura.Location = New System.Drawing.Point(309, 51)
+        Me.pb_factura.Name = "pb_factura"
+        Me.pb_factura.Size = New System.Drawing.Size(70, 70)
+        Me.pb_factura.TabIndex = 13
+        Me.pb_factura.TabStop = False
         '
         'Label9
         '
@@ -559,30 +583,6 @@ Partial Class Principal
         Me.pb_estadisticas.TabIndex = 7
         Me.pb_estadisticas.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Resume_80
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Location = New System.Drawing.Point(309, 51)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(70, 70)
-        Me.PictureBox1.TabIndex = 13
-        Me.PictureBox1.TabStop = False
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label10.Location = New System.Drawing.Point(305, 19)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(68, 19)
-        Me.Label10.TabIndex = 14
-        Me.Label10.Text = "Factura"
-        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -610,10 +610,10 @@ Partial Class Principal
         CType(Me.pb_registrar_empleado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gb_estadisticas.ResumeLayout(False)
         Me.gb_estadisticas.PerformLayout()
+        CType(Me.pb_factura, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pb_ventas_empleado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pb_ventas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pb_estadisticas, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout
 
@@ -669,5 +669,5 @@ End Sub
     Friend WithEvents Label8 As Label
     Friend WithEvents pb_ventas As PictureBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents pb_factura As System.Windows.Forms.PictureBox
 End Class
