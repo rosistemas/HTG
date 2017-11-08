@@ -19,17 +19,17 @@
         sql = "select B.*, L.nombre as nombre_localidad from Barrio B join Localidad L on B.idLocalidad = L.id"
 
         Dim tabla As New DataTable
-        tabla = conex.consultar(sql)
+        tabla = Conex.Consultar(sql)
         grd_barrios.Rows.Clear()
         For i = 0 To tabla.Rows.Count - 1
             grd_barrios.Rows.Add(tabla.Rows(i)("id"), tabla.Rows(i)("nombre"), tabla.Rows(i)("idLocalidad"), tabla.Rows(i)("nombre_localidad"))
         Next
-        End Sub
+    End Sub
 
     Private Sub Modificar()
         Dim sql As String
         sql = "update Barrio set nombre = '" & txt_nombre.Text.Trim & "'"
-        sql &= ", idLocalidad = " & Integer.Parse(cmb_localidades.SelectedValue)
+        sql &= ", idLocalidad = " & cmb_localidades.SelectedValue
         sql &= " where id = " & BarrioSeleccionado
         Conex.Insertar(sql)
     End Sub

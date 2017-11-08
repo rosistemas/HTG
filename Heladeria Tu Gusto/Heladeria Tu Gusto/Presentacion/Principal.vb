@@ -188,4 +188,8 @@ Public Class Principal
         Comprobante_Factura.Show()
 
     End Sub
+
+    Private Sub pb_registrar_proveedor_Click(sender As Object, e As EventArgs) Handles pb_registrar_proveedor.Click
+        RegistrarProveedor.Show()
+    End Sub
 End Class

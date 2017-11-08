@@ -29,7 +29,7 @@
         sql &= ", " & cmb_tipo.SelectedValue            'idTipo
         sql &= ", " & Double.Parse(txt_precio.Text.Trim) 'precio
         sql &= ", 0"                                       'stock
-        sql &= ", '" & txt_descripcion.Text.Trim & "'"  'descripción
+        sql &= ", '" & txt_descripcion.Text & "'"  'descripción
         sql &= ")"
         Conex.Insertar(sql)
     End Sub

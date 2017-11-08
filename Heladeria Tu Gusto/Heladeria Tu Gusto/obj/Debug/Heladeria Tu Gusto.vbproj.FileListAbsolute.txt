@@ -325,13 +325,16 @@ C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj
 C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.RegistrarTurno.resources
 C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\RdlCompile.cache
 C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\RdlCompile.compiled
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Estadisticas.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.InformeDeVentas.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ComprobanteFactural.resources
+C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Comprobante_Factura.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe.config
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.pdb
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.Design.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.ReportViewer.WinForms.dll
@@ -342,9 +345,30 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microso
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\stdole.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\EnvDTE80.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\VSLangProj.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\VSLangProj80.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.WCFReference.Interop.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\VSLangProj2.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
@@ -391,7 +415,10 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHS\
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Estadisticas.resources
+C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Comprobante_Factura.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.InformeDeVentas.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.VentasPorEmpleado.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ModificarProvincia.resources
@@ -418,9 +445,4 @@ C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Helader
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.exe
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.xml
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.pdb
-C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Estadisticas.resources
-C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.InformeDeVentas.resources
-C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.ComprobanteFactural.resources
-C:\GitKraken Principal\Helados 2.0\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Comprobante_Factura.resources
 C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria Tu Gusto.vbprojResolveAssemblyReference.cache
-C:\Users\Rodrigo\Git\HTG\Heladeria Tu Gusto\Heladeria Tu Gusto\obj\Debug\Heladeria_Tu_Gusto.Comprobante_Factura.resources
