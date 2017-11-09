@@ -29,12 +29,17 @@ Public Class Conexiones
         'Función que retorna una dataTable cargada con los resultados de la consulta SQL
         Dim tabla As New DataTable
         AbrirConexion()
-
         Comando.Connection = Conexion
         Comando.CommandType = CommandType.Text
         Comando.CommandText = "select * from " & nombreTabla
-
-        tabla.Load(Comando.ExecuteReader)
+        Try
+            tabla.Load(Comando.ExecuteReader())
+            If tabla.Rows.Count = 0 Then
+                MessageBox.Show("La tabla " & nombreTabla & " no contiene datos")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("No se pudo leer la tabla " & nombreTabla)
+        End Try
         CerrarConexion()
         Return tabla
     End Function

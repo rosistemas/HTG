@@ -12,7 +12,7 @@
     End Sub
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
-        If Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+        If Asistente.VerificarVacios(Controls) = AsistenteFormulario.EstadoValidacion.SinErrores Then
             Insertar()
             MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
             Asistente.LimpiarFormulario(Controls)
@@ -44,7 +44,10 @@
     End Sub
 
     Private Sub RegistrarEmpleado_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No Then
+        If _
+            MessageBox.Show("¿Desea cancelar el registro?", "Perderá los datos ingresados", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
+            Then
             e.Cancel = True
         End If
     End Sub

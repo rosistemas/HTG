@@ -33,14 +33,14 @@ Partial Class ModificarBarrio
         Me.lbl_nombre_barrio = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.grd_barrios = New System.Windows.Forms.DataGridView()
-        Me.cmd_cancelar = New System.Windows.Forms.Button()
-        Me.cmd_guardar = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.Id_barrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre_barrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.id_localidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre_localidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cmd_cancelar = New System.Windows.Forms.Button()
+        Me.cmd_guardar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.grd_datos.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.grd_barrios, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,6 +114,34 @@ Partial Class ModificarBarrio
         Me.grd_barrios.Size = New System.Drawing.Size(254, 96)
         Me.grd_barrios.TabIndex = 7
         '
+        'Id_barrio
+        '
+        Me.Id_barrio.HeaderText = "ID Barrio"
+        Me.Id_barrio.Name = "Id_barrio"
+        Me.Id_barrio.ReadOnly = True
+        Me.Id_barrio.Visible = False
+        '
+        'nombre_barrio
+        '
+        Me.nombre_barrio.HeaderText = "Barrio"
+        Me.nombre_barrio.Name = "nombre_barrio"
+        Me.nombre_barrio.ReadOnly = True
+        Me.nombre_barrio.Width = 105
+        '
+        'id_localidad
+        '
+        Me.id_localidad.HeaderText = "ID Localidad"
+        Me.id_localidad.Name = "id_localidad"
+        Me.id_localidad.ReadOnly = True
+        Me.id_localidad.Visible = False
+        '
+        'nombre_localidad
+        '
+        Me.nombre_localidad.HeaderText = "Localidad"
+        Me.nombre_localidad.Name = "nombre_localidad"
+        Me.nombre_localidad.ReadOnly = True
+        Me.nombre_localidad.Width = 105
+        '
         'cmd_cancelar
         '
         Me.cmd_cancelar.Image = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
@@ -149,34 +177,6 @@ Partial Class ModificarBarrio
         Me.lbl_guardar.Size = New System.Drawing.Size(87, 13)
         Me.lbl_guardar.TabIndex = 28
         Me.lbl_guardar.Text = "Guardar cambios"
-        '
-        'Id_barrio
-        '
-        Me.Id_barrio.HeaderText = "ID Barrio"
-        Me.Id_barrio.Name = "Id_barrio"
-        Me.Id_barrio.ReadOnly = True
-        Me.Id_barrio.Visible = False
-        '
-        'nombre_barrio
-        '
-        Me.nombre_barrio.HeaderText = "Barrio"
-        Me.nombre_barrio.Name = "nombre_barrio"
-        Me.nombre_barrio.ReadOnly = True
-        Me.nombre_barrio.Width = 105
-        '
-        'id_localidad
-        '
-        Me.id_localidad.HeaderText = "ID Localidad"
-        Me.id_localidad.Name = "id_localidad"
-        Me.id_localidad.ReadOnly = True
-        Me.id_localidad.Visible = False
-        '
-        'nombre_localidad
-        '
-        Me.nombre_localidad.HeaderText = "Localidad"
-        Me.nombre_localidad.Name = "nombre_localidad"
-        Me.nombre_localidad.ReadOnly = True
-        Me.nombre_localidad.Width = 105
         '
         'ModificarBarrio
         '

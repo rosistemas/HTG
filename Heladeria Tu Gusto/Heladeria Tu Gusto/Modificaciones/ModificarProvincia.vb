@@ -24,12 +24,8 @@
     End Sub
 
     Private Sub cmd_cancel_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
-        If _
-            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Close()
-            Principal.Show()
-        End If
+        Close()
+        Principal.Show()
     End Sub
 
     Private Sub CargarGrilla()
@@ -58,4 +54,12 @@
         Conex.Insertar(sql)
     End Sub
 
+    Private Sub ModificarProvincia_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If _
+            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
+            Then
+            e.Cancel = True
+        End If
+    End Sub
 End Class

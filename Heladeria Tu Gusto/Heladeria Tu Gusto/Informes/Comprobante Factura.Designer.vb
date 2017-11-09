@@ -48,7 +48,7 @@ Partial Class Comprobante_Factura
         'cmb_factura
         '
         Me.cmb_factura.FormattingEnabled = True
-        Me.cmb_factura.Location = New System.Drawing.Point(166, 14)
+        Me.cmb_factura.Location = New System.Drawing.Point(125, 14)
         Me.cmb_factura.Name = "cmb_factura"
         Me.cmb_factura.Size = New System.Drawing.Size(121, 21)
         Me.cmb_factura.TabIndex = 5
@@ -56,19 +56,19 @@ Partial Class Comprobante_Factura
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 17)
+        Me.Label1.Location = New System.Drawing.Point(12, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(140, 13)
+        Me.Label1.Size = New System.Drawing.Size(107, 13)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Seleccione un comprobante"
+        Me.Label1.Text = "Seleccione un ticket:"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(327, 12)
+        Me.Button1.Location = New System.Drawing.Point(268, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(119, 23)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Generar"
+        Me.Button1.Text = "Generar comprobante"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'ReportViewer1
@@ -76,21 +76,22 @@ Partial Class Comprobante_Factura
         Me.ReportViewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ReportViewer1.DocumentMapWidth = 91
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.TablaFacturaBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Heladeria_Tu_Gusto.rptComprobanteFactura.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(12, 65)
+        Me.ReportViewer1.Location = New System.Drawing.Point(15, 41)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(478, 456)
+        Me.ReportViewer1.Size = New System.Drawing.Size(440, 588)
         Me.ReportViewer1.TabIndex = 6
         '
         'Comprobante_Factura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(502, 549)
+        Me.ClientSize = New System.Drawing.Size(467, 641)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.cmb_factura)
         Me.Controls.Add(Me.Label1)

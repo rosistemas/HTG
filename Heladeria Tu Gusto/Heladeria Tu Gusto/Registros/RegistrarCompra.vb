@@ -4,7 +4,7 @@
 
     Private Sub RegistrarCompra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Asistente.CargarCombo(cmb_empleado, Conex.LeerTabla("Empleado"), "id", "id")
-        Asistente.CargarCombo(cmb_producto, Conex.LeerTabla("Producto"), "idProducto", "nombre")
+        Asistente.CargarCombo(cmb_producto, Conex.LeerTabla("Producto"), "nombre", "idProducto")
         MostrarInfoEmpleado()
         lbl_id_compra_display.Text = Conex.Generar_id_consecutivo("Compra", "id")
     End Sub
@@ -75,7 +75,10 @@
     End Sub
 
     Private Sub RegistrarCompra_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No Then
+        If _
+            MessageBox.Show("¿Desea cancelar el registro?", "Perderá los datos ingresados", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
+            Then
             e.Cancel = True
         End If
     End Sub
@@ -86,7 +89,7 @@
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
 
-        If ValidarInfo() = False And Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.ConErrores Then
+        If ValidarInfo() = False And Asistente.VerificarVacios(Controls) = AsistenteFormulario.EstadoValidacion.ConErrores Then
             MsgBox("No se han cargado datos", MsgBoxStyle.Critical, "No se puede guardar")
             Exit Sub
         End If

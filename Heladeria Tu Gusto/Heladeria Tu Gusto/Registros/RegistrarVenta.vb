@@ -117,7 +117,7 @@
 
     Private Sub RegistrarVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Asistente.CargarCombo(cmb_empleado, Conex.LeerTabla("empleado"), "id", "id")
-        Asistente.CargarCombo(cmb_producto, Conex.LeerTabla("producto"), "idProducto", "nombre")
+        Asistente.CargarCombo(cmb_producto, Conex.LeerTabla("producto"), "nombre", "idProducto")
         lbl_id_venta_display.Text = generar_id_venta()
         txt_codigo_producto.Text = cmb_producto.SelectedValue
         mostrar_info_empleado()
@@ -160,7 +160,12 @@
         Dim selected As String = cmb_empleado.SelectedValue
         Dim table As New DataTable
         Dim sql As String = "select * from empleado where id = " & selected
-        table = Conex.Consultar(sql)
+        Try
+            table = Conex.Consultar(sql)
+        Catch ex As Exception
+            MessageBox.Show("No se encontró al empleado seleccionado")
+            Exit Sub
+        End Try
         lbl_info_empleado.Text = table.Rows(0)("nombre") & " " & table.Rows(0)("apellido")
     End Sub
 

@@ -8,10 +8,8 @@
     End Sub
 
     Private Sub cmd_cancel_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Close()
-            Principal.Show()
-        End If
+        Close()
+        Principal.Show()
     End Sub
 
     Private Sub CargarGrilla()
@@ -51,5 +49,14 @@
         cmb_localidades.SelectedValue = grd_barrios.CurrentRow.Cells("id_localidad").Value
         txt_nombre.Text = grd_barrios.CurrentRow.Cells("nombre_barrio").Value
         BarrioSeleccionado = grd_barrios.CurrentRow.Cells("id_barrio").Value
+    End Sub
+
+    Private Sub ModificarBarrio_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If _
+            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
+            Then
+            e.Cancel = True
+        End If
     End Sub
 End Class

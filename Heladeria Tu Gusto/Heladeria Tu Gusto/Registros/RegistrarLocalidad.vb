@@ -19,13 +19,19 @@
     End Sub
 
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Close()
-            Principal.Show()
-        End If
+        Close()
     End Sub
 
     Private Sub RegistrarLocalidad_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Asistente.CargarCombo(cmb_provincia, Conex.LeerTabla("Provincia"), "nombre", "id")
+    End Sub
+
+    Private Sub RegistrarLocalidad_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If _
+            MessageBox.Show("¿Desea cancelar el registro?", "Perderá los datos ingresados", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
+            Then
+            e.Cancel = True
+        End If
     End Sub
 End Class

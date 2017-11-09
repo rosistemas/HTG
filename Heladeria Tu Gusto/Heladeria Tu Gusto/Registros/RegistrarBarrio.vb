@@ -22,12 +22,15 @@
     End Sub
 
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
-        'Simple funcionalidad del botón cancelar, limpia los campos y vuelve a mostrar la ventana principal
+        Close()
+    End Sub
+
+    Private Sub RegistrarBarrio_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If _
-            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar el registro?", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Close()
-            Principal.Show()
+            MessageBox.Show("¿Desea cancelar el registro?", "Perderá los datos ingresados", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
+            Then
+            e.Cancel = True
         End If
     End Sub
 End Class

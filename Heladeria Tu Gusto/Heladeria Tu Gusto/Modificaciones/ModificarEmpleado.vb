@@ -20,10 +20,8 @@
     End Sub
 
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
-        If MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Close()
-            Principal.Show()
-        End If
+        Close()
+        Principal.Show()
     End Sub
 
     Private Sub CargarGrilla()
@@ -31,7 +29,7 @@
         sql = "SELECT E.*, T.descripcion, B.nombre as nombre_barrio FROM Empleado E INNER JOIN TipoDoc T ON E.tipoDoc = T.id INNER JOIN Barrio B ON E.idBarrio = B.id"
         Dim tabla As New DataTable
         tabla = Conex.Consultar(sql)
-        Me.grd_empleados.Rows.Clear()
+        grd_empleados.Rows.Clear()
         For i = 0 To tabla.Rows.Count - 1
             grd_empleados.Rows.Add()
             grd_empleados.Rows(i).Cells("id").Value = tabla.Rows(i)("id")
@@ -68,14 +66,14 @@
     Private Sub Modificar()
         Dim sql
         sql = "update Empleado"
-        sql &= " set nombre = '" & Me.txt_nombre.Text.Trim & "'"
+        sql &= " set nombre = '" & txt_nombre.Text.Trim & "'"
         sql &= ", numDoc = " & Integer.Parse(txt_numero_documento.Text.Trim)
-        sql &= ", tipoDoc = " & Me.cmb_tipo_documento.SelectedValue
-        sql &= ", apellido = '" & Me.txt_apellido.Text.Trim & "'"
+        sql &= ", tipoDoc = " & cmb_tipo_documento.SelectedValue
+        sql &= ", apellido = '" & txt_apellido.Text.Trim & "'"
         sql &= ", fechaNacimiento = '" & date_fecha_nacimiento.Value.Date & "'"
         sql &= ", fechaIngreso = '" & date_fecha_ingreso.Value.Date & "'"
-        sql &= ", idBarrio = " & Me.cmb_barrio.SelectedValue
-        sql &= ", calle = '" & Me.txt_calle.Text.Trim & "'"
+        sql &= ", idBarrio = " & cmb_barrio.SelectedValue
+        sql &= ", calle = '" & txt_calle.Text.Trim & "'"
         sql &= ", numCalle = " & Integer.Parse(txt_numero_calle.Text.Trim)
         sql &= " where id = " & IdEmpleadoSeleccionado
         Conex.Insertar(sql)

@@ -9,12 +9,8 @@
     End Sub
 
     Private Sub cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
-        If _
-            MessageBox.Show("Perderá los datos ingresados", "¿Desea cancelar la modificación?", MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Warning) = DialogResult.Yes Then
-            Close()
-            Principal.Show()
-        End If
+        Close()
+        Principal.Show()
     End Sub
 
     Private Sub grd_Localidad_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) _
@@ -60,6 +56,15 @@
         Else
             MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK,
                             MessageBoxIcon.Information)
+        End If
+    End Sub
+
+    Private Sub ModificarLocalidad_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If _
+            MessageBox.Show("¿Está seguro que desea cancelar?", "Confirmar cancelación", MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) = DialogResult.No _
+            Then
+            e.Cancel = True
         End If
     End Sub
 End Class

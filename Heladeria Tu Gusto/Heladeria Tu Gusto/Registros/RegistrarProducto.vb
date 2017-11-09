@@ -9,7 +9,7 @@
 
     Private Sub cmd_guardar_Click(sender As Object, e As EventArgs) Handles cmd_guardar.Click
         'Llamar al procedimiento de inserción e informar que fue correcto.
-        If Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+        If Asistente.VerificarVacios(Controls) = AsistenteFormulario.EstadoValidacion.SinErrores Then
             Insertar()
             MsgBox("Se ha guardado la información.", MsgBoxStyle.OkOnly, "¡Éxito!")
         End If

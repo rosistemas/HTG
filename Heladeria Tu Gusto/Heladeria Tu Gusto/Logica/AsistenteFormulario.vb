@@ -4,8 +4,6 @@
         ConErrores
     End Enum
 
-
-
     Public Sub CargarCombo(ByRef combo As ComboBox, ByRef tabla As DataTable, descriptor As String, pk As String)
         combo.DataSource = Nothing
         'Limpiar el comboBox

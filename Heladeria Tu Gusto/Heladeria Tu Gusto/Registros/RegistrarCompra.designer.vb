@@ -177,7 +177,7 @@ Partial Class RegistrarCompra
         '
         Me.lbl_razon_social_proveedor.AutoSize = true
         Me.lbl_razon_social_proveedor.ForeColor = System.Drawing.Color.Black
-        Me.lbl_razon_social_proveedor.Location = New System.Drawing.Point(21, 80)
+        Me.lbl_razon_social_proveedor.Location = New System.Drawing.Point(8, 69)
         Me.lbl_razon_social_proveedor.Name = "lbl_razon_social_proveedor"
         Me.lbl_razon_social_proveedor.Size = New System.Drawing.Size(73, 13)
         Me.lbl_razon_social_proveedor.TabIndex = 0
@@ -185,7 +185,7 @@ Partial Class RegistrarCompra
         '
         'lbl_nombre_proveedor
         '
-        Me.lbl_nombre_proveedor.AutoSize = true
+        Me.lbl_nombre_proveedor.AutoSize = True
         Me.lbl_nombre_proveedor.ForeColor = System.Drawing.Color.Black
         Me.lbl_nombre_proveedor.Location = New System.Drawing.Point(8, 112)
         Me.lbl_nombre_proveedor.Name = "lbl_nombre_proveedor"
@@ -196,7 +196,7 @@ Partial Class RegistrarCompra
         'lbl_display_mail_proveedor
         '
         Me.lbl_display_mail_proveedor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.lbl_display_mail_proveedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lbl_display_mail_proveedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_display_mail_proveedor.ForeColor = System.Drawing.Color.Black
         Me.lbl_display_mail_proveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lbl_display_mail_proveedor.Location = New System.Drawing.Point(61, 138)
@@ -208,18 +208,18 @@ Partial Class RegistrarCompra
         'lbl_display_razon_social_proveedor
         '
         Me.lbl_display_razon_social_proveedor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.lbl_display_razon_social_proveedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lbl_display_razon_social_proveedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_display_razon_social_proveedor.ForeColor = System.Drawing.Color.Black
         Me.lbl_display_razon_social_proveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lbl_display_razon_social_proveedor.Location = New System.Drawing.Point(97, 75)
+        Me.lbl_display_razon_social_proveedor.Location = New System.Drawing.Point(87, 64)
         Me.lbl_display_razon_social_proveedor.Name = "lbl_display_razon_social_proveedor"
-        Me.lbl_display_razon_social_proveedor.Size = New System.Drawing.Size(141, 21)
+        Me.lbl_display_razon_social_proveedor.Size = New System.Drawing.Size(151, 21)
         Me.lbl_display_razon_social_proveedor.TabIndex = 20
         Me.lbl_display_razon_social_proveedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lbl_id_proveedor
         '
-        Me.lbl_id_proveedor.AutoSize = true
+        Me.lbl_id_proveedor.AutoSize = True
         Me.lbl_id_proveedor.ForeColor = System.Drawing.Color.Black
         Me.lbl_id_proveedor.Location = New System.Drawing.Point(34, 32)
         Me.lbl_id_proveedor.Name = "lbl_id_proveedor"
@@ -230,10 +230,10 @@ Partial Class RegistrarCompra
         'lbl_display_nombre_proveedor
         '
         Me.lbl_display_nombre_proveedor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.lbl_display_nombre_proveedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lbl_display_nombre_proveedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_display_nombre_proveedor.ForeColor = System.Drawing.Color.Black
         Me.lbl_display_nombre_proveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lbl_display_nombre_proveedor.Location = New System.Drawing.Point(61, 107)
+        Me.lbl_display_nombre_proveedor.Location = New System.Drawing.Point(61, 101)
         Me.lbl_display_nombre_proveedor.Name = "lbl_display_nombre_proveedor"
         Me.lbl_display_nombre_proveedor.Size = New System.Drawing.Size(177, 21)
         Me.lbl_display_nombre_proveedor.TabIndex = 20

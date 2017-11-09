@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
-        If Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+        If Asistente.VerificarVacios(Controls) = AsistenteFormulario.EstadoValidacion.SinErrores Then
             If MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes Then
                 Modificar()
                 CargarGrilla()
@@ -21,6 +21,7 @@
 
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
         Close()
+        Principal.Show()
     End Sub
 
     Private Sub CargarGrilla()

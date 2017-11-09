@@ -1,10 +1,10 @@
 ﻿Public Class ModificarProducto
     Private Property  Conex as Conexiones = New Conexiones
     Private Property Asistente As AsistenteFormulario = New AsistenteFormulario
-    Private id_producto_seleccionado As Integer = 0
+    Private Property IdProductoSeleccionado As Integer = 0
 
     Private Sub ModificarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cargarGrilla()
+        CargarGrilla()
     End Sub
 
     Private Sub CargarGrilla()
@@ -16,7 +16,7 @@
 
         'Limpiar valores previos si es que había
         Dim tabla As New DataTable
-        tabla = Conex.consultar(sql)
+        tabla = Conex.Consultar(sql)
         grd_productos.Rows.Clear()
         'Desde la fila 0 hasta cantidad de filas -1
         For c = 0 To tabla.Rows.Count - 1
@@ -41,17 +41,18 @@
         txt_descripcion.Text = grd_productos.CurrentRow.Cells("descripcion").Value
         Asistente.CargarCombo(cmb_tipo, Conex.LeerTabla("TipoProducto"), "descripcion", "idTipo")
         cmb_tipo.SelectedValue = grd_productos.CurrentRow.Cells("id_tipo_producto").Value
-        id_producto_seleccionado = grd_productos.CurrentRow.Cells("id_producto").Value
+        IdProductoSeleccionado = grd_productos.CurrentRow.Cells("id_producto").Value
     End Sub
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
-        If Asistente.VerificarVacios(Controls) = Validador.EstadoValidacion.SinErrores Then
+        If Asistente.VerificarVacios(Controls) = AsistenteFormulario.EstadoValidacion.SinErrores Then
             If _
                 MessageBox.Show("¿Está seguro de querer modificar los datos del producto seleccionado?", "Precaución",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes _
                 Then
                 Modificar()
                 CargarGrilla()
+                Asistente.LimpiarFormulario(Controls)
             Else
                 MessageBox.Show("Los datos no se han alterado.", "Cancelado", MessageBoxButtons.OK,
                                 MessageBoxIcon.Information)
@@ -66,7 +67,7 @@
         sql &= ", descripcion = '" & txt_descripcion.Text.Trim & "'"
         sql &= ", precio = " & Double.Parse(txt_precio.Text)
         sql &= ", idTipo = " & cmb_tipo.SelectedValue
-        sql &= " where idProducto = " & id_producto_seleccionado
+        sql &= " where idProducto = " & IdProductoSeleccionado
         Conex.insertar(sql)
     End Sub
 
