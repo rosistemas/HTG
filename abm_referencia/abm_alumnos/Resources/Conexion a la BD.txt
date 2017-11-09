@@ -1,4 +1,0 @@
-Conexion Microsoft SQL: Ole DB
-Servidor : maquis
-User:pswd  avisuales1
-Database: __BD_PAV1_3K3
