@@ -19,7 +19,7 @@
         sql &= ", t.fecha, t.hora, t.total as 'totalVendido' from empleado e inner join"
         sql &= " ticket t on(e.id = t.legajoEmpleado)"
         sql &= " where  t.fecha > '" & date_desde.Value.Date & "' and "
-        sql &= "t.fecha < '" & date_hasta.Value.Date & "'"
+        sql &= "t.fecha <= '" & date_hasta.Value.Date & "'"
 
         bs_ventas_por_empleado.DataSource = conex.Consultar(sql)
         rv_ventas_por_empleado.RefreshReport()
