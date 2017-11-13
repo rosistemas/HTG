@@ -24,10 +24,11 @@ Partial Class InformeDeVentas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InformeDeVentas))
         Me.bs_ventas = New System.Windows.Forms.BindingSource(Me.components)
         Me.rv_ventas = New Microsoft.Reporting.WinForms.ReportViewer()
-        CType(Me.bs_ventas,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        CType(Me.bs_ventas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'rv_ventas
         '
@@ -39,15 +40,16 @@ Partial Class InformeDeVentas
         Me.rv_ventas.Location = New System.Drawing.Point(0, 0)
         Me.rv_ventas.Name = "rv_ventas"
         Me.rv_ventas.ServerReport.BearerToken = Nothing
-        Me.rv_ventas.Size = New System.Drawing.Size(682, 535)
+        Me.rv_ventas.Size = New System.Drawing.Size(547, 395)
         Me.rv_ventas.TabIndex = 0
         '
         'InformeDeVentas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(682, 535)
+        Me.ClientSize = New System.Drawing.Size(547, 395)
         Me.Controls.Add(Me.rv_ventas)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "InformeDeVentas"
         Me.Text = "Informe de ventas"
         CType(Me.bs_ventas,System.ComponentModel.ISupportInitialize).EndInit

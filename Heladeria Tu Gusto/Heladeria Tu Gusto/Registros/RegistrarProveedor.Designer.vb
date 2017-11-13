@@ -48,13 +48,17 @@ Partial Class RegistrarProveedor
         Me.lbl_razon_social = New System.Windows.Forms.Label()
         Me.txt_mail = New System.Windows.Forms.TextBox()
         Me.cmb_tipo_documento = New System.Windows.Forms.ComboBox()
-        Me.cmd_cancelar = New System.Windows.Forms.Button()
-        Me.cmd_guardar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lbl_guardar = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.cmb_producto = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cmb_tipo_telefono = New System.Windows.Forms.ComboBox()
+        Me.txt_numero_telefono = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.cmd_cancelar = New System.Windows.Forms.Button()
+        Me.cmd_guardar = New System.Windows.Forms.Button()
         Me.grp_domicilio.SuspendLayout()
         Me.grp_datos.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -62,6 +66,10 @@ Partial Class RegistrarProveedor
         '
         'grp_domicilio
         '
+        Me.grp_domicilio.Controls.Add(Me.txt_numero_telefono)
+        Me.grp_domicilio.Controls.Add(Me.Label6)
+        Me.grp_domicilio.Controls.Add(Me.cmb_tipo_telefono)
+        Me.grp_domicilio.Controls.Add(Me.Label5)
         Me.grp_domicilio.Controls.Add(Me.Label3)
         Me.grp_domicilio.Controls.Add(Me.cmb_provincia)
         Me.grp_domicilio.Controls.Add(Me.txt_numero_calle)
@@ -74,7 +82,7 @@ Partial Class RegistrarProveedor
         Me.grp_domicilio.Controls.Add(Me.cmb_localidad)
         Me.grp_domicilio.Location = New System.Drawing.Point(12, 160)
         Me.grp_domicilio.Name = "grp_domicilio"
-        Me.grp_domicilio.Size = New System.Drawing.Size(353, 159)
+        Me.grp_domicilio.Size = New System.Drawing.Size(353, 178)
         Me.grp_domicilio.TabIndex = 14
         Me.grp_domicilio.TabStop = False
         Me.grp_domicilio.Text = "Domicilio"
@@ -263,30 +271,10 @@ Partial Class RegistrarProveedor
         Me.cmb_tipo_documento.Size = New System.Drawing.Size(100, 21)
         Me.cmb_tipo_documento.TabIndex = 2
         '
-        'cmd_cancelar
-        '
-        Me.cmd_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
-        Me.cmd_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.cmd_cancelar.Location = New System.Drawing.Point(290, 417)
-        Me.cmd_cancelar.Name = "cmd_cancelar"
-        Me.cmd_cancelar.Size = New System.Drawing.Size(75, 46)
-        Me.cmd_cancelar.TabIndex = 1
-        Me.cmd_cancelar.UseVisualStyleBackColor = True
-        '
-        'cmd_guardar
-        '
-        Me.cmd_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
-        Me.cmd_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.cmd_guardar.Location = New System.Drawing.Point(12, 417)
-        Me.cmd_guardar.Name = "cmd_guardar"
-        Me.cmd_guardar.Size = New System.Drawing.Size(75, 46)
-        Me.cmd_guardar.TabIndex = 0
-        Me.cmd_guardar.UseVisualStyleBackColor = True
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(303, 401)
+        Me.Label2.Location = New System.Drawing.Point(303, 419)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
         Me.Label2.TabIndex = 16
@@ -295,7 +283,7 @@ Partial Class RegistrarProveedor
         'lbl_guardar
         '
         Me.lbl_guardar.AutoSize = True
-        Me.lbl_guardar.Location = New System.Drawing.Point(27, 401)
+        Me.lbl_guardar.Location = New System.Drawing.Point(27, 419)
         Me.lbl_guardar.Name = "lbl_guardar"
         Me.lbl_guardar.Size = New System.Drawing.Size(45, 13)
         Me.lbl_guardar.TabIndex = 15
@@ -305,12 +293,20 @@ Partial Class RegistrarProveedor
         '
         Me.GroupBox1.Controls.Add(Me.cmb_producto)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 325)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 343)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(353, 67)
         Me.GroupBox1.TabIndex = 17
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Producto"
+        '
+        'cmb_producto
+        '
+        Me.cmb_producto.FormattingEnabled = True
+        Me.cmb_producto.Location = New System.Drawing.Point(160, 29)
+        Me.cmb_producto.Name = "cmb_producto"
+        Me.cmb_producto.Size = New System.Drawing.Size(180, 21)
+        Me.cmb_producto.TabIndex = 7
         '
         'Label4
         '
@@ -321,19 +317,64 @@ Partial Class RegistrarProveedor
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Seleccione un producto"
         '
-        'cmb_producto
+        'Label5
         '
-        Me.cmb_producto.FormattingEnabled = True
-        Me.cmb_producto.Location = New System.Drawing.Point(160, 29)
-        Me.cmb_producto.Name = "cmb_producto"
-        Me.cmb_producto.Size = New System.Drawing.Size(180, 21)
-        Me.cmb_producto.TabIndex = 7
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(46, 148)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(72, 13)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "Tipo teléfono:"
+        '
+        'cmb_tipo_telefono
+        '
+        Me.cmb_tipo_telefono.FormattingEnabled = True
+        Me.cmb_tipo_telefono.Location = New System.Drawing.Point(124, 145)
+        Me.cmb_tipo_telefono.Name = "cmb_tipo_telefono"
+        Me.cmb_tipo_telefono.Size = New System.Drawing.Size(100, 21)
+        Me.cmb_tipo_telefono.TabIndex = 8
+        '
+        'txt_numero_telefono
+        '
+        Me.txt_numero_telefono.Location = New System.Drawing.Point(285, 148)
+        Me.txt_numero_telefono.Name = "txt_numero_telefono"
+        Me.txt_numero_telefono.Size = New System.Drawing.Size(59, 20)
+        Me.txt_numero_telefono.TabIndex = 9
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(234, 151)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(47, 13)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Número:"
+        '
+        'cmd_cancelar
+        '
+        Me.cmd_cancelar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Delete_40
+        Me.cmd_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_cancelar.Location = New System.Drawing.Point(290, 435)
+        Me.cmd_cancelar.Name = "cmd_cancelar"
+        Me.cmd_cancelar.Size = New System.Drawing.Size(75, 46)
+        Me.cmd_cancelar.TabIndex = 1
+        Me.cmd_cancelar.UseVisualStyleBackColor = True
+        '
+        'cmd_guardar
+        '
+        Me.cmd_guardar.BackgroundImage = Global.Heladeria_Tu_Gusto.My.Resources.Resources.icons8_Add_New_40
+        Me.cmd_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.cmd_guardar.Location = New System.Drawing.Point(12, 435)
+        Me.cmd_guardar.Name = "cmd_guardar"
+        Me.cmd_guardar.Size = New System.Drawing.Size(75, 46)
+        Me.cmd_guardar.TabIndex = 0
+        Me.cmd_guardar.UseVisualStyleBackColor = True
         '
         'RegistrarProveedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(387, 473)
+        Me.ClientSize = New System.Drawing.Size(387, 489)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lbl_guardar)
@@ -383,4 +424,8 @@ End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents cmb_producto As System.Windows.Forms.ComboBox
+    Friend WithEvents txt_numero_telefono As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents cmb_tipo_telefono As ComboBox
+    Friend WithEvents Label5 As Label
 End Class

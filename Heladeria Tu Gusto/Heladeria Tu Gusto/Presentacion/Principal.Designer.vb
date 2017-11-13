@@ -36,9 +36,9 @@ Partial Class Principal
         Me.CompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TurnoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OtrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BarrioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProvinciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BarrioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TipoProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.modificar_producto = New System.Windows.Forms.ToolStripMenuItem()
@@ -78,6 +78,7 @@ Partial Class Principal
         Me.pb_ventas = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.pb_estadisticas = New System.Windows.Forms.PictureBox()
+        Me.TipoTelefonoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.pb_registrar_venta, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb_registrar_compra, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -161,10 +162,16 @@ Partial Class Principal
         '
         'OtrosToolStripMenuItem
         '
-        Me.OtrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BarrioToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.ProvinciaToolStripMenuItem, Me.TipoProductoToolStripMenuItem})
+        Me.OtrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BarrioToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.ProvinciaToolStripMenuItem, Me.TipoProductoToolStripMenuItem, Me.TipoTelefonoToolStripMenuItem})
         Me.OtrosToolStripMenuItem.Name = "OtrosToolStripMenuItem"
         Me.OtrosToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
         Me.OtrosToolStripMenuItem.Text = "Otros"
+        '
+        'BarrioToolStripMenuItem
+        '
+        Me.BarrioToolStripMenuItem.Name = "BarrioToolStripMenuItem"
+        Me.BarrioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BarrioToolStripMenuItem.Text = "Barrio"
         '
         'LocalidadToolStripMenuItem
         '
@@ -177,12 +184,6 @@ Partial Class Principal
         Me.ProvinciaToolStripMenuItem.Name = "ProvinciaToolStripMenuItem"
         Me.ProvinciaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProvinciaToolStripMenuItem.Text = "Provincia"
-        '
-        'BarrioToolStripMenuItem
-        '
-        Me.BarrioToolStripMenuItem.Name = "BarrioToolStripMenuItem"
-        Me.BarrioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.BarrioToolStripMenuItem.Text = "Barrio"
         '
         'TipoProductoToolStripMenuItem
         '
@@ -584,6 +585,12 @@ Partial Class Principal
         Me.pb_estadisticas.TabIndex = 7
         Me.pb_estadisticas.TabStop = False
         '
+        'TipoTelefonoToolStripMenuItem
+        '
+        Me.TipoTelefonoToolStripMenuItem.Name = "TipoTelefonoToolStripMenuItem"
+        Me.TipoTelefonoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TipoTelefonoToolStripMenuItem.Text = "Tipo Telefono"
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -671,4 +678,5 @@ End Sub
     Friend WithEvents pb_ventas As PictureBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents pb_factura As System.Windows.Forms.PictureBox
+    Friend WithEvents TipoTelefonoToolStripMenuItem As ToolStripMenuItem
 End Class

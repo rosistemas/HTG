@@ -209,4 +209,8 @@ Public Class Principal
     Private Sub pb_registrar_proveedor_Click(sender As Object, e As EventArgs) Handles pb_registrar_proveedor.Click
         RegistrarProveedor.Show()
     End Sub
+
+    Private Sub TipoTelefonoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TipoTelefonoToolStripMenuItem.Click
+        RegistrarTipoTelefono.Show()
+    End Sub
 End Class

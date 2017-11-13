@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.33499cm</Width>
+              <Width>3.46186cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.33499cm</Width>
+              <Width>3.46186cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.33499cm</Width>
+              <Width>3.46186cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.33499cm</Width>
+              <Width>3.46186cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -32,7 +32,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Número de ticket</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -43,7 +45,7 @@
                       <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -64,7 +66,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Código de producto</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -75,7 +79,7 @@
                       <rd:DefaultName>Textbox4</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -96,7 +100,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Cantidad</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -107,7 +113,7 @@
                       <rd:DefaultName>Textbox6</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -128,7 +134,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Precio</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -139,7 +147,7 @@
                       <rd:DefaultName>Textbox8</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -176,7 +184,7 @@
                       <rd:DefaultName>numeroTicket</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -208,7 +216,7 @@
                       <rd:DefaultName>idProducto</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -240,7 +248,7 @@
                       <rd:DefaultName>cantidad</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -272,7 +280,7 @@
                       <rd:DefaultName>precio</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -309,15 +317,16 @@
         <DataSetName>ListadoDeVentas</DataSetName>
         <Top>0.14111cm</Top>
         <Height>1.41166cm</Height>
-        <Width>17.33996cm</Width>
+        <Width>13.84745cm</Width>
         <Style>
           <Border>
+            <Color>Tomato</Color>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2in</Height>
+    <Height>2.03125in</Height>
     <Style>
       <Border>
         <Style>None</Style>
@@ -328,10 +337,10 @@
       </BackgroundImage>
     </Style>
   </Body>
-  <Width>6.86842in</Width>
+  <Width>5.45175in</Width>
   <Page>
     <PageHeader>
-      <Height>2.54cm</Height>
+      <Height>1.64042cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -343,7 +352,10 @@
               <TextRuns>
                 <TextRun>
                   <Value>Listado de productos vendidos</Value>
-                  <Style />
+                  <Style>
+                    <FontSize>16pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -352,10 +364,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.82021cm</Top>
-          <Left>5.68854cm</Left>
-          <Height>0.635cm</Height>
-          <Width>5.69828cm</Width>
+          <Top>0.44979cm</Top>
+          <Left>2.73601cm</Left>
+          <Height>0.71438cm</Height>
+          <Width>8.6087cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -378,7 +390,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>2.54cm</Height>
+      <Height>0.94078cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -401,8 +413,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>OverallPageNumber</rd:DefaultName>
-          <Top>1.29328cm</Top>
-          <Left>14.83995cm</Left>
+          <Top>0.17639cm</Top>
+          <Left>11.34745cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <Style>

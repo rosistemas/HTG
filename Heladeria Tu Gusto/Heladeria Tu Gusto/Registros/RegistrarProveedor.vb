@@ -9,6 +9,7 @@
         Asistente.CargarCombo(cmb_tipo_documento, Conex.LeerTabla("TipoDoc"), "descripcion", "id")
         Asistente.CargarCombo(cmb_producto, Conex.Consultar("select * from producto p where p.idProducto not in (select p1.idProducto from proveedor p1)"), "nombre", "idProducto")
         Asistente.CargarCombo(cmb_provincia, tabla, "nombre", "id")
+        Asistente.CargarCombo(cmb_tipo_telefono, Conex.Consultar("select * from TipoTelefono"), "descripcion", "idTipo")
         cmb_localidad.DataSource = Nothing
         cmb_barrio.DataSource = Nothing
         cmb_localidad.Items.Clear()
@@ -23,9 +24,11 @@
     End Sub
 
     Private Sub Insertar()
-        Dim sql 
+        Dim sql
+        Dim idProveeedor As Integer
+        idProveeedor = Conex.Generar_id_consecutivo("Proveedor", "idProveedor")
         sql = "insert into Proveedor values"
-        sql &= "(" & Conex.Generar_id_consecutivo("Proveedor", "idProveedor") 'idProveedor
+        sql &= "(" & idProveeedor                                   'idProveedor
         sql &= ", " & Integer.Parse(txt_numero_documento.Text.Trim) 'numDoc
         sql &= ", " & cmb_tipo_documento.SelectedValue              'tipoDoc
         sql &= ", '" & txt_razon_social.Text.Trim & "'"             'razonSocial
@@ -40,6 +43,12 @@
         sql &= ")"
 
         Conex.Insertar(sql)
+
+        sql = "insert into TelefonoXProveedor values"
+        sql &= " (" & idProveeedor & ", " & cmb_tipo_telefono.SelectedValue & ", " & txt_numero_telefono.Text.Trim() & ")"
+
+        Conex.Insertar(sql)
+
     End Sub
 
     Private Sub Cmd_cancelar_Click(sender As Object, e As EventArgs) Handles cmd_cancelar.Click
